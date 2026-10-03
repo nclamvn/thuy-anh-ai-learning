@@ -27,3 +27,10 @@ export-*.json
 
 # Local Vercel project linkage and build state
 .vercel/
+
+# Deliberately generated authored handoff archive only
+!app/downloads/project-review-WEB02.zip
+
+# Visitor-authored review exports are not source assets
+project-feedback.json
+project-feedback.md

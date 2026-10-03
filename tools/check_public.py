@@ -98,7 +98,7 @@ def run(project,node=None):
     integrity=verify_distribution(project)
     results=[{'check':'public-source-integrity','status':integrity['status'],'result':integrity}]
     binary=node or os.environ.get('AI_LEARNING_NODE') or shutil.which('node')
-    jobs=[('python-fault-tests',[sys.executable,'-B','-m','unittest','discover','-s','tools/tests','-v']),('unmeasured-benchmark',[sys.executable,'-B','tools/evaluate_responses.py','benchmarks/response_template.json']),('synthetic-benchmark',[sys.executable,'-B','tools/evaluate_responses.py','benchmarks/fixtures/synthetic_responses.json']),('inactive-provider-config',[sys.executable,'-B','tools/verify_provider_config.py','benchmarks/provider-config.template.json'])]
+    jobs=[('python-fault-tests',[sys.executable,'-B','-m','unittest','discover','-s','tools/tests','-v']),('unmeasured-benchmark',[sys.executable,'-B','tools/evaluate_responses.py','benchmarks/response_template.json']),('synthetic-benchmark',[sys.executable,'-B','tools/evaluate_responses.py','benchmarks/fixtures/synthetic_responses.json']),('inactive-provider-config',[sys.executable,'-B','tools/verify_provider_config.py','benchmarks/provider-config.template.json']),('authored-review-bundle',[sys.executable,'-B','tools/build_share_bundle.py','--verify'])]
     if binary:jobs.append(('app-tests',[binary,'--test',*sorted(str(p.relative_to(project)) for p in (project/'app/tests').glob('*.test.mjs'))]))
     else:results.append({'check':'app-tests','status':'FAIL','reason':'Node.js 18+ required; set --node or AI_LEARNING_NODE'})
     for name,command in jobs:

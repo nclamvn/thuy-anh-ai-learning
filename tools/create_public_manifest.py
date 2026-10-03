@@ -14,8 +14,8 @@ for path in sorted(root.rglob('*')):
     if path.is_symlink():raise ValueError(f'public source symlink forbidden: {relative}')
     if not path.is_file():continue
     name=relative.as_posix()
-    if name in omitted or path.suffix in {'.pdf','.zip'} or any(part.lower() in {'private','backup','backups','qa','snapshots'} for part in relative.parts):raise ValueError(f'raw/private distribution path forbidden: {name}')
+    if name in omitted or (path.suffix=='.pdf' or (path.suffix=='.zip' and name!='app/downloads/project-review-WEB02.zip')) or any(part.lower() in {'private','backup','backups','qa','snapshots'} for part in relative.parts):raise ValueError(f'raw/private distribution path forbidden: {name}')
     raw=path.read_bytes();files[name]={'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
-receipt={'schemaVersion':1,'dataKind':'public-references-only','release':'P03-public-01','files':files,'omittedRawCaptures':omitted,'limits':'Integrity receipt for available public sources only; missing research corpus cannot be reverified; no cryptographic signature or educational approval.'}
+receipt={'schemaVersion':1,'dataKind':'public-references-only','release':'WEB02-public-02','files':files,'omittedRawCaptures':omitted,'limits':'Integrity receipt for available public sources only; missing research corpus cannot be reverified; no cryptographic signature or educational approval.'}
 (root/'PUBLIC-MANIFEST.json').write_text(json.dumps(receipt,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'status':'PASS','files':len(files),'omittedRawCaptures':len(omitted)}))

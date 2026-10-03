@@ -1,21 +1,15 @@
 {
-  "dataKind": "public-references-only",
+  "archive": "project-review-WEB02.zip",
+  "authoredLanguageDocuments": 108,
+  "bytes": 727061,
+  "catalogDocuments": 54,
+  "dataKind": "authored-review-download",
+  "documentCountScope": "catalog entries only; package support documents excluded",
+  "fileCount": 254,
   "files": {
-    ".github/workflows/checks.yml": {
-      "bytes": 406,
-      "sha256": "108621b805c5c01a30ac4a95fb3a015c582c7b05e6378dc591ae115dcfae5faa"
-    },
-    ".gitignore": {
-      "bytes": 597,
-      "sha256": "4f70cf2b81607f6ace9804e1346bb8b69b7d20866b333b6acf4c93d48c7faabf"
-    },
-    ".vercelignore": {
-      "bytes": 227,
-      "sha256": "f0ecfb05b49a0abd8d99594fb55b20444d195b16282a92a540fc01aca9580203"
-    },
-    "AGENTS.md": {
-      "bytes": 1600,
-      "sha256": "27e109be4bdd1ded5efc6284399d3ec9c75f04a2ca24ddcc8c1a49925e4bf081"
+    "CONTENT-MANIFEST.json": {
+      "bytes": 40874,
+      "sha256": "3c9fc1cde2b24af85888a56852a1f5f0599a66a66626aaa8c2175adb4c490175"
     },
     "LICENSE.md": {
       "bytes": 764,
@@ -26,16 +20,12 @@
       "sha256": "6dd183d1c57394f3ec769a3cff6826a14aae34d88be8d17fccd655261bd596dd"
     },
     "README.en.md": {
-      "bytes": 6206,
-      "sha256": "cff5cced62d6e6d6fcdd83120bd8f639ab37ebcde1cce43dcd17da44b82a640b"
+      "bytes": 2627,
+      "sha256": "03539f113d042e63f5fa648e954b219e3457de09b506ad73e98caaf54b5e5cd5"
     },
     "README.md": {
-      "bytes": 6707,
-      "sha256": "4bb38e032e32cb1715a89b2f517b028dd58ed8d643e36ce2a2e3abf9c57ca03c"
-    },
-    "app/README.md": {
-      "bytes": 12437,
-      "sha256": "635539a492eb8e0c6554bd303cb9ab9ea6e1aa7ed3bf10d63aeb373cf04dad30"
+      "bytes": 2812,
+      "sha256": "dcbcc79ae93ec1d2c89651f8d0d3b157de5ef7f82398fe769839fc13d081d991"
     },
     "app/assets/brandmark.svg": {
       "bytes": 587,
@@ -60,14 +50,6 @@
     "app/assets/fonts/Lora.ttf": {
       "bytes": 212196,
       "sha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7"
-    },
-    "app/downloads/project-review-WEB02.json": {
-      "bytes": 41267,
-      "sha256": "f6ed5714c8c06cefd030ed1bbc178855aa3c44d755fa6840b24aa885d8471d2b"
-    },
-    "app/downloads/project-review-WEB02.zip": {
-      "bytes": 727061,
-      "sha256": "bc72309de9b34452d0fe851b9969f8d0c3bde79262c2505fed747a4601ee3ca8"
     },
     "app/favicon.svg": {
       "bytes": 341,
@@ -96,10 +78,6 @@
     "app/model.js": {
       "bytes": 25099,
       "sha256": "e68f45c769a50e70ae62d6d1cd296c2dc919202e3cc36928c72c0e3f60a48c10"
-    },
-    "app/package.json": {
-      "bytes": 167,
-      "sha256": "65b00e029baf7cfa6c87fa8a985ed04a3722913f8b3ab59097a895ddf5901791"
     },
     "app/provider.js": {
       "bytes": 1034,
@@ -561,30 +539,6 @@
       "bytes": 41483,
       "sha256": "74099ca709f1bf97000d7dcf9c1f1217138c590ca3f2eaaf9e0728f39e3dde11"
     },
-    "app/tests/handoff.test.mjs": {
-      "bytes": 6292,
-      "sha256": "d3c1fa6dce3744f2b513ab5a1599006e28e4497cadbc920f953ef9109d519062"
-    },
-    "app/tests/model.test.mjs": {
-      "bytes": 9770,
-      "sha256": "b62a5e3c53bb84e6cb441657d4b0364ee0ca0a761167390ba200f0a9cad51a8b"
-    },
-    "app/tests/p03.test.mjs": {
-      "bytes": 11983,
-      "sha256": "7d099d78756844a17af4c577da5422d63ef69bc2a569c958429832097e9711c3"
-    },
-    "app/tests/platform.test.mjs": {
-      "bytes": 12375,
-      "sha256": "e94d69e1c21dcfceb47fb7c0782435d60edefb78a560e4420bd5b6ae3a053356"
-    },
-    "benchmarks/EVALUATION_GUIDE.md": {
-      "bytes": 5161,
-      "sha256": "b11a4f401b7b6e1d549ee6ff3bfe6a258211abe9287fa9b9f35db79ca0c12c90"
-    },
-    "benchmarks/LIVE-PROVIDER-PROTOCOL.md": {
-      "bytes": 3098,
-      "sha256": "11de9bb1e6372835ff94b050350fcf284ca7df09b0e4a543d5304275f231641f"
-    },
     "benchmarks/fixtures/synthetic_responses.json": {
       "bytes": 1164,
       "sha256": "dd77729b7016ee3aba104a1c216d7e2b90d1128d3a072eaab24fc26030a4222c"
@@ -608,10 +562,6 @@
     "docs/SHARING-WEB02.md": {
       "bytes": 3422,
       "sha256": "cf28d8ae988d6a262c52dfebd4042ed0be0eee5417e3f82cba5af7f8650a3e1e"
-    },
-    "docs/images/library-en.png": {
-      "bytes": 99917,
-      "sha256": "edf8fd1d343fdefd5a0365051df46526da56ce4df5b2c66e4959443740f2bd19"
     },
     "materials/README.md": {
       "bytes": 8558,
@@ -1072,86 +1022,17 @@
     "start-local.command": {
       "bytes": 1760,
       "sha256": "8a932f218e86c20442e961c5d6594bb070718d7c3d6f971bdf9073daf847c673"
-    },
-    "tools/build_resources.py": {
-      "bytes": 19456,
-      "sha256": "00a8bbc8b04e35836da80e611cf809dcc716e188cc710a933dc34e126558530f"
-    },
-    "tools/build_share_bundle.py": {
-      "bytes": 15944,
-      "sha256": "d1a58baea02575d15638e9d07cd8508036ae069bdadb5b5d9259b6b16e9503ba"
-    },
-    "tools/check_all.py": {
-      "bytes": 3394,
-      "sha256": "7a55ea1712ddd3297e1db924d267bec8c38f4d9e152df2c92fe446738a7dff5a"
-    },
-    "tools/check_public.py": {
-      "bytes": 10074,
-      "sha256": "7ce42e104b858429f55ce4a5381f1a3fda9762ef391742c2f65b045e9a027f78"
-    },
-    "tools/create_public_manifest.py": {
-      "bytes": 1915,
-      "sha256": "d7fc781cca702eac05af6c3a575bec10387599aaac5bc83e33a4b24d9920425c"
-    },
-    "tools/evaluate_responses.py": {
-      "bytes": 9715,
-      "sha256": "1afa68c9e5442bba05d4f2f12f8f80b8edcdc157db4768a9994ed40e3e1839be"
-    },
-    "tools/package_project.py": {
-      "bytes": 9149,
-      "sha256": "8a037cabe964dfb1fa48b3e8f6dbf95a4096eecace0f51f61f87dec99c045043"
-    },
-    "tools/tests/test_project_kit.py": {
-      "bytes": 31630,
-      "sha256": "8bf2f428d58a953bf2a7d6bb593455f95c8e2f91bda71666455b57bbaec4d0bb"
-    },
-    "tools/tests/test_public_distribution.py": {
-      "bytes": 2120,
-      "sha256": "19dca90913c6fb4fa1e5fc08b30c8ed4b6acc4372b7c7094c3e7783c89a9b70c"
-    },
-    "tools/tests/test_share_bundle.py": {
-      "bytes": 6115,
-      "sha256": "497caf3e8a2558b4bf00e90bde838a363f7733665023523678c91225bccbd1b0"
-    },
-    "tools/verify_package.py": {
-      "bytes": 5927,
-      "sha256": "43bda8b07da974b6162d86b3c15d9cfd9d392d81e32f302c5d168f8ea2f34d1a"
-    },
-    "tools/verify_project_kit.py": {
-      "bytes": 3854,
-      "sha256": "32ebf2abd017352ffce7a4fc90d7bd27d22adc0cf64ef1574d88070c300ed570"
-    },
-    "tools/verify_provider_config.py": {
-      "bytes": 2476,
-      "sha256": "fa835f791ebc8aa69a5e27d8b02baad210b94f61cc29e6fba0ce291f81e9421c"
-    },
-    "tools/verify_research.py": {
-      "bytes": 19904,
-      "sha256": "33306424060fa925c745dc8fb89570b4e8d4337ef13519b5def08ca3fbf235b1"
-    },
-    "vercel.json": {
-      "bytes": 152,
-      "sha256": "497207ce945740835e94119e97ce6df23af164ea10a801f1b176f7bc95018604"
     }
   },
-  "limits": "Integrity receipt for available public sources only; missing research corpus cannot be reverified; no cryptographic signature or educational approval.",
-  "omittedRawCaptures": [
-    "research/fulltexts/SRC-08.pdf",
-    "research/fulltexts/SRC-09.pdf",
-    "research/fulltexts/SRC-11.html",
-    "research/fulltexts/SRC-12.html",
-    "research/snapshots/SRC-01.html",
-    "research/snapshots/SRC-02.html",
-    "research/snapshots/SRC-03A.html",
-    "research/snapshots/SRC-04.html",
-    "research/snapshots/SRC-05.html",
-    "research/snapshots/SRC-06.html",
-    "research/snapshots/SRC-07.html",
-    "research/snapshots/SRC-10.html",
-    "research/snapshots/SRC-11.html",
-    "research/snapshots/SRC-12.html",
-    "research/snapshots/SRC-13.html"
-  ],
-  "release": "WEB02-public-02",
-  "schemaVersion": 1
+  "languageDocuments": {
+    "en": 54,
+    "vi": 54
+  },
+  "lessons": 3,
+  "limits": "Full authored handoff; third-party raw corpus and all browser/user records excluded. No cryptographic signature or human approval.",
+  "release": "WEB02",
+  "resourceFiles": 112,
+  "schemaVersion": 1,
+  "sha256": "bc72309de9b34452d0fe851b9969f8d0c3bde79262c2505fed747a4601ee3ca8",
+  "sourceFingerprint": "2bad2e137941d588b60440de12d319f900a4ed60631e42ebbe4d23fb32c1ca57"
 }

@@ -1,8 +1,14 @@
 # Lớp thực hành AI · AI Learning Practice
 
-Bộ công cụ local dành cho người hướng dẫn thiết kế và diễn tập việc học có AI: giao diện VI/EN, ba bài học nháp, thư viện 54 tài liệu song ngữ, phiên học tám bước, hồ sơ bài làm và bàn ghi quan sát/readiness. Bản P03 public-01 giữ hướng thiết kế UI03 và ứng dụng đã nghiệm thu trên máy. [English README](README.en.md).
+Bộ công cụ local dành cho người hướng dẫn thiết kế và diễn tập việc học có AI: giao diện VI/EN, ba bài học nháp, thư viện 54 tài liệu song ngữ, phiên học tám bước, hồ sơ bài làm và bàn ghi quan sát/readiness. Bản WEB02 giữ hướng thiết kế UI03 và ứng dụng đã nghiệm thu trên máy. [English README](README.en.md).
 
 **Phạm vi: diễn tập người lớn với dữ liệu giả.** Chưa được phê duyệt sử dụng với trẻ, chưa có kết quả hiệu quả giáo dục tại Việt Nam và chưa là dịch vụ production. Preview người học chỉ ẩn công cụ người hướng dẫn; không có xác thực hay phân quyền bảo mật. AI hiện dùng fixture cố ý có lỗi, không gọi model/API trả phí.
+
+## Gửi cho người khác xem
+
+[Ứng dụng web](https://thuy-anh-ai-learning.vercel.app/#overview) · [Hướng dẫn reviewer](https://thuy-anh-ai-learning.vercel.app/#guide) · [Bài LES-02 · EN](https://thuy-anh-ai-learning.vercel.app/#library?doc=MAT-04&lang=en) · [Nguyên bộ review ZIP](https://thuy-anh-ai-learning.vercel.app/downloads/project-review-WEB02.zip).
+
+WEB02 bổ sung tổng quan, đường đọc sâu thư viện và phiếu góp ý JSON local. Gửi link xem ngay hoặc tải nguyên bộ app +108 tài liệu authored để diễn tập offline; corpus toàn văn bên thứ ba và dữ liệu browser không nằm trong ZIP. Phiếu góp ý JSON là export để chủ động gửi, chưa có server nhận/import/merge hay shared account. Mỗi browser/origin giữ state riêng; đổi ngôn ngữ không dịch câu trả lời người dùng. Xuất backup trước khi đổi origin; review JSON không phải backup học viên. [Protocol bàn giao và checksum](docs/SHARING-WEB02.md).
 
 ## Chạy trên máy
 
@@ -19,6 +25,8 @@ Mở [ứng dụng local](http://127.0.0.1:8875/). Hoặc chạy `./start-local.
 ```sh
 python3 -B tools/check_public.py
 ```
+
+Bộ kiểm còn xác nhận ZIP authored review đã rebuild đúng nguồn bằng `tools/build_share_bundle.py --verify`; source đổi mà quên rebuild phải FAIL.
 
 Bộ kiểm này xác nhận dấu vân tay của **file đang được phân phối**, nguồn/copy học liệu, link local, metadata dịch, Python fault tests, Node app tests, hai benchmark offline và provider config chưa kích hoạt. `PUBLIC-MANIFEST.json` là receipt kiểm tính toàn vẹn, không chữ ký, không chứng minh chất lượng sư phạm. Sau thay đổi có chủ đích và review, cập nhật receipt bằng `python3 -B tools/create_public_manifest.py`, rồi chạy lại bộ kiểm.
 

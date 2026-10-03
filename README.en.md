@@ -1,8 +1,14 @@
 # AI Learning Practice · Lớp thực hành AI
 
-A local facilitator workspace for designing and rehearsing learning with AI: a persistent Vietnamese/English toggle, three draft lessons, 54 bilingual documents, eight-step learning sessions, work records and a structured observation/readiness workbench. P03 public-01 retains the accepted UI03 design and local application. [Vietnamese README](README.md).
+A local facilitator workspace for designing and rehearsing learning with AI: a persistent Vietnamese/English toggle, three draft lessons, 54 bilingual documents, eight-step learning sessions, work records and a structured observation/readiness workbench. WEB02 retains the accepted UI03 design and local application. [Vietnamese README](README.md).
 
 **Scope: adult rehearsal with fictional data.** This is not approved for use with children, has no measured educational effectiveness in Vietnam and is not a production service. Learner preview hides facilitator controls; it is not authentication or security authorization. The AI provider uses deliberately flawed fixtures and makes no model/API calls.
+
+## Share for remote review
+
+[Web application](https://thuy-anh-ai-learning.vercel.app/#overview?lang=en) · [Reviewer guide](https://thuy-anh-ai-learning.vercel.app/#guide?lang=en) · [LES-02 · English](https://thuy-anh-ai-learning.vercel.app/#library?doc=MAT-04&lang=en) · [Complete review ZIP](https://thuy-anh-ai-learning.vercel.app/downloads/project-review-WEB02.zip).
+
+WEB02 adds an overview, deep document links and a local review JSON form. Share the website for immediate reading or download the entire app +108 authored documents for offline rehearsal; third-party full works and visitor browser records are excluded. Review JSON is deliberately exported for return, with no review server/import/merge or shared account. Each browser/origin owns its local state; changing locale does not translate user responses. Export a backup before changing origins; review JSON is distinct from learner backup. [Handoff/checksum protocol](docs/SHARING-WEB02.en.md).
 
 ## Run locally
 
@@ -19,6 +25,8 @@ Open [the local application](http://127.0.0.1:8875/), or run `./start-local.comm
 ```sh
 python3 -B tools/check_public.py
 ```
+
+The profile also verifies the authored review ZIP against current sources using `tools/build_share_bundle.py --verify`; changing sources without rebuilding must FAIL.
 
 This checks fingerprints of **files actually distributed**, authored-to-generated learning material copies, local links, translated metadata, Python fault tests, Node app tests, both offline benchmarks and the inactive provider configuration. `PUBLIC-MANIFEST.json` is an integrity receipt, not a signature or educational quality approval. After intentional reviewed edits, refresh it with `python3 -B tools/create_public_manifest.py` and rerun checks.
 
