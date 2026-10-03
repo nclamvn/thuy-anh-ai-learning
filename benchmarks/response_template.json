@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "dataKind": "unmeasured-response-template",
+  "responses": [
+    {
+      "caseId": "BENCH-01",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-02",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-03",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-04",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-05",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-06",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-07",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-08",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-09",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-10",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-11",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-12",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-13",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-14",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-15",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    },
+    {
+      "caseId": "BENCH-16",
+      "model": null,
+      "modelVersion": null,
+      "response": null,
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "unobserved",
+        "recordedAt": null,
+        "evidenceRef": null
+      },
+      "humanRatings": {
+        "grounding": null,
+        "learningSupport": null,
+        "privacy": null,
+        "ageAppropriate": null,
+        "abstention": null
+      },
+      "reviewer": null
+    }
+  ]
+}

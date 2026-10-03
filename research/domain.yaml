@@ -1,0 +1,44 @@
+{
+  "domain": "ai_learning_foundation",
+  "entity_label": "Nguồn nghiên cứu nền đã chọn, không phải toàn bộ tài liệu thế giới",
+  "schema": {
+    "fields": [
+      "source_statement",
+      "document_type",
+      "local_effectiveness",
+      "pilot_cost_vnd"
+    ],
+    "type_field": "document_type"
+  },
+  "rollup_field": "document_type",
+  "universe": {
+    "estimate": 11,
+    "basis": "11 selected locally captured sources after R01; not a census/systematic review. Manifest includes three unavailable captures; duplicate DOI PNAS/PMC counts once."
+  },
+  "refresh_days": {
+    "default": 90
+  },
+  "alias_map": {},
+  "ambiguous_clusters": [],
+  "verification": {
+    "allowed_tiers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "allowed_extractions": [
+      "verbatim",
+      "normalized",
+      "inferred"
+    ],
+    "unknown_fields": [
+      "local_effectiveness",
+      "pilot_cost_vnd"
+    ]
+  },
+  "domain_gates": {
+    "no_inferred_fields": [
+      "source_statement"
+    ]
+  }
+}

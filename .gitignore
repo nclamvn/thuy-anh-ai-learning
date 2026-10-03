@@ -1,0 +1,26 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.env
+.env.*
+exports/
+observed/
+runtime/
+private/
+backups/
+QA/
+research/snapshots/
+research/fulltexts/*.pdf
+research/fulltexts/*.html
+*.zip
+
+# User-created rehearsal exports and backup conventions
+*-state-*.json
+P03-state*.json
+QA-*.json
+qa-*.json
+observed-*.json
+export-*.json
+*.backup.json

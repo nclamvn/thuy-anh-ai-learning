@@ -1,0 +1,1527 @@
+{
+  "generatedKind": "ai-draft-local-kit",
+  "items": [
+    {
+      "category": "project",
+      "description": "Chỉ mục toàn bộ tài liệu, đường bắt đầu diễn tập, nguồn và việc cần người thật.",
+      "href": "resources/README.md",
+      "id": "MAT-INDEX",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "README.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "operating-guide",
+      "title": "Bộ dự án trên máy · bắt đầu ở đây",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/README.md",
+          "description": "Bilingual lesson/research/operations library, adult rehearsal entry points and human-dependent decisions.",
+          "href": "resources/en/README.md",
+          "path": "en/README.md",
+          "sourceLocale": "en",
+          "status": "operating-guide",
+          "title": "Local project kit · start here"
+        }
+      }
+    },
+    {
+      "category": "project",
+      "description": "Bộ local này hỗ trợ người hướng dẫn soạn học liệu, tổ chức diễn tập và xem lại bằng chứng bài làm. Chủ dự án quyết định phạm vi; Thuý Anh khởi xướng side project. Phạm vi và quyền quyết định giữa các bên chưa được thống nhất trong tài liệu này.",
+      "href": "resources/project-brief.md",
+      "id": "MAT-01",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "project-brief.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-03A",
+        "SRC-04"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Brief dự án · điều đã biết và điều cần quyết định",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/project-brief.md",
+          "description": "This local kit helps facilitators prepare learning materials, rehearse delivery and examine evidence in completed work. The project owner decides scope; Thuý Anh initiated the side project. Collaboration scope and decision rights between the parties have not been agreed in this d",
+          "href": "resources/en/project-brief.md",
+          "path": "en/project-brief.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Project brief · what is known and what needs a decision"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Các bài sau dùng cùng một tiến trình nhưng yêu cầu ba cách kiểm khác nhau. Chỉ dùng cho diễn tập người lớn cho đến khi người có chuyên môn rà soát mức khó, ngôn ngữ, rubric và điều kiện vận hành.",
+      "href": "resources/curriculum/README.md",
+      "id": "MAT-02",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/README.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-03A",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Bộ học liệu nháp · ba cách tự kiểm",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/README.md",
+          "description": "These lessons share a process but require three different checks. Use only for adult rehearsals until an educator reviews difficulty, language, rubric and delivery conditions.",
+          "href": "resources/en/curriculum/README.md",
+          "path": "en/curriculum/README.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Draft curriculum · three ways to check for yourself"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "LES-01 · 13–15 tuổi (nhóm đề xuất) · 45 phút (ước lượng thiết kế, chưa đo).",
+      "href": "resources/curriculum/lesson-01.md",
+      "id": "MAT-03",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/lesson-01.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-03A",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Đo lại điều AI nói",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/lesson-01.md",
+          "description": "LES-01 · ages 13–15 (proposed group) · 45 minutes (design estimate, not measured).",
+          "href": "resources/en/curriculum/lesson-01.md",
+          "path": "en/curriculum/lesson-01.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Measure what the AI claims"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "LES-02 · 13–15 tuổi (nhóm đề xuất) · 45 phút (ước lượng thiết kế, chưa đo).",
+      "href": "resources/curriculum/lesson-02.md",
+      "id": "MAT-04",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/lesson-02.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-04",
+        "SRC-06"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Đọc đúng lời hẹn",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/lesson-02.md",
+          "description": "LES-02 · ages 13–15 (proposed group) · 45 minutes (design estimate, not measured).",
+          "href": "resources/en/curriculum/lesson-02.md",
+          "path": "en/curriculum/lesson-02.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Read the updated notice accurately"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "LES-03 · 13–15 tuổi (nhóm đề xuất) · 45 phút (ước lượng thiết kế, chưa đo).",
+      "href": "resources/curriculum/lesson-03.md",
+      "id": "MAT-05",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/lesson-03.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Một câu hỏi có thể thử được",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/lesson-03.md",
+          "description": "LES-03 · ages 13–15 (proposed group) · 45 minutes (design estimate, not measured).",
+          "href": "resources/en/curriculum/lesson-03.md",
+          "path": "en/curriculum/lesson-03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "A question you can test"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "Buổi này dành cho người lớn đóng vai và dùng mã giả, nhằm phát hiện lỗi học liệu và vận hành. Chưa phải buổi thử hiệu quả học tập của trẻ. Chọn một bài trong curriculum, một người hướng dẫn, một người đóng vai người học và một người quan sát.",
+      "href": "resources/guides/facilitator-rehearsal.md",
+      "id": "MAT-06",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/facilitator-rehearsal.md",
+      "sourceIds": [
+        "SRC-03A",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "sourceLocale": "vi",
+      "status": "operating-guide",
+      "title": "Diễn tập 45 phút · người hướng dẫn",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/facilitator-rehearsal.md",
+          "description": "Adults role-play using fictional codes to discover instructional and operational difficulties. This is not a study of children's learning effectiveness. Choose one lesson, a facilitator, a learner-role adult and an observer.",
+          "href": "resources/en/guides/facilitator-rehearsal.md",
+          "path": "en/guides/facilitator-rehearsal.md",
+          "sourceLocale": "en",
+          "status": "operating-guide",
+          "title": "A 45-minute rehearsal · facilitator"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "Khởi chạy từ thư mục dự án: python3 -m http.server 8875 --bind 127.0.0.1 --directory app, rồi mở http://127.0.0.1:8875/. Nếu máy chủ 8875 đang chạy, dùng bản đang mở; không tạo một máy chủ trùng cổng. Lệnh nền và cách dừng được người vận hành kiểm trong môi trường của mình. Giao diện mở qua localhos",
+      "href": "resources/guides/operator-quickstart.md",
+      "id": "MAT-07",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/operator-quickstart.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "operating-guide",
+      "title": "Vận hành platform local",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/operator-quickstart.md",
+          "description": "From the project directory run `python3 -m http.server 8875 --bind 127.0.0.1 --directory app`, then open `http://127.0.0.1:8875/`. Reuse an existing server on port 8875; do not launch a second one on that port. The operator checks background execution and shutdown in their own en",
+          "href": "resources/en/guides/operator-quickstart.md",
+          "path": "en/guides/operator-quickstart.md",
+          "sourceLocale": "en",
+          "status": "operating-guide",
+          "title": "Operating the local platform"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "Backup là ảnh trạng thái dữ liệu local của trình duyệt, khác với báo cáo một phiên. Xuất cả hai trước khi đổi máy hoặc thử import. Chỉ nhập file có nguồn do người vận hành biết; schema không hợp lệ phải bị từ chối mà không ghi đè dữ liệu.",
+      "href": "resources/guides/backup-and-recovery.md",
+      "id": "MAT-08",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/backup-and-recovery.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "operating-guide",
+      "title": "Lưu thủ công và phục hồi",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/backup-and-recovery.md",
+          "description": "A backup is a snapshot of browser-local data, distinct from a single-session report. Export both before switching computers or testing an import. Only import a file whose origin the operator knows; invalid schema must be rejected without overwriting current data.",
+          "href": "resources/en/guides/backup-and-recovery.md",
+          "path": "en/guides/backup-and-recovery.md",
+          "sourceLocale": "en",
+          "status": "operating-guide",
+          "title": "Manual saving and recovery"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "Tài liệu này dùng để bàn giao một bản local có thể diễn tập. Hoàn tất checklist không xác nhận sản phẩm production, pháp lý hay hiệu quả giáo dục.",
+      "href": "resources/guides/release-checklist.md",
+      "id": "MAT-09",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/release-checklist.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "operating-guide",
+      "title": "Bản phát hành local · ghi bằng chứng",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/release-checklist.md",
+          "description": "Use this to hand over a local rehearsal build. Completing it does not certify production readiness, legal compliance or educational effectiveness.",
+          "href": "resources/en/guides/release-checklist.md",
+          "path": "en/guides/release-checklist.md",
+          "sourceLocale": "en",
+          "status": "operating-guide",
+          "title": "Local release · record the evidence"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Dùng một phiếu cho một phiên. Người quan sát ghi hành vi và câu nói, tách diễn giải sang cột riêng. Không suy ra hiểu biết từ thao tác nhanh hoặc sự tự tin. Các ví dụ dưới đây hoàn toàn giả, chỉ minh họa cách ghi.",
+      "href": "resources/templates/observer-sheet.md",
+      "id": "MAT-10",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/observer-sheet.md",
+      "sourceIds": [
+        "SRC-04"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Phiếu quan sát · điều thực sự xảy ra",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/observer-sheet.md",
+          "description": "Use one sheet per session. Record behaviour and statements; keep interpretation in its own column. Fast operation and confidence do not establish understanding. All examples are fictional.",
+          "href": "resources/en/templates/observer-sheet.md",
+          "path": "en/templates/observer-sheet.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Observation sheet · what actually happened"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Bản giấy hoặc bản text dùng khi diễn tập chưa mở platform. Người hướng dẫn chèn nhiệm vụ từ đúng phiên bản bài, giữ phần đáp án/rubric cho người đánh giá. Không chép phản hồi AI vào bài ban đầu.",
+      "href": "resources/templates/learner-worksheet.md",
+      "id": "MAT-11",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/learner-worksheet.md",
+      "sourceIds": [
+        "SRC-03A",
+        "SRC-05"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Phiếu bài làm · tám bước",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/learner-worksheet.md",
+          "description": "Paper/text alternative when rehearsal does not use the platform. The facilitator inserts tasks from the correct version and keeps answers/rubric with the reviewer. Do not copy the AI response into initial work.",
+          "href": "resources/en/templates/learner-worksheet.md",
+          "path": "en/templates/learner-worksheet.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Worksheet · eight steps"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Dùng cho cuộc trao đổi 15–20 phút sau khi người thật đồng ý tham gia. Hỏi về một trải nghiệm gần đây trước khi giới thiệu ý tưởng. Người phỏng vấn không hứa sản phẩm sắp có, không xem lời khen là nhu cầu đã xác nhận.",
+      "href": "resources/templates/interview-guide.md",
+      "id": "MAT-12",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/interview-guide.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Phỏng vấn nhu cầu · tránh dẫn dắt",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/interview-guide.md",
+          "description": "Use for a 15–20-minute conversation after a real person agrees. Ask about a recent experience before presenting the idea. Do not promise an imminent product or treat praise as validated demand.",
+          "href": "resources/en/templates/interview-guide.md",
+          "path": "en/templates/interview-guide.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Needs interview · avoid leading questions"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Một dòng bằng chứng phải cho người khác biết nó đến từ đâu và xác nhận điều gì. Phân biệt SOURCE_CAPTURED (điều nguồn nói), OBSERVED (sự kiện ghi được), REPORTED (người khác kể), AI_DRAFT (đề xuất), UNKNOWN (chưa có thông tin). Không chuyển AI_DRAFT thành kết quả thực địa.",
+      "href": "resources/templates/evidence-capture.md",
+      "id": "MAT-13",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/evidence-capture.md",
+      "sourceIds": [
+        "SRC-06"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Ghi bằng chứng · tách nguồn và diễn giải",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/evidence-capture.md",
+          "description": "Every evidence row must reveal its origin and what it supports. Distinguish SOURCE_CAPTURED (what a source says), OBSERVED (recorded event), REPORTED (another person's account), AI_DRAFT (proposal) and UNKNOWN. AI_DRAFT is never field evidence.",
+          "href": "resources/en/templates/evidence-capture.md",
+          "path": "en/templates/evidence-capture.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Evidence capture · separate sources and interpretation"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Phiếu cho người có chuyên môn đọc bài và đưa nhận xét. Người nhập trên platform có thể ghi ý kiến cho diễn tập local; phần mềm chưa xác thực danh tính hoặc thẩm quyền. Một lựa chọn “được diễn tập” không phải phê duyệt sử dụng với trẻ.",
+      "href": "resources/templates/curriculum-review.md",
+      "id": "MAT-14",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/curriculum-review.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-04"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Rà soát học liệu · quyết định có phạm vi",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/curriculum-review.md",
+          "description": "An educator reads a lesson and comments. Local platform entries record the submitter's judgement without authenticating identity or authority. “May be rehearsed” is not approval for use with children.",
+          "href": "resources/en/templates/curriculum-review.md",
+          "path": "en/templates/curriculum-review.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Curriculum review · a decision with a defined scope"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Chọn một mục tiêu quan sát và một bài; không đưa cả bộ curriculum vào buổi đầu chỉ để đủ chức năng. Lịch dưới đây là mẫu soạn, chưa có người tham gia thật.",
+      "href": "resources/templates/session-plan.md",
+      "id": "MAT-15",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/session-plan.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Kế hoạch một buổi · chuẩn bị và dừng",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/session-plan.md",
+          "description": "Choose one observation goal and one lesson. Do not include the whole curriculum merely to demonstrate features. This plan has no confirmed real participants.",
+          "href": "resources/en/templates/session-plan.md",
+          "path": "en/templates/session-plan.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Session plan · preparation and stopping"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Template điều phối lịch và vai trò; không là danh sách người thật hoặc lời mời đã gửi. Thuý Anh và người vận hành cần thống nhất tuyển người, sự đồng ý và khả năng tham gia trước khi điền lịch thật.",
+      "href": "resources/templates/cohort-schedule.md",
+      "id": "MAT-16",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/cohort-schedule.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Lịch nhóm thử · chưa có người được tuyển",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/cohort-schedule.md",
+          "description": "Scheduling/role template, not a real participant list or sent invitation. Thuý Anh and the operator must agree recruitment, participation and availability before entering real events.",
+          "href": "resources/en/templates/cohort-schedule.md",
+          "path": "en/templates/cohort-schedule.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Trial schedule · nobody has been recruited"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Issue là điều đã xảy ra và có cách tái hiện; risk là điều có thể xảy ra. Giữ hai loại riêng để không biến giả thuyết thành lỗi thực tế hoặc bỏ qua lỗi bằng câu “chỉ là rủi ro”.",
+      "href": "resources/templates/issue-risk-log.md",
+      "id": "MAT-17",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/issue-risk-log.md",
+      "sourceIds": [
+        "SRC-06",
+        "SRC-07"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Lỗi và rủi ro · sự kiện khác khả năng",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/issue-risk-log.md",
+          "description": "An issue occurred and has reproduction evidence; a risk may occur. Keep them separate so hypotheses do not become fabricated incidents, and incidents are not dismissed as “only risks”.",
+          "href": "resources/en/templates/issue-risk-log.md",
+          "path": "en/templates/issue-risk-log.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Issues and risks · events differ from possibilities"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Dùng khi người có quyền quyết định chọn một hướng hoặc khi nhóm giữ một giả định để tiếp tục thử. Giả định AI không phải quyết định đã được Thuý Anh hoặc chuyên gia đồng ý.",
+      "href": "resources/templates/decision-record.md",
+      "id": "MAT-18",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/decision-record.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Bản ghi quyết định · ai chọn và vì sao",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/decision-record.md",
+          "description": "Use when an authorised person chooses a direction or the team retains an assumption for a trial. An AI assumption is not agreement from Thuý Anh or an educator.",
+          "href": "resources/en/templates/decision-record.md",
+          "path": "en/templates/decision-record.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Decision record · who chose and why"
+        }
+      }
+    },
+    {
+      "category": "template",
+      "description": "Template dùng sau khi có hoạt động thật hoặc diễn tập được ghi. Không điền các số từ kế hoạch như số đã thực hiện. Nếu chưa có đo, dùng chưa biết; không tự sinh đồ thị hiệu quả.",
+      "href": "resources/templates/weekly-synthesis.md",
+      "id": "MAT-19",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "templates/weekly-synthesis.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Tổng hợp tuần · đủ bằng chứng mới kết luận",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/templates/weekly-synthesis.md",
+          "description": "Use after actual activities or recorded rehearsals. Planned numbers are not completed work. If nothing was measured, state unknown; do not generate effectiveness charts.",
+          "href": "resources/en/templates/weekly-synthesis.md",
+          "path": "en/templates/weekly-synthesis.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Weekly synthesis · conclusions require evidence"
+        }
+      }
+    },
+    {
+      "category": "channels",
+      "description": "Đây là bản thiết kế local, chưa tạo nhóm trên ứng dụng bên ngoài, chưa có thành viên thật và chưa gửi tin. Chọn công cụ sau khi người vận hành biết gia đình dùng gì và có thể quản lý trao đổi đến đâu. Không mặc định Discord, Zalo hoặc bất kỳ dịch vụ nào đã được chấp thuận.",
+      "href": "resources/channels/architecture.md",
+      "id": "MAT-20",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "channels/architecture.md",
+      "sourceIds": [
+        "SRC-02",
+        "SRC-06"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Kênh trao đổi · cấu trúc đề xuất",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/channels/architecture.md",
+          "description": "Local design only: no external groups, actual members or sent messages. Choose a tool after understanding family habits and the operator's capacity to moderate. Discord, Zalo and all other services remain unapproved options.",
+          "href": "resources/en/channels/architecture.md",
+          "path": "en/channels/architecture.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Communication channels · proposed structure"
+        }
+      }
+    },
+    {
+      "category": "channel-post",
+      "description": "Chỉ là mẫu để người phụ trách sửa và gửi; chưa có cuộc họp, lời đồng ý hoặc thành viên được xác nhận. Những ô trống phải được chốt trước khi đăng.",
+      "href": "resources/channels/posts/internal-coordination.md",
+      "id": "MAT-21",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "channels/posts/internal-coordination.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Tin nháp · điều phối nội bộ",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/channels/posts/internal-coordination.md",
+          "description": "A template for a responsible sender to revise. No meeting, agreement or member is confirmed. Complete blanks before posting.",
+          "href": "resources/en/channels/posts/internal-coordination.md",
+          "path": "en/channels/posts/internal-coordination.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Draft post · internal coordination"
+        }
+      }
+    },
+    {
+      "category": "channel-post",
+      "description": "Chưa gửi. Dùng sau khi người phụ trách đã thống nhất nội dung và điều kiện; không thay văn bản đồng ý tham gia.",
+      "href": "resources/channels/posts/parent-welcome.md",
+      "id": "MAT-22",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "channels/posts/parent-welcome.md",
+      "sourceIds": [
+        "SRC-02"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Tin nháp · chào phụ huynh",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/channels/posts/parent-welcome.md",
+          "description": "Unsent. Use after content and conditions are agreed; this does not replace participation agreement.",
+          "href": "resources/en/channels/posts/parent-welcome.md",
+          "path": "en/channels/posts/parent-welcome.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Draft post · welcome for parents"
+        }
+      }
+    },
+    {
+      "category": "channel-post",
+      "description": "Mẫu nháp chưa gửi. Chưa có lịch hoặc người nhận thật.",
+      "href": "resources/channels/posts/rehearsal-invitation.md",
+      "id": "MAT-23",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "channels/posts/rehearsal-invitation.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Tin nháp · mời người lớn diễn tập",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/channels/posts/rehearsal-invitation.md",
+          "description": "Unsent draft; no actual schedule or recipient.",
+          "href": "resources/en/channels/posts/rehearsal-invitation.md",
+          "path": "en/channels/posts/rehearsal-invitation.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Draft post · invite adults to rehearse"
+        }
+      }
+    },
+    {
+      "category": "channel-post",
+      "description": "Mẫu điền được, chưa gửi. Không dùng số đề xuất làm số thực hiện.",
+      "href": "resources/channels/posts/weekly-note.md",
+      "id": "MAT-24",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "channels/posts/weekly-note.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Tin nháp · ghi chú tiến độ tuần",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/channels/posts/weekly-note.md",
+          "description": "Editable unsent template. Planned counts are not completed work.",
+          "href": "resources/en/channels/posts/weekly-note.md",
+          "path": "en/channels/posts/weekly-note.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Draft post · weekly progress note"
+        }
+      }
+    },
+    {
+      "category": "channel-post",
+      "description": "Bản trả lời đề xuất để người vận hành rà soát; chưa phải chính sách đã chốt hoặc lời cam kết dịch vụ.",
+      "href": "resources/channels/posts/faq.md",
+      "id": "MAT-25",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "channels/posts/faq.md",
+      "sourceIds": [
+        "SRC-02",
+        "SRC-03A"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "FAQ nháp · nói rõ giới hạn",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/channels/posts/faq.md",
+          "description": "Proposed replies for operator review, not agreed policy or service commitments.",
+          "href": "resources/en/channels/posts/faq.md",
+          "path": "en/channels/posts/faq.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Draft FAQ · clear limitations"
+        }
+      }
+    },
+    {
+      "category": "research",
+      "description": "11 nguồn capture hợp lệ sau R01, 22 claims; hai nguồn mới chờ capture. Chỉ mục giữ loại tài liệu và giới hạn áp dụng.",
+      "href": "resources/research/source-index.md",
+      "id": "MAT-26",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "research/source-index.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-02",
+        "SRC-04",
+        "SRC-05",
+        "SRC-06",
+        "SRC-07",
+        "SRC-03A",
+        "SRC-10",
+        "SRC-11",
+        "SRC-12",
+        "SRC-13"
+      ],
+      "sourceLocale": "vi",
+      "status": "source-index",
+      "title": "Chỉ mục nguồn · provenance và giới hạn",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/research/source-index.md",
+          "description": "R01 contains 11 valid captures and 22 claims. Fourteen manifest rows retain three unavailable attempts: direct PNAS (PMC version has the same DOI), OECD HTML 403 and UNESCO teacher challenge. Count independent DOI/study once. Raw/SHA/claims: `research/sources.json`, `research/cla",
+          "href": "resources/en/research/source-index.md",
+          "path": "en/research/source-index.md",
+          "sourceLocale": "en",
+          "status": "source-index",
+          "title": "Source index · provenance and limitations"
+        }
+      }
+    },
+    {
+      "category": "benchmark",
+      "description": "Bộ này chuẩn bị câu hỏi và mẫu ghi; chưa gọi model thật, chưa đo chất lượng, latency hay chi phí. Không có model chiến thắng hoặc leaderboard. Các testcases là đề xuất kỹ thuật, chưa được thẩm định như thang đo giáo dục.",
+      "href": "resources/benchmark/scoring-guide.md",
+      "id": "MAT-27",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "benchmark/scoring-guide.md",
+      "sourceIds": [
+        "SRC-06",
+        "SRC-07"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Benchmark offline · chuẩn bị phép so sánh",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/benchmark/scoring-guide.md",
+          "description": "Questions and recording templates only: no live calls, measured quality, latency or cost. There is no winning model/leaderboard. Technical cases are proposals, not validated educational scales.",
+          "href": "resources/en/benchmark/scoring-guide.md",
+          "path": "en/benchmark/scoring-guide.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Offline benchmark · prepare a fair comparison"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "AI đã chuẩn bị công cụ và tài liệu; chưa liên hệ, phỏng vấn, xác nhận đồng ý hoặc quan sát trẻ thật. Phần cần con người không phụ thuộc việc họ gặp trực tiếp hay họp qua mạng: đó là quan hệ, hiểu bối cảnh và trách nhiệm.",
+      "href": "resources/guides/human-handoff.md",
+      "id": "MAT-28",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/human-handoff.md",
+      "sourceIds": [
+        "SRC-02"
+      ],
+      "sourceLocale": "vi",
+      "status": "operating-guide",
+      "title": "Bàn giao con người · quan hệ, quan sát, trách nhiệm",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/human-handoff.md",
+          "description": "AI has prepared tools and documents; it has not contacted anyone, conducted interviews, confirmed consent or observed real children. The work requiring people is relational judgement, context and responsibility, whether in person or online.",
+          "href": "resources/en/guides/human-handoff.md",
+          "path": "en/guides/human-handoff.md",
+          "sourceLocale": "en",
+          "status": "operating-guide",
+          "title": "Human handoff · relationships, observation and responsibility"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Mã bài LES-01 · mã người học ____ · mã phiên ____ · version ____.",
+      "href": "resources/curriculum/handout-01.md",
+      "id": "MAT-29",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/handout-01.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Phiếu người học · Đo lại điều AI nói",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/handout-01.md",
+          "description": "Lesson LES-01 · learner code ____ · session code ____ · version ____.",
+          "href": "resources/en/curriculum/handout-01.md",
+          "path": "en/curriculum/handout-01.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Learner handout · Measure what the AI claims"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Mã bài LES-01 · mã người học ____ · mã phiên ____ · version ____.",
+      "href": "resources/curriculum/transfer-01.md",
+      "id": "MAT-30",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/transfer-01.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Bài độc lập riêng · Đo lại điều AI nói",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/transfer-01.md",
+          "description": "Lesson LES-01 · learner code ____ · session code ____ · version ____.",
+          "href": "resources/en/curriculum/transfer-01.md",
+          "path": "en/curriculum/transfer-01.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Separate independent task · Measure what the AI claims"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Mã bài LES-02 · mã người học ____ · mã phiên ____ · version ____.",
+      "href": "resources/curriculum/handout-02.md",
+      "id": "MAT-31",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/handout-02.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Phiếu người học · Đọc đúng lời hẹn",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/handout-02.md",
+          "description": "Lesson LES-02 · learner code ____ · session code ____ · version ____.",
+          "href": "resources/en/curriculum/handout-02.md",
+          "path": "en/curriculum/handout-02.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Learner handout · Read the updated notice accurately"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Mã bài LES-02 · mã người học ____ · mã phiên ____ · version ____.",
+      "href": "resources/curriculum/transfer-02.md",
+      "id": "MAT-32",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/transfer-02.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Bài độc lập riêng · Đọc đúng lời hẹn",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/transfer-02.md",
+          "description": "Lesson LES-02 · learner code ____ · session code ____ · version ____.",
+          "href": "resources/en/curriculum/transfer-02.md",
+          "path": "en/curriculum/transfer-02.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Separate independent task · Read the updated notice accurately"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Mã bài LES-03 · mã người học ____ · mã phiên ____ · version ____.",
+      "href": "resources/curriculum/handout-03.md",
+      "id": "MAT-33",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/handout-03.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Phiếu người học · Một câu hỏi có thể thử được",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/handout-03.md",
+          "description": "Lesson LES-03 · learner code ____ · session code ____ · version ____.",
+          "href": "resources/en/curriculum/handout-03.md",
+          "path": "en/curriculum/handout-03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Learner handout · A question you can test"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Mã bài LES-03 · mã người học ____ · mã phiên ____ · version ____.",
+      "href": "resources/curriculum/transfer-03.md",
+      "id": "MAT-34",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/transfer-03.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Bài độc lập riêng · Một câu hỏi có thể thử được",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/transfer-03.md",
+          "description": "Lesson LES-03 · learner code ____ · session code ____ · version ____.",
+          "href": "resources/en/curriculum/transfer-03.md",
+          "path": "en/curriculum/transfer-03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Separate independent task · A question you can test"
+        }
+      }
+    },
+    {
+      "category": "research",
+      "description": "Ưu tiên, quyết định và loại bằng chứng cần lấy; đề xuất AI chưa được người dạy duyệt.",
+      "href": "resources/research/research-map.md",
+      "id": "R01-MAP",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "research/research-map.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-03A",
+        "SRC-10",
+        "SRC-11",
+        "SRC-12",
+        "SRC-13"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Bản đồ 18 câu hỏi nghiên cứu",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/research/research-map.md",
+          "description": "Every question serves a decision. P0 before children participate; P1 before product/provider choice; P2 before expansion. Priorities/measures are proposals. Read gaps, synthesis and data plan.",
+          "href": "resources/en/research/research-map.md",
+          "path": "en/research/research-map.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Research question map · R01"
+        }
+      }
+    },
+    {
+      "category": "research",
+      "description": "Tách thiếu dữ liệu địa phương, thiếu review và thiếu full text.",
+      "href": "resources/research/evidence-gap-register.md",
+      "id": "R01-GAPS",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "research/evidence-gap-register.md",
+      "sourceIds": [
+        "SRC-10",
+        "SRC-11",
+        "SRC-12",
+        "SRC-13"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Khoảng trống bằng chứng",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/research/evidence-gap-register.md",
+          "description": "At R01, SRC-10 article body is captured but selectively read, not fully appraised for design/measurement/attrition/limits. SRC-11/12 are preprints, abstract/metadata intake only. SRC-13 landing abstract is captured; PDF/methods/appendix appraisal is pending. Abstract numbers do n",
+          "href": "resources/en/research/evidence-gap-register.md",
+          "path": "en/research/evidence-gap-register.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Evidence gaps · R01"
+        }
+      }
+    },
+    {
+      "category": "research",
+      "description": "Intake có SHA, loại nghiên cứu, giới hạn suy luận; targeted scan chưa phải systematic review.",
+      "href": "resources/research/selection-protocol.md",
+      "id": "R01-PROTOCOL",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "research/selection-protocol.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Quy trình tìm và chọn nguồn",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/research/selection-protocol.md",
+          "description": "Three branches: official competence frameworks; intervention design/outcome studies; family/facilitator experience. Combine AI literacy, children, parents, K-12, generative AI tutoring, independent assessment, transfer, retention and randomized trial with topic/age. Vietnam/Vietn",
+          "href": "resources/en/research/selection-protocol.md",
+          "path": "en/research/selection-protocol.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Source discovery and selection · R01"
+        }
+      }
+    },
+    {
+      "category": "research",
+      "description": "So điều kiện người học, đối chứng, trợ giúp và vai trò người lớn.",
+      "href": "resources/research/evidence-synthesis-R01.md",
+      "id": "R01-SYNTHESIS",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "research/evidence-synthesis-R01.md",
+      "sourceIds": [
+        "SRC-03A",
+        "SRC-10",
+        "SRC-11",
+        "SRC-12",
+        "SRC-13"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Đối chiếu bằng chứng R01",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/research/evidence-synthesis-R01.md",
+          "description": "SRC-03A secondary mathematics warns about performance after removing AI and the role of safeguards. SRC-10 tests a pedagogically designed college AI tutor and reports positive results versus active learning. These do not automatically contradict: learners, assistance, comparator ",
+          "href": "resources/en/research/evidence-synthesis-R01.md",
+          "path": "en/research/evidence-synthesis-R01.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Evidence comparison · R01"
+        }
+      }
+    },
+    {
+      "category": "research",
+      "description": "Bốn captures mới và hai nguồn chờ; giữ peer review/preprint/working paper riêng.",
+      "href": "resources/research/evidence-cards-R01.md",
+      "id": "R01-CARDS",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "research/evidence-cards-R01.md",
+      "sourceIds": [
+        "SRC-10",
+        "SRC-11",
+        "SRC-12",
+        "SRC-13"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Hồ sơ nguồn bổ sung R01",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/research/evidence-cards-R01.md",
+          "description": "Original, Scientific Reports, 3 June 2025, DOI 10.1038/s41598-025-97652-6. Tier A, peer-reviewed research. HTML body captured; abstract/descriptive sections selectively read.",
+          "href": "resources/en/research/evidence-cards-R01.md",
+          "path": "en/research/evidence-cards-R01.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Additional source cards · R01"
+        }
+      }
+    },
+    {
+      "category": "research",
+      "description": "Dữ liệu cần mang về, phân biệt quan sát/lời kể và cách bác bỏ giả thuyết.",
+      "href": "resources/research/data-plan.md",
+      "id": "R01-DATA",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "research/data-plan.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Kế hoạch dữ liệu và kiểm giả thuyết",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/research/data-plan.md",
+          "description": "1. Survey: exact question version, recruitment route, collection dates, invitation count if known, valid/missing responses and exclusions. Submitting a personal survey does not grant AI access to responses. No dataset is in this repository. 2. Interviews: a concrete experience, a",
+          "href": "resources/en/research/data-plan.md",
+          "path": "en/research/data-plan.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Data plan and falsifiable hypotheses · R01"
+        }
+      }
+    },
+    {
+      "category": "project",
+      "description": "Đánh giá 10 chiều, 12 phát hiện và giới hạn: prototype local đã kiểm, chưa pilot với trẻ.",
+      "href": "resources/project/maturity-assessment-M01.md",
+      "id": "M01-ASSESSMENT",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "project/maturity-assessment-M01.md",
+      "sourceIds": [
+        "SRC-02"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Mức trưởng thành · bằng chứng và khoảng cách",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/project/maturity-assessment-M01.md",
+          "description": "A carefully tested local operational prototype with an adult-rehearsal preparation kit. Seriousness is shown by provenance, versioned materials, answer preservation on failure and explicit unknowns. Overall maturity remains before a child pilot: needs, educational review and actu",
+          "href": "resources/en/project/maturity-assessment-M01.md",
+          "path": "en/project/maturity-assessment-M01.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Product maturity · M01"
+        }
+      }
+    },
+    {
+      "category": "project",
+      "description": "P03/P04 đề xuất: đầu ra, người/máy, phụ thuộc và điều kiện nghiệm thu; chưa là lịch cam kết.",
+      "href": "resources/project/completion-roadmap-M01.md",
+      "id": "M01-ROADMAP",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "project/completion-roadmap-M01.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Kế hoạch hoàn thiện · rehearsal tới pilot",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/project/completion-roadmap-M01.md",
+          "description": "One lesson, one goal, one version: another facilitator rehearses with fictional data and returns actionable evidence. Responsible child-pilot preparation proceeds in parallel. Retain UI03, eight steps, snapshots and SOT; change to address observed problems.",
+          "href": "resources/en/project/completion-roadmap-M01.md",
+          "path": "en/project/completion-roadmap-M01.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Completion roadmap with acceptance conditions · M01"
+        }
+      }
+    },
+    {
+      "category": "project",
+      "description": "Đề xuất làm công cụ cho người hướng dẫn tổ chức một buổi học cách kiểm lời AI. Đây là giả định để diễn tập trên máy; Lâm và Thuý Anh cần xác nhận bằng nhu cầu gia đình, không tự xem khảo sát đã gửi là dữ liệu nhu cầu đã phân tích.",
+      "href": "resources/project/product-contract-P03.md",
+      "id": "P03-CONTRACT",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "project/product-contract-P03.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Product contract · chọn một vấn đề đầu tiên",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/project/product-contract-P03.md",
+          "description": "Proposed facilitator tool for one session on checking AI claims. This is a working assumption for local rehearsal; Lâm and Thuý Anh must confirm it against family needs. A submitted survey is not analysed demand evidence.",
+          "href": "resources/en/project/product-contract-P03.md",
+          "path": "en/project/product-contract-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Product contract · choose one initial problem"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Anchor giữ nguyên bài LES-02 hiện có để tránh thay yêu cầu của phiên đã bắt đầu. Tài liệu này giải thích design, không tăng version bài hoặc gắn duyệt sư phạm. Mục tiêu hẹp: dùng quy tắc cập nhật của hai văn bản hư cấu, giữ điều không đổi, và nêu đúng điều chưa biết.",
+      "href": "resources/curriculum/anchor-design-P03.md",
+      "id": "P03-ANCHOR",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/anchor-design-P03.md",
+      "sourceIds": [
+        "SRC-01",
+        "SRC-03A",
+        "SRC-04",
+        "SRC-05",
+        "SRC-10",
+        "SRC-12",
+        "SRC-13"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "LES-02 · bản đồ lý do thiết kế",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/anchor-design-P03.md",
+          "description": "The anchor retains the existing LES-02 so started sessions do not change. This document explains design; it does not revise the lesson or confer educational approval. Narrow goal: apply an update rule to two fictional texts, retain unchanged information and identify what is unknown.",
+          "href": "resources/en/curriculum/anchor-design-P03.md",
+          "path": "en/curriculum/anchor-design-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "LES-02 · design rationale map"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Bộ bổ sung để reviewer thử độ tương đương, chưa tích hợp vào session seed và chưa được kiểm định. Không phát phần hướng dẫn chấm cho người học. Không dùng tuổi 13–15 hoặc điểm tổng để tự xác nhận độ phù hợp.",
+      "href": "resources/curriculum/anchor-assessment-P03.md",
+      "id": "P03-ASSESS",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/anchor-assessment-P03.md",
+      "sourceIds": [
+        "SRC-03A",
+        "SRC-04",
+        "SRC-05"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "LES-02 · bộ đo độc lập và trì hoãn nháp",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/anchor-assessment-P03.md",
+          "description": "Additional reviewer tasks for assessing comparability, not integrated into seed sessions or validated. Do not distribute scoring notes to learners. Ages 13–15 or a total score do not establish suitability.",
+          "href": "resources/en/curriculum/anchor-assessment-P03.md",
+          "path": "en/curriculum/anchor-assessment-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "LES-02 · draft independent and delayed assessment"
+        }
+      }
+    },
+    {
+      "category": "curriculum",
+      "description": "Chuẩn bị cách dùng rubric LES-02; chưa có người chấm, mức đồng thuận hoặc review giáo dục. Phiếu dùng cho người lớn, không tạo hồ sơ năng lực của trẻ.",
+      "href": "resources/curriculum/review-calibration-P03.md",
+      "id": "P03-CALIBRATE",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "curriculum/review-calibration-P03.md",
+      "sourceIds": [
+        "SRC-04"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Reviewer pack · chấm độc lập và giữ bất đồng",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/curriculum/review-calibration-P03.md",
+          "description": "Prepare use of the LES-02 rubric; no actual raters, agreement result or educational review. Adult-review sheet, not a child's competence record.",
+          "href": "resources/en/curriculum/review-calibration-P03.md",
+          "path": "en/curriculum/review-calibration-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Reviewer pack · independent scoring and retained disagreement"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "Mục tiêu là người hướng dẫn khác đọc kit và vận hành LES-02 từ chuẩn bị tới report/restore. Người tạo app không thao tác hộ; nếu phải can thiệp, ghi rõ. Chỉ người lớn đóng vai và mã giả, không gộp với pilot trẻ.",
+      "href": "resources/guides/adult-rehearsal-P03.md",
+      "id": "P03-REHEARSE",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/adult-rehearsal-P03.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "P03 · diễn tập độc lập có bằng chứng",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/adult-rehearsal-P03.md",
+          "description": "Goal: another facilitator reads the kit and operates LES-02 from preparation to report/restore. The app author does not take over; record any intervention. Adults/fictitious codes only, separate from a child pilot.",
+          "href": "resources/en/guides/adult-rehearsal-P03.md",
+          "path": "en/guides/adult-rehearsal-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "P03 · independent rehearsal with evidence"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "Đây là danh mục cần người chịu trách nhiệm thống nhất trước buổi thật, chưa là consent đã có hoặc tư vấn pháp lý. P03 không lưu người học thật, không tự mở quyền truy cập và không tự xác nhận checkbox như sự đồng ý.",
+      "href": "resources/guides/participant-data-P03.md",
+      "id": "P03-DATA",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/participant-data-P03.md",
+      "sourceIds": [
+        "SRC-02"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Người tham gia và dữ liệu · hồ sơ trách nhiệm nháp",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/participant-data-P03.md",
+          "description": "Decisions for accountable people before real participation, not existing consent or legal advice. P03 records no real learners, grants no access and does not treat a checkbox as agreement.",
+          "href": "resources/en/guides/participant-data-P03.md",
+          "path": "en/guides/participant-data-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Participants and data · draft responsibility record"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "P03 learner preview tách navigation để người hướng dẫn cầm thiết bị diễn tập; không là quyền server hoặc tài khoản trẻ. Người dùng có file/browser vẫn có thể xem nguồn. Phương án production chưa chọn.",
+      "href": "resources/guides/access-storage-P03.md",
+      "id": "P03-ACCESS",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/access-storage-P03.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Surface và lưu trữ · chọn theo cách sử dụng",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/access-storage-P03.md",
+          "description": "P03 learner preview separates navigation for facilitator-held-device rehearsal; it is not a server permission or child account. Anyone with browser/files may inspect sources. Production option unchosen.",
+          "href": "resources/en/guides/access-storage-P03.md",
+          "path": "en/guides/access-storage-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "Learner surface and storage · fit the delivery model"
+        }
+      }
+    },
+    {
+      "category": "benchmark",
+      "description": "P03 giữ fixture mặc định; chưa chọn provider, gọi API, dùng key hoặc đo model. Tài liệu này chuẩn bị phép so sánh và quyết định có cần live. Học cách kiểm AI với ví dụ biên soạn không bắt buộc model thật.",
+      "href": "resources/benchmark/provider-protocol-P03.md",
+      "id": "P03-PROVIDER",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "benchmark/provider-protocol-P03.md",
+      "sourceIds": [
+        "SRC-06",
+        "SRC-07"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "AI provider · phép đo và gate trước live",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/benchmark/provider-protocol-P03.md",
+          "description": "Fixtures remain default; no provider/key/API call/live measurement. Prepare fair comparison and decide whether live AI is necessary. Curated examples can support AI-literacy education without a live model.",
+          "href": "resources/en/benchmark/provider-protocol-P03.md",
+          "path": "en/benchmark/provider-protocol-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "AI provider · evaluation and live-use gate"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "Mẫu cho bản local song ngữ; từng kết quả phải có artifact thật. Không lấy template điền được làm bằng chứng đã có người vận hành độc lập.",
+      "href": "resources/guides/operations-release-P03.md",
+      "id": "P03-OPS",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/operations-release-P03.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Vận hành P03 · incident, release và bàn giao",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/operations-release-P03.md",
+          "description": "Template for a bilingual local build; every result needs an actual artifact. An editable template is not evidence of independent operation.",
+          "href": "resources/en/guides/operations-release-P03.md",
+          "path": "en/guides/operations-release-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "P03 operations · incidents, release and handover"
+        }
+      }
+    },
+    {
+      "category": "guide",
+      "description": "Workbench tập hợp checklist trách nhiệm và log quan sát để người hướng dẫn chuẩn bị rehearsal local. Nhập một status không xác thực ai hoặc tạo giấy phép dùng trẻ. Nội dung con người còn pending cho đến khi có evidence thật.",
+      "href": "resources/guides/workbench-P03.md",
+      "id": "P03-WORKBENCH",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "guides/workbench-P03.md",
+      "sourceIds": [],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Workbench P03 · quyết định và quan sát",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/guides/workbench-P03.md",
+          "description": "Responsibility checklist and observation log for local facilitator rehearsal. Entering a status authenticates nobody and grants no permission for child use. Human-dependent items stay pending until actual evidence exists.",
+          "href": "resources/en/guides/workbench-P03.md",
+          "path": "en/guides/workbench-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "P03 workbench · decisions and observation"
+        }
+      }
+    },
+    {
+      "category": "research",
+      "description": "Đọc chọn lọc full text và tài liệu bổ sung, điều kiện can thiệp và giới hạn áp dụng; không tự suy hiệu quả Việt Nam.",
+      "href": "resources/research/full-methods-P03.md",
+      "id": "P03-METHODS",
+      "localeAvailability": {
+        "en": "authored",
+        "vi": "authored"
+      },
+      "path": "research/full-methods-P03.md",
+      "sourceIds": [
+        "SRC-08",
+        "SRC-09",
+        "SRC-10",
+        "SRC-11",
+        "SRC-12",
+        "SRC-13"
+      ],
+      "sourceLocale": "vi",
+      "status": "draft",
+      "title": "Appraisal phương pháp P03 · phạm vi đọc và giới hạn",
+      "translations": {
+        "en": {
+          "contentUrl": "resources/en/research/full-methods-P03.md",
+          "description": "Selected full-text and supplemental reading, intervention conditions and application limits; no Vietnamese-effectiveness inference.",
+          "href": "resources/en/research/full-methods-P03.md",
+          "path": "en/research/full-methods-P03.md",
+          "sourceLocale": "en",
+          "status": "draft",
+          "title": "P03 methods appraisal · reading scope and limits"
+        }
+      }
+    }
+  ],
+  "schemaVersion": 1
+}

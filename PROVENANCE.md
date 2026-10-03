@@ -1,0 +1,11 @@
+# Public distribution provenance · P03 public-01
+
+This standalone source repository derives from the locally verified P03 kit. It distributes authored application code, bilingual materials, generated resources, offline tools, synthetic tests/benchmark templates and references. Historical QA backups, browser records, screenshots, observation exports, private conversations, machine paths, SOT baselines/tokens/logs, raw third-party HTML/PDF works and local release ZIP files are excluded.
+
+`research/sources.json`, `claims.jsonl`, `domain.yaml` and `fulltexts/capture-manifest.json` are unchanged historical reference metadata. Eleven HTML captures and four supplementary full-text captures are referenced but omitted. Failed retrievals remain recorded as failed; supplementary copies do not count as independent studies. Short evidence spans retain URLs/source IDs and extraction labels. Stored hashes identify historical content; the public profile cannot establish missing raw content or reproduce strict span checks.
+
+The compiled resource manifest retains original input/output hashes. Public validation verifies each available input and every output, source-copy correspondence, available links and synthetic fault behavior. Exactly declared raw input paths are treated as unavailable, never as verified. Strict original checks remain available and fail visibly on the missing corpus. Metadata can be amended only through deliberate review; no runtime or CI automatically fetches third-party works. An integrity receipt is not a cryptographic signature.
+
+Third-party research remains subject to each publisher/author's rights and terms. The repository cites sources without granting their rights or redistributing their full works. Fonts: Lora and Be Vietnam Pro are included under their original SIL Open Font License notices in `app/assets/fonts/`. The project's own license remains undecided; public repository visibility alone grants no broad reuse license.
+
+No real participants, consent, educational approval, independent rehearsal or effectiveness results are represented by fixtures. Human, pilot and production decisions remain pending as described in the bilingual operating materials.

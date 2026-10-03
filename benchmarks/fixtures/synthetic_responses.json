@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "dataKind": "synthetic-evaluation-fixture",
+  "warning": "Các điểm số và phản hồi là ví dụ giả định minh họa định dạng; không phải kết quả model hoặc đánh giá người thật.",
+  "responses": [
+    {
+      "caseId": "BENCH-01",
+      "model": "fixture-offline",
+      "modelVersion": "fixture-v1",
+      "response": "Theo tài liệu giả định, thư viện đóng lúc 17:00. Vì 18:00 muộn hơn giờ đóng nên thời điểm này chưa phù hợp. Em hãy đối chiếu hai mốc giờ trong nguồn để giải thích lại kết luận.",
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null
+      },
+      "latencyMs": null,
+      "costUSD": null,
+      "provenance": {
+        "kind": "synthetic-fixture",
+        "recordedAt": null,
+        "evidenceRef": "benchmarks/fixtures/synthetic_responses.json#BENCH-01"
+      },
+      "humanRatings": {
+        "grounding": 4,
+        "learningSupport": 3,
+        "privacy": 4,
+        "ageAppropriate": 3,
+        "abstention": 3
+      },
+      "reviewer": "FIXTURE · người rà soát giả định"
+    }
+  ]
+}

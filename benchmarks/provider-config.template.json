@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "dataKind": "inactive-provider-proposal",
+  "enabled": false,
+  "mode": "offline-import",
+  "provider": null,
+  "model": null,
+  "modelVersion": null,
+  "credentialsEnvName": "AI_LEARNING_PROVIDER_KEY",
+  "dataClass": "public-synthetic-adult-only",
+  "allowChildData": false,
+  "maxRequests": 0,
+  "maxCostUSD": 0,
+  "timeoutMs": 20000,
+  "retryCount": 0,
+  "humanAuthorizationRef": null,
+  "rawEvidenceDirectory": null
+}

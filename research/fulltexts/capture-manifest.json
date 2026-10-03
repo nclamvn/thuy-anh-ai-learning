@@ -1,0 +1,85 @@
+{
+  "kind": "supplementary-fulltext-captures",
+  "not_independent_sources": true,
+  "captures": [
+    {
+      "file": "SRC-08.pdf",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/empowering-learners-for-the-age-of-ai_2f8315e7/65cd27d4-en.pdf",
+      "captured_on": "2026-10-03",
+      "final_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/06/empowering-learners-for-the-age-of-ai_2f8315e7/65cd27d4-en.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "bytes": 5741931,
+      "sha256": "8662f4c12a327443dc82de6458a3f084a8fc279e55c982da2cd1bb97aa51fc5e",
+      "status": "captured",
+      "sourceId": "SRC-08"
+    },
+    {
+      "file": "SRC-09.pdf",
+      "url": "https://discovery.ucl.ac.uk/10196729/1/UNESCO_AI_CFT_Final.pdf",
+      "captured_on": "2026-10-03",
+      "provenance_note": "UCL coauthor repository; published UNESCO version",
+      "final_url": "https://discovery.ucl.ac.uk/id/eprint/10196729/1/UNESCO_AI_CFT_Final.pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "bytes": 1708746,
+      "sha256": "37769f28e373a6e9abc3540cbeb699d1363c45f9c8c4a41e7e5b09ae6b7435ad",
+      "status": "captured",
+      "sourceId": "SRC-09"
+    },
+    {
+      "file": "SRC-11.html",
+      "url": "https://arxiv.org/html/2510.24070v1",
+      "captured_on": "2026-10-03",
+      "final_url": "https://arxiv.org/html/2510.24070v1",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 237152,
+      "sha256": "de58f0262a56852e8fc8259c0943b296723a25a851f5b13a922307aedeae185d",
+      "status": "captured",
+      "sourceId": "SRC-11"
+    },
+    {
+      "file": "SRC-12.html",
+      "url": "https://arxiv.org/html/2512.23633v1",
+      "captured_on": "2026-10-03",
+      "final_url": "https://arxiv.org/html/2512.23633v1",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 880790,
+      "sha256": "defa86a107ba525b748837ab376feae32d5d6679c02d6d51b1a76646e628ddc0",
+      "status": "captured",
+      "sourceId": "SRC-12"
+    }
+  ],
+  "failed_attempts": [
+    {
+      "file": "SRC-13.pdf",
+      "url": "https://documents1.worldbank.org/curated/en/099548105192529324/pdf/IDU-c09f40d8-9ff8-42dc-b315-591157499be7.pdf",
+      "captured_on": "2026-10-03",
+      "status": "unavailable",
+      "error": "[Errno 54] Connection reset by peer",
+      "sourceId": "SRC-13"
+    },
+    {
+      "file": "SRC-13.pdf",
+      "url": "https://openknowledge.worldbank.org/bitstreams/cd9cca5b-2ffd-4be1-8313-0f4d2ed6ef4f/download",
+      "captured_on": "2026-10-03",
+      "provenance_note": "World Bank publisher bitstream",
+      "final_url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/cd9cca5b-2ffd-4be1-8313-0f4d2ed6ef4f/content",
+      "http_status": 200,
+      "content_type": "text/plain;charset=UTF-8",
+      "status": "unavailable",
+      "error": "Not a PDF content capture",
+      "sourceId": "SRC-13"
+    },
+    {
+      "file": "SRC-13.pdf",
+      "url": "https://openknowledge.worldbank.org/bitstreams/8fcccf10-83c9-4295-b01c-5a68aac83b06/download",
+      "captured_on": "2026-10-03",
+      "status": "unavailable",
+      "error": "Publisher stream did not finish; capture interrupted after extended wait; no PDF stored.",
+      "sourceId": "SRC-13"
+    }
+  ]
+}

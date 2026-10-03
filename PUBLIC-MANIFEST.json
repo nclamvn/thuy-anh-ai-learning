@@ -1,0 +1,1117 @@
+{
+  "dataKind": "public-references-only",
+  "files": {
+    ".github/workflows/checks.yml": {
+      "bytes": 406,
+      "sha256": "108621b805c5c01a30ac4a95fb3a015c582c7b05e6378dc591ae115dcfae5faa"
+    },
+    ".gitignore": {
+      "bytes": 345,
+      "sha256": "ffbf3ce40759246bb2212adbb84981989e28e1a256e39e79e90b4d65f8207c18"
+    },
+    "AGENTS.md": {
+      "bytes": 1600,
+      "sha256": "27e109be4bdd1ded5efc6284399d3ec9c75f04a2ca24ddcc8c1a49925e4bf081"
+    },
+    "LICENSE.md": {
+      "bytes": 764,
+      "sha256": "7eeb4c5cd2daa35d5fedf86a1c35ad6ef6ea860a82765d9e5b9c49156fe24960"
+    },
+    "PROVENANCE.md": {
+      "bytes": 2204,
+      "sha256": "6dd183d1c57394f3ec769a3cff6826a14aae34d88be8d17fccd655261bd596dd"
+    },
+    "README.en.md": {
+      "bytes": 3849,
+      "sha256": "ef42ddb09b804e6d5fd08e3aac050052e838124e591f2fede75519dc77b5b09c"
+    },
+    "README.md": {
+      "bytes": 4283,
+      "sha256": "e88afc0553f6598c3ad15d727abc8fea3962e11f15e40cdb460e2fa4c79f7c69"
+    },
+    "app/README.md": {
+      "bytes": 12437,
+      "sha256": "635539a492eb8e0c6554bd303cb9ab9ea6e1aa7ed3bf10d63aeb373cf04dad30"
+    },
+    "app/assets/brandmark.svg": {
+      "bytes": 587,
+      "sha256": "8455d3458db83ac02b714a8c6e8cbb514f17217a4df377746c4200ad2d59e0c3"
+    },
+    "app/assets/fonts/BeVietnamPro-OFL.txt": {
+      "bytes": 4397,
+      "sha256": "6b7f8f73609a25ea78c891e34cf37b06f8a676b7ea986e941e43b009110f2a85"
+    },
+    "app/assets/fonts/BeVietnamPro-Regular.ttf": {
+      "bytes": 132948,
+      "sha256": "cd1ef6e9d7db28ad5cdb88a65ccbe693870e60d340b791f349d248342b4fe4c3"
+    },
+    "app/assets/fonts/BeVietnamPro-SemiBold.ttf": {
+      "bytes": 136736,
+      "sha256": "bd8e27eb02720b9d91e59e4f10a90878643219f25ce6a8d9a4f06a8a88d3bb71"
+    },
+    "app/assets/fonts/Lora-OFL.txt": {
+      "bytes": 4423,
+      "sha256": "1d9a970809ac804b582a6ce7f0ebc4e7fefcbfd7ff6299cad35ee656a21be716"
+    },
+    "app/assets/fonts/Lora.ttf": {
+      "bytes": 212196,
+      "sha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7"
+    },
+    "app/favicon.svg": {
+      "bytes": 341,
+      "sha256": "b92a0d9dd2a3cf1294c7caf69922e959bb855ef6335f8ef9bedb1b56787f8721"
+    },
+    "app/index.html": {
+      "bytes": 4050,
+      "sha256": "970fb233442052038fb43ab5869454b54de662f5dd476f29d7484db0622c8b25"
+    },
+    "app/legacy-p01.js": {
+      "bytes": 12860,
+      "sha256": "e4a12b6ec35e31a33ec5d1539fdc41d3a954d9bd405a9a5c2971fe6200598abc"
+    },
+    "app/locale.js": {
+      "bytes": 28059,
+      "sha256": "9108b61a3989ca80992c3b5b90fa7b5560bb2343c1912bb13a355c42d2c197db"
+    },
+    "app/main.js": {
+      "bytes": 65004,
+      "sha256": "17605e31951fd294078e6a5e132f4c79b56c5508391b2b68b5fd781161771de0"
+    },
+    "app/model.js": {
+      "bytes": 25099,
+      "sha256": "e68f45c769a50e70ae62d6d1cd296c2dc919202e3cc36928c72c0e3f60a48c10"
+    },
+    "app/package.json": {
+      "bytes": 167,
+      "sha256": "65b00e029baf7cfa6c87fa8a985ed04a3722913f8b3ab59097a895ddf5901791"
+    },
+    "app/provider.js": {
+      "bytes": 1034,
+      "sha256": "f339eb659cc748b9d278452729a3fa3a8589070b3259f661ffccf09a50981587"
+    },
+    "app/resources-client.js": {
+      "bytes": 7020,
+      "sha256": "dc7d302ccca18aec4e3d836bf2eaf0abe2802001a65b1fdf07d2ec4b1281a96e"
+    },
+    "app/resources/README.md": {
+      "bytes": 8558,
+      "sha256": "00eefc4944704e223d59308dd9bbc32eeda746c873652a8cf0ebfadb1fa5b3e0"
+    },
+    "app/resources/benchmark/provider-protocol-P03.md": {
+      "bytes": 2337,
+      "sha256": "5dc686091b0325621afdaf986d4d06fa9a1cf51f43ff11f6e3cf4b621ff3267e"
+    },
+    "app/resources/benchmark/scoring-guide.md": {
+      "bytes": 4711,
+      "sha256": "5e98c1c23d34b7b27b67d035b4e35f3837ae5a20be84bfcbbd63b30d62dc496e"
+    },
+    "app/resources/catalog.json": {
+      "bytes": 66627,
+      "sha256": "d82bf1c41ec14d6ae644c4c64714fea740bbe0900c5f0a8623a1c3edd69320ef"
+    },
+    "app/resources/channels/architecture.md": {
+      "bytes": 2613,
+      "sha256": "44a79e2f23c8ad3e0594e89caa7d06402fd5c8916645d7275ef69f8d1a786e65"
+    },
+    "app/resources/channels/posts/faq.md": {
+      "bytes": 2335,
+      "sha256": "11577d6e5b9a8105a8b8a3bceae26a51e342d9f2a440565dd0ad371c674d9893"
+    },
+    "app/resources/channels/posts/internal-coordination.md": {
+      "bytes": 1800,
+      "sha256": "e5210d51056ce7cc59af0d1769b18ffc9bf91a968c396833f5668d19564157b3"
+    },
+    "app/resources/channels/posts/parent-welcome.md": {
+      "bytes": 1798,
+      "sha256": "b066234113003dcc4ce3e7cb6ee7f365ef94e637ee7c84707eb18db2331f2266"
+    },
+    "app/resources/channels/posts/rehearsal-invitation.md": {
+      "bytes": 1691,
+      "sha256": "8f15a5d310181cb00575412b62cee52147db438fda28e68005634964764bb6b4"
+    },
+    "app/resources/channels/posts/weekly-note.md": {
+      "bytes": 1589,
+      "sha256": "3f61a2d252ac9c73a4e5499de634c83c9a1779005cfb8bbb4ebedffebe2c53bb"
+    },
+    "app/resources/curriculum/README.md": {
+      "bytes": 2859,
+      "sha256": "a43c43e8bea12dbcf61a8981287d414bd8a728ef7f543ced48621fcf21e9a283"
+    },
+    "app/resources/curriculum/anchor-assessment-P03.md": {
+      "bytes": 2734,
+      "sha256": "d84040cb1a1f991406e6e4b7847403a0f577864fdece3fd6ed9e462b28b801f2"
+    },
+    "app/resources/curriculum/anchor-design-P03.md": {
+      "bytes": 2864,
+      "sha256": "8f38d4f42ffd5d4a3ecddd49d3a00aedc3df9de3ce684543ef5e86d8739e01d6"
+    },
+    "app/resources/curriculum/handout-01.md": {
+      "bytes": 2818,
+      "sha256": "5b6cb29571be4ae2baf9038ee9693c721123332fb66f9706cf039135425e11b1"
+    },
+    "app/resources/curriculum/handout-02.md": {
+      "bytes": 3159,
+      "sha256": "d29a0b5c69c2eeeafa4c3307140689446ecdf171019bc0ed3ab99b8e0c032d1e"
+    },
+    "app/resources/curriculum/handout-03.md": {
+      "bytes": 3657,
+      "sha256": "b7cfe84f76f120d8c640159326ee0b05b37bcddbbe3f823c71241117396b0313"
+    },
+    "app/resources/curriculum/lesson-01.md": {
+      "bytes": 6989,
+      "sha256": "8bb913a2a6ab041a416bcd68a7d392992ebe268542672e63291972b4d1067421"
+    },
+    "app/resources/curriculum/lesson-02.md": {
+      "bytes": 7491,
+      "sha256": "8d5c4fa1b14983bb01b9092a9c0ba5d84dcb3fb3e3684abb6048d78ae0c7cde0"
+    },
+    "app/resources/curriculum/lesson-03.md": {
+      "bytes": 8140,
+      "sha256": "30c5997061976c9cc85db419cd3ca655977065312482098d2b9f4e390c8a9335"
+    },
+    "app/resources/curriculum/lessons.json": {
+      "bytes": 30231,
+      "sha256": "b8621eff1b2bb85f087a6de1049e46fc5bf0d34e19e43809624ff6a5eec08d2d"
+    },
+    "app/resources/curriculum/review-calibration-P03.md": {
+      "bytes": 2111,
+      "sha256": "7923b058c9d98755339cbfe9476a502ce3469cb805b8723a7467dcbb86f93b82"
+    },
+    "app/resources/curriculum/transfer-01.md": {
+      "bytes": 1188,
+      "sha256": "d7487aa24aa08f5d253b8acb5b37f36e9ae2853db14ee610819efdbcc2a6013e"
+    },
+    "app/resources/curriculum/transfer-02.md": {
+      "bytes": 1362,
+      "sha256": "37fe2cfbe9c95a9bef466380a0dc204977bd919b4503f47df7e789a3f630ad6a"
+    },
+    "app/resources/curriculum/transfer-03.md": {
+      "bytes": 1378,
+      "sha256": "729cf56a340972f65c8f61d6b1915e6d1e9549b8b368fb9f404f447b860c776e"
+    },
+    "app/resources/en/README.md": {
+      "bytes": 8637,
+      "sha256": "27ca225eec981aad55158a11f8850006f66f6d3e4566777c72531a3320beb8d4"
+    },
+    "app/resources/en/benchmark/provider-protocol-P03.md": {
+      "bytes": 2051,
+      "sha256": "8052a2deb50d6e1eceb55d1305ea9f7d975129a4d80d2cda6bbc67a7335403dd"
+    },
+    "app/resources/en/benchmark/scoring-guide.md": {
+      "bytes": 3495,
+      "sha256": "3989ffd7d23ed288a51e6b33260cb37a2f5e77e1548edbe3cf5119bfdc4f3151"
+    },
+    "app/resources/en/channels/architecture.md": {
+      "bytes": 1811,
+      "sha256": "085417525cc26eeb3fc78bc1121960be72c2c4273650bd713d9c06d4c03afaa4"
+    },
+    "app/resources/en/channels/posts/faq.md": {
+      "bytes": 1668,
+      "sha256": "d82c03f0bbce0862ea187acc27872de4a8fb088f210f72d24061660893ac3bfb"
+    },
+    "app/resources/en/channels/posts/internal-coordination.md": {
+      "bytes": 1297,
+      "sha256": "623a62160ae80860b365e892979d5332dc7f88566c56e8f44014b3b6e3e7c055"
+    },
+    "app/resources/en/channels/posts/parent-welcome.md": {
+      "bytes": 1265,
+      "sha256": "0e5d0bad67b46b931fbf3466c44a365ebb8eaa26e473bbd365e1164c32d4db39"
+    },
+    "app/resources/en/channels/posts/rehearsal-invitation.md": {
+      "bytes": 1237,
+      "sha256": "9bcfda53694328b8beddec8b8e8e4d1ddc8d9e93c69fa694ed4fdae73a800e84"
+    },
+    "app/resources/en/channels/posts/weekly-note.md": {
+      "bytes": 1137,
+      "sha256": "22005042cba5741af3e6d6d52f20ddc64ec9c7e9b41091f34df84bd09a854dd9"
+    },
+    "app/resources/en/curriculum/README.md": {
+      "bytes": 2343,
+      "sha256": "1bcffa582beb04bfb7d44e96b46c81f2064c9393a3a5d5660303e3bd603999d7"
+    },
+    "app/resources/en/curriculum/anchor-assessment-P03.md": {
+      "bytes": 2213,
+      "sha256": "049d8c1a9056d049e80fa1ab41be4d819ad4565ea71c28ca6c3eccf360532fe1"
+    },
+    "app/resources/en/curriculum/anchor-design-P03.md": {
+      "bytes": 2285,
+      "sha256": "703d3d87a81c488be7937c7756d770eaa7a1cd3cd96bb75d88c2455e833680b2"
+    },
+    "app/resources/en/curriculum/handout-01.md": {
+      "bytes": 2343,
+      "sha256": "3d0cc93e8f12c523418d7a15e8cdd8c21e0fb2dcc4a54d6754e104e67d1a1ca1"
+    },
+    "app/resources/en/curriculum/handout-02.md": {
+      "bytes": 2760,
+      "sha256": "bab1cc85f365e862b0b67dcd6c51a4064a25bcb5d8b8aa6504427d77012248cf"
+    },
+    "app/resources/en/curriculum/handout-03.md": {
+      "bytes": 3134,
+      "sha256": "26b18b724beda604082382accefb766ed37b4fc637b6434e7dff2b0e7f98535e"
+    },
+    "app/resources/en/curriculum/lesson-01.md": {
+      "bytes": 5848,
+      "sha256": "bf86ff5300418065392a73760ab2002e1925fee9d729ba4430befe8ffb76ed3e"
+    },
+    "app/resources/en/curriculum/lesson-02.md": {
+      "bytes": 6278,
+      "sha256": "88b3a2373acaaa096c1d44f4675b57075f0e561ad41e972e39fcb77d730f0ba1"
+    },
+    "app/resources/en/curriculum/lesson-03.md": {
+      "bytes": 6784,
+      "sha256": "d96f186d89fad28ca9eba86dd103710262b7ddcace981dbeb7f06d7414772df6"
+    },
+    "app/resources/en/curriculum/review-calibration-P03.md": {
+      "bytes": 1719,
+      "sha256": "52f54d5a46985dbcfad04b83c1d6bb2d6eb8a88e8b2ac07f8177ab17928d7d32"
+    },
+    "app/resources/en/curriculum/transfer-01.md": {
+      "bytes": 1011,
+      "sha256": "ff125b221061d31fad54e226bae6bf1915f597b9212dc75482fed07fe9f7d10a"
+    },
+    "app/resources/en/curriculum/transfer-02.md": {
+      "bytes": 1159,
+      "sha256": "60f479c7a6d9c86aa8bb81c880b60dfa44f604a3690a2d587a9cabd2a0f688ff"
+    },
+    "app/resources/en/curriculum/transfer-03.md": {
+      "bytes": 1150,
+      "sha256": "caebf0a40e5ac24c99339f287674cf067eba91c80349f18f728bc7f4f249ae9a"
+    },
+    "app/resources/en/guides/access-storage-P03.md": {
+      "bytes": 1752,
+      "sha256": "10ae133ae8071656085c049eb7e07bf85114db3e915b07396149c3f2eac0f61b"
+    },
+    "app/resources/en/guides/adult-rehearsal-P03.md": {
+      "bytes": 1884,
+      "sha256": "d7fc3461e849856b381b7c192e62caf1311345b69c8f65931cdd21a63c9541cf"
+    },
+    "app/resources/en/guides/backup-and-recovery.md": {
+      "bytes": 1954,
+      "sha256": "e0937071aa73efe141b2e9466d3a4bdf779a664c9098280c0059e8bffec63cfa"
+    },
+    "app/resources/en/guides/facilitator-rehearsal.md": {
+      "bytes": 2135,
+      "sha256": "c866187941aae8e05d921728a2aae60d5a29a4fae3b3f86433bbdb39b2eb97cb"
+    },
+    "app/resources/en/guides/human-handoff.md": {
+      "bytes": 2439,
+      "sha256": "a10e09c644a85a642b4945012b241b575566ac350d2c829e5a76fb423457d01a"
+    },
+    "app/resources/en/guides/operations-release-P03.md": {
+      "bytes": 2047,
+      "sha256": "e52a2872af5d09860ce61e767d6dd3f5abd67036c11e7e380af014bfb7db2faf"
+    },
+    "app/resources/en/guides/operator-quickstart.md": {
+      "bytes": 2087,
+      "sha256": "c58edc567c2a9191d190408fef37f3e93f86dd24fc0801738fdc0592e7d74269"
+    },
+    "app/resources/en/guides/participant-data-P03.md": {
+      "bytes": 1943,
+      "sha256": "706bc6652d79f25538a15b08c48932323cfd2c1cb3439d7818c2cfe95876d254"
+    },
+    "app/resources/en/guides/release-checklist.md": {
+      "bytes": 1809,
+      "sha256": "fe95b1f2c51cf5ac1b1860ad42f6afbfec15b44869add74be3b3c29dce651fb4"
+    },
+    "app/resources/en/guides/workbench-P03.md": {
+      "bytes": 2057,
+      "sha256": "98550a4d55acbbc8a3a119abb09c80d6610e7115ccea72ab1f1a4f7c56545406"
+    },
+    "app/resources/en/project-brief.md": {
+      "bytes": 2155,
+      "sha256": "f30962869b7122ce1b7d406a7752ba6548ea0d03018ead5c5cabbb0daa29d973"
+    },
+    "app/resources/en/project/completion-roadmap-M01.md": {
+      "bytes": 6086,
+      "sha256": "89b47fafb60d822d8231c780b06938d19cfc0ee6a7c427f9e579a73971edf3a3"
+    },
+    "app/resources/en/project/maturity-assessment-M01.md": {
+      "bytes": 7017,
+      "sha256": "13137ace62d11b1b1f7bdb97846884543fcd7a810bf96345382359681b863857"
+    },
+    "app/resources/en/project/product-contract-P03.md": {
+      "bytes": 1887,
+      "sha256": "cce1a2b6f7b7bf93d5030d9ee41128f09e4489668082919816936e286ea01813"
+    },
+    "app/resources/en/research/data-plan.md": {
+      "bytes": 2639,
+      "sha256": "c4af61afc3ea05834c4c93b4282c192659a04a69181ff4866f4f1849e1283d92"
+    },
+    "app/resources/en/research/evidence-cards-R01.md": {
+      "bytes": 3129,
+      "sha256": "3c77b985e476f5b9faaf01cc4bf7e2485735e54b7cef15922b4bfd8662cb26ef"
+    },
+    "app/resources/en/research/evidence-gap-register.md": {
+      "bytes": 2539,
+      "sha256": "37d1c91ac59ea00b4877d71da47af9c4d988dd4d4435c11c97fa733a910f081b"
+    },
+    "app/resources/en/research/evidence-synthesis-R01.md": {
+      "bytes": 1966,
+      "sha256": "d65ab41ef9c4406e4b9961be6678a86c6a536b616bdab8f8a70a36a227fbcffc"
+    },
+    "app/resources/en/research/full-methods-P03.md": {
+      "bytes": 5974,
+      "sha256": "4f423f037ed470b3c3ea3db1f872589d8a8e567810492f9236b3d44a8603eec6"
+    },
+    "app/resources/en/research/research-map.md": {
+      "bytes": 4115,
+      "sha256": "f728ac2ab31f4062cb5560dbe0186545c193fdc8680db47b3e43e62aeae7d9db"
+    },
+    "app/resources/en/research/selection-protocol.md": {
+      "bytes": 2337,
+      "sha256": "9fc1658c3eef4162c605c26d912a5c6bd975cee4067aa03714dae7c49fe3c540"
+    },
+    "app/resources/en/research/source-index.md": {
+      "bytes": 3321,
+      "sha256": "34bb18a77c29e42ad790ace20738b79a00897046b4e3d4f5e8112ea9a55adafd"
+    },
+    "app/resources/en/templates/cohort-schedule.md": {
+      "bytes": 1476,
+      "sha256": "0fe99550a9e52ac899ea90a37ae876275ed823a837edd9b0651b3197798025db"
+    },
+    "app/resources/en/templates/curriculum-review.md": {
+      "bytes": 1602,
+      "sha256": "482e28e33dca749f7cc6f8a14a48aee16b2810928b182c839022489dcad47921"
+    },
+    "app/resources/en/templates/decision-record.md": {
+      "bytes": 1404,
+      "sha256": "6cabd4803e7bec5946a88055e86a2d19aff348e24f5fa847dbe25b96b1632320"
+    },
+    "app/resources/en/templates/evidence-capture.md": {
+      "bytes": 1523,
+      "sha256": "3bca4628b62a876248060064de7f20d5a299dcfaee54d806831d508ed91b2965"
+    },
+    "app/resources/en/templates/interview-guide.md": {
+      "bytes": 1866,
+      "sha256": "03d6f6a31a4e2914ce190770a4d526b27fa6502e85547ff866cb89fe8ede21e3"
+    },
+    "app/resources/en/templates/issue-risk-log.md": {
+      "bytes": 1439,
+      "sha256": "a5458538f70535e43df178e061d876cf61d3d5d0a172228936b67a54c52d91dc"
+    },
+    "app/resources/en/templates/learner-worksheet.md": {
+      "bytes": 1605,
+      "sha256": "97e3d5a06754211aecc652f0bb70cab61d73680c7ee91284d57fb5c9f9dda023"
+    },
+    "app/resources/en/templates/observer-sheet.md": {
+      "bytes": 1693,
+      "sha256": "51980c5f2f6f7802d5ef091b5ea946303874fd53379bd06453c141e4cad05c5f"
+    },
+    "app/resources/en/templates/session-plan.md": {
+      "bytes": 1543,
+      "sha256": "ead25638ba5dd90f459e2b017364f7b4681c575df748b22df7be461025d70579"
+    },
+    "app/resources/en/templates/weekly-synthesis.md": {
+      "bytes": 1369,
+      "sha256": "d5d20d8ca01bf7c89ca18531f0c747e9970e5a7e1b4d4121a9b19cc892f69a10"
+    },
+    "app/resources/guides/access-storage-P03.md": {
+      "bytes": 2222,
+      "sha256": "5eb0bcc50f5771841b06eaf59d4d0fddcb63a860c18581d2d8ab64c769ca5c51"
+    },
+    "app/resources/guides/adult-rehearsal-P03.md": {
+      "bytes": 2301,
+      "sha256": "f681fb0aa9ef3011c97e96de2d0115e718ccb37135c9efc499b816f7ad927fe1"
+    },
+    "app/resources/guides/backup-and-recovery.md": {
+      "bytes": 2342,
+      "sha256": "b52c9b68044b6d9aeda8d14154c9a6cdba879d2f37e273850654a19788c702ea"
+    },
+    "app/resources/guides/facilitator-rehearsal.md": {
+      "bytes": 2720,
+      "sha256": "f46600543584f4afddb8fa37dd1ea4d766369617f581f1c190aa28b9b833ca38"
+    },
+    "app/resources/guides/human-handoff.md": {
+      "bytes": 3242,
+      "sha256": "f87cb39e1607b0ab141db1b803796c54d9036a4d8dc10559b546ca96f41688f4"
+    },
+    "app/resources/guides/operations-release-P03.md": {
+      "bytes": 2395,
+      "sha256": "696d75132596181adb83667b00125d083b1ce8f33025901b155a732f45262c1f"
+    },
+    "app/resources/guides/operator-quickstart.md": {
+      "bytes": 2509,
+      "sha256": "859512eec97115b0064ddbf986bb82fdab18b510683aec95a52a95699db45135"
+    },
+    "app/resources/guides/participant-data-P03.md": {
+      "bytes": 2554,
+      "sha256": "a6bb5b1518ca6b5b1d030af10b366cb5dc02a10ac1ebc81871f5c45fc64c0de3"
+    },
+    "app/resources/guides/release-checklist.md": {
+      "bytes": 2234,
+      "sha256": "12990d8a2d2d61fb45a3197c8cd7079e5cca53b951340a0c3a1133b4a2303ab9"
+    },
+    "app/resources/guides/workbench-P03.md": {
+      "bytes": 2347,
+      "sha256": "722e672e01d96ab19ea363476edc6bb29e6da51d32c12d79fd6791a391a5f232"
+    },
+    "app/resources/lessons.json": {
+      "bytes": 30231,
+      "sha256": "81ace7bf3c74e8813dd8dc3f8e958fbda0cf374ed7bfcfd397aa5ef9bec14f3a"
+    },
+    "app/resources/manifest.json": {
+      "bytes": 25085,
+      "sha256": "ded54db2d2b0ac6d8b8d34a19469f0b2cfcbfbabe4c349781056b87da10c0044"
+    },
+    "app/resources/project-brief.md": {
+      "bytes": 2684,
+      "sha256": "babd9c336d5b7dcec57f9d39858def6b639f0b78edc52bdb2e3893a1e1bb8d28"
+    },
+    "app/resources/project/completion-roadmap-M01.md": {
+      "bytes": 10634,
+      "sha256": "653f58106dc43be5f1df70a573b4c017fa6638c3d1c702c6d2eed7be88a2234d"
+    },
+    "app/resources/project/maturity-assessment-M01.md": {
+      "bytes": 11887,
+      "sha256": "c95f786aee1834f7b71cbd614c33c4e21cf53b94d742334e474ff858884262b5"
+    },
+    "app/resources/project/product-contract-P03.md": {
+      "bytes": 2500,
+      "sha256": "8b39f2726c659aa489161aadf433ae464ec0ba53aad78011ef6e35db2ac5b36d"
+    },
+    "app/resources/research/data-plan.md": {
+      "bytes": 3556,
+      "sha256": "e507c8fb53976bbd1e6e183b74ed4da6515b308362ab555793b33d790242a909"
+    },
+    "app/resources/research/evidence-cards-R01.md": {
+      "bytes": 3920,
+      "sha256": "5a06100552d9f4ee3c5bdda25c47a777fdc5df24e272a785a4b3c29768367ce1"
+    },
+    "app/resources/research/evidence-gap-register.md": {
+      "bytes": 3414,
+      "sha256": "930829f49d0de39115545a98d7b1f4e27bb08884a0c56a2ef5eab621b376b261"
+    },
+    "app/resources/research/evidence-synthesis-R01.md": {
+      "bytes": 2916,
+      "sha256": "8f41dab0b07b6f651d6f42289b40bbe9c74499ac714b5c2e8df5b6919a014b94"
+    },
+    "app/resources/research/full-methods-P03.md": {
+      "bytes": 7041,
+      "sha256": "a85227f759bbfe60b40cb8595639f2772b17af60779945fac1ec1d14db4ee66f"
+    },
+    "app/resources/research/research-map.md": {
+      "bytes": 5576,
+      "sha256": "a0adb4854f3e9b86eb80e4a5f1c611f3ca7f031854846268d3fbc3e4dfe3931d"
+    },
+    "app/resources/research/selection-protocol.md": {
+      "bytes": 2968,
+      "sha256": "0e90e7bdd9a8cd7aa1371e43bdfa2cba50a2df7c4fab199a72496543c18df1c9"
+    },
+    "app/resources/research/source-index.md": {
+      "bytes": 4435,
+      "sha256": "07702120e058792bef10ed2d179b1696395bba6bf1bb07590ff290bebc9389dc"
+    },
+    "app/resources/templates/cohort-schedule.md": {
+      "bytes": 2102,
+      "sha256": "965df7fcf8c7cbeafe9ad8690e5cf5ebd5f9c4eb41e69bea283457dbe7d8d5a8"
+    },
+    "app/resources/templates/curriculum-review.md": {
+      "bytes": 2216,
+      "sha256": "97bfed6f80bb1399ba5b4fb3715029ff55ead4709e70809552981322d48e65dd"
+    },
+    "app/resources/templates/decision-record.md": {
+      "bytes": 1994,
+      "sha256": "58ad27a74fcb094781dcae3687477ca7b24bbfff89ad84591849b6d8401d5bb7"
+    },
+    "app/resources/templates/evidence-capture.md": {
+      "bytes": 2057,
+      "sha256": "a7cee5974f3e49ba603016ffcaa60b95760448cb0e9fb1966c18c83c46996a9e"
+    },
+    "app/resources/templates/interview-guide.md": {
+      "bytes": 2359,
+      "sha256": "213d2b613c17242f7fa50330a5277806d5da1278638925bcd9a54dfb3519c182"
+    },
+    "app/resources/templates/issue-risk-log.md": {
+      "bytes": 1926,
+      "sha256": "50bfd21572849dad0f8410684eca98418712d76528ca13b590a78a80dbf51991"
+    },
+    "app/resources/templates/learner-worksheet.md": {
+      "bytes": 2138,
+      "sha256": "2ebda9146dbf3201ba57e2e92552a68ce72f887c962698ebd515b48600216cbd"
+    },
+    "app/resources/templates/observer-sheet.md": {
+      "bytes": 2063,
+      "sha256": "1d10069f3e0df727d7d1efb3b78a341d7660e6bf6eb56a469d55221201bdadad"
+    },
+    "app/resources/templates/session-plan.md": {
+      "bytes": 2015,
+      "sha256": "754b0f0f84c20566ed09080eaa8a5d9912132c96016f8ff38b1fdb1edf70d155"
+    },
+    "app/resources/templates/weekly-synthesis.md": {
+      "bytes": 1843,
+      "sha256": "1f923275e4f8c2a0b753fa12e020ea0644beb4ee0331372848edeeae5d674411"
+    },
+    "app/styles.css": {
+      "bytes": 36009,
+      "sha256": "3e7b0a9bab2258b88da6c0df68f59aca3e68c870f72b1fa9299412f860064563"
+    },
+    "app/tests/model.test.mjs": {
+      "bytes": 9770,
+      "sha256": "b62a5e3c53bb84e6cb441657d4b0364ee0ca0a761167390ba200f0a9cad51a8b"
+    },
+    "app/tests/p03.test.mjs": {
+      "bytes": 11983,
+      "sha256": "7d099d78756844a17af4c577da5422d63ef69bc2a569c958429832097e9711c3"
+    },
+    "app/tests/platform.test.mjs": {
+      "bytes": 12375,
+      "sha256": "e94d69e1c21dcfceb47fb7c0782435d60edefb78a560e4420bd5b6ae3a053356"
+    },
+    "benchmarks/EVALUATION_GUIDE.md": {
+      "bytes": 5161,
+      "sha256": "b11a4f401b7b6e1d549ee6ff3bfe6a258211abe9287fa9b9f35db79ca0c12c90"
+    },
+    "benchmarks/LIVE-PROVIDER-PROTOCOL.md": {
+      "bytes": 3098,
+      "sha256": "11de9bb1e6372835ff94b050350fcf284ca7df09b0e4a543d5304275f231641f"
+    },
+    "benchmarks/fixtures/synthetic_responses.json": {
+      "bytes": 1164,
+      "sha256": "dd77729b7016ee3aba104a1c216d7e2b90d1128d3a072eaab24fc26030a4222c"
+    },
+    "benchmarks/provider-config.template.json": {
+      "bytes": 448,
+      "sha256": "465b6c1afb29c7f9470f7aff2918e0c3a352fbeca72730ae7f5c41a0f1aa3eaa"
+    },
+    "benchmarks/response_template.json": {
+      "bytes": 9100,
+      "sha256": "498e95240f9e89127ddfc7b75b419e232245a4804832cd324ec9d5e474617323"
+    },
+    "benchmarks/task_cases.json": {
+      "bytes": 8925,
+      "sha256": "128d25d06587d362d976d1dde1c8c1aa76ccebe968fa748ad03dc7535256f8f3"
+    },
+    "docs/images/library-en.png": {
+      "bytes": 99917,
+      "sha256": "edf8fd1d343fdefd5a0365051df46526da56ce4df5b2c66e4959443740f2bd19"
+    },
+    "materials/README.md": {
+      "bytes": 8558,
+      "sha256": "00eefc4944704e223d59308dd9bbc32eeda746c873652a8cf0ebfadb1fa5b3e0"
+    },
+    "materials/benchmark/provider-protocol-P03.md": {
+      "bytes": 2337,
+      "sha256": "5dc686091b0325621afdaf986d4d06fa9a1cf51f43ff11f6e3cf4b621ff3267e"
+    },
+    "materials/benchmark/scoring-guide.md": {
+      "bytes": 4711,
+      "sha256": "5e98c1c23d34b7b27b67d035b4e35f3837ae5a20be84bfcbbd63b30d62dc496e"
+    },
+    "materials/catalog.json": {
+      "bytes": 48441,
+      "sha256": "a853efd1351a9f1906d385a5e0200fc44da191acb5cb72b283c0e525807dd338"
+    },
+    "materials/channels/architecture.md": {
+      "bytes": 2613,
+      "sha256": "44a79e2f23c8ad3e0594e89caa7d06402fd5c8916645d7275ef69f8d1a786e65"
+    },
+    "materials/channels/posts/faq.md": {
+      "bytes": 2335,
+      "sha256": "11577d6e5b9a8105a8b8a3bceae26a51e342d9f2a440565dd0ad371c674d9893"
+    },
+    "materials/channels/posts/internal-coordination.md": {
+      "bytes": 1800,
+      "sha256": "e5210d51056ce7cc59af0d1769b18ffc9bf91a968c396833f5668d19564157b3"
+    },
+    "materials/channels/posts/parent-welcome.md": {
+      "bytes": 1798,
+      "sha256": "b066234113003dcc4ce3e7cb6ee7f365ef94e637ee7c84707eb18db2331f2266"
+    },
+    "materials/channels/posts/rehearsal-invitation.md": {
+      "bytes": 1691,
+      "sha256": "8f15a5d310181cb00575412b62cee52147db438fda28e68005634964764bb6b4"
+    },
+    "materials/channels/posts/weekly-note.md": {
+      "bytes": 1589,
+      "sha256": "3f61a2d252ac9c73a4e5499de634c83c9a1779005cfb8bbb4ebedffebe2c53bb"
+    },
+    "materials/curriculum/README.md": {
+      "bytes": 2859,
+      "sha256": "a43c43e8bea12dbcf61a8981287d414bd8a728ef7f543ced48621fcf21e9a283"
+    },
+    "materials/curriculum/anchor-assessment-P03.md": {
+      "bytes": 2734,
+      "sha256": "d84040cb1a1f991406e6e4b7847403a0f577864fdece3fd6ed9e462b28b801f2"
+    },
+    "materials/curriculum/anchor-design-P03.md": {
+      "bytes": 2864,
+      "sha256": "8f38d4f42ffd5d4a3ecddd49d3a00aedc3df9de3ce684543ef5e86d8739e01d6"
+    },
+    "materials/curriculum/handout-01.md": {
+      "bytes": 2818,
+      "sha256": "5b6cb29571be4ae2baf9038ee9693c721123332fb66f9706cf039135425e11b1"
+    },
+    "materials/curriculum/handout-02.md": {
+      "bytes": 3159,
+      "sha256": "d29a0b5c69c2eeeafa4c3307140689446ecdf171019bc0ed3ab99b8e0c032d1e"
+    },
+    "materials/curriculum/handout-03.md": {
+      "bytes": 3657,
+      "sha256": "b7cfe84f76f120d8c640159326ee0b05b37bcddbbe3f823c71241117396b0313"
+    },
+    "materials/curriculum/lesson-01.md": {
+      "bytes": 6989,
+      "sha256": "8bb913a2a6ab041a416bcd68a7d392992ebe268542672e63291972b4d1067421"
+    },
+    "materials/curriculum/lesson-02.md": {
+      "bytes": 7491,
+      "sha256": "8d5c4fa1b14983bb01b9092a9c0ba5d84dcb3fb3e3684abb6048d78ae0c7cde0"
+    },
+    "materials/curriculum/lesson-03.md": {
+      "bytes": 8140,
+      "sha256": "30c5997061976c9cc85db419cd3ca655977065312482098d2b9f4e390c8a9335"
+    },
+    "materials/curriculum/lessons.json": {
+      "bytes": 30231,
+      "sha256": "b8621eff1b2bb85f087a6de1049e46fc5bf0d34e19e43809624ff6a5eec08d2d"
+    },
+    "materials/curriculum/review-calibration-P03.md": {
+      "bytes": 2111,
+      "sha256": "7923b058c9d98755339cbfe9476a502ce3469cb805b8723a7467dcbb86f93b82"
+    },
+    "materials/curriculum/transfer-01.md": {
+      "bytes": 1188,
+      "sha256": "d7487aa24aa08f5d253b8acb5b37f36e9ae2853db14ee610819efdbcc2a6013e"
+    },
+    "materials/curriculum/transfer-02.md": {
+      "bytes": 1362,
+      "sha256": "37fe2cfbe9c95a9bef466380a0dc204977bd919b4503f47df7e789a3f630ad6a"
+    },
+    "materials/curriculum/transfer-03.md": {
+      "bytes": 1378,
+      "sha256": "729cf56a340972f65c8f61d6b1915e6d1e9549b8b368fb9f404f447b860c776e"
+    },
+    "materials/en/README.md": {
+      "bytes": 8637,
+      "sha256": "27ca225eec981aad55158a11f8850006f66f6d3e4566777c72531a3320beb8d4"
+    },
+    "materials/en/benchmark/provider-protocol-P03.md": {
+      "bytes": 2051,
+      "sha256": "8052a2deb50d6e1eceb55d1305ea9f7d975129a4d80d2cda6bbc67a7335403dd"
+    },
+    "materials/en/benchmark/scoring-guide.md": {
+      "bytes": 3495,
+      "sha256": "3989ffd7d23ed288a51e6b33260cb37a2f5e77e1548edbe3cf5119bfdc4f3151"
+    },
+    "materials/en/channels/architecture.md": {
+      "bytes": 1811,
+      "sha256": "085417525cc26eeb3fc78bc1121960be72c2c4273650bd713d9c06d4c03afaa4"
+    },
+    "materials/en/channels/posts/faq.md": {
+      "bytes": 1668,
+      "sha256": "d82c03f0bbce0862ea187acc27872de4a8fb088f210f72d24061660893ac3bfb"
+    },
+    "materials/en/channels/posts/internal-coordination.md": {
+      "bytes": 1297,
+      "sha256": "623a62160ae80860b365e892979d5332dc7f88566c56e8f44014b3b6e3e7c055"
+    },
+    "materials/en/channels/posts/parent-welcome.md": {
+      "bytes": 1265,
+      "sha256": "0e5d0bad67b46b931fbf3466c44a365ebb8eaa26e473bbd365e1164c32d4db39"
+    },
+    "materials/en/channels/posts/rehearsal-invitation.md": {
+      "bytes": 1237,
+      "sha256": "9bcfda53694328b8beddec8b8e8e4d1ddc8d9e93c69fa694ed4fdae73a800e84"
+    },
+    "materials/en/channels/posts/weekly-note.md": {
+      "bytes": 1137,
+      "sha256": "22005042cba5741af3e6d6d52f20ddc64ec9c7e9b41091f34df84bd09a854dd9"
+    },
+    "materials/en/curriculum/README.md": {
+      "bytes": 2343,
+      "sha256": "1bcffa582beb04bfb7d44e96b46c81f2064c9393a3a5d5660303e3bd603999d7"
+    },
+    "materials/en/curriculum/anchor-assessment-P03.md": {
+      "bytes": 2213,
+      "sha256": "049d8c1a9056d049e80fa1ab41be4d819ad4565ea71c28ca6c3eccf360532fe1"
+    },
+    "materials/en/curriculum/anchor-design-P03.md": {
+      "bytes": 2285,
+      "sha256": "703d3d87a81c488be7937c7756d770eaa7a1cd3cd96bb75d88c2455e833680b2"
+    },
+    "materials/en/curriculum/handout-01.md": {
+      "bytes": 2343,
+      "sha256": "3d0cc93e8f12c523418d7a15e8cdd8c21e0fb2dcc4a54d6754e104e67d1a1ca1"
+    },
+    "materials/en/curriculum/handout-02.md": {
+      "bytes": 2760,
+      "sha256": "bab1cc85f365e862b0b67dcd6c51a4064a25bcb5d8b8aa6504427d77012248cf"
+    },
+    "materials/en/curriculum/handout-03.md": {
+      "bytes": 3134,
+      "sha256": "26b18b724beda604082382accefb766ed37b4fc637b6434e7dff2b0e7f98535e"
+    },
+    "materials/en/curriculum/lesson-01.md": {
+      "bytes": 5848,
+      "sha256": "bf86ff5300418065392a73760ab2002e1925fee9d729ba4430befe8ffb76ed3e"
+    },
+    "materials/en/curriculum/lesson-02.md": {
+      "bytes": 6278,
+      "sha256": "88b3a2373acaaa096c1d44f4675b57075f0e561ad41e972e39fcb77d730f0ba1"
+    },
+    "materials/en/curriculum/lesson-03.md": {
+      "bytes": 6784,
+      "sha256": "d96f186d89fad28ca9eba86dd103710262b7ddcace981dbeb7f06d7414772df6"
+    },
+    "materials/en/curriculum/review-calibration-P03.md": {
+      "bytes": 1719,
+      "sha256": "52f54d5a46985dbcfad04b83c1d6bb2d6eb8a88e8b2ac07f8177ab17928d7d32"
+    },
+    "materials/en/curriculum/transfer-01.md": {
+      "bytes": 1011,
+      "sha256": "ff125b221061d31fad54e226bae6bf1915f597b9212dc75482fed07fe9f7d10a"
+    },
+    "materials/en/curriculum/transfer-02.md": {
+      "bytes": 1159,
+      "sha256": "60f479c7a6d9c86aa8bb81c880b60dfa44f604a3690a2d587a9cabd2a0f688ff"
+    },
+    "materials/en/curriculum/transfer-03.md": {
+      "bytes": 1150,
+      "sha256": "caebf0a40e5ac24c99339f287674cf067eba91c80349f18f728bc7f4f249ae9a"
+    },
+    "materials/en/guides/access-storage-P03.md": {
+      "bytes": 1752,
+      "sha256": "10ae133ae8071656085c049eb7e07bf85114db3e915b07396149c3f2eac0f61b"
+    },
+    "materials/en/guides/adult-rehearsal-P03.md": {
+      "bytes": 1884,
+      "sha256": "d7fc3461e849856b381b7c192e62caf1311345b69c8f65931cdd21a63c9541cf"
+    },
+    "materials/en/guides/backup-and-recovery.md": {
+      "bytes": 1954,
+      "sha256": "e0937071aa73efe141b2e9466d3a4bdf779a664c9098280c0059e8bffec63cfa"
+    },
+    "materials/en/guides/facilitator-rehearsal.md": {
+      "bytes": 2135,
+      "sha256": "c866187941aae8e05d921728a2aae60d5a29a4fae3b3f86433bbdb39b2eb97cb"
+    },
+    "materials/en/guides/human-handoff.md": {
+      "bytes": 2439,
+      "sha256": "a10e09c644a85a642b4945012b241b575566ac350d2c829e5a76fb423457d01a"
+    },
+    "materials/en/guides/operations-release-P03.md": {
+      "bytes": 2047,
+      "sha256": "e52a2872af5d09860ce61e767d6dd3f5abd67036c11e7e380af014bfb7db2faf"
+    },
+    "materials/en/guides/operator-quickstart.md": {
+      "bytes": 2087,
+      "sha256": "c58edc567c2a9191d190408fef37f3e93f86dd24fc0801738fdc0592e7d74269"
+    },
+    "materials/en/guides/participant-data-P03.md": {
+      "bytes": 1943,
+      "sha256": "706bc6652d79f25538a15b08c48932323cfd2c1cb3439d7818c2cfe95876d254"
+    },
+    "materials/en/guides/release-checklist.md": {
+      "bytes": 1809,
+      "sha256": "fe95b1f2c51cf5ac1b1860ad42f6afbfec15b44869add74be3b3c29dce651fb4"
+    },
+    "materials/en/guides/workbench-P03.md": {
+      "bytes": 2057,
+      "sha256": "98550a4d55acbbc8a3a119abb09c80d6610e7115ccea72ab1f1a4f7c56545406"
+    },
+    "materials/en/project-brief.md": {
+      "bytes": 2155,
+      "sha256": "f30962869b7122ce1b7d406a7752ba6548ea0d03018ead5c5cabbb0daa29d973"
+    },
+    "materials/en/project/completion-roadmap-M01.md": {
+      "bytes": 6086,
+      "sha256": "89b47fafb60d822d8231c780b06938d19cfc0ee6a7c427f9e579a73971edf3a3"
+    },
+    "materials/en/project/maturity-assessment-M01.md": {
+      "bytes": 7017,
+      "sha256": "13137ace62d11b1b1f7bdb97846884543fcd7a810bf96345382359681b863857"
+    },
+    "materials/en/project/product-contract-P03.md": {
+      "bytes": 1887,
+      "sha256": "cce1a2b6f7b7bf93d5030d9ee41128f09e4489668082919816936e286ea01813"
+    },
+    "materials/en/research/data-plan.md": {
+      "bytes": 2639,
+      "sha256": "c4af61afc3ea05834c4c93b4282c192659a04a69181ff4866f4f1849e1283d92"
+    },
+    "materials/en/research/evidence-cards-R01.md": {
+      "bytes": 3129,
+      "sha256": "3c77b985e476f5b9faaf01cc4bf7e2485735e54b7cef15922b4bfd8662cb26ef"
+    },
+    "materials/en/research/evidence-gap-register.md": {
+      "bytes": 2539,
+      "sha256": "37d1c91ac59ea00b4877d71da47af9c4d988dd4d4435c11c97fa733a910f081b"
+    },
+    "materials/en/research/evidence-synthesis-R01.md": {
+      "bytes": 1966,
+      "sha256": "d65ab41ef9c4406e4b9961be6678a86c6a536b616bdab8f8a70a36a227fbcffc"
+    },
+    "materials/en/research/full-methods-P03.md": {
+      "bytes": 5974,
+      "sha256": "4f423f037ed470b3c3ea3db1f872589d8a8e567810492f9236b3d44a8603eec6"
+    },
+    "materials/en/research/research-map.md": {
+      "bytes": 4115,
+      "sha256": "f728ac2ab31f4062cb5560dbe0186545c193fdc8680db47b3e43e62aeae7d9db"
+    },
+    "materials/en/research/selection-protocol.md": {
+      "bytes": 2337,
+      "sha256": "9fc1658c3eef4162c605c26d912a5c6bd975cee4067aa03714dae7c49fe3c540"
+    },
+    "materials/en/research/source-index.md": {
+      "bytes": 3321,
+      "sha256": "34bb18a77c29e42ad790ace20738b79a00897046b4e3d4f5e8112ea9a55adafd"
+    },
+    "materials/en/templates/cohort-schedule.md": {
+      "bytes": 1476,
+      "sha256": "0fe99550a9e52ac899ea90a37ae876275ed823a837edd9b0651b3197798025db"
+    },
+    "materials/en/templates/curriculum-review.md": {
+      "bytes": 1602,
+      "sha256": "482e28e33dca749f7cc6f8a14a48aee16b2810928b182c839022489dcad47921"
+    },
+    "materials/en/templates/decision-record.md": {
+      "bytes": 1404,
+      "sha256": "6cabd4803e7bec5946a88055e86a2d19aff348e24f5fa847dbe25b96b1632320"
+    },
+    "materials/en/templates/evidence-capture.md": {
+      "bytes": 1523,
+      "sha256": "3bca4628b62a876248060064de7f20d5a299dcfaee54d806831d508ed91b2965"
+    },
+    "materials/en/templates/interview-guide.md": {
+      "bytes": 1866,
+      "sha256": "03d6f6a31a4e2914ce190770a4d526b27fa6502e85547ff866cb89fe8ede21e3"
+    },
+    "materials/en/templates/issue-risk-log.md": {
+      "bytes": 1439,
+      "sha256": "a5458538f70535e43df178e061d876cf61d3d5d0a172228936b67a54c52d91dc"
+    },
+    "materials/en/templates/learner-worksheet.md": {
+      "bytes": 1605,
+      "sha256": "97e3d5a06754211aecc652f0bb70cab61d73680c7ee91284d57fb5c9f9dda023"
+    },
+    "materials/en/templates/observer-sheet.md": {
+      "bytes": 1693,
+      "sha256": "51980c5f2f6f7802d5ef091b5ea946303874fd53379bd06453c141e4cad05c5f"
+    },
+    "materials/en/templates/session-plan.md": {
+      "bytes": 1543,
+      "sha256": "ead25638ba5dd90f459e2b017364f7b4681c575df748b22df7be461025d70579"
+    },
+    "materials/en/templates/weekly-synthesis.md": {
+      "bytes": 1369,
+      "sha256": "d5d20d8ca01bf7c89ca18531f0c747e9970e5a7e1b4d4121a9b19cc892f69a10"
+    },
+    "materials/guides/access-storage-P03.md": {
+      "bytes": 2222,
+      "sha256": "5eb0bcc50f5771841b06eaf59d4d0fddcb63a860c18581d2d8ab64c769ca5c51"
+    },
+    "materials/guides/adult-rehearsal-P03.md": {
+      "bytes": 2301,
+      "sha256": "f681fb0aa9ef3011c97e96de2d0115e718ccb37135c9efc499b816f7ad927fe1"
+    },
+    "materials/guides/backup-and-recovery.md": {
+      "bytes": 2342,
+      "sha256": "b52c9b68044b6d9aeda8d14154c9a6cdba879d2f37e273850654a19788c702ea"
+    },
+    "materials/guides/facilitator-rehearsal.md": {
+      "bytes": 2720,
+      "sha256": "f46600543584f4afddb8fa37dd1ea4d766369617f581f1c190aa28b9b833ca38"
+    },
+    "materials/guides/human-handoff.md": {
+      "bytes": 3242,
+      "sha256": "f87cb39e1607b0ab141db1b803796c54d9036a4d8dc10559b546ca96f41688f4"
+    },
+    "materials/guides/operations-release-P03.md": {
+      "bytes": 2395,
+      "sha256": "696d75132596181adb83667b00125d083b1ce8f33025901b155a732f45262c1f"
+    },
+    "materials/guides/operator-quickstart.md": {
+      "bytes": 2509,
+      "sha256": "859512eec97115b0064ddbf986bb82fdab18b510683aec95a52a95699db45135"
+    },
+    "materials/guides/participant-data-P03.md": {
+      "bytes": 2554,
+      "sha256": "a6bb5b1518ca6b5b1d030af10b366cb5dc02a10ac1ebc81871f5c45fc64c0de3"
+    },
+    "materials/guides/release-checklist.md": {
+      "bytes": 2234,
+      "sha256": "12990d8a2d2d61fb45a3197c8cd7079e5cca53b951340a0c3a1133b4a2303ab9"
+    },
+    "materials/guides/workbench-P03.md": {
+      "bytes": 2347,
+      "sha256": "722e672e01d96ab19ea363476edc6bb29e6da51d32c12d79fd6791a391a5f232"
+    },
+    "materials/project-brief.md": {
+      "bytes": 2684,
+      "sha256": "babd9c336d5b7dcec57f9d39858def6b639f0b78edc52bdb2e3893a1e1bb8d28"
+    },
+    "materials/project/completion-roadmap-M01.md": {
+      "bytes": 10634,
+      "sha256": "653f58106dc43be5f1df70a573b4c017fa6638c3d1c702c6d2eed7be88a2234d"
+    },
+    "materials/project/maturity-assessment-M01.md": {
+      "bytes": 11887,
+      "sha256": "c95f786aee1834f7b71cbd614c33c4e21cf53b94d742334e474ff858884262b5"
+    },
+    "materials/project/product-contract-P03.md": {
+      "bytes": 2500,
+      "sha256": "8b39f2726c659aa489161aadf433ae464ec0ba53aad78011ef6e35db2ac5b36d"
+    },
+    "materials/research/data-plan.md": {
+      "bytes": 3556,
+      "sha256": "e507c8fb53976bbd1e6e183b74ed4da6515b308362ab555793b33d790242a909"
+    },
+    "materials/research/evidence-cards-R01.md": {
+      "bytes": 3920,
+      "sha256": "5a06100552d9f4ee3c5bdda25c47a777fdc5df24e272a785a4b3c29768367ce1"
+    },
+    "materials/research/evidence-gap-register.md": {
+      "bytes": 3414,
+      "sha256": "930829f49d0de39115545a98d7b1f4e27bb08884a0c56a2ef5eab621b376b261"
+    },
+    "materials/research/evidence-synthesis-R01.md": {
+      "bytes": 2916,
+      "sha256": "8f41dab0b07b6f651d6f42289b40bbe9c74499ac714b5c2e8df5b6919a014b94"
+    },
+    "materials/research/full-methods-P03.md": {
+      "bytes": 7041,
+      "sha256": "a85227f759bbfe60b40cb8595639f2772b17af60779945fac1ec1d14db4ee66f"
+    },
+    "materials/research/research-map.md": {
+      "bytes": 5576,
+      "sha256": "a0adb4854f3e9b86eb80e4a5f1c611f3ca7f031854846268d3fbc3e4dfe3931d"
+    },
+    "materials/research/selection-protocol.md": {
+      "bytes": 2968,
+      "sha256": "0e90e7bdd9a8cd7aa1371e43bdfa2cba50a2df7c4fab199a72496543c18df1c9"
+    },
+    "materials/research/source-index.md": {
+      "bytes": 4435,
+      "sha256": "07702120e058792bef10ed2d179b1696395bba6bf1bb07590ff290bebc9389dc"
+    },
+    "materials/templates/cohort-schedule.md": {
+      "bytes": 2102,
+      "sha256": "965df7fcf8c7cbeafe9ad8690e5cf5ebd5f9c4eb41e69bea283457dbe7d8d5a8"
+    },
+    "materials/templates/curriculum-review.md": {
+      "bytes": 2216,
+      "sha256": "97bfed6f80bb1399ba5b4fb3715029ff55ead4709e70809552981322d48e65dd"
+    },
+    "materials/templates/decision-record.md": {
+      "bytes": 1994,
+      "sha256": "58ad27a74fcb094781dcae3687477ca7b24bbfff89ad84591849b6d8401d5bb7"
+    },
+    "materials/templates/evidence-capture.md": {
+      "bytes": 2057,
+      "sha256": "a7cee5974f3e49ba603016ffcaa60b95760448cb0e9fb1966c18c83c46996a9e"
+    },
+    "materials/templates/interview-guide.md": {
+      "bytes": 2359,
+      "sha256": "213d2b613c17242f7fa50330a5277806d5da1278638925bcd9a54dfb3519c182"
+    },
+    "materials/templates/issue-risk-log.md": {
+      "bytes": 1926,
+      "sha256": "50bfd21572849dad0f8410684eca98418712d76528ca13b590a78a80dbf51991"
+    },
+    "materials/templates/learner-worksheet.md": {
+      "bytes": 2138,
+      "sha256": "2ebda9146dbf3201ba57e2e92552a68ce72f887c962698ebd515b48600216cbd"
+    },
+    "materials/templates/observer-sheet.md": {
+      "bytes": 2063,
+      "sha256": "1d10069f3e0df727d7d1efb3b78a341d7660e6bf6eb56a469d55221201bdadad"
+    },
+    "materials/templates/session-plan.md": {
+      "bytes": 2015,
+      "sha256": "754b0f0f84c20566ed09080eaa8a5d9912132c96016f8ff38b1fdb1edf70d155"
+    },
+    "materials/templates/weekly-synthesis.md": {
+      "bytes": 1843,
+      "sha256": "1f923275e4f8c2a0b753fa12e020ea0644beb4ee0331372848edeeae5d674411"
+    },
+    "research/claims.jsonl": {
+      "bytes": 8969,
+      "sha256": "b453b1a75a6dac8e38d29514653d0ac29760476a6ff31d15bf51ed37463cc65e"
+    },
+    "research/domain.yaml": {
+      "bytes": 1017,
+      "sha256": "c8eaae6714b7c0e70d454c1f8bcb0630f1e813af4a8aca19cb501b59b4473d66"
+    },
+    "research/fulltexts/capture-manifest.json": {
+      "bytes": 3366,
+      "sha256": "afc2cef9285c9083598acc19330af0816c42ccd7fda5c222b55c42dfe769dc08"
+    },
+    "research/sources.json": {
+      "bytes": 10183,
+      "sha256": "6ca16d9c52dc9c058d3a450b8f3b6db4b2c9c02d69407fc2bbcdc95857f73763"
+    },
+    "start-local.command": {
+      "bytes": 1760,
+      "sha256": "8a932f218e86c20442e961c5d6594bb070718d7c3d6f971bdf9073daf847c673"
+    },
+    "tools/build_resources.py": {
+      "bytes": 19456,
+      "sha256": "00a8bbc8b04e35836da80e611cf809dcc716e188cc710a933dc34e126558530f"
+    },
+    "tools/check_all.py": {
+      "bytes": 3394,
+      "sha256": "7a55ea1712ddd3297e1db924d267bec8c38f4d9e152df2c92fe446738a7dff5a"
+    },
+    "tools/check_public.py": {
+      "bytes": 9974,
+      "sha256": "77255f9a27f79831ae968286199b9db4a964194d4b4d078ffacd1e0c1a7710b4"
+    },
+    "tools/create_public_manifest.py": {
+      "bytes": 1836,
+      "sha256": "cf56fe9a35a62a709f07062b8c15199aa951b867f5755f4d7c4d763267001bf8"
+    },
+    "tools/evaluate_responses.py": {
+      "bytes": 9715,
+      "sha256": "1afa68c9e5442bba05d4f2f12f8f80b8edcdc157db4768a9994ed40e3e1839be"
+    },
+    "tools/package_project.py": {
+      "bytes": 9149,
+      "sha256": "8a037cabe964dfb1fa48b3e8f6dbf95a4096eecace0f51f61f87dec99c045043"
+    },
+    "tools/tests/test_project_kit.py": {
+      "bytes": 31630,
+      "sha256": "8bf2f428d58a953bf2a7d6bb593455f95c8e2f91bda71666455b57bbaec4d0bb"
+    },
+    "tools/tests/test_public_distribution.py": {
+      "bytes": 2110,
+      "sha256": "098cc0ed343da2aa53591fd5064afc64354bd9390d8846aa6268cd78de9477fc"
+    },
+    "tools/verify_package.py": {
+      "bytes": 5927,
+      "sha256": "43bda8b07da974b6162d86b3c15d9cfd9d392d81e32f302c5d168f8ea2f34d1a"
+    },
+    "tools/verify_project_kit.py": {
+      "bytes": 3854,
+      "sha256": "32ebf2abd017352ffce7a4fc90d7bd27d22adc0cf64ef1574d88070c300ed570"
+    },
+    "tools/verify_provider_config.py": {
+      "bytes": 2476,
+      "sha256": "fa835f791ebc8aa69a5e27d8b02baad210b94f61cc29e6fba0ce291f81e9421c"
+    },
+    "tools/verify_research.py": {
+      "bytes": 19904,
+      "sha256": "33306424060fa925c745dc8fb89570b4e8d4337ef13519b5def08ca3fbf235b1"
+    }
+  },
+  "limits": "Integrity receipt for available public sources only; missing research corpus cannot be reverified; no cryptographic signature or educational approval.",
+  "omittedRawCaptures": [
+    "research/fulltexts/SRC-08.pdf",
+    "research/fulltexts/SRC-09.pdf",
+    "research/fulltexts/SRC-11.html",
+    "research/fulltexts/SRC-12.html",
+    "research/snapshots/SRC-01.html",
+    "research/snapshots/SRC-02.html",
+    "research/snapshots/SRC-03A.html",
+    "research/snapshots/SRC-04.html",
+    "research/snapshots/SRC-05.html",
+    "research/snapshots/SRC-06.html",
+    "research/snapshots/SRC-07.html",
+    "research/snapshots/SRC-10.html",
+    "research/snapshots/SRC-11.html",
+    "research/snapshots/SRC-12.html",
+    "research/snapshots/SRC-13.html"
+  ],
+  "release": "P03-public-01",
+  "schemaVersion": 1
+}
