@@ -35,7 +35,7 @@ def verify_distribution(project):
             raw=path.read_bytes()
             require(row=={'bytes':len(raw),'sha256':digest(raw)}, f'public file fingerprint mismatch: {name}')
         # Git metadata, local caches/reports/exports are intentionally outside this source receipt.
-        actual={p.relative_to(project).as_posix() for p in project.rglob('*') if p.is_file() and not any(part in {'.git','__pycache__','.venv','node_modules','exports','observed','runtime'} for part in p.relative_to(project).parts) and p.name!='PUBLIC-MANIFEST.json' and not p.name.endswith('.pyc')}
+        actual={p.relative_to(project).as_posix() for p in project.rglob('*') if p.is_file() and not any(part in {'.git','.vercel','__pycache__','.venv','node_modules','exports','observed','runtime'} for part in p.relative_to(project).parts) and p.name!='PUBLIC-MANIFEST.json' and not p.name.endswith('.pyc')}
         require(actual==expected, f'unlisted source files: {sorted(actual-expected)}; missing: {sorted(expected-actual)}')
         sources,_=read_json(project/'research/sources.json')
         supplements,_=read_json(project/'research/fulltexts/capture-manifest.json')

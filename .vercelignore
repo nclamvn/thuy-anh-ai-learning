@@ -1,0 +1,10 @@
+# Only the static application enters the Vercel upload/build input.
+*
+!app
+!app/**
+!vercel.json
+# Application development/source-only metadata is not served.
+app/tests
+app/README.md
+app/package.json
+app/resources/manifest.json

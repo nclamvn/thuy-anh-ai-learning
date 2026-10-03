@@ -26,6 +26,20 @@ This checks fingerprints of **files actually distributed**, authored-to-generate
 
 The original strict `check_all.py`, `verify_research.py`, `verify_project_kit.py`, compiler and packager remain intact. They require lawfully held corpus files restored manually at declared paths with matching hashes. There is no automatic download or fake corpus to bypass gates. The application runs using precompiled `app/resources/`; do not invoke `build_resources.py` in a public quickstart without restoring the corpus. [Source scope and rights](PROVENANCE.md).
 
+## Deploy to Vercel
+
+`vercel.json` selects the Other preset, skips dependency installation/build commands and serves only `app/`. `.vercelignore` admits only the application and hosting config to the deployment input, excluding app tests/README/package/compiler manifest and all root research/tooling/source documents. Fonts and their OFL notices remain included. No environment variables, API keys or backend are required.
+
+From the repository root, with Vercel CLI installed and authenticated to the intended account/scope:
+
+```sh
+vercel link
+vercel --dry --json
+vercel --prod
+```
+
+Select the intended project/scope when linking. Review the dry inventory before production deployment; machine-local `.vercel/` linkage is ignored by git and the public receipt. Production deployment returns an HTTPS URL. Verify index, modules, fonts and both library languages, and confirm `/tests/`, `/research/` and `/tools/` are not served. Moving from localhost to a Vercel origin does not transfer localStorage; use a synthetic backup if needed for rehearsal. Hosting does not add accounts, live AI or child-pilot approval. Configuration reference: [Vercel static configuration](https://vercel.com/docs/project-configuration/vercel-json).
+
 ## Further work
 
 Agree the product contract and responsible decision makers; obtain educational review of LES-02; ask an independent facilitator to rehearse; decide consent/data/incident processes; then decide whether a child pilot, live AI and production operation are appropriate. Templates, age/time/rubric proposals and channel copy remain drafts. Locally entered review/readiness records do not authenticate identity or grant approval.

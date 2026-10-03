@@ -12,7 +12,7 @@ class PublicDistribution(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
         self.project=Path(self.temp.name)/'repo'
-        shutil.copytree(ROOT,self.project,ignore=shutil.ignore_patterns('.git','__pycache__','.venv','node_modules','exports','observed','runtime'))
+        shutil.copytree(ROOT,self.project,ignore=shutil.ignore_patterns('.git','.vercel','__pycache__','.venv','node_modules','exports','observed','runtime'))
     def test_available_source_integrity_passes_but_capture_is_unavailable(self):
         result=verify_distribution(self.project)
         self.assertEqual(result['status'],'PASS',result)

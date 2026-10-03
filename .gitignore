@@ -24,3 +24,6 @@ qa-*.json
 observed-*.json
 export-*.json
 *.backup.json
+
+# Local Vercel project linkage and build state
+.vercel/

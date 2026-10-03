@@ -26,6 +26,20 @@ Bộ kiểm này xác nhận dấu vân tay của **file đang được phân ph
 
 `tools/check_all.py`, `verify_research.py`, `verify_project_kit.py`, compiler và packager strict vẫn giữ nguyên. Chúng yêu cầu corpus hợp pháp đúng hash được khôi phục thủ công tại các đường dẫn đã ghi; không có tải lại tự động, không tạo dữ liệu giả để vượt gate. App có `app/resources/` đã biên dịch nên chạy được mà không có corpus. Không gọi `build_resources.py` trong quickstart public khi thiếu corpus. [Phạm vi nguồn và quyền](PROVENANCE.md).
 
+## Triển khai Vercel
+
+Cấu hình `vercel.json` dùng preset Other, bỏ install/build command và chỉ phục vụ thư mục `app/`. `.vercelignore` chỉ cho phép app + config vào deployment; tests, README/package của app, manifest compiler và toàn bộ nguồn/tooling/research ngoài app bị loại. Font và giấy phép OFL vẫn đi kèm. Không cần env, API key hoặc backend.
+
+Từ thư mục gốc repo, với Vercel CLI đã cài và đăng nhập đúng tài khoản/scope:
+
+```sh
+vercel link
+vercel --dry --json
+vercel --prod
+```
+
+Chọn đúng project/scope khi link. Xem inventory dry-run trước khi deploy; `.vercel/` là trạng thái máy riêng, được bỏ qua bởi git và public receipt. Lệnh production tạo URL HTTPS; kiểm index, module, font và library VI/EN sau deploy, đồng thời xác nhận `/tests/`, `/research/`, `/tools/` không được phục vụ. Thay origin sang Vercel không chuyển localStorage từ localhost; dùng backup synthetic nếu cần diễn tập. Hosting không bổ sung tài khoản, live AI hay quyền chạy pilot với trẻ. Hướng dẫn cấu hình: [Vercel static configuration](https://vercel.com/docs/project-configuration/vercel-json).
+
 ## Đường hoàn thiện
 
 Chốt product contract giữa người chịu trách nhiệm; chuyên gia giáo dục review LES-02; người hướng dẫn độc lập diễn tập; quyết định dữ liệu/consent và xử lý sự cố; chỉ sau đó quyết định pilot, live AI và vận hành production. Các template, đề xuất độ tuổi/thời lượng/rubric và nội dung kênh vẫn là nháp. Review/readiness do người tự nhập trên máy không xác thực danh tính, không tự cấp phê duyệt.

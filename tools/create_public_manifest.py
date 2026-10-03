@@ -3,7 +3,7 @@
 import hashlib,json
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-excluded={'.git','__pycache__','.venv','node_modules','exports','observed','runtime'}
+excluded={'.git','.vercel','__pycache__','.venv','node_modules','exports','observed','runtime'}
 sources=json.loads((root/'research/sources.json').read_text())
 supplements=json.loads((root/'research/fulltexts/capture-manifest.json').read_text())
 omitted=sorted({'research/'+s['snapshot'] for s in sources if s.get('capture_status')=='captured'}|{'research/fulltexts/'+s['file'] for s in supplements['captures'] if s.get('status')=='captured'})

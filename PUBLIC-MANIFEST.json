@@ -6,8 +6,12 @@
       "sha256": "108621b805c5c01a30ac4a95fb3a015c582c7b05e6378dc591ae115dcfae5faa"
     },
     ".gitignore": {
-      "bytes": 345,
-      "sha256": "ffbf3ce40759246bb2212adbb84981989e28e1a256e39e79e90b4d65f8207c18"
+      "bytes": 402,
+      "sha256": "30827c08c7cb4e6d47c83c773dcd568b725226ea4a48987bff66b969b73c4160"
+    },
+    ".vercelignore": {
+      "bytes": 227,
+      "sha256": "f0ecfb05b49a0abd8d99594fb55b20444d195b16282a92a540fc01aca9580203"
     },
     "AGENTS.md": {
       "bytes": 1600,
@@ -22,12 +26,12 @@
       "sha256": "6dd183d1c57394f3ec769a3cff6826a14aae34d88be8d17fccd655261bd596dd"
     },
     "README.en.md": {
-      "bytes": 3849,
-      "sha256": "ef42ddb09b804e6d5fd08e3aac050052e838124e591f2fede75519dc77b5b09c"
+      "bytes": 5079,
+      "sha256": "228555da49082aa559cea9507a6a13d546c311a4180ee5e0018793bf3d343d04"
     },
     "README.md": {
-      "bytes": 4283,
-      "sha256": "e88afc0553f6598c3ad15d727abc8fea3962e11f15e40cdb460e2fa4c79f7c69"
+      "bytes": 5517,
+      "sha256": "f1d189f123883bbd2d0b37b640979ea383b1c041df8048c8fdab34751a692078"
     },
     "app/README.md": {
       "bytes": 12437,
@@ -1054,12 +1058,12 @@
       "sha256": "7a55ea1712ddd3297e1db924d267bec8c38f4d9e152df2c92fe446738a7dff5a"
     },
     "tools/check_public.py": {
-      "bytes": 9974,
-      "sha256": "77255f9a27f79831ae968286199b9db4a964194d4b4d078ffacd1e0c1a7710b4"
+      "bytes": 9984,
+      "sha256": "e8359439336fc3270f84ad93b3c4dc48eec48b5577b579bce53d88f5d6ce6748"
     },
     "tools/create_public_manifest.py": {
-      "bytes": 1836,
-      "sha256": "cf56fe9a35a62a709f07062b8c15199aa951b867f5755f4d7c4d763267001bf8"
+      "bytes": 1846,
+      "sha256": "d4085b2d9b78398184f10322bea72765071141f954b1dd96f36379d1a2605903"
     },
     "tools/evaluate_responses.py": {
       "bytes": 9715,
@@ -1074,8 +1078,8 @@
       "sha256": "8bf2f428d58a953bf2a7d6bb593455f95c8e2f91bda71666455b57bbaec4d0bb"
     },
     "tools/tests/test_public_distribution.py": {
-      "bytes": 2110,
-      "sha256": "098cc0ed343da2aa53591fd5064afc64354bd9390d8846aa6268cd78de9477fc"
+      "bytes": 2120,
+      "sha256": "19dca90913c6fb4fa1e5fc08b30c8ed4b6acc4372b7c7094c3e7783c89a9b70c"
     },
     "tools/verify_package.py": {
       "bytes": 5927,
@@ -1092,6 +1096,10 @@
     "tools/verify_research.py": {
       "bytes": 19904,
       "sha256": "33306424060fa925c745dc8fb89570b4e8d4337ef13519b5def08ca3fbf235b1"
+    },
+    "vercel.json": {
+      "bytes": 152,
+      "sha256": "497207ce945740835e94119e97ce6df23af164ea10a801f1b176f7bc95018604"
     }
   },
   "limits": "Integrity receipt for available public sources only; missing research corpus cannot be reverified; no cryptographic signature or educational approval.",
