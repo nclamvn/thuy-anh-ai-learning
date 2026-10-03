@@ -14,18 +14,19 @@ import zipfile
 from build_resources import KitError, digest, encode, markdown_links, read_json, require, validate_resource_links
 
 RELEASE='WEB02'
+VISUAL_EDITION='UI04'
 ARCHIVE='app/downloads/project-review-WEB02.zip'
 OUTER='app/downloads/project-review-WEB02.json'
 INNER='CONTENT-MANIFEST.json'
 PREFIX='thuy-anh-ai-learning-WEB02/'
-RUNTIME=('index.html','styles.css','main.js','model.js','provider.js','locale.js','resources-client.js','legacy-p01.js','handoff.js','favicon.svg','assets/brandmark.svg','assets/fonts/Lora.ttf','assets/fonts/Lora-OFL.txt','assets/fonts/BeVietnamPro-Regular.ttf','assets/fonts/BeVietnamPro-SemiBold.ttf','assets/fonts/BeVietnamPro-OFL.txt')
+RUNTIME=('index.html','styles.css','main.js','model.js','provider.js','locale.js','resources-client.js','legacy-p01.js','handoff.js','motion.js','favicon.svg','assets/brandmark.svg','assets/explorer-world.svg','assets/star-path.svg','assets/rose-mark.svg','assets/fonts/Lora.ttf','assets/fonts/Lora-OFL.txt','assets/fonts/BeVietnamPro-Regular.ttf','assets/fonts/BeVietnamPro-SemiBold.ttf','assets/fonts/BeVietnamPro-OFL.txt')
 ROOT=('LICENSE.md','PROVENANCE.md','start-local.command','docs/SHARING-WEB02.md','docs/SHARING-WEB02.en.md')
 REFERENCES=('sources.json','claims.jsonl','domain.yaml','fulltexts/capture-manifest.json')
 BENCHMARKS=('task_cases.json','response_template.json','provider-config.template.json','fixtures/synthetic_responses.json')
 PACKAGE_READMES={
-'README.md':'''# Bộ bàn giao review · WEB02
+'README.md':'''# Bộ bàn giao review · WEB02 · giao diện UI04
 
-Bộ offline này gồm ứng dụng hiện tại, 54 tài liệu VI +54 bản EN, ba bài nháp song ngữ, nguồn học liệu, metadata tham khảo và benchmark/template giả định. [English](README.en.md). Dành cho diễn tập người lớn với dữ liệu giả; không là phê duyệt giáo dục, pilot với trẻ hay dịch vụ production.
+Bộ offline này gồm ứng dụng hiện tại, 54 tài liệu VI +54 bản EN, ba bài nháp song ngữ, nguồn học liệu, metadata tham khảo và benchmark/template giả định. [English](README.en.md). Bản giao diện UI04 có tranh vector nguyên bản về hành tinh, người khám phá và đường sao; motion có nút dừng và theo lựa chọn giảm chuyển động của hệ thống. Dành cho diễn tập người lớn với dữ liệu giả; không là phê duyệt giáo dục, pilot với trẻ hay dịch vụ production.
 
 ## Mở trên máy
 
@@ -47,9 +48,9 @@ CONTENT-MANIFEST.json liệt kê SHA-256/byte count của từng file, release W
 
 Không chứa dữ liệu browser/người tham gia, consent, QA, env/credentials hay phê duyệt người thật. Quyền sử dụng code/tài liệu dự án chưa được chọn license chung; giữ LICENSE/PROVENANCE và font OFL. Review chuyên gia, diễn tập độc lập, product/data/consent và mọi quyết định pilot/live/production còn cần người chịu trách nhiệm.
 ''',
-'README.en.md':'''# Authored review handoff · WEB02
+'README.en.md':'''# Authored review handoff · WEB02 · UI04 visual edition
 
-This offline kit contains the current application, 54 Vietnamese documents +54 authored English counterparts, three bilingual draft lessons, material sources, reference metadata and synthetic benchmark/templates. [Vietnamese](README.md). Scope: adult rehearsal with fictional data; no educational approval, child-pilot approval or production-service claim.
+This offline kit contains the current application, 54 Vietnamese documents +54 authored English counterparts, three bilingual draft lessons, material sources, reference metadata and synthetic benchmark/templates. [Vietnamese](README.md). The UI04 visual edition includes original vector planetary/explorer/star-path artwork with a pause control and system reduced-motion support. Scope: adult rehearsal with fictional data; no educational approval, child-pilot approval or production-service claim.
 
 ## Open locally
 
@@ -102,9 +103,17 @@ def validate_links(files):
             for href in imports:
                 require(href.startswith(('./','../')),f'nonlocal runtime module: {href}')
                 target(name,href)
+            # Literal asset attributes in JS template markup; dynamic interpolation
+            # is covered by the reviewed exact asset allowlist and browser QA.
+            for href in re.findall(r'(?:src|href)=[\"\']([^$<>\"\']+)',body):
+                if '{' not in href and '}' not in href:target(name,href)
         if name.startswith('app/') and name.endswith('.css'):
             for href in re.findall(r"url\(\s*['\"]?([^'\")\s]+)",raw.decode('utf-8')):
                 require(not urlsplit(href).scheme or href.startswith('data:'),f'external stylesheet asset: {href}')
+                target(name,href)
+        if name.startswith('app/') and name.endswith('.svg'):
+            for href in re.findall(r'(?:href|xlink:href)=[\"\']([^\"\']+)',raw.decode('utf-8')):
+                require(not urlsplit(href).scheme or href.startswith('data:'),f'external vector asset: {href}')
                 target(name,href)
         if name=='app/index.html':
             for href in re.findall(r'(?:src|href)=[\"\']([^\"\']+)',raw.decode('utf-8')):target(name,href)
@@ -143,8 +152,8 @@ def collect(project):
 def prepared(project):
     files=collect(project)
     entries={name:{'sha256':digest(raw),'bytes':len(raw)} for name,raw in sorted(files.items())}
-    fingerprint=digest(encode({'release':RELEASE,'files':entries}))
-    manifest={'schemaVersion':1,'dataKind':'authored-review-handoff','release':RELEASE,'sourceFingerprint':fingerprint,'catalogDocuments':54,'authoredLanguageDocuments':108,'documentCountScope':'catalog entries only; package support documents excluded','files':entries,'limits':'Synthetic adult rehearsal; references metadata only; excludes raw third-party works/user records; not a signature or educational approval.'}
+    fingerprint=digest(encode({'release':RELEASE,'visualEdition':VISUAL_EDITION,'files':entries}))
+    manifest={'schemaVersion':1,'dataKind':'authored-review-handoff','release':RELEASE,'visualEdition':VISUAL_EDITION,'sourceFingerprint':fingerprint,'catalogDocuments':54,'authoredLanguageDocuments':108,'documentCountScope':'catalog entries only; package support documents excluded','files':entries,'limits':'Synthetic adult rehearsal; references metadata only; excludes raw third-party works/user records; not a signature or educational approval.'}
     files[INNER]=encode(manifest)
     output=io.BytesIO()
     with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
@@ -153,7 +162,7 @@ def prepared(project):
             info.external_attr=(0o100755 if name=='start-local.command' else 0o100644)<<16
             archive.writestr(info,raw)
     raw=output.getvalue()
-    outer={'schemaVersion':1,'dataKind':'authored-review-download','release':RELEASE,'archive':'project-review-WEB02.zip','sha256':digest(raw),'bytes':len(raw),'fileCount':len(files),'files':{name:{'sha256':digest(payload),'bytes':len(payload)} for name,payload in sorted(files.items())},'sourceFingerprint':fingerprint,'catalogDocuments':54,'authoredLanguageDocuments':108,'documentCountScope':'catalog entries only; package support documents excluded','languageDocuments':{'vi':54,'en':54},'lessons':3,'resourceFiles':len([p for p in files if p.startswith('app/resources/')]),'limits':'Full authored handoff; third-party raw corpus and all browser/user records excluded. No cryptographic signature or human approval.'}
+    outer={'schemaVersion':1,'dataKind':'authored-review-download','release':RELEASE,'visualEdition':VISUAL_EDITION,'archive':'project-review-WEB02.zip','sha256':digest(raw),'bytes':len(raw),'fileCount':len(files),'files':{name:{'sha256':digest(payload),'bytes':len(payload)} for name,payload in sorted(files.items())},'sourceFingerprint':fingerprint,'catalogDocuments':54,'authoredLanguageDocuments':108,'documentCountScope':'catalog entries only; package support documents excluded','languageDocuments':{'vi':54,'en':54},'lessons':3,'resourceFiles':len([p for p in files if p.startswith('app/resources/')]),'limits':'Full authored handoff; third-party raw corpus and all browser/user records excluded. No cryptographic signature or human approval.'}
     return raw,encode(outer),outer
 
 

@@ -17,3 +17,7 @@ Extract the entire directory; run `python3 -B -m http.server 8875 --bind 127.0.0
 From the **public source checkout**: `python3 -B tools/build_share_bundle.py` deliberately rebuilds after source edits; `python3 -B tools/build_share_bundle.py --verify` checks without repairing. An explicit allowlist, confinement and symlink/private-path rejection select input files. Module/CSS asset/Markdown graphs are checked before writing. ZIP timestamps/order are fixed. Freeze app changes, rebuild, refresh the reviewed PUBLIC-MANIFEST, run `tools/check_public.py`, then deploy. Source changes without rebuilding must FAIL.
 
 Reviewers read and observe; review forms do not authenticate identity or approve use with children. Records stay on the device by origin and can disappear after browser data removal. WEB02 adds no accounts, shared database, automatic email/chat submission, live AI or child pilot.
+
+## UI04 visual edition
+
+The handoff retains WEB02 lineage and download URLs; inner/outer manifests record `visualEdition: UI04`. Original vector artwork, star-path motifs and the motion-control module enter through exact allowlisted paths and share content hashes with the code. Motion has a pause control, follows system reduced-motion and stores a separate browser preference; learning records/rubrics stay unchanged. Rebuild/receipt generation follows actual visual review and an explicit freeze. The source receipt edition is UI04-public-03; the original P03 resource compile manifest is retained.

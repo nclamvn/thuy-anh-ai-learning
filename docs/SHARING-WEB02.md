@@ -17,3 +17,7 @@ Giải nén nguyên thư mục; chạy `python3 -B -m http.server 8875 --bind 12
 Từ **public source checkout**: `python3 -B tools/build_share_bundle.py` để rebuild sau sửa có chủ đích; `python3 -B tools/build_share_bundle.py --verify` chỉ kiểm, không tự sửa. Builder chọn source bằng allowlist, chặn symlink/traversal/private và kiểm graph module/CSS asset/Markdown trước khi ghi ZIP. ZIP có timestamp/order cố định. Sau app ổn định, rebuild bundle, refresh PUBLIC-MANIFEST có review, chạy `tools/check_public.py`, mới deploy. Source đổi mà quên rebuild phải FAIL.
 
 Người reviewer đọc và tự quan sát; phiếu không xác thực danh tính, không phê duyệt dùng với trẻ. Dữ liệu giữ trên thiết bị theo origin; xoá/đổi browser có thể mất. Tài khoản, shared database, tự gửi email/chat, live AI và pilot chưa được thêm bởi bản WEB02.
+
+## Giao diện UI04
+
+Dòng phát hành bộ bàn giao vẫn là WEB02 để giữ nguyên link tải; inner/outer manifest ghi `visualEdition: UI04`. Tranh vector nguyên bản, motif đường sao và module điều khiển motion được chọn bằng đúng đường dẫn allowlist và kiểm hash cùng code. Motion có nút dừng, theo system reduced-motion, preference riêng trên browser; nó không đổi bài làm hay rubric. Rebuild/receipt chỉ thực hiện sau khi giao diện thực tế đã được review và freeze. Source receipt mang edition UI04-public-03; resource compiler manifest P03 giữ nguyên.

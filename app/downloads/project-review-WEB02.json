@@ -1,15 +1,15 @@
 {
   "archive": "project-review-WEB02.zip",
   "authoredLanguageDocuments": 108,
-  "bytes": 727061,
+  "bytes": 737616,
   "catalogDocuments": 54,
   "dataKind": "authored-review-download",
   "documentCountScope": "catalog entries only; package support documents excluded",
-  "fileCount": 254,
+  "fileCount": 258,
   "files": {
     "CONTENT-MANIFEST.json": {
-      "bytes": 40874,
-      "sha256": "3c9fc1cde2b24af85888a56852a1f5f0599a66a66626aaa8c2175adb4c490175"
+      "bytes": 41474,
+      "sha256": "4597d4c8cde0cd017bad3b944e639d826eb193eaff05aa277e3a360d8fdc3910"
     },
     "LICENSE.md": {
       "bytes": 764,
@@ -20,16 +20,20 @@
       "sha256": "6dd183d1c57394f3ec769a3cff6826a14aae34d88be8d17fccd655261bd596dd"
     },
     "README.en.md": {
-      "bytes": 2627,
-      "sha256": "03539f113d042e63f5fa648e954b219e3457de09b506ad73e98caaf54b5e5cd5"
+      "bytes": 2792,
+      "sha256": "29038b62b9204647dd68c7399d7e6170712dc4e4ddcc4bf0620381054fa61d7d"
     },
     "README.md": {
-      "bytes": 2812,
-      "sha256": "dcbcc79ae93ec1d2c89651f8d0d3b157de5ef7f82398fe769839fc13d081d991"
+      "bytes": 3031,
+      "sha256": "a25db63d62864e2f68935bffe65fc17302aa8259e9ea5763fabf3fa8fae5d591"
     },
     "app/assets/brandmark.svg": {
       "bytes": 587,
       "sha256": "8455d3458db83ac02b714a8c6e8cbb514f17217a4df377746c4200ad2d59e0c3"
+    },
+    "app/assets/explorer-world.svg": {
+      "bytes": 10477,
+      "sha256": "1a7cbb72a9c1506b6ec8635035d04aafda2e01afdc50dd3a6d56e00f9a413767"
     },
     "app/assets/fonts/BeVietnamPro-OFL.txt": {
       "bytes": 4397,
@@ -51,17 +55,25 @@
       "bytes": 212196,
       "sha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7"
     },
+    "app/assets/rose-mark.svg": {
+      "bytes": 647,
+      "sha256": "449a6c79784f0c9cf4ba241d3bb4fb3702b39d3c3570aac5b039c02894e1d765"
+    },
+    "app/assets/star-path.svg": {
+      "bytes": 545,
+      "sha256": "fb8e31067cdee7efbcaf078961c62d31e68a6be925bc5c08edb0ff377bf5c266"
+    },
     "app/favicon.svg": {
       "bytes": 341,
       "sha256": "b92a0d9dd2a3cf1294c7caf69922e959bb855ef6335f8ef9bedb1b56787f8721"
     },
     "app/handoff.js": {
-      "bytes": 25239,
-      "sha256": "fe29352f6a08024f24a3417a40eb3b79f3404821877e3a497b27f17508e210ea"
+      "bytes": 26499,
+      "sha256": "2f0e6ba4bf4fb735705fae2cff1964c251a1cce83987f9bf76a3a770f794ec5a"
     },
     "app/index.html": {
-      "bytes": 4917,
-      "sha256": "ea36f89ad102129a9786d58c06a63e0164faccee1f1b9c8cb077ceb8c10e7bf3"
+      "bytes": 5032,
+      "sha256": "897a478f6a55acd314c551fe2a10a06f426d0b566bb7e73c21a5c2616a7dfebe"
     },
     "app/legacy-p01.js": {
       "bytes": 12860,
@@ -72,12 +84,16 @@
       "sha256": "f84970703032cc83c1cdef36285b9b2fc6456921012266c6c5deb1b087138eda"
     },
     "app/main.js": {
-      "bytes": 69249,
-      "sha256": "c58fec1ce4fd4d8decaee4a3716053cafae32469d36dd7870ad02000dd47b926"
+      "bytes": 69490,
+      "sha256": "bb5f6c6de916d4e719e347db80bdc698ddbf40fff7bf43a811326c6736fd8960"
     },
     "app/model.js": {
       "bytes": 25099,
       "sha256": "e68f45c769a50e70ae62d6d1cd296c2dc919202e3cc36928c72c0e3f60a48c10"
+    },
+    "app/motion.js": {
+      "bytes": 1842,
+      "sha256": "337518004439a4ce7aa777dd8a112b169f10e39a7ea23930c37f314fde820fd3"
     },
     "app/provider.js": {
       "bytes": 1034,
@@ -536,8 +552,8 @@
       "sha256": "1f923275e4f8c2a0b753fa12e020ea0644beb4ee0331372848edeeae5d674411"
     },
     "app/styles.css": {
-      "bytes": 41483,
-      "sha256": "74099ca709f1bf97000d7dcf9c1f1217138c590ca3f2eaaf9e0728f39e3dde11"
+      "bytes": 53726,
+      "sha256": "f2e5403ef6aa7bc058956b1ae82f0ac97205a5a0c121fd227be98721c108277d"
     },
     "benchmarks/fixtures/synthetic_responses.json": {
       "bytes": 1164,
@@ -556,12 +572,12 @@
       "sha256": "128d25d06587d362d976d1dde1c8c1aa76ccebe968fa748ad03dc7535256f8f3"
     },
     "docs/SHARING-WEB02.en.md": {
-      "bytes": 3167,
-      "sha256": "3f1739d373e0e264fcfe911c030c02119c8e9b1f58f336a9037c276877c549f8"
+      "bytes": 3770,
+      "sha256": "5aaee3f056fe3498a461e1176177e31a02c78819206ed7e1c1a1c033254df1d4"
     },
     "docs/SHARING-WEB02.md": {
-      "bytes": 3422,
-      "sha256": "cf28d8ae988d6a262c52dfebd4042ed0be0eee5417e3f82cba5af7f8650a3e1e"
+      "bytes": 4055,
+      "sha256": "e277c52f7725c882bbe5fcd1bd53d2c4b18f97eb3f60bd8a0f5fea6cdf4f2a35"
     },
     "materials/README.md": {
       "bytes": 8558,
@@ -1033,6 +1049,7 @@
   "release": "WEB02",
   "resourceFiles": 112,
   "schemaVersion": 1,
-  "sha256": "bc72309de9b34452d0fe851b9969f8d0c3bde79262c2505fed747a4601ee3ca8",
-  "sourceFingerprint": "2bad2e137941d588b60440de12d319f900a4ed60631e42ebbe4d23fb32c1ca57"
+  "sha256": "a535a567775e021a73ab98f1454f34dd5bc0ede1768a6c34b9706dad27691fbc",
+  "sourceFingerprint": "aaaac2a6a18a479f68bea6a989e5273ae3177e9ad15468575a68d3ce8c7f659b",
+  "visualEdition": "UI04"
 }

@@ -41,6 +41,10 @@
       "bytes": 587,
       "sha256": "8455d3458db83ac02b714a8c6e8cbb514f17217a4df377746c4200ad2d59e0c3"
     },
+    "app/assets/explorer-world.svg": {
+      "bytes": 10477,
+      "sha256": "1a7cbb72a9c1506b6ec8635035d04aafda2e01afdc50dd3a6d56e00f9a413767"
+    },
     "app/assets/fonts/BeVietnamPro-OFL.txt": {
       "bytes": 4397,
       "sha256": "6b7f8f73609a25ea78c891e34cf37b06f8a676b7ea986e941e43b009110f2a85"
@@ -61,25 +65,33 @@
       "bytes": 212196,
       "sha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7"
     },
+    "app/assets/rose-mark.svg": {
+      "bytes": 647,
+      "sha256": "449a6c79784f0c9cf4ba241d3bb4fb3702b39d3c3570aac5b039c02894e1d765"
+    },
+    "app/assets/star-path.svg": {
+      "bytes": 545,
+      "sha256": "fb8e31067cdee7efbcaf078961c62d31e68a6be925bc5c08edb0ff377bf5c266"
+    },
     "app/downloads/project-review-WEB02.json": {
-      "bytes": 41267,
-      "sha256": "f6ed5714c8c06cefd030ed1bbc178855aa3c44d755fa6840b24aa885d8471d2b"
+      "bytes": 41867,
+      "sha256": "a9f5f10afb147bfd183120b842832676f76d89f40120c9b2d3a447f7b8eb722b"
     },
     "app/downloads/project-review-WEB02.zip": {
-      "bytes": 727061,
-      "sha256": "bc72309de9b34452d0fe851b9969f8d0c3bde79262c2505fed747a4601ee3ca8"
+      "bytes": 737616,
+      "sha256": "a535a567775e021a73ab98f1454f34dd5bc0ede1768a6c34b9706dad27691fbc"
     },
     "app/favicon.svg": {
       "bytes": 341,
       "sha256": "b92a0d9dd2a3cf1294c7caf69922e959bb855ef6335f8ef9bedb1b56787f8721"
     },
     "app/handoff.js": {
-      "bytes": 25239,
-      "sha256": "fe29352f6a08024f24a3417a40eb3b79f3404821877e3a497b27f17508e210ea"
+      "bytes": 26499,
+      "sha256": "2f0e6ba4bf4fb735705fae2cff1964c251a1cce83987f9bf76a3a770f794ec5a"
     },
     "app/index.html": {
-      "bytes": 4917,
-      "sha256": "ea36f89ad102129a9786d58c06a63e0164faccee1f1b9c8cb077ceb8c10e7bf3"
+      "bytes": 5032,
+      "sha256": "897a478f6a55acd314c551fe2a10a06f426d0b566bb7e73c21a5c2616a7dfebe"
     },
     "app/legacy-p01.js": {
       "bytes": 12860,
@@ -90,12 +102,16 @@
       "sha256": "f84970703032cc83c1cdef36285b9b2fc6456921012266c6c5deb1b087138eda"
     },
     "app/main.js": {
-      "bytes": 69249,
-      "sha256": "c58fec1ce4fd4d8decaee4a3716053cafae32469d36dd7870ad02000dd47b926"
+      "bytes": 69490,
+      "sha256": "bb5f6c6de916d4e719e347db80bdc698ddbf40fff7bf43a811326c6736fd8960"
     },
     "app/model.js": {
       "bytes": 25099,
       "sha256": "e68f45c769a50e70ae62d6d1cd296c2dc919202e3cc36928c72c0e3f60a48c10"
+    },
+    "app/motion.js": {
+      "bytes": 1842,
+      "sha256": "337518004439a4ce7aa777dd8a112b169f10e39a7ea23930c37f314fde820fd3"
     },
     "app/package.json": {
       "bytes": 167,
@@ -558,8 +574,8 @@
       "sha256": "1f923275e4f8c2a0b753fa12e020ea0644beb4ee0331372848edeeae5d674411"
     },
     "app/styles.css": {
-      "bytes": 41483,
-      "sha256": "74099ca709f1bf97000d7dcf9c1f1217138c590ca3f2eaaf9e0728f39e3dde11"
+      "bytes": 53726,
+      "sha256": "f2e5403ef6aa7bc058956b1ae82f0ac97205a5a0c121fd227be98721c108277d"
     },
     "app/tests/handoff.test.mjs": {
       "bytes": 6292,
@@ -568,6 +584,10 @@
     "app/tests/model.test.mjs": {
       "bytes": 9770,
       "sha256": "b62a5e3c53bb84e6cb441657d4b0364ee0ca0a761167390ba200f0a9cad51a8b"
+    },
+    "app/tests/motion.test.mjs": {
+      "bytes": 4407,
+      "sha256": "94e76979775324450a5d0ea2101572d20fa14ee0737080a043afdae999ed81aa"
     },
     "app/tests/p03.test.mjs": {
       "bytes": 11983,
@@ -602,12 +622,12 @@
       "sha256": "128d25d06587d362d976d1dde1c8c1aa76ccebe968fa748ad03dc7535256f8f3"
     },
     "docs/SHARING-WEB02.en.md": {
-      "bytes": 3167,
-      "sha256": "3f1739d373e0e264fcfe911c030c02119c8e9b1f58f336a9037c276877c549f8"
+      "bytes": 3770,
+      "sha256": "5aaee3f056fe3498a461e1176177e31a02c78819206ed7e1c1a1c033254df1d4"
     },
     "docs/SHARING-WEB02.md": {
-      "bytes": 3422,
-      "sha256": "cf28d8ae988d6a262c52dfebd4042ed0be0eee5417e3f82cba5af7f8650a3e1e"
+      "bytes": 4055,
+      "sha256": "e277c52f7725c882bbe5fcd1bd53d2c4b18f97eb3f60bd8a0f5fea6cdf4f2a35"
     },
     "docs/images/library-en.png": {
       "bytes": 99917,
@@ -1078,8 +1098,8 @@
       "sha256": "00a8bbc8b04e35836da80e611cf809dcc716e188cc710a933dc34e126558530f"
     },
     "tools/build_share_bundle.py": {
-      "bytes": 15944,
-      "sha256": "d1a58baea02575d15638e9d07cd8508036ae069bdadb5b5d9259b6b16e9503ba"
+      "bytes": 17148,
+      "sha256": "be068168a99a153b7cef03e279ec4fd2b60567c6cafe82fd0911e689021dc554"
     },
     "tools/check_all.py": {
       "bytes": 3394,
@@ -1090,8 +1110,8 @@
       "sha256": "7ce42e104b858429f55ce4a5381f1a3fda9762ef391742c2f65b045e9a027f78"
     },
     "tools/create_public_manifest.py": {
-      "bytes": 1915,
-      "sha256": "d7fc781cca702eac05af6c3a575bec10387599aaac5bc83e33a4b24d9920425c"
+      "bytes": 1914,
+      "sha256": "91b163388d4de4106f4b80fb5291b5962664e62fffac2ecab7085f6df46e1f33"
     },
     "tools/evaluate_responses.py": {
       "bytes": 9715,
@@ -1110,8 +1130,8 @@
       "sha256": "19dca90913c6fb4fa1e5fc08b30c8ed4b6acc4372b7c7094c3e7783c89a9b70c"
     },
     "tools/tests/test_share_bundle.py": {
-      "bytes": 6115,
-      "sha256": "497caf3e8a2558b4bf00e90bde838a363f7733665023523678c91225bccbd1b0"
+      "bytes": 7719,
+      "sha256": "37fea8edd8302ae8886dc0d59e21fb4ae430228e33d31c69b01ccc23fa66168c"
     },
     "tools/verify_package.py": {
       "bytes": 5927,
@@ -1152,6 +1172,6 @@
     "research/snapshots/SRC-12.html",
     "research/snapshots/SRC-13.html"
   ],
-  "release": "WEB02-public-02",
+  "release": "UI04-public-03",
   "schemaVersion": 1
 }

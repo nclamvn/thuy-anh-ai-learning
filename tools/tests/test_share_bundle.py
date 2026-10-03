@@ -9,7 +9,7 @@ import unittest
 import zipfile
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'tools'))
-from build_share_bundle import build, collect, verify, ARCHIVE, OUTER, PREFIX, INNER
+from build_share_bundle import build, collect, verify, ARCHIVE, OUTER, PREFIX, INNER, RUNTIME, VISUAL_EDITION
 from build_resources import KitError, markdown_links
 
 class ShareBundle(unittest.TestCase):
@@ -39,6 +39,31 @@ class ShareBundle(unittest.TestCase):
             for name,row in inner['files'].items():
                 raw=archive.read(PREFIX+name);self.assertEqual(row,{'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()})
             self.assertEqual((archive.getinfo(PREFIX+'start-local.command').external_attr>>16)&0o777,0o755)
+    def test_exact_visual_assets_and_motion_module_are_included_with_hashes(self):
+        build(self.project)
+        with zipfile.ZipFile(self.project/ARCHIVE) as archive:
+            inner=json.loads(archive.read(PREFIX+INNER))
+            outer=json.loads((self.project/OUTER).read_text())
+            self.assertEqual(inner['visualEdition'],VISUAL_EDITION)
+            self.assertEqual(outer['visualEdition'],VISUAL_EDITION)
+            for name in RUNTIME:
+                with self.subTest(name=name):
+                    self.assertIn('app/'+name,inner['files'])
+                    self.assertEqual(archive.read(PREFIX+'app/'+name),(self.project/'app'/name).read_bytes())
+    def test_static_art_reference_inside_runtime_markup_must_resolve(self):
+        path=self.project/'app/main.js';path.write_text(path.read_text()+'''
+const brokenMarkup=`<img src="assets/missing-world.svg">`;
+''')
+        with self.assertRaisesRegex(KitError,'link missing'):collect(self.project)
+    def test_vector_external_reference_or_missing_local_art_fails(self):
+        path=self.project/'app/assets/explorer-world.svg';original=path.read_text()
+        for suffix in ('<image href="missing-art.svg"/>','<image href="https://example.invalid/art.svg"/>'):
+            with self.subTest(suffix=suffix):
+                path.write_text(original+suffix)
+                with self.assertRaisesRegex(KitError,'missing|external'):collect(self.project)
+                path.write_text(original)
+        path.unlink()
+        with self.assertRaisesRegex(KitError,'missing'):collect(self.project)
     def test_unlisted_secrets_raw_user_exports_and_recursion_excluded(self):
         for name in ('.env.local','private/child.csv','app/browser-state.json','app/private.json','research/snapshots/SRC-01.html','research/fulltexts/SRC-08.pdf','app/downloads/unlisted.zip'):
             path=self.project/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_text('Synthetic forbidden sentinel, not a secret')
