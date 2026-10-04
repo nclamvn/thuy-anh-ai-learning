@@ -580,3 +580,5 @@ main[data-view=group] :is(.start-session,.open-session):disabled{background:#e5e
 @media(max-width:700px){.reading-room.has-selected-document .document-pane{order:0}.reading-room.has-selected-document .library-list{order:1}.author-notebook textarea,.correspondence-notebook textarea{padding-left:12px;padding-right:12px}.correspondence-notebook textarea{min-height:165px}}
 /* On a narrow correspondence page, the writing comes before the margin notes. */
 @media(max-width:700px){.correspondence-layout .correspondence-notebook{order:0}.correspondence-layout .letter-margin{order:1}}
+/* Keep long fill-in underscore runs inside reading prose without altering source text. */
+.document-preview p{overflow-wrap:anywhere;word-break:normal}

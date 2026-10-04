@@ -107,11 +107,11 @@
     },
     "app/downloads/project-review-WEB02.json": {
       "bytes": 43192,
-      "sha256": "c0fb91ba528a0412b1aa139a5bce1e7fa3489beb20750f00aab3ae75d09e580a"
+      "sha256": "c0c003951cf24c820937e58d08af298a3d35b6226cf6445dbcff78635569ea00"
     },
     "app/downloads/project-review-WEB02.zip": {
-      "bytes": 760715,
-      "sha256": "1857cbc61d810e9908d231fcef577d204f56eab9261d934e2f4e07dc7210e024"
+      "bytes": 760785,
+      "sha256": "5bcb901f4b437d30038a239b89204904e8060949705b4c4dc346447b07375dd2"
     },
     "app/favicon.svg": {
       "bytes": 341,
@@ -610,8 +610,8 @@
       "sha256": "4fe8311f07feb89a1788bfa96131097989c217013b4be3078d248035296f29fd"
     },
     "app/styles.css": {
-      "bytes": 95395,
-      "sha256": "1f16567541ec84f5fdd24873ae0751585c94affc7f110d22bba2325a5f7c91d9"
+      "bytes": 95548,
+      "sha256": "dda48c44db2d612f913459dfcc86749d0ab0b3e3ab7e14a28b6893b24b74cbd8"
     },
     "app/tests/handoff.test.mjs": {
       "bytes": 6292,

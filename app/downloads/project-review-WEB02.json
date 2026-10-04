@@ -1,7 +1,7 @@
 {
   "archive": "project-review-WEB02.zip",
   "authoredLanguageDocuments": 108,
-  "bytes": 760715,
+  "bytes": 760785,
   "catalogDocuments": 54,
   "dataKind": "authored-review-download",
   "documentCountScope": "catalog entries only; package support documents excluded",
@@ -9,7 +9,7 @@
   "files": {
     "CONTENT-MANIFEST.json": {
       "bytes": 42799,
-      "sha256": "fc98c8bf19455e70dc3f315bc5f24c7dcfb61f1ff0de6874cbb8144141396231"
+      "sha256": "f7b3ad059de998f78bf857ace080e3768071830f3815b6061bdb85524f36d6f1"
     },
     "LICENSE.md": {
       "bytes": 764,
@@ -588,8 +588,8 @@
       "sha256": "4fe8311f07feb89a1788bfa96131097989c217013b4be3078d248035296f29fd"
     },
     "app/styles.css": {
-      "bytes": 95395,
-      "sha256": "1f16567541ec84f5fdd24873ae0751585c94affc7f110d22bba2325a5f7c91d9"
+      "bytes": 95548,
+      "sha256": "dda48c44db2d612f913459dfcc86749d0ab0b3e3ab7e14a28b6893b24b74cbd8"
     },
     "benchmarks/fixtures/synthetic_responses.json": {
       "bytes": 1164,
@@ -1085,7 +1085,7 @@
   "release": "WEB02",
   "resourceFiles": 112,
   "schemaVersion": 1,
-  "sha256": "1857cbc61d810e9908d231fcef577d204f56eab9261d934e2f4e07dc7210e024",
-  "sourceFingerprint": "09800e6ca307be8d16d65435e63fd857091cefaae878a8c726741cdf16fe7c24",
+  "sha256": "5bcb901f4b437d30038a239b89204904e8060949705b4c4dc346447b07375dd2",
+  "sourceFingerprint": "51543a9a3930cfb9f57a4201d1fea8d949ef692e356bc6e892a11c0eb175a139",
   "visualEdition": "UI05"
 }
