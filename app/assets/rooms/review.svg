@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none"><!-- Original atlas illustration; decorative, no learner data. --><defs><pattern id="review-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)"><path d="M0 0V8" stroke="#182b39" stroke-width=".7" opacity=".24"/></pattern></defs><g stroke="#182b39" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+<path d="M28 313q127 -17 266 1q152 24 311 -2" stroke-width="1.1" opacity=".45"/>
+<path d="M79 139l139 -86 145 106 -15 146 -278 -7Z" fill="#b18c49"/>
+<path d="M94 91l231 -15 10 183 -234 6Z" fill="#f5f1e7"/>
+<path d="M101 102l18 -1m192 -12 5 11m-208 150 12 2m186 -5 12 -2" stroke-width="1.2"/>
+<path d="M131 122q63 -7 135 -6m-135 28q80 -7 147 -7m-146 28q84 -6 146 -4m-146 27q69 -4 118 -4m-105 37q15 -12 30 -4q-6 14 9 11q17 -18 26 -5q11 10 27 -2" stroke-width="1.3" opacity=".65"/>
+<path d="M70 143l134 104 158 -87 -12 146 -280 -8Z" fill="#ad6267"/>
+<path d="M71 294l118 -58m161 67 -121 -67M80 157l125 98 145 -84" stroke-width="1.3"/>
+<circle cx="208" cy="251" r="18" fill="#b18c49"/><path d="M208 241l2.5 7.5l7.5 2.5l-7.5 2.5l-2.5 7.5l-2.5 -7.5l-7.5 -2.5l7.5 -2.5Z" fill="#f5f1e7" stroke-width="1.2"/>
+<path d="M378 271q-36 -9 -36 -43q10 -33 37 -38q35 -5 46 20q11 34 -16 51q-28 14 -39 2q-13 -13 -4 -25q12 -15 20 -6q8 8 0 14" fill="#ad6267"/>
+<path d="M343 230q8 -34 35 -30q-18 9 -24 27q-4 12 4 20" fill="#f5f1e7"/>
+<path d="M393 202q9 -45 36 -52q23 3 39 27q30 37 12 90q-17 33 -80 22q-20 -11 -11 -36Z" fill="#ad6267"/>
+<path d="M403 253q25 -22 20 -61q23 7 29 30q16 33 -4 57q-27 14 -47 -2" fill="#f5f1e7"/>
+<path d="M421 285l-3 24 -24 2q-6 -13 15 -18m42 -4 3 19 -23 3q-6 -13 13 -17" fill="#182b39"/>
+<path d="M428 187q-35 -16 -41 -42q-4 -31 6 -68l25 24q30 -20 57 -1l30 -20q10 35 0 56q-9 34 -51 48Z" fill="#ad6267"/>
+<path d="M395 91l18 18 -17 8Zm97 5 -20 14 24 7Z" fill="#b18c49"/>
+<path d="M392 134q28 -3 47 24q14 -26 54 -25q-7 30 -45 47q-43 -12 -56 -46Z" fill="#f5f1e7"/>
+<path d="M414 134q8 -7 14 -1m40 0q8 -6 14 1m-42 25 9 4 8 -5 -8 -2Z" fill="#182b39" stroke-width="1.4"/>
+<path d="M449 166v9m0 -2 -8 2m8 -2 8 2m-62 -25 -18 -1m20 7 -20 3m114 -6 17 -1m-19 8 19 3" stroke-width="1.1"/>
+<path d="M423 183q19 13 45 -5l-1 11q-27 19 -44 4Z" fill="#728c78"/>
+<path d="M434 193l-8 23 11 -3 4 7 10 -30" fill="#b18c49"/>
+<path d="M513 305q17 -23 42 -18m-35 20q-9 -22 -6 -34q16 -1 16 15m16 1q11 -30 27 -20q-3 18 -24 23" fill="#728c78" stroke-width="1.4"/>
+<path d="M569 284q9 -14 22 -6l6 9 -33 3Z" fill="#ad6267"/><path d="M578 290v14m-5 2h12"/>
+<path d="M87 61q38 -28 78 -17m-7 1 12 -7m-12 7 13 4m352 -1q14 -10 25 0q13 -9 23 1" stroke-width="1.2"/>
+<path d="M367 63l1.75 5.25l5.25 1.75l-5.25 1.75l-1.75 5.25l-1.75 -5.25l-5.25 -1.75l5.25 -1.75Z" fill="#b18c49" stroke-width="1.2"/><path d="M548 148l1.5 4.5l4.5 1.5l-4.5 1.5l-1.5 4.5l-1.5 -4.5l-4.5 -1.5l4.5 -1.5Z" fill="#b18c49" stroke-width="1.2"/>
+</g></svg>

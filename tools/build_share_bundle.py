@@ -11,22 +11,24 @@ from urllib.parse import unquote, urlsplit
 from pathlib import Path, PurePosixPath
 import tempfile
 import zipfile
+import xml.etree.ElementTree as ET
 from build_resources import KitError, digest, encode, markdown_links, read_json, require, validate_resource_links
 
 RELEASE='WEB02'
-VISUAL_EDITION='UI04'
+VISUAL_EDITION='UI05'
+ROOM_ASSETS=tuple('assets/rooms/'+name+'.svg' for name in ('group','activity','session','reports','workbench','library','guide','review'))
 ARCHIVE='app/downloads/project-review-WEB02.zip'
 OUTER='app/downloads/project-review-WEB02.json'
 INNER='CONTENT-MANIFEST.json'
 PREFIX='thuy-anh-ai-learning-WEB02/'
-RUNTIME=('index.html','styles.css','main.js','model.js','provider.js','locale.js','resources-client.js','legacy-p01.js','handoff.js','motion.js','favicon.svg','assets/brandmark.svg','assets/explorer-world.svg','assets/star-path.svg','assets/rose-mark.svg','assets/fonts/Lora.ttf','assets/fonts/Lora-OFL.txt','assets/fonts/BeVietnamPro-Regular.ttf','assets/fonts/BeVietnamPro-SemiBold.ttf','assets/fonts/BeVietnamPro-OFL.txt')
+RUNTIME=('index.html','styles.css','main.js','model.js','provider.js','locale.js','resources-client.js','legacy-p01.js','handoff.js','motion.js','room-ui.js','favicon.svg','assets/brandmark.svg','assets/explorer-world.svg','assets/star-path.svg','assets/rose-mark.svg',*ROOM_ASSETS,'assets/fonts/Lora.ttf','assets/fonts/Lora-OFL.txt','assets/fonts/BeVietnamPro-Regular.ttf','assets/fonts/BeVietnamPro-SemiBold.ttf','assets/fonts/BeVietnamPro-OFL.txt')
 ROOT=('LICENSE.md','PROVENANCE.md','start-local.command','docs/SHARING-WEB02.md','docs/SHARING-WEB02.en.md')
 REFERENCES=('sources.json','claims.jsonl','domain.yaml','fulltexts/capture-manifest.json')
 BENCHMARKS=('task_cases.json','response_template.json','provider-config.template.json','fixtures/synthetic_responses.json')
 PACKAGE_READMES={
-'README.md':'''# Bộ bàn giao review · WEB02 · giao diện UI04
+'README.md':'''# Bộ bàn giao review · WEB02 · giao diện UI05
 
-Bộ offline này gồm ứng dụng hiện tại, 54 tài liệu VI +54 bản EN, ba bài nháp song ngữ, nguồn học liệu, metadata tham khảo và benchmark/template giả định. [English](README.en.md). Bản giao diện UI04 có tranh vector nguyên bản về hành tinh, người khám phá và đường sao; motion có nút dừng và theo lựa chọn giảm chuyển động của hệ thống. Dành cho diễn tập người lớn với dữ liệu giả; không là phê duyệt giáo dục, pilot với trẻ hay dịch vụ production.
+Bộ offline này gồm ứng dụng hiện tại, 54 tài liệu VI +54 bản EN, ba bài nháp song ngữ, nguồn học liệu, metadata tham khảo và benchmark/template giả định. [English](README.en.md). Bản giao diện UI05 giữ tranh hành tinh/người khám phá và thêm tám phòng làm việc có tranh vector nguyên bản riêng: nhóm, biên soạn, buổi học, nhật ký, chuẩn bị, thư viện, hướng dẫn và góp ý; motion có nút dừng và theo lựa chọn giảm chuyển động của hệ thống. Dành cho diễn tập người lớn với dữ liệu giả; không là phê duyệt giáo dục, pilot với trẻ hay dịch vụ production.
 
 ## Mở trên máy
 
@@ -48,9 +50,9 @@ CONTENT-MANIFEST.json liệt kê SHA-256/byte count của từng file, release W
 
 Không chứa dữ liệu browser/người tham gia, consent, QA, env/credentials hay phê duyệt người thật. Quyền sử dụng code/tài liệu dự án chưa được chọn license chung; giữ LICENSE/PROVENANCE và font OFL. Review chuyên gia, diễn tập độc lập, product/data/consent và mọi quyết định pilot/live/production còn cần người chịu trách nhiệm.
 ''',
-'README.en.md':'''# Authored review handoff · WEB02 · UI04 visual edition
+'README.en.md':'''# Authored review handoff · WEB02 · UI05 visual edition
 
-This offline kit contains the current application, 54 Vietnamese documents +54 authored English counterparts, three bilingual draft lessons, material sources, reference metadata and synthetic benchmark/templates. [Vietnamese](README.md). The UI04 visual edition includes original vector planetary/explorer/star-path artwork with a pause control and system reduced-motion support. Scope: adult rehearsal with fictional data; no educational approval, child-pilot approval or production-service claim.
+This offline kit contains the current application, 54 Vietnamese documents +54 authored English counterparts, three bilingual draft lessons, material sources, reference metadata and synthetic benchmark/templates. [Vietnamese](README.md). The UI05 visual edition retains original planetary/explorer artwork and adds eight purpose-specific illustrated working rooms: group, authoring, session, journal, preparation, library, guide and correspondence, with a pause control and system reduced-motion support. Scope: adult rehearsal with fictional data; no educational approval, child-pilot approval or production-service claim.
 
 ## Open locally
 
@@ -105,18 +107,34 @@ def validate_links(files):
                 target(name,href)
             # Literal asset attributes in JS template markup; dynamic interpolation
             # is covered by the reviewed exact asset allowlist and browser QA.
-            for href in re.findall(r'(?:src|href)=[\"\']([^$<>\"\']+)',body):
-                if '{' not in href and '}' not in href:target(name,href)
+            for _,href in re.findall(r'''(?:src|href)=(["'])([^<>]*?)\1''',body):
+                if not any(marker in href for marker in ('$', '{', '}')):target(name,href)
         if name.startswith('app/') and name.endswith('.css'):
             for href in re.findall(r"url\(\s*['\"]?([^'\")\s]+)",raw.decode('utf-8')):
                 require(not urlsplit(href).scheme or href.startswith('data:'),f'external stylesheet asset: {href}')
                 target(name,href)
         if name.startswith('app/') and name.endswith('.svg'):
+            body=raw.decode('utf-8')
+            require('@import' not in body.lower(),f'external vector stylesheet import forbidden: {name}')
+            for href in re.findall(r"url\(\s*['\"]?([^'\")\s]+)",body):
+                require(not urlsplit(href).scheme or href.startswith('data:'),f'external vector asset: {href}')
+                target(name,href)
             for href in re.findall(r'(?:href|xlink:href)=[\"\']([^\"\']+)',raw.decode('utf-8')):
                 require(not urlsplit(href).scheme or href.startswith('data:'),f'external vector asset: {href}')
                 target(name,href)
         if name=='app/index.html':
             for href in re.findall(r'(?:src|href)=[\"\']([^\"\']+)',raw.decode('utf-8')):target(name,href)
+
+
+def validate_room_art(raw,name):
+    require(b'<!DOCTYPE' not in raw.upper(),f'room artwork document type forbidden: {name}')
+    try:root=ET.fromstring(raw)
+    except ET.ParseError as exc:raise KitError(f'invalid room artwork XML: {name}') from exc
+    require(root.tag.rsplit('}',1)[-1]=='svg' and root.get('viewBox')=='0 0 640 360',f'room artwork viewport contract invalid: {name}')
+    for node in root.iter():
+        tag=node.tag.rsplit('}',1)[-1]
+        require(tag not in {'script','foreignObject','animate','animateTransform','animateMotion','set'},f'active/animated room artwork forbidden: {name}')
+        require(not any(key.rsplit('}',1)[-1].lower().startswith('on') for key in node.attrib),f'room artwork event handler forbidden: {name}')
 
 
 def collect(project):
@@ -125,6 +143,7 @@ def collect(project):
         require(name not in files,f'duplicate share path: {name}')
         files[name]=safe_file(project,name).read_bytes()
     for relative in RUNTIME:add('app/'+relative)
+    for relative in ROOM_ASSETS:validate_room_art(files['app/'+relative],relative)
     resources,_=read_json(project/'app/resources/manifest.json')
     require(resources['fingerprint']==digest(encode({'inputs':resources['inputs'],'outputs':resources['outputs']})),'frozen resource manifest corrupt')
     for name,sha in resources['outputs'].items():

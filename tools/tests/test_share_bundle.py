@@ -9,7 +9,7 @@ import unittest
 import zipfile
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'tools'))
-from build_share_bundle import build, collect, verify, ARCHIVE, OUTER, PREFIX, INNER, RUNTIME, VISUAL_EDITION
+from build_share_bundle import build, collect, verify, ARCHIVE, OUTER, PREFIX, INNER, RUNTIME, VISUAL_EDITION, ROOM_ASSETS
 from build_resources import KitError, markdown_links
 
 class ShareBundle(unittest.TestCase):
@@ -50,14 +50,37 @@ class ShareBundle(unittest.TestCase):
                 with self.subTest(name=name):
                     self.assertIn('app/'+name,inner['files'])
                     self.assertEqual(archive.read(PREFIX+'app/'+name),(self.project/'app'/name).read_bytes())
+    def test_all_eight_room_artworks_and_room_renderer_are_portable(self):
+        self.assertEqual(len(ROOM_ASSETS),8)
+        build(self.project)
+        with zipfile.ZipFile(self.project/ARCHIVE) as archive:
+            manifest=json.loads(archive.read(PREFIX+INNER))
+            for name in ('room-ui.js',*ROOM_ASSETS):
+                with self.subTest(name=name):
+                    self.assertIn('app/'+name,manifest['files'])
+                    self.assertEqual(archive.read(PREFIX+'app/'+name),(self.project/'app'/name).read_bytes())
+        missing=self.project/'app'/ROOM_ASSETS[-1];missing.unlink()
+        with self.assertRaisesRegex(KitError,'source missing'):collect(self.project)
+    def test_room_svg_viewport_and_static_safety_contract_enforced(self):
+        path=self.project/'app'/ROOM_ASSETS[0];original=path.read_text()
+        for changed in (original.replace('0 0 640 360','0 0 1 1'),original.replace('</svg>','<script>/* synthetic rejected fixture */</script></svg>'),original.replace('</svg>','<animate attributeName="opacity" dur="1s"/></svg>')):
+            with self.subTest(changed=changed[-100:]):
+                path.write_text(changed)
+                with self.assertRaisesRegex(KitError,'contract|forbidden'):collect(self.project)
+        path.write_text(original)
     def test_static_art_reference_inside_runtime_markup_must_resolve(self):
-        path=self.project/'app/main.js';path.write_text(path.read_text()+'''
+        path=self.project/'app/main.js';original=path.read_text()
+        path.write_text(original+'''
+const dynamicMarkup=`<img src="assets/rooms/${route}.svg">`;
+''')
+        self.assertIn('app/assets/rooms/group.svg',collect(self.project))
+        path.write_text(original+'''
 const brokenMarkup=`<img src="assets/missing-world.svg">`;
 ''')
         with self.assertRaisesRegex(KitError,'link missing'):collect(self.project)
     def test_vector_external_reference_or_missing_local_art_fails(self):
         path=self.project/'app/assets/explorer-world.svg';original=path.read_text()
-        for suffix in ('<image href="missing-art.svg"/>','<image href="https://example.invalid/art.svg"/>'):
+        for suffix in ('<image href="missing-art.svg"/>','<image href="https://example.invalid/art.svg"/>','<style>path { fill: url(https://example.invalid/paint.svg); }</style>'):
             with self.subTest(suffix=suffix):
                 path.write_text(original+suffix)
                 with self.assertRaisesRegex(KitError,'missing|external'):collect(self.project)

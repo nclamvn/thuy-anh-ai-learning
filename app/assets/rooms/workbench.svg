@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none"><!-- Original atlas illustration; decorative, no learner data. --><defs><pattern id="workbench-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)"><path d="M0 0V8" stroke="#182b39" stroke-width=".7" opacity=".24"/></pattern></defs><g stroke="#182b39" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+<path d="M40 277l71 -25 465 7 31 33 -518 11Z" fill="#b18c49"/><path d="M40 277l71 -25 465 7 31 33 -518 11Z" fill="url(#workbench-hatch)" stroke="none" opacity=".52"/><path d="M85 286l485 -9m-487 28 -5 32m36 -34 -1 30m437 -34 12 34m-30 -34 3 35"/>
+<path d="M75 205l27 -97q61 -18 109 17l-49 88Z" fill="#f5f1e7"/>
+<path d="M85 193l32 -66q40 -10 74 8l-31 53Z" fill="#b18c49"/>
+<path d="M101 212q43 27 74 -14m-17 -1 58 -84m-53 86 -22 -70m17 55 -15 -30M94 209l12 14m24 -4 4 16m21 -25 8 13m22 -32 11 9m1 -29 11 6"/>
+<circle cx="159" cy="198" r="7" fill="#ad6267"/><path d="M151 212l-26 36 18 5 20 -41m29 -70 27 -4 4 -19 -27 5Z" fill="#728c78"/>
+<circle cx="335" cy="89" r="65" fill="#f5f1e7"/><circle cx="335" cy="89" r="52" fill="url(#workbench-hatch)"/><circle cx="335" cy="89" r="43" fill="#f5f1e7"/><path d="M282 89l7 0" stroke-width="1.1"/><path d="M297 51l5 5" stroke-width="1.1"/><path d="M335 36l0 7" stroke-width="1.1"/><path d="M373 51l-5 5" stroke-width="1.1"/><path d="M388 89l-7 0" stroke-width="1.1"/><path d="M373 127l-5 -5" stroke-width="1.1"/><path d="M335 142l0 -7" stroke-width="1.1"/><path d="M297 127l5 -5" stroke-width="1.1"/>
+<path d="M335 44l10 45 -10 45 -10 -45Z" fill="#ad6267"/><path d="M291 89l44 -10 44 10 -44 10Z" fill="#f5f1e7"/>
+<circle cx="335" cy="89" r="5" fill="#b18c49"/><path d="M325 24v-10h20v10"/>
+<path d="M251 179l126 -24 18 94 -128 22Z" fill="#f5f1e7"/><path d="M261 189l112 -22m-107 41 66 -14m-58 34 99 -19m-94 32 73 -14" stroke-width="1.2"/>
+<path d="M269 238q16 -54 46 -67m-28 39q-21 -14 -20 -25q21 0 20 25m16 -20q25 3 30 -12q-19 -6 -30 12m-15 36q26 5 35 -9q-17 -9 -35 9" fill="#728c78" stroke-width="1.35"/>
+<path d="M451 58h49v9q-1 42 -25 50q27 12 25 48v9h-49v-9q-2 -38 24 -48q-23 -13 -24 -50Z" fill="#f5f1e7"/>
+<path d="M447 57h59m-59 117h59m-52 -106q20 33 42 0m-38 92q21 -25 35 0" fill="#b18c49"/>
+<path d="M475 117v30m-5 11 10 1" stroke-width="1.2"/>
+<path d="M463 209q25 -31 51 -6l18 66q-29 15 -70 1Z" fill="#ad6267"/>
+<path d="M465 209q20 23 50 -6m-38 -7q-5 -30 15 -31q15 -1 17 28m-25 22 2 17h12l2 -22m-10 10v-4m-23 52 51 -2"/>
+<path d="M543 251q-7 -20 3 -41q12 -15 22 -3q14 19 10 45m-30 -8q17 -8 28 3m-26 -24q-20 -4 -17 13q6 12 15 7" fill="#f5f1e7"/>
+<path d="M130 295q58 -46 92 -11q18 30 -7 36q-22 9 -26 -7q-5 -17 7 -21q13 -4 14 8q-2 11 -10 7m-22 -18q-41 -13 -58 10" stroke="#728c78" stroke-width="5"/>
+<path d="M127 292q50 -39 82 -15m-5 15 7 13" stroke-width=".9"/>
+<path d="M219 52l1.75 5.25l5.25 1.75l-5.25 1.75l-1.75 5.25l-1.75 -5.25l-5.25 -1.75l5.25 -1.75Z" fill="#b18c49" stroke-width="1.2"/><path d="M552 102l1.5 4.5l4.5 1.5l-4.5 1.5l-1.5 4.5l-1.5 -4.5l-4.5 -1.5l4.5 -1.5Z" fill="#b18c49" stroke-width="1.2"/>
+</g></svg>

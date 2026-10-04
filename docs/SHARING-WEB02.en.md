@@ -18,6 +18,6 @@ From the **public source checkout**: `python3 -B tools/build_share_bundle.py` de
 
 Reviewers read and observe; review forms do not authenticate identity or approve use with children. Records stay on the device by origin and can disappear after browser data removal. WEB02 adds no accounts, shared database, automatic email/chat submission, live AI or child pilot.
 
-## UI04 visual edition
+## UI05 visual edition
 
-The handoff retains WEB02 lineage and download URLs; inner/outer manifests record `visualEdition: UI04`. Original vector artwork, star-path motifs and the motion-control module enter through exact allowlisted paths and share content hashes with the code. Motion has a pause control, follows system reduced-motion and stores a separate browser preference; learning records/rubrics stay unchanged. Rebuild/receipt generation follows actual visual review and an explicit freeze. The source receipt edition is UI04-public-03; the original P03 resource compile manifest is retained.
+The handoff retains WEB02 lineage/download URLs. Inner/outer manifests record `visualEdition: UI05`; the source receipt is UI05-public-04. Eight purposeful working rooms have original local artwork under `app/assets/rooms/`: group, activity, session, reports, workbench, library, guide and review. The exact `room-ui.js` module and all eight SVG paths enter graph/hash validation and the bundle; no folder glob can capture private records. Existing pause/reduced-motion, business fields, work/snapshots and local-only scope remain authoritative. Artifact regeneration follows actual all-room QA and an explicit freeze; the original P03 authored/resource compiler corpus stays unchanged.

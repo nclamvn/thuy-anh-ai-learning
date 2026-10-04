@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none"><!-- Original atlas illustration; decorative, no learner data. --><defs><pattern id="activity-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)"><path d="M0 0V8" stroke="#182b39" stroke-width=".7" opacity=".24"/></pattern></defs><g stroke="#182b39" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+<path d="M33 273q130 -18 266 -11q145 -7 306 9l-14 28q-238 22 -541 1Z" fill="#b18c49"/><path d="M33 273q130 -18 266 -11q145 -7 306 9l-14 28q-238 22 -541 1Z" fill="url(#activity-hatch)" stroke="none" opacity=".52"/>
+<path d="M46 279q209 15 548 0m-531 22 -6 38m28 -36 -3 34m477 -35 12 35m-31 -36 10 36M91 282l81 2m331 -2 33 -2"/>
+<path d="M175 127q73 -33 157 -4q62 -40 146 -28l19 151q-93 -7 -155 24q-79 -31 -151 -15Z" fill="#ad6267"/>
+<path d="M182 121q78 -30 149 -2q70 -33 137 -29l16 148q-82 -4 -142 24q-78 -26 -147 -17Z" fill="#f5f1e7"/>
+<path d="M331 120l12 140m-5 -130 9 119m-154 -121q69 -18 125 0m37 0q50 -23 104 -26m-262 140q73 -3 134 19m14 0q58 -29 132 -28" stroke-width="1.2"/>
+<path d="M210 157q43.2 -2 96 0" stroke-width="1" opacity=".45"/><path d="M210 169q43.2 -2 96 0" stroke-width="1" opacity=".45"/><path d="M210 181q43.2 -2 96 0" stroke-width="1" opacity=".45"/><path d="M210 193q43.2 -2 96 0" stroke-width="1" opacity=".45"/><path d="M215 222q25.2 -2 56 0" stroke-width="1" opacity=".45"/><path d="M215 234q25.2 -2 56 0" stroke-width="1" opacity=".45"/><path d="M363 154q37.800000000000004 -2 84 0" stroke-width="1" opacity=".45"/><path d="M363 166q37.800000000000004 -2 84 0" stroke-width="1" opacity=".45"/><path d="M363 178q37.800000000000004 -2 84 0" stroke-width="1" opacity=".45"/>
+<path d="M375 235q6 -33 27 -50m-17 28q-23 -7 -20 -21q20 0 20 21m9 -16q20 6 25 -10q-18 -8 -25 10m-15 31q20 7 29 -7q-15 -10 -29 7" fill="#b18c49" stroke-width="1.3"/>
+<path d="M312 254l6 42 10 -9 11 4 -3 -31" fill="#728c78"/>
+<path d="M50 206l97 -10 5 23 -95 12Z" fill="#728c78"/>
+<path d="M56 208l87 -7m-86 17 85 -8m-76 15 -3 -12m67 -16 4 24" stroke-width="1.1"/>
+<path d="M58 184l79 -6 5 19 -88 8Z" fill="#ad6267"/>
+<path d="M58 183l12 -14 74 -7 11 17 -94 12Z" fill="#f5f1e7"/>
+<path d="M74 171l67 -7m-78 25 77 -8m-46 -8 3 9" stroke-width="1.2"/>
+<path d="M96 163q-6 -12 -14 -13q-8 -21 6 -23q12 4 13 21q15 -22 26 -17q11 13 -4 25q-13 5 -17 11" fill="#728c78"/>
+<path d="M102 161l-7 -18m8 16 13 -17" stroke-width="1.1"/>
+<path d="M508 205l25 -4 13 48 -38 5 -11 -35Z" fill="#182b39"/>
+<ellipse cx="519" cy="203" rx="13" ry="5" fill="#f5f1e7"/>
+<path d="M522 196q-11 -44 12 -89q19 -43 64 -65q6 56 -30 102q-20 30 -46 52Z" fill="#b18c49"/>
+<path d="M522 206q23 -82 70 -155m-61 116 27 -1m-16 -23 28 -7m-21 -14 28 -10m-15 -8 24 -13m-37 14 -3 -14m-8 37 -6 -20m-4 41 -4 -25m-1 43 -9 -26" stroke-width="1.2"/>
+<path d="M81 270l94 -24 4 7 -94 26Z" fill="#f5f1e7"/>
+<path d="M178 247l12 -1 -11 7m-94 23 8 -1"/>
+<path d="M66 94q-11 -35 20 -51q36 -19 62 9m-77 43q-4 -32 25 -41q29 -10 48 9m-58 14 6 18m27 -27 10 13m-25 -44 -1 -9" stroke-width="1.3" opacity=".6"/>
+<path d="M448 57q-13 -3 -11 -14q2 -12 14 -8q12 7 5 17l-8 5" fill="#ad6267"/><path d="M445 55q-8 16 -30 16" stroke-width="1.1"/>
+<path d="M310 53l1.5 4.5l4.5 1.5l-4.5 1.5l-1.5 4.5l-1.5 -4.5l-4.5 -1.5l4.5 -1.5Z" fill="#b18c49" stroke-width="1.2"/><path d="M385 79l1.25 3.75l3.75 1.25l-3.75 1.25l-1.25 3.75l-1.25 -3.75l-3.75 -1.25l3.75 -1.25Z" fill="#b18c49" stroke-width="1.2"/>
+</g></svg>

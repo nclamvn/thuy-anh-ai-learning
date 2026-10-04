@@ -18,6 +18,6 @@ Từ **public source checkout**: `python3 -B tools/build_share_bundle.py` để 
 
 Người reviewer đọc và tự quan sát; phiếu không xác thực danh tính, không phê duyệt dùng với trẻ. Dữ liệu giữ trên thiết bị theo origin; xoá/đổi browser có thể mất. Tài khoản, shared database, tự gửi email/chat, live AI và pilot chưa được thêm bởi bản WEB02.
 
-## Giao diện UI04
+## Giao diện UI05
 
-Dòng phát hành bộ bàn giao vẫn là WEB02 để giữ nguyên link tải; inner/outer manifest ghi `visualEdition: UI04`. Tranh vector nguyên bản, motif đường sao và module điều khiển motion được chọn bằng đúng đường dẫn allowlist và kiểm hash cùng code. Motion có nút dừng, theo system reduced-motion, preference riêng trên browser; nó không đổi bài làm hay rubric. Rebuild/receipt chỉ thực hiện sau khi giao diện thực tế đã được review và freeze. Source receipt mang edition UI04-public-03; resource compiler manifest P03 giữ nguyên.
+Dòng bộ bàn giao vẫn là WEB02 để giữ link tải; inner/outer manifest ghi `visualEdition: UI05`, source receipt là UI05-public-04. Tám phòng làm việc có tranh nguyên bản riêng ở `app/assets/rooms/`: group, activity, session, reports, workbench, library, guide và review. Module `room-ui.js` cùng đủ tám SVG được liệt kê chính xác, kiểm graph/hash và đóng gói; không glob toàn thư mục để vô tình thu dữ liệu riêng. Giao diện vẫn giữ motion pause/reduced-motion, mọi trường nghiệp vụ, bài làm/snapshot và local-only scope. Artifact chỉ rebuild sau actual all-room QA và explicit freeze; P03 authored/resource compiler corpus giữ nguyên.
