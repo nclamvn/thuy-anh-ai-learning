@@ -3,10 +3,13 @@
 from __future__ import annotations
 import argparse
 import io
+from html.parser import HTMLParser
 import json
 import os
 import posixpath
 import re
+import subprocess
+import sys
 from urllib.parse import unquote, urlsplit
 from pathlib import Path, PurePosixPath
 import tempfile
@@ -15,20 +18,21 @@ import xml.etree.ElementTree as ET
 from build_resources import KitError, digest, encode, markdown_links, read_json, require, validate_resource_links
 
 RELEASE='WEB02'
-VISUAL_EDITION='UI05'
+VISUAL_EDITION='R04'
 ROOM_ASSETS=tuple('assets/rooms/'+name+'.svg' for name in ('group','activity','session','reports','workbench','library','guide','review'))
 ARCHIVE='app/downloads/project-review-WEB02.zip'
 OUTER='app/downloads/project-review-WEB02.json'
 INNER='CONTENT-MANIFEST.json'
 PREFIX='thuy-anh-ai-learning-WEB02/'
-RUNTIME=('index.html','styles.css','main.js','model.js','provider.js','locale.js','resources-client.js','legacy-p01.js','handoff.js','motion.js','room-ui.js','favicon.svg','assets/brandmark.svg','assets/explorer-world.svg','assets/star-path.svg','assets/rose-mark.svg',*ROOM_ASSETS,'assets/fonts/Lora.ttf','assets/fonts/Lora-OFL.txt','assets/fonts/BeVietnamPro-Regular.ttf','assets/fonts/BeVietnamPro-SemiBold.ttf','assets/fonts/BeVietnamPro-OFL.txt')
+RUNTIME=('index.html','styles.css','main.js','model.js','provider.js','locale.js','resources-client.js','legacy-p01.js','handoff.js','motion.js','room-ui.js','references-client.js','favicon.svg','assets/brandmark.svg','assets/explorer-world.svg','assets/star-path.svg','assets/rose-mark.svg',*ROOM_ASSETS,'assets/fonts/Lora.ttf','assets/fonts/Lora-OFL.txt','assets/fonts/BeVietnamPro-Regular.ttf','assets/fonts/BeVietnamPro-SemiBold.ttf','assets/fonts/BeVietnamPro-OFL.txt')
 ROOT=('LICENSE.md','PROVENANCE.md','start-local.command','docs/SHARING-WEB02.md','docs/SHARING-WEB02.en.md')
+REFERENCE_ASSETS=('references/catalog.json','references/report.html','references/build.json')
 REFERENCES=('sources.json','claims.jsonl','domain.yaml','fulltexts/capture-manifest.json')
 BENCHMARKS=('task_cases.json','response_template.json','provider-config.template.json','fixtures/synthetic_responses.json')
 PACKAGE_READMES={
-'README.md':'''# Bộ bàn giao review · WEB02 · giao diện UI05
+'README.md':'''# Bộ bàn giao review · WEB02 · bản tích hợp R04
 
-Bộ offline này gồm ứng dụng hiện tại, 54 tài liệu VI +54 bản EN, ba bài nháp song ngữ, nguồn học liệu, metadata tham khảo và benchmark/template giả định. [English](README.en.md). Bản giao diện UI05 giữ tranh hành tinh/người khám phá và thêm tám phòng làm việc có tranh vector nguyên bản riêng: nhóm, biên soạn, buổi học, nhật ký, chuẩn bị, thư viện, hướng dẫn và góp ý; motion có nút dừng và theo lựa chọn giảm chuyển động của hệ thống. Dành cho diễn tập người lớn với dữ liệu giả; không là phê duyệt giáo dục, pilot với trẻ hay dịch vụ production.
+Bộ offline này gồm ứng dụng hiện tại, 54 tài liệu VI +54 bản EN, ba bài nháp song ngữ, nguồn học liệu, metadata tham khảo và benchmark/template giả định. [English](README.en.md). Bản tích hợp R04 bổ sung danh mục 14 tài liệu tham chiếu và hồ sơ nghiên cứu song ngữ; giữ tranh hành tinh/người khám phá và thêm tám phòng làm việc có tranh vector nguyên bản riêng: nhóm, biên soạn, buổi học, nhật ký, chuẩn bị, thư viện, hướng dẫn và góp ý; motion có nút dừng và theo lựa chọn giảm chuyển động của hệ thống. Dành cho diễn tập người lớn với dữ liệu giả; không là phê duyệt giáo dục, pilot với trẻ hay dịch vụ production.
 
 ## Mở trên máy
 
@@ -50,9 +54,9 @@ CONTENT-MANIFEST.json liệt kê SHA-256/byte count của từng file, release W
 
 Không chứa dữ liệu browser/người tham gia, consent, QA, env/credentials hay phê duyệt người thật. Quyền sử dụng code/tài liệu dự án chưa được chọn license chung; giữ LICENSE/PROVENANCE và font OFL. Review chuyên gia, diễn tập độc lập, product/data/consent và mọi quyết định pilot/live/production còn cần người chịu trách nhiệm.
 ''',
-'README.en.md':'''# Authored review handoff · WEB02 · UI05 visual edition
+'README.en.md':'''# Authored review handoff · WEB02 · R04 references edition
 
-This offline kit contains the current application, 54 Vietnamese documents +54 authored English counterparts, three bilingual draft lessons, material sources, reference metadata and synthetic benchmark/templates. [Vietnamese](README.md). The UI05 visual edition retains original planetary/explorer artwork and adds eight purpose-specific illustrated working rooms: group, authoring, session, journal, preparation, library, guide and correspondence, with a pause control and system reduced-motion support. Scope: adult rehearsal with fictional data; no educational approval, child-pilot approval or production-service claim.
+This offline kit contains the current application, 54 Vietnamese documents +54 authored English counterparts, three bilingual draft lessons, material sources, reference metadata and synthetic benchmark/templates. [Vietnamese](README.md). The R04 edition adds a native directory of 14 reference documents and the bilingual research dossier; it retains original planetary/explorer artwork and adds eight purpose-specific illustrated working rooms: group, authoring, session, journal, preparation, library, guide and correspondence, with a pause control and system reduced-motion support. Scope: adult rehearsal with fictional data; no educational approval, child-pilot approval or production-service claim.
 
 ## Open locally
 
@@ -88,12 +92,22 @@ def safe_file(project,relative):
     return target
 
 
+class HTMLLinks(HTMLParser):
+    """Read actual element attributes; script text is not filesystem markup."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.links=[]
+    def handle_starttag(self,tag,attrs):
+        self.links.extend(value for key,value in attrs if key in ('src','href') and value is not None)
+
+
 def validate_links(files):
     def target(source,href):
         parsed=urlsplit(href)
         if parsed.scheme in ('https','http','mailto','data') or not parsed.path:return
         require(not parsed.scheme and not parsed.netloc and '\\' not in href,f'unsafe bundle link: {href}')
         name=posixpath.normpath(posixpath.join(posixpath.dirname(source),unquote(parsed.path)))
+        if name not in files and name+'/index.html' in files:name+='/index.html'
         require(not name.startswith('../') and not name.startswith('/') and name in files,f'bundle link missing/escaping: {source} -> {href}')
     for name,raw in files.items():
         if name.endswith('.md'):
@@ -122,8 +136,9 @@ def validate_links(files):
             for href in re.findall(r'(?:href|xlink:href)=[\"\']([^\"\']+)',raw.decode('utf-8')):
                 require(not urlsplit(href).scheme or href.startswith('data:'),f'external vector asset: {href}')
                 target(name,href)
-        if name=='app/index.html':
-            for href in re.findall(r'(?:src|href)=[\"\']([^\"\']+)',raw.decode('utf-8')):target(name,href)
+        if name.startswith('app/') and name.endswith('.html'):
+            parser=HTMLLinks();parser.feed(raw.decode('utf-8'));parser.close()
+            for href in parser.links:target(name,href)
 
 
 def validate_room_art(raw,name):
@@ -137,12 +152,23 @@ def validate_room_art(raw,name):
         require(not any(key.rsplit('}',1)[-1].lower().startswith('on') for key in node.attrib),f'room artwork event handler forbidden: {name}')
 
 
+def validate_reference_build(project):
+    script=safe_file(project,'tools/build_references.py')
+    try:
+        result=subprocess.run([sys.executable,'-B',str(script),'--check'],cwd=project,capture_output=True,text=True,timeout=20)
+    except subprocess.TimeoutExpired as exc:
+        raise KitError('reference build validation timed out') from exc
+    require(result.returncode==0,'reference build check failed: '+(result.stderr or result.stdout).strip()[-1200:])
+
+
 def collect(project):
     project=project.resolve();files={}
     def add(name):
         require(name not in files,f'duplicate share path: {name}')
         files[name]=safe_file(project,name).read_bytes()
     for relative in RUNTIME:add('app/'+relative)
+    for relative in REFERENCE_ASSETS:add('app/'+relative)
+    validate_reference_build(project)
     for relative in ROOM_ASSETS:validate_room_art(files['app/'+relative],relative)
     resources,_=read_json(project/'app/resources/manifest.json')
     require(resources['fingerprint']==digest(encode({'inputs':resources['inputs'],'outputs':resources['outputs']})),'frozen resource manifest corrupt')
@@ -170,9 +196,10 @@ def collect(project):
 
 def prepared(project):
     files=collect(project)
+    reference_catalog=json.loads(files['app/references/catalog.json'])
     entries={name:{'sha256':digest(raw),'bytes':len(raw)} for name,raw in sorted(files.items())}
     fingerprint=digest(encode({'release':RELEASE,'visualEdition':VISUAL_EDITION,'files':entries}))
-    manifest={'schemaVersion':1,'dataKind':'authored-review-handoff','release':RELEASE,'visualEdition':VISUAL_EDITION,'sourceFingerprint':fingerprint,'catalogDocuments':54,'authoredLanguageDocuments':108,'documentCountScope':'catalog entries only; package support documents excluded','files':entries,'limits':'Synthetic adult rehearsal; references metadata only; excludes raw third-party works/user records; not a signature or educational approval.'}
+    manifest={'schemaVersion':1,'dataKind':'authored-review-handoff','release':RELEASE,'visualEdition':VISUAL_EDITION,'sourceFingerprint':fingerprint,'catalogDocuments':54,'authoredLanguageDocuments':108,'documentCountScope':'54 material catalog entries; 14 reference documents counted separately; package support documents excluded','referenceDocuments':reference_catalog['documents'],'researchClaimReferences':reference_catalog['claimReferences'],'files':entries,'limits':'Synthetic adult rehearsal; references metadata only; excludes raw third-party works/user records; not a signature or educational approval.'}
     files[INNER]=encode(manifest)
     output=io.BytesIO()
     with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:
@@ -181,7 +208,7 @@ def prepared(project):
             info.external_attr=(0o100755 if name=='start-local.command' else 0o100644)<<16
             archive.writestr(info,raw)
     raw=output.getvalue()
-    outer={'schemaVersion':1,'dataKind':'authored-review-download','release':RELEASE,'visualEdition':VISUAL_EDITION,'archive':'project-review-WEB02.zip','sha256':digest(raw),'bytes':len(raw),'fileCount':len(files),'files':{name:{'sha256':digest(payload),'bytes':len(payload)} for name,payload in sorted(files.items())},'sourceFingerprint':fingerprint,'catalogDocuments':54,'authoredLanguageDocuments':108,'documentCountScope':'catalog entries only; package support documents excluded','languageDocuments':{'vi':54,'en':54},'lessons':3,'resourceFiles':len([p for p in files if p.startswith('app/resources/')]),'limits':'Full authored handoff; third-party raw corpus and all browser/user records excluded. No cryptographic signature or human approval.'}
+    outer={'schemaVersion':1,'dataKind':'authored-review-download','release':RELEASE,'visualEdition':VISUAL_EDITION,'archive':'project-review-WEB02.zip','sha256':digest(raw),'bytes':len(raw),'fileCount':len(files),'files':{name:{'sha256':digest(payload),'bytes':len(payload)} for name,payload in sorted(files.items())},'sourceFingerprint':fingerprint,'catalogDocuments':54,'authoredLanguageDocuments':108,'documentCountScope':'54 material catalog entries; 14 reference documents counted separately; package support documents excluded','referenceDocuments':reference_catalog['documents'],'researchClaimReferences':reference_catalog['claimReferences'],'languageDocuments':{'vi':54,'en':54},'lessons':3,'resourceFiles':len([p for p in files if p.startswith('app/resources/')]),'limits':'Full authored handoff; third-party raw corpus and all browser/user records excluded. No cryptographic signature or human approval.'}
     return raw,encode(outer),outer
 
 

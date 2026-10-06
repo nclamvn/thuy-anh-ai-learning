@@ -1,0 +1,1151 @@
+{
+  "schemaVersion": 1,
+  "kind": "public-authored-reference-metadata",
+  "sourceHTMLSha256": "3cc7fee4c0f745100b110155fdc4bceca434f526cdd143ccc49704c048811b8f",
+  "reportHref": "references/report.html",
+  "reportSha256": "e572b0915b758c987eedf7a76a7bf63f7d2365a609b8083e3195e8c8f9201682",
+  "documents": 14,
+  "claimReferences": 92,
+  "meta": {
+    "date": "2026-10-06",
+    "r03SourceStatus": "ACCEPTED_FOR_TRACEABILITY_SCOPE",
+    "acceptanceScope": "Capture, traceability, registry and scoped semantic review only; no educational suitability, demand, local effectiveness or human owner approval.",
+    "sourceReports": 14,
+    "r02Reports": 7,
+    "r02Claims": 35,
+    "r03Reports": 7,
+    "r03Claims": 57,
+    "r03Final": true,
+    "r02SourceRegistryHash": "b9fd398e59b395b596a907516952f549df24b5a733403379e80d805a7bc02df8",
+    "r03SourceCardsHash": "a98a98797231ece32708b32d5d2c6ec1715cc9e604f3ca0a8f2b8def58cb45b7",
+    "sourceClaims": {
+      "R02-01": 6,
+      "R02-02": 6,
+      "R02-03": 6,
+      "R02-04": 5,
+      "R02-06": 2,
+      "R02-07": 5,
+      "R02-08": 5,
+      "R03-01": 9,
+      "R03-02": 7,
+      "R03-03": 8,
+      "R03-04": 11,
+      "R03-05": 8,
+      "R03-06": 7,
+      "R03-07": 7
+    },
+    "fonts": [
+      {
+        "name": "BeVietnamPro-Regular.ttf",
+        "sha256": "cd1ef6e9d7db28ad5cdb88a65ccbe693870e60d340b791f349d248342b4fe4c3",
+        "bytes": 132948,
+        "origin": "frozen PROJECT-P03-local.zip"
+      },
+      {
+        "name": "BeVietnamPro-SemiBold.ttf",
+        "sha256": "bd8e27eb02720b9d91e59e4f10a90878643219f25ce6a8d9a4f06a8a88d3bb71",
+        "bytes": 136736,
+        "origin": "frozen PROJECT-P03-local.zip"
+      },
+      {
+        "name": "Lora.ttf",
+        "sha256": "822a6621ccbe8d97d20ac88c1c41f5615c9c2c202eaa75f272cd452aac6475a7",
+        "bytes": 212196,
+        "origin": "frozen PROJECT-P03-local.zip"
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "R02-01",
+      "batch": "R02",
+      "title": {
+        "vi": "Phụ huynh hiểu việc con dùng chatbot đến đâu?",
+        "en": "What parents know about their teens’ chatbot use"
+      },
+      "publisher": "Pew Research Center",
+      "url": "https://www.pewresearch.org/internet/2026/02/24/what-parents-say-about-their-teens-ai-use/",
+      "type": "survey",
+      "scope": "family",
+      "countries": [
+        "US"
+      ],
+      "population": {
+        "vi": "1.458 cặp trẻ 13–17 tuổi và phụ huynh, Mỹ.",
+        "en": "1,458 U.S. teen–parent pairs; teens aged 13–17."
+      },
+      "method": {
+        "vi": "Khảo sát online 25/09–09/10/2025; tuyển qua Ipsos KnowledgePanel.",
+        "en": "Online survey, 25 September–9 October 2025; recruitment through Ipsos KnowledgePanel."
+      },
+      "findings": [
+        {
+          "vi": "51% phụ huynh nói con dùng chatbot; 64% trẻ tự báo cáo có dùng.",
+          "en": "51% of parents report teen chatbot use; 64% of teens self-report use.",
+          "claimIDs": [
+            "R02-C004"
+          ]
+        },
+        {
+          "vi": "18% phụ huynh được hỏi thấy thoải mái với việc con tìm hỗ trợ hoặc lời khuyên cảm xúc từ chatbot.",
+          "en": "18% of surveyed parents are comfortable with teens seeking emotional support or advice from chatbots.",
+          "claimIDs": [
+            "R02-C005"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Chênh 13 điểm phần trăm ở mức tổng hợp không chứng minh từng phụ huynh không biết con mình.",
+          "en": "The aggregate 13-percentage-point gap does not establish that an individual parent is unaware of their own child’s use."
+        },
+        {
+          "vi": "Khảo sát Mỹ không xác nhận tỷ lệ, nhu cầu hoặc hiệu quả ở gia đình Việt.",
+          "en": "The U.S. survey does not establish prevalence, need or effectiveness in Vietnamese families."
+        }
+      ],
+      "implication": {
+        "vi": "Hỏi phụ huynh và người học về một lần dùng cụ thể; có lựa chọn “không biết”.",
+        "en": "Ask parents and learners about a specific use occasion and allow “I do not know”.",
+        "status": "AI_PROPOSAL"
+      },
+      "novelty": "NEW",
+      "provenance": {
+        "status": "captured-and-span-verified",
+        "captureIDs": [
+          "pew-method",
+          "pew-parents",
+          "pew-teens"
+        ],
+        "tiers": [
+          "A"
+        ],
+        "claimIDs": [
+          "R02-C001",
+          "R02-C002",
+          "R02-C003",
+          "R02-C004",
+          "R02-C005",
+          "R02-C006"
+        ]
+      },
+      "date": {
+        "published": "2026-02-24",
+        "fieldwork": "2025-09-25–2025-10-09",
+        "version": null
+      }
+    },
+    {
+      "id": "R02-02",
+      "batch": "R02",
+      "title": {
+        "vi": "Trẻ 9–17 tuổi và nhiều dạng AI",
+        "en": "A broad view of AI among children aged 9–17"
+      },
+      "publisher": "Common Sense Media / SSRS",
+      "url": "https://www.commonsensemedia.org/research/a-comprehensive-report-on-teens-tweens-and-ai",
+      "type": "survey",
+      "scope": "family",
+      "countries": [
+        "US"
+      ],
+      "population": {
+        "vi": "1.204 trẻ 9–17 tuổi, Mỹ.",
+        "en": "1,204 U.S. children aged 9–17."
+      },
+      "method": {
+        "vi": "SSRS; thu 18–26/03/2026. Định nghĩa AI rộng và tách nhóm tuổi.",
+        "en": "SSRS survey, 18–26 March 2026; a broad AI definition and separate age groups."
+      },
+      "findings": [
+        {
+          "vi": "86% trẻ trong khảo sát từng dùng một dạng AI theo định nghĩa rộng của báo cáo.",
+          "en": "86% in this survey have used some form of AI under the report’s broad definition.",
+          "claimIDs": [
+            "R02-C010"
+          ]
+        },
+        {
+          "vi": "44% nói chưa trò chuyện với phụ huynh/người giám hộ về an toàn AI.",
+          "en": "44% report no AI-safety conversation with a parent or guardian.",
+          "claimIDs": [
+            "R02-C011"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Không so với khảo sát chỉ hỏi ChatGPT như một chuỗi thời gian cùng thang đo.",
+          "en": "Do not treat it and a ChatGPT-only survey as a comparable time series."
+        },
+        {
+          "vi": "Biết hoặc gặp một dạng AI không đồng nghĩa dùng AI để học, hoặc học có hiệu quả.",
+          "en": "Encountering or using some form of AI is not equivalent to learning with AI or learning effectively."
+        }
+      ],
+      "implication": {
+        "vi": "Ghi rõ công cụ, tác vụ và nhóm tuổi trước khi hỏi mức sử dụng.",
+        "en": "Specify the tool, task and age group before asking about use.",
+        "status": "AI_PROPOSAL"
+      },
+      "novelty": "NEW",
+      "provenance": {
+        "status": "captured-and-span-verified",
+        "captureIDs": [
+          "csm-census",
+          "csm-census-full"
+        ],
+        "tiers": [
+          "A"
+        ],
+        "claimIDs": [
+          "R02-C007",
+          "R02-C008",
+          "R02-C009",
+          "R02-C010",
+          "R02-C011",
+          "R02-C012"
+        ]
+      },
+      "date": {
+        "published": "2026",
+        "fieldwork": "2026-03-18–2026-03-26",
+        "version": null
+      }
+    },
+    {
+      "id": "R02-03",
+      "batch": "R02",
+      "title": {
+        "vi": "Làm bài xong và hiểu bài là hai câu hỏi",
+        "en": "Getting schoolwork done and understanding it are different questions"
+      },
+      "publisher": "Common Sense Media / SSRS",
+      "url": "https://www.commonsensemedia.org/research/teens-in-the-ai-era-schoolwork-and-skills-that-matter",
+      "type": "survey",
+      "scope": "learning",
+      "countries": [
+        "US"
+      ],
+      "population": {
+        "vi": "1.017 trẻ 13–17 tuổi, Mỹ; nhóm dùng AI cho bài học n = 665.",
+        "en": "1,017 U.S. teens aged 13–17; schoolwork-AI subgroup n = 665."
+      },
+      "method": {
+        "vi": "Thu 30/04–14/05/2026; kết hợp mẫu xác suất/phi xác suất với hiệu chỉnh hybrid.",
+        "en": "Fielded 30 April–14 May 2026; probability and nonprobability samples combined with hybrid calibration."
+      },
+      "findings": [
+        {
+          "vi": "Trong nhóm thanh thiếu niên dùng AI cho bài học (n = 665), 63% lấy đáp án bài tập theo ít nhất một cách được hỏi; các cách có thể trùng nhau.",
+          "en": "Among teens using AI for schoolwork (n = 665), 63% obtain schoolwork answers in at least one listed way; the ways can overlap.",
+          "claimIDs": [
+            "R02-C016"
+          ]
+        },
+        {
+          "vi": "Trong nhóm dùng AI cho bài học (n = 665), 66% đồng ý AI giúp hiểu bài; đây là tự báo cáo.",
+          "en": "Among schoolwork-AI users (n = 665), 66% agree that AI helps understanding; this is self-report.",
+          "claimIDs": [
+            "R02-C017"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Tự báo cáo hiểu bài không đo khả năng giải thích hay giải bài mới khi bỏ AI.",
+          "en": "Reported understanding does not measure explanation or solving a new task without AI."
+        },
+        {
+          "vi": "Không cộng tỷ lệ các cách dùng và không gán tỷ lệ của nhóm con cho toàn bộ trẻ.",
+          "en": "Do not sum overlapping use categories or apply a subgroup percentage to all teens."
+        }
+      ],
+      "implication": {
+        "vi": "Giữ riêng bài ban đầu, bài có hỗ trợ và bài mới không AI trong phương án thử.",
+        "en": "Keep initial work, supported work and a new unaided task separate in a proposed trial.",
+        "status": "AI_PROPOSAL"
+      },
+      "novelty": "NEW",
+      "provenance": {
+        "status": "captured-and-span-verified",
+        "captureIDs": [
+          "csm-school",
+          "csm-school-full"
+        ],
+        "tiers": [
+          "A"
+        ],
+        "claimIDs": [
+          "R02-C013",
+          "R02-C014",
+          "R02-C015",
+          "R02-C016",
+          "R02-C017",
+          "R02-C018"
+        ]
+      },
+      "date": {
+        "published": "2026-08-18",
+        "fieldwork": "2026-04-30–2026-05-14",
+        "version": null
+      }
+    },
+    {
+      "id": "R02-04",
+      "batch": "R02",
+      "title": {
+        "vi": "Khoảng cách sử dụng giữa trẻ và người chăm sóc",
+        "en": "Use differences between children and caregivers"
+      },
+      "publisher": "UNICEF Innocenti / Global Kids Online",
+      "url": "https://www.unicef.org/innocenti/documents/snapshot-ai-usage-among-children-parents",
+      "type": "survey",
+      "scope": "family",
+      "countries": [
+        "MULTI"
+      ],
+      "population": {
+        "vi": "Khoảng 1.000 trẻ dùng internet 12–17 tuổi và 1.000 phụ huynh mỗi nước; 10 nước.",
+        "en": "Approximately 1,000 internet-using 12–17-year-olds and 1,000 caregivers per country; ten countries."
+      },
+      "method": {
+        "vi": "Khảo sát hộ gia đình; dữ liệu gốc kết thúc đầu 2025; báo cáo 06/2026.",
+        "en": "Household surveys; underlying data collection ended in early 2025; report published June 2026."
+      },
+      "findings": [
+        {
+          "vi": "Trong các nước được khảo sát, trẻ có khả năng dùng AI cao hơn ba lần so với phụ huynh/người chăm sóc.",
+          "en": "In the surveyed countries, children are over three times as likely to use AI as caregivers.",
+          "claimIDs": [
+            "R02-C022"
+          ]
+        },
+        {
+          "vi": "Trung bình 11% trẻ đã dùng AI tìm lời khuyên về điều lo lắng; mức này khác giữa các nước.",
+          "en": "On average, 11% of AI-using children seek advice about worries, with variation across countries.",
+          "claimIDs": [
+            "R02-C023"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Danh sách không có Việt Nam hoặc Canada; đăng trên trang UNICEF Việt Nam không biến thành khảo sát Việt Nam.",
+          "en": "The countries do not include Vietnam or Canada; a UNICEF Vietnam page does not make the dataset Vietnamese."
+        },
+        {
+          "vi": "Mẫu số của 11% là trẻ dùng AI, không phải toàn bộ trẻ.",
+          "en": "The denominator for 11% is AI-using children, not all children."
+        }
+      ],
+      "implication": {
+        "vi": "Tách nhu cầu học tập, tìm thông tin và tìm lời khuyên; kiểm bối cảnh địa phương riêng.",
+        "en": "Separate learning, information-seeking and advice-seeking, and check the local context separately.",
+        "status": "AI_PROPOSAL"
+      },
+      "novelty": "NEW",
+      "provenance": {
+        "status": "captured-and-span-verified",
+        "captureIDs": [
+          "unicef-brief",
+          "unicef-full",
+          "unicef-method"
+        ],
+        "tiers": [
+          "A"
+        ],
+        "claimIDs": [
+          "R02-C019",
+          "R02-C020",
+          "R02-C021",
+          "R02-C022",
+          "R02-C023"
+        ]
+      },
+      "date": {
+        "published": "2026-06",
+        "fieldwork": "Ended early 2025",
+        "version": null
+      }
+    },
+    {
+      "id": "R02-06",
+      "batch": "R02",
+      "title": {
+        "vi": "Một điểm tựa literacy từ Canada",
+        "en": "A Canadian literacy starting point"
+      },
+      "publisher": "MediaSmarts",
+      "url": "https://mediasmarts.ca/sites/default/files/2024-10/guide_what_is_ai.pdf",
+      "type": "literacy_guide",
+      "scope": "guidance",
+      "countries": [
+        "CA"
+      ],
+      "population": null,
+      "method": null,
+      "findings": [
+        {
+          "vi": "Hướng dẫn mô tả chatbot có thể tạo tài liệu tham khảo không tồn tại; nêu tính toàn vẹn học tập, riêng tư và quan hệ với chatbot.",
+          "en": "The guide explains that chatbots can invent references and discusses academic integrity, privacy and chatbot relationships.",
+          "claimIDs": [
+            "R02-C025"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Hướng dẫn giáo dục, không phải khảo sát nhu cầu Canada hoặc thử hiệu quả.",
+          "en": "An educational guide, not a Canadian demand survey or effectiveness trial."
+        },
+        {
+          "vi": "Ví dụ và giải thích kỹ thuật năm 2024 cần được rà soát trước khi dùng hiện nay.",
+          "en": "Technical explanations and examples from 2024 need review before present-day use."
+        }
+      ],
+      "implication": {
+        "vi": "Dùng làm tài liệu đọc cho người lớn; kiểm lại ví dụ và ngôn ngữ trước khi đưa vào bài.",
+        "en": "Use as adult reading material, checking its examples and language before incorporating it into a lesson.",
+        "status": "AI_PROPOSAL"
+      },
+      "novelty": "NEW",
+      "provenance": {
+        "status": "captured-and-span-verified",
+        "captureIDs": [
+          "mediasmarts-guide"
+        ],
+        "tiers": [
+          "A"
+        ],
+        "claimIDs": [
+          "R02-C024",
+          "R02-C025"
+        ]
+      },
+      "date": {
+        "published": "2024-10",
+        "fieldwork": null,
+        "version": null
+      }
+    },
+    {
+      "id": "R02-07",
+      "batch": "R02",
+      "title": {
+        "vi": "Cha mẹ và trẻ nói gì về rủi ro?",
+        "en": "What parents and children say about risks"
+      },
+      "publisher": "Yu et al. / arXiv v1",
+      "url": "https://arxiv.org/html/2406.10461v1",
+      "type": "qualitative_study",
+      "scope": "family",
+      "countries": [
+        "UNSPECIFIED"
+      ],
+      "population": {
+        "vi": "20 người phỏng vấn: 7 trẻ và 13 phụ huynh; không phải 20 gia đình.",
+        "en": "20 interviewees: seven children and 13 parents, not twenty families."
+      },
+      "method": {
+        "vi": "Phân tích thảo luận Reddit và phỏng vấn định tính.",
+        "en": "Analysis of Reddit discussions and qualitative interviews."
+      },
+      "findings": [
+        {
+          "vi": "Một số phụ huynh nói thiếu tự tin khi xử lý và giải thích rủi ro AI tạo sinh.",
+          "en": "Some interviewed parents report low confidence in handling and explaining generative-AI risks.",
+          "claimIDs": [
+            "R02-C029"
+          ]
+        },
+        {
+          "vi": "Một số phụ huynh cho rằng AI kiểm chứng sự thật trước khi trả lời.",
+          "en": "Some parents assume that AI fact-checks responses before producing them.",
+          "claimIDs": [
+            "R02-C030"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Không dùng để ước lượng tỷ lệ toàn dân hoặc suy tâm lý một gia đình cụ thể.",
+          "en": "Do not use it to estimate population prevalence or infer the psychology of a particular family."
+        },
+        {
+          "vi": "Nhận xét tính năng parental control năm 2024 không xác minh sản phẩm hiện tại.",
+          "en": "Comments about 2024 parental controls do not verify current product features."
+        }
+      ],
+      "implication": {
+        "vi": "Phát triển câu hỏi mở về cách giải thích, xử lý sai và cách hỗ trợ hiện có.",
+        "en": "Develop open questions about explanations, handling errors and existing support practices.",
+        "status": "AI_PROPOSAL"
+      },
+      "novelty": "NEW",
+      "provenance": {
+        "status": "captured-and-span-verified",
+        "captureIDs": [
+          "parent-child-study"
+        ],
+        "tiers": [
+          "B"
+        ],
+        "claimIDs": [
+          "R02-C026",
+          "R02-C027",
+          "R02-C028",
+          "R02-C029",
+          "R02-C030"
+        ]
+      },
+      "date": {
+        "published": "2024",
+        "fieldwork": null,
+        "version": "arXiv v1"
+      }
+    },
+    {
+      "id": "R02-08",
+      "batch": "R02",
+      "title": {
+        "vi": "AI companion và cuộc trò chuyện quan trọng",
+        "en": "AI companions and important conversations"
+      },
+      "publisher": "Common Sense Media / SSRS",
+      "url": "https://www.commonsensemedia.org/sites/default/files/research/report/talk-trust-and-trade-offs_2025_web.pdf",
+      "type": "survey",
+      "scope": "relationship",
+      "countries": [
+        "US"
+      ],
+      "population": {
+        "vi": "1.060 trẻ 13–17 tuổi, Mỹ; nhóm dùng companion n = 758.",
+        "en": "1,060 U.S. teens aged 13–17; companion-user subgroup n = 758."
+      },
+      "method": {
+        "vi": "Khảo sát 30/04–14/05/2025; companion là bạn/nhân vật số theo định nghĩa báo cáo.",
+        "en": "Survey, 30 April–14 May 2025; companions are digital friends or characters as defined by the report."
+      },
+      "findings": [
+        {
+          "vi": "Trong nhóm dùng companion, 33% nói từng chọn AI thay người thật cho cuộc trò chuyện quan trọng/nghiêm túc.",
+          "en": "Among companion users, 33% say they have chosen AI over a person for an important or serious conversation.",
+          "claimIDs": [
+            "R02-C034"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Không gán tỷ lệ cho mọi chatbot, mọi trẻ hoặc nhóm nhỏ tuổi hơn.",
+          "en": "Do not apply the percentage to all chatbots, all children or younger age groups."
+        },
+        {
+          "vi": "Khảo sát không chứng minh quan hệ nhân quả hoặc tác động tâm lý.",
+          "en": "The survey does not establish causation or psychological effects."
+        }
+      ],
+      "implication": {
+        "vi": "Hỏi riêng việc trò chuyện và cách tìm người thật khi cần; không nhập chung với tutor.",
+        "en": "Ask separately about conversation and reaching a real person when needed; do not merge this with tutoring.",
+        "status": "AI_PROPOSAL"
+      },
+      "novelty": "NEW",
+      "provenance": {
+        "status": "captured-and-span-verified",
+        "captureIDs": [
+          "csm-companions"
+        ],
+        "tiers": [
+          "A"
+        ],
+        "claimIDs": [
+          "R02-C031",
+          "R02-C032",
+          "R02-C033",
+          "R02-C034",
+          "R02-C035"
+        ]
+      },
+      "date": {
+        "published": "2025",
+        "fieldwork": "2025-04-30–2025-05-14",
+        "version": null
+      }
+    },
+    {
+      "id": "R03-01",
+      "title": {
+        "vi": "PISA 2025: ghi chú quốc gia Việt Nam",
+        "en": "PISA 2025 Results (Volume I): Viet Nam"
+      },
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/09/pisa-2025-results-volume-i-country-notes_88d1164e/viet-nam_1edab899/d652623e-en.pdf",
+      "type": "country_note",
+      "scope": "Viet Nam",
+      "countries": [
+        "Viet Nam"
+      ],
+      "population": {
+        "vi": "7.368 học sinh tại 195 trường; đại diện khoảng 1.109.000 học sinh đủ điều kiện, khoảng 71% dân số tuổi 15. Tuổi thực 15 năm 3 tháng–16 năm 2 tháng, đã học ≥ 6 năm.",
+        "en": "7,368 students in 195 schools representing about 1,109,000 eligible students, estimated at 71% of all 15-year-olds. Ages 15 years 3 months to 16 years 2 months, with at least 6 years of schooling."
+      },
+      "method": {
+        "vi": "PISA 2025; các con số AI là tự báo cáo trong bảng hỏi bối cảnh, không phải bài kiểm tra năng lực AI. Công bố 8/9/2026.",
+        "en": "PISA 2025; the AI figures are self-reports in a background questionnaire, not an AI competence test. Released on 8 September 2026."
+      },
+      "findings": [
+        {
+          "vi": "69% cho biết dùng chatbot để giúp học ít nhất mỗi tuần.",
+          "en": "69% reported using chatbots to help them learn at least weekly.",
+          "claimIDs": [
+            "R03-01-C05"
+          ]
+        },
+        {
+          "vi": "52% được ghi nhận ở tác vụ soạn văn bản cho bài viết; 4% chưa bao giờ/gần như không dùng cho những tác vụ học tập được hỏi.",
+          "en": "The note reports 52% for drafting writing assignments; 4% never/almost never across the examined schoolwork tasks.",
+          "claimIDs": [
+            "R03-01-C06"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Phạm vi học sinh đủ điều kiện đang đi học; không đại diện toàn bộ trẻ 8–18 hay hộ gia đình. Không đảo 4% thành tỷ lệ đã dùng mọi loại AI.",
+          "en": "Eligible school-going students only; not all 8–18-year-olds or households. Do not invert 4% into all-purpose AI ever-use."
+        },
+        {
+          "vi": "Tự báo cáo chịu ảnh hưởng văn hoá/không trả lời. Chuyển sang kiểm tra máy tính khiến so sánh xu hướng thành tích Việt Nam còn bất định.",
+          "en": "Response behaviour, culture and nonresponse matter. Computer-based transition leaves Viet Nam performance-trend comparability uncertain."
+        }
+      ],
+      "implication": {
+        "vi": "Phỏng vấn gia đình về từng tác vụ AI cụ thể và bổ sung nhiệm vụ tự làm không AI, thay vì suy ra nhu cầu mua từ tỷ lệ dùng.",
+        "en": "Interview families about specific AI tasks and add unaided tasks rather than inferring purchase demand from usage.",
+        "status": "AI_PROPOSAL"
+      },
+      "date": {
+        "published": "2026-09-08",
+        "fieldwork": "PISA 2025",
+        "version": "Captured 2026-10-06"
+      },
+      "novelty": "NEW",
+      "overlap": [],
+      "provenance": {
+        "status": "ACCEPTED_FOR_TRACEABILITY_SCOPE",
+        "captureIDs": [
+          "pisa-vietnam-pdf"
+        ],
+        "claimIDs": [
+          "R03-01-C01",
+          "R03-01-C02",
+          "R03-01-C03",
+          "R03-01-C04",
+          "R03-01-C05",
+          "R03-01-C06",
+          "R03-01-C07",
+          "R03-01-C08",
+          "R03-01-C09"
+        ]
+      },
+      "claimsCount": 9,
+      "unknowns": {
+        "local_effectiveness": null,
+        "willingness_to_pay_vietnam": null,
+        "long_term_independent_transfer": null
+      },
+      "batch": "R03"
+    },
+    {
+      "id": "R03-02",
+      "title": {
+        "vi": "Hiểu thuật toán: đối thoại với thanh thiếu niên Canada về AI và quyền riêng tư",
+        "en": "Algorithmic Awareness: Conversations with Young Canadians about Artificial Intelligence and Privacy"
+      },
+      "publisher": "MediaSmarts",
+      "url": "https://mediasmarts.ca/sites/default/files/publication-report/full/report_algorithmic_awareness.pdf",
+      "type": "qualitative_study",
+      "scope": "Canada",
+      "countries": [
+        "Canada"
+      ],
+      "population": {
+        "vi": "22 người tham gia 13–17 tuổi,8 nhóm thảo luận trực tuyến; tuyển qua mạng xã hội.",
+        "en": "22 participants aged 13–17 in 8 online focus groups, recruited through social media."
+      },
+      "method": {
+        "vi": "Thực địa 11/2020–1/2021; trò chơi nguyên mẫu, thảo luận và phản tư theo 3 vòng có người hướng dẫn.",
+        "en": "November 2020–January 2021 fieldwork; a facilitated prototype game with discussion and reflection after three scaffolded rounds."
+      },
+      "findings": [
+        {
+          "vi": "Kết hợp trò chơi–thảo luận giúp tìm hiểu cách người trẻ hiểu thuật toán, dữ liệu và quyền riêng tư.",
+          "en": "The game-and-discussion design explored young people’s understanding of algorithms, data and privacy.",
+          "claimIDs": [
+            "R03-02-C05",
+            "R03-02-C06"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Nghiên cứu định tính lịch sử 2021; không phải tỷ lệ dùng GenAI hiện tại hay thử nghiệm chứng minh hiệu quả học.",
+          "en": "Historical 2021 qualitative research; not current GenAI prevalence or an efficacy trial."
+        },
+        {
+          "vi": "Không dùng lời kể cá nhân hay tỷ lệ của 22 người để đại diện thanh thiếu niên Canada.",
+          "en": "Do not use individual quotations or this small sample as representative Canadian prevalence."
+        }
+      ],
+      "implication": {
+        "vi": "Thử một buổi gia đình cùng nhìn cách thuật toán chọn nội dung, thảo luận dữ liệu nào được dùng và quyền lựa chọn; đo bằng giải thích của trẻ.",
+        "en": "Try a family activity examining recommendations, data used and agency; assess the child’s own explanation.",
+        "status": "AI_PROPOSAL"
+      },
+      "date": {
+        "published": "2021",
+        "fieldwork": "2020-11 to 2021-01",
+        "version": "Captured 2026-10-06"
+      },
+      "novelty": "NEW",
+      "overlap": [],
+      "provenance": {
+        "status": "ACCEPTED_FOR_TRACEABILITY_SCOPE",
+        "captureIDs": [
+          "mediasmarts-algorithmic",
+          "mediasmarts-publisher"
+        ],
+        "claimIDs": [
+          "R03-02-C01",
+          "R03-02-C02",
+          "R03-02-C03",
+          "R03-02-C04",
+          "R03-02-C05",
+          "R03-02-C06",
+          "R03-02-C07"
+        ]
+      },
+      "claimsCount": 7,
+      "unknowns": {
+        "local_effectiveness": null,
+        "willingness_to_pay_vietnam": null,
+        "long_term_independent_transfer": null
+      },
+      "batch": "R03"
+    },
+    {
+      "id": "R03-03",
+      "title": {
+        "vi": "Safer Internet Day 2026: trẻ, phụ huynh và AI",
+        "en": "Safer Internet Day 2026 Research Report"
+      },
+      "publisher": "Nominet/Childnet/Opinium",
+      "url": "https://nominet.uk/wp-content/uploads/2026/01/Safer-Internet-Day-2026-Report.pdf",
+      "type": "survey",
+      "scope": "United Kingdom",
+      "countries": [
+        "United Kingdom"
+      ],
+      "population": {
+        "vi": "Hai mẫu riêng: 2.018 trẻ 8–17 tuổi và 2.000 phụ huynh/người chăm sóc tại Vương quốc Anh. Không phải các cặp ghép trẻ–cha mẹ.",
+        "en": "Separate UK samples: 2,018 children aged 8–17 and 2,000 parents/carers of children aged 8–17. These are not matched child-parent pairs."
+      },
+      "method": {
+        "vi": "Opinium khảo sát 11/2025; Nominet tài trợ, Childnet thiết kế; hai bộ dữ liệu có trọng số đại diện quốc gia.",
+        "en": "Opinium surveys in November 2025, commissioned and funded by Nominet and designed with Childnet; each sample weighted for national representation."
+      },
+      "findings": [
+        {
+          "vi": "54% trẻ nói dùng AI để học/làm bài; 31% phụ huynh nghĩ con dùng AI hỗ trợ bài tập—hai mẫu và hai góc nhìn riêng.",
+          "en": "54% of children reported AI for studying/homework; 31% of parents thought their child used AI for homework—separate samples and perspectives.",
+          "claimIDs": [
+            "R03-03-C05",
+            "R03-03-C06"
+          ]
+        },
+        {
+          "vi": "31% trẻ nói dùng AI làm bài tập/bài học thay mình; đây là tự báo cáo, chưa đo suy giảm kỹ năng.",
+          "en": "31% of children said AI did schoolwork/homework for them; self-report does not measure skill loss.",
+          "claimIDs": [
+            "R03-03-C07"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "AI trong báo cáo gồm nhiều loại công cụ, không chỉ chatbot GenAI. Không so trực tiếp tỷ lệ với khảo sát có định nghĩa khác.",
+          "en": "AI includes broader tool categories than GenAI chatbots. Do not directly compare percentages with differently defined surveys."
+        },
+        {
+          "vi": "Không trừ hai tỷ lệ để gọi là tỷ lệ trẻ giấu phụ huynh; không suy ra quan hệ nhân quả.",
+          "en": "Do not subtract the two rates to claim child concealment; no causal inference."
+        }
+      ],
+      "implication": {
+        "vi": "Dùng câu hỏi trung tính theo tác vụ: con nhờ AI gợi ý, giải thích hay làm thay? Phụ huynh kể điều mình biết, rồi hai bên đối chiếu.",
+        "en": "Ask neutrally by task: did AI suggest, explain or do the work? Let parents describe what they know, then compare perspectives.",
+        "status": "AI_PROPOSAL"
+      },
+      "date": {
+        "published": "2026(report)",
+        "fieldwork": "2025-11",
+        "version": "Captured 2026-10-06"
+      },
+      "novelty": "NEW",
+      "overlap": [],
+      "provenance": {
+        "status": "ACCEPTED_FOR_TRACEABILITY_SCOPE",
+        "captureIDs": [
+          "nominet-report",
+          "nominet-methods"
+        ],
+        "claimIDs": [
+          "R03-03-C01",
+          "R03-03-C02",
+          "R03-03-C03",
+          "R03-03-C04",
+          "R03-03-C05",
+          "R03-03-C06",
+          "R03-03-C07",
+          "R03-03-C08"
+        ]
+      },
+      "claimsCount": 8,
+      "unknowns": {
+        "local_effectiveness": null,
+        "willingness_to_pay_vietnam": null,
+        "long_term_independent_transfer": null
+      },
+      "batch": "R03"
+    },
+    {
+      "id": "R03-04",
+      "title": {
+        "vi": "Từ bảng phấn đến chatbot: can thiệp học tập Nigeria",
+        "en": "From Chalkboards to Chatbots: Evaluating the Impact of Generative AI on Learning Outcomes in Nigeria"
+      },
+      "publisher": "World Bank",
+      "url": "https://documents1.worldbank.org/curated/en/099548105192529324/pdf/IDU-c09f40d8-9ff8-42dc-b315-591157499be7.pdf",
+      "type": "randomized_trial_working_paper",
+      "scope": "Nigeria",
+      "countries": [
+        "Nigeria"
+      ],
+      "population": {
+        "vi": "9 trường được chọn có phòng máy, học sinh đầu THPT có nguyện vọng. Phân 657 can thiệp/671 đối chứng; cuối kỳ 422/337 làm bài đánh giá.",
+        "en": "9 selected lab-equipped schools; interested first-year senior secondary students. Assigned: 657 treatment and 671 control. Final assessment: 422 treatment and 337 control."
+      },
+      "method": {
+        "vi": "Ngẫu nhiên từng học sinh; 6 tuần 6–7/2024, tối đa 2 buổi 90 phút/tuần. Làm theo cặp với Copilot/GPT 4, giáo viên được tập huấn và hỗ trợ.",
+        "en": "Student-level randomisation; 6 weeks in June–July 2024, up to two weekly 90-minute sessions. Paired Copilot/GPT-4 use with trained teacher support."
+      },
+      "findings": [
+        {
+          "vi": "Bài kiểm tra giấy trắc nghiệm có giám sát ở cuối 6 tuần; tác giả báo 0,31 SD bài tổng hợp và 0,23 SD tiếng Anh là đầu ra chính.",
+          "en": "Monitored paper multiple-choice endline after 6 weeks; authors report 0.31 SD on combined assessment and 0.23 SD for English, the main outcome.",
+          "claimIDs": [
+            "R03-04-C06",
+            "R03-04-C07"
+          ]
+        },
+        {
+          "vi": "Tác giả ước chi phí khoảng 48 USD/học sinh cho pilot và 9 USD chi phí biên; hai đại lượng khác nhau.",
+          "en": "Authors estimate about US$48 per pupil pilot cost and US$9 marginal cost; these are different cost concepts.",
+          "claimIDs": [
+            "R03-04-C09",
+            "R03-04-C10"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Đây là hiệu quả gói sau giờ học gồm thời gian, phòng máy, giáo viên, hướng dẫn và AI; không cô lập tác dụng model.",
+          "en": "This evaluates an after-school package of time, labs, teachers, guidance and AI; it does not isolate the model."
+        },
+        {
+          "vi": "Mất mẫu cuối kỳ khác biệt; tác giả có Lee/IPW checks. Chưa chứng minh lưu giữ dài hạn hay hiệu quả tại Việt Nam. Năm giá USD không được ghi rõ.",
+          "en": "Differential endline attrition; authors report Lee/IPW checks. No demonstrated long-term retention or Viet Nam effect; USD price year is not explicit."
+        },
+        {
+          "vi": "Chi phí bảng báo cáo loại điện và hạ tầng trường; 9 USD là ước chi phí biên, khác 27 USD chi phí biến đổi trung bình. Không dùng làm dự toán pilot Việt Nam.",
+          "en": "The cost table excludes electricity and school infrastructure. US$9 is an estimated marginal cost, distinct from US$27 average variable cost. These are not Vietnamese pilot budget estimates."
+        }
+      ],
+      "implication": {
+        "vi": "Thiết kế đối chứng tương đương thời gian/trợ giúp và một bài độc lập sau buổi; ghi cả số phân nhóm, tham dự và làm bài cuối.",
+        "en": "Use a comparator matched for time/support and an independent end task; record assignment, attendance and final assessment separately.",
+        "status": "AI_PROPOSAL"
+      },
+      "date": {
+        "published": "2025-05",
+        "fieldwork": "2024-06 to 2024-07",
+        "version": "Captured 2026-10-06"
+      },
+      "novelty": "DEEPENED",
+      "overlap": [
+        {
+          "id": "SRC-13",
+          "relationship": "Sameworkingpaper,newfull-methodread;notnewindependentstudy"
+        }
+      ],
+      "provenance": {
+        "status": "ACCEPTED_FOR_TRACEABILITY_SCOPE",
+        "captureIDs": [
+          "worldbank-trial"
+        ],
+        "claimIDs": [
+          "R03-04-C01",
+          "R03-04-C02",
+          "R03-04-C03",
+          "R03-04-C04",
+          "R03-04-C05",
+          "R03-04-C06",
+          "R03-04-C07",
+          "R03-04-C08",
+          "R03-04-C09",
+          "R03-04-C10",
+          "R03-04-C11"
+        ]
+      },
+      "claimsCount": 11,
+      "unknowns": {
+        "local_effectiveness": null,
+        "willingness_to_pay_vietnam": null,
+        "long_term_independent_transfer": null
+      },
+      "batch": "R03"
+    },
+    {
+      "id": "R03-05",
+      "title": {
+        "vi": "OECD Digital Education Outlook 2026",
+        "en": "OECD Digital Education Outlook 2026: Exploring Effective Uses of Generative AI in Education"
+      },
+      "publisher": "OECD",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/01/oecd-digital-education-outlook-2026_940e0dd8/062a7394-en.pdf",
+      "type": "research_synthesis",
+      "scope": "International",
+      "countries": [
+        "International"
+      ],
+      "population": {
+        "vi": "Nhiều bối cảnh giáo dục và nghiên cứu quốc tế; không có một mẫu trẻ thống nhất.",
+        "en": "Heterogeneous international education settings and studies; no single child sample."
+      },
+      "method": {
+        "vi": "Đọc chọn lọc tóm tắt và chương 1–2 về tư duy, học tập và thiết kế sư phạm; tổng hợp nghiên cứu/chuyên gia.",
+        "en": "Selected reading of the executive summary and chapters 1–2 on learning, cognition and pedagogical design; a research and expert synthesis."
+      },
+      "findings": [
+        {
+          "vi": "Kết quả hoàn thành nhiệm vụ tốt hơn có thể không đi cùng hiểu biết; báo cáo nhấn mạnh giữ nỗ lực tư duy và chủ động của người học.",
+          "en": "Better task completion may not mean better learning; the report emphasises cognitive effort and learner agency.",
+          "claimIDs": [
+            "R03-05-C05",
+            "R03-05-C06"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Trích lại Bastani/Kestin đã có trong nền dự án; không tính thành thử nghiệm độc lập mới hoặc nhân đôi cỡ mẫu.",
+          "en": "Summarises Bastani/Kestin already in the project; do not count new independent trials or double underlying samples."
+        },
+        {
+          "vi": "Đây là đọc chọn lọc một tổng hợp, không phải rà soát hệ thống toàn bộ lĩnh vực.",
+          "en": "This is a selected reading of a synthesis, not a systematic review of the field."
+        }
+      ],
+      "implication": {
+        "vi": "Tách ba thứ khi đo: bài có AI, lời giải thích của trẻ, và bài tự làm không AI; xem gợi ý có giữ quyền suy nghĩ không.",
+        "en": "Assess AI-assisted work, the child’s own explanation and an unaided task separately; inspect whether hints preserve thinking.",
+        "status": "AI_PROPOSAL"
+      },
+      "date": {
+        "published": "2026",
+        "fieldwork": "Multipleunderlyingstudies",
+        "version": "Captured 2026-10-06"
+      },
+      "novelty": "SYNTHESIS",
+      "overlap": [
+        {
+          "id": "SRC-03A",
+          "relationship": "Bastanicitedagain"
+        },
+        {
+          "id": "SRC-10",
+          "relationship": "Kestincitedagain"
+        }
+      ],
+      "provenance": {
+        "status": "ACCEPTED_FOR_TRACEABILITY_SCOPE",
+        "captureIDs": [
+          "oecd-outlook"
+        ],
+        "claimIDs": [
+          "R03-05-C01",
+          "R03-05-C02",
+          "R03-05-C03",
+          "R03-05-C04",
+          "R03-05-C05",
+          "R03-05-C06",
+          "R03-05-C07",
+          "R03-05-C08"
+        ]
+      },
+      "claimsCount": 8,
+      "unknowns": {
+        "local_effectiveness": null,
+        "willingness_to_pay_vietnam": null,
+        "long_term_independent_transfer": null
+      },
+      "batch": "R03"
+    },
+    {
+      "id": "R03-06",
+      "title": {
+        "vi": "Diễn đàn quốc gia AI trong giáo dục Việt Nam",
+        "en": "Viet Nam National Forum on Artificial Intelligence in Education"
+      },
+      "publisher": "UNICEF VietNam",
+      "url": "https://www.unicef.org/vietnam/press-releases/viet-nam-national-forum-artificial-intelligence-education",
+      "type": "policy_context",
+      "scope": "Viet Nam",
+      "countries": [
+        "Viet Nam"
+      ],
+      "population": {
+        "vi": "Nhà hoạch định, giáo viên, quản lý và đối tác giáo dục; không phải mẫu khảo sát hộ gia đình.",
+        "en": "Policymakers, teachers, managers and education partners; not a household survey."
+      },
+      "method": {
+        "vi": "Thông cáo diễn đàn 30/5/2025 về kế hoạch năng lực AI và hợp tác giáo dục.",
+        "en": "Forum press release dated 30 May 2025 on AI competencies and education partnerships."
+      },
+      "findings": [
+        {
+          "vi": "Bối cảnh Việt Nam đã có kế hoạch bồi dưỡng năng lực AI cho giáo viên/quản lý và ứng dụng trong dạy học.",
+          "en": "Vietnamese policy context includes teacher/manager AI capacity building and classroom integration.",
+          "claimIDs": [
+            "R03-06-C05",
+            "R03-06-C06"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Thông cáo/agenda không đo nhu cầu mua, mức dùng ở gia đình hoặc hiệu quả học. Không coi lời cam kết là kết quả đạt được.",
+          "en": "A press release/agenda does not measure purchase demand, home usage or learning effect. Commitments are not achieved outcomes."
+        }
+      ],
+      "implication": {
+        "vi": "Mời người làm giáo dục Việt Nam rà mục tiêu, ngôn ngữ và cách đồng hành; nối định hướng với bài học cụ thể được review.",
+        "en": "Invite Vietnamese educators to review goals, language and facilitation; connect policy intent to a reviewed concrete lesson.",
+        "status": "AI_PROPOSAL"
+      },
+      "date": {
+        "published": "2025-05-30",
+        "fieldwork": null,
+        "version": "Captured 2026-10-06"
+      },
+      "novelty": "NEW",
+      "overlap": [],
+      "provenance": {
+        "status": "ACCEPTED_FOR_TRACEABILITY_SCOPE",
+        "captureIDs": [
+          "unicef-vietnam-forum"
+        ],
+        "claimIDs": [
+          "R03-06-C01",
+          "R03-06-C02",
+          "R03-06-C03",
+          "R03-06-C04",
+          "R03-06-C05",
+          "R03-06-C06",
+          "R03-06-C07"
+        ]
+      },
+      "claimsCount": 7,
+      "unknowns": {
+        "local_effectiveness": null,
+        "willingness_to_pay_vietnam": null,
+        "long_term_independent_transfer": null
+      },
+      "batch": "R03"
+    },
+    {
+      "id": "R03-07",
+      "title": {
+        "vi": "Đánh giá mức sẵn sàng AI của Việt Nam",
+        "en": "Viet Nam Artificial Intelligence Readiness Assessment Report"
+      },
+      "publisher": "UNESCO",
+      "url": "https://articles.unesco.org/sites/default/files/medias/fichiers/2025/10/Viet%20Nam%20Artificial%20Intelligence%20Readiness%20Assessment%20Report.pdf",
+      "type": "country_readiness_assessment",
+      "scope": "Viet Nam",
+      "countries": [
+        "Viet Nam"
+      ],
+      "population": {
+        "vi": "Hệ sinh thái AI và thể chế Việt Nam; không phải mẫu trẻ hay phụ huynh.",
+        "en": "Vietnamese AI ecosystem and institutions; not a child or parent sample."
+      },
+      "method": {
+        "vi": "Báo cáo 2025, khởi đầu đánh giá từ 8/2024; nghiên cứu bàn, phỏng vấn chuyên gia và tham vấn bên liên quan.",
+        "en": "2025 report, with assessment since August 2024; desk research, expert interviews and stakeholder consultations."
+      },
+      "findings": [
+        {
+          "vi": "Báo cáo nêu khoảng trống nhân lực AI và kiến nghị năng lực, tính bao trùm, an sinh trong các ưu tiên quốc gia.",
+          "en": "The report identifies AI talent/capacity gaps and recommends capacity building, inclusion and wellbeing within national priorities.",
+          "claimIDs": [
+            "R03-07-C05",
+            "R03-07-C06"
+          ]
+        }
+      ],
+      "limitations": [
+        {
+          "vi": "Chẩn đoán chính sách 2025 không xác nhận nhu cầu gia đình hoặc tư vấn pháp lý hiện hành 2026.",
+          "en": "A 2025 policy diagnostic does not establish family demand or current 2026 legal advice."
+        }
+      ],
+      "implication": {
+        "vi": "Giữ tiêu chí tiếp cận, ngôn ngữ và hỗ trợ người lớn trong thiết kế; xác minh pháp lý riêng trước hoạt động với dữ liệu trẻ.",
+        "en": "Keepaccess, language andadultsupport criteria in design; obtain a separate current legal review before child data operations.",
+        "status": "AI_PROPOSAL"
+      },
+      "date": {
+        "published": "2025",
+        "fieldwork": "Assessment since 2024-08",
+        "version": "Captured 2026-10-06"
+      },
+      "novelty": "NEW",
+      "overlap": [],
+      "provenance": {
+        "status": "ACCEPTED_FOR_TRACEABILITY_SCOPE",
+        "captureIDs": [
+          "unesco-vietnam-readiness"
+        ],
+        "claimIDs": [
+          "R03-07-C01",
+          "R03-07-C02",
+          "R03-07-C03",
+          "R03-07-C04",
+          "R03-07-C05",
+          "R03-07-C06",
+          "R03-07-C07"
+        ]
+      },
+      "claimsCount": 7,
+      "unknowns": {
+        "local_effectiveness": null,
+        "willingness_to_pay_vietnam": null,
+        "long_term_independent_transfer": null
+      },
+      "batch": "R03"
+    }
+  ]
+}

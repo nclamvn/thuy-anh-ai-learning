@@ -2,8 +2,8 @@
   "dataKind": "public-references-only",
   "files": {
     ".github/workflows/checks.yml": {
-      "bytes": 406,
-      "sha256": "108621b805c5c01a30ac4a95fb3a015c582c7b05e6378dc591ae115dcfae5faa"
+      "bytes": 464,
+      "sha256": "ceca0ee20aac61201ab12ae8216c4d750dee957d3ae7d6a95b409c912909392b"
     },
     ".gitignore": {
       "bytes": 597,
@@ -106,36 +106,36 @@
       "sha256": "fb8e31067cdee7efbcaf078961c62d31e68a6be925bc5c08edb0ff377bf5c266"
     },
     "app/downloads/project-review-WEB02.json": {
-      "bytes": 43192,
-      "sha256": "c0c003951cf24c820937e58d08af298a3d35b6226cf6445dbcff78635569ea00"
+      "bytes": 43893,
+      "sha256": "3dcac4954e94354f9bbac34211acfb6a0c985d1f80be24a3961a2eecd2376dc5"
     },
     "app/downloads/project-review-WEB02.zip": {
-      "bytes": 760785,
-      "sha256": "5bcb901f4b437d30038a239b89204904e8060949705b4c4dc346447b07375dd2"
+      "bytes": 1107619,
+      "sha256": "ad4b02679bdcb662161da866544720c564a2f3614cca0f3c93ab3cff435ac9d6"
     },
     "app/favicon.svg": {
       "bytes": 341,
       "sha256": "b92a0d9dd2a3cf1294c7caf69922e959bb855ef6335f8ef9bedb1b56787f8721"
     },
     "app/handoff.js": {
-      "bytes": 27705,
-      "sha256": "0cb1cd02c1ffdd65d431a31afc0e94e38a46b08c6a0d8e11e4b4197c62dc3b7a"
+      "bytes": 27742,
+      "sha256": "a0fbf0a1a6e540407137ae005ed892390395373364cf578310cc31c759c4032f"
     },
     "app/index.html": {
-      "bytes": 5095,
-      "sha256": "5a3e6b0a3ed62e4be879c81dfae534a79ecd0d69efdc9244a2757c9495ce0ab8"
+      "bytes": 5163,
+      "sha256": "489c8d55ecfd270a4cd1d358520abb13cb1b7a7b26173fa0ac5e0910fddffd25"
     },
     "app/legacy-p01.js": {
       "bytes": 12860,
       "sha256": "e4a12b6ec35e31a33ec5d1539fdc41d3a954d9bd405a9a5c2971fe6200598abc"
     },
     "app/locale.js": {
-      "bytes": 28304,
-      "sha256": "f84970703032cc83c1cdef36285b9b2fc6456921012266c6c5deb1b087138eda"
+      "bytes": 28448,
+      "sha256": "2450567ee2f92c88fb3dc4d990b253172b8e947f11d3d38338edf35611183f3a"
     },
     "app/main.js": {
-      "bytes": 72232,
-      "sha256": "1ca07f3755b6a6a989b6f2f9ea2b4ec3a0d8fb5c0e757e759953774c8fad92f9"
+      "bytes": 75525,
+      "sha256": "922b76e266d41b09bd5031355aa4a37e039450fde28cac7796242c6aa969f9fd"
     },
     "app/model.js": {
       "bytes": 25099,
@@ -152,6 +152,22 @@
     "app/provider.js": {
       "bytes": 1034,
       "sha256": "f339eb659cc748b9d278452729a3fa3a8589070b3259f661ffccf09a50981587"
+    },
+    "app/references-client.js": {
+      "bytes": 13223,
+      "sha256": "84f7c1d57b34e3a36acd0a24c9653540952ecc8012d40eec854ea33b8f9f68e6"
+    },
+    "app/references/build.json": {
+      "bytes": 532,
+      "sha256": "7a354dfa13f523b77d99d846888ac49d5cb0ae598def6e7217abc35eba41d96c"
+    },
+    "app/references/catalog.json": {
+      "bytes": 46078,
+      "sha256": "65dfc94d35e6804abd1b1b4c0136ed2303b15a47b1bd8640006750ad74240d19"
+    },
+    "app/references/report.html": {
+      "bytes": 757280,
+      "sha256": "e572b0915b758c987eedf7a76a7bf63f7d2365a609b8083e3195e8c8f9201682"
     },
     "app/resources-client.js": {
       "bytes": 7020,
@@ -610,8 +626,8 @@
       "sha256": "4fe8311f07feb89a1788bfa96131097989c217013b4be3078d248035296f29fd"
     },
     "app/styles.css": {
-      "bytes": 95548,
-      "sha256": "dda48c44db2d612f913459dfcc86749d0ab0b3e3ab7e14a28b6893b24b74cbd8"
+      "bytes": 100433,
+      "sha256": "96027dc0ff8700192b41da22291fbf5ea74b7e7ee229167e7e1ed53160ba2e1c"
     },
     "app/tests/handoff.test.mjs": {
       "bytes": 6292,
@@ -632,6 +648,10 @@
     "app/tests/platform.test.mjs": {
       "bytes": 12375,
       "sha256": "e94d69e1c21dcfceb47fb7c0782435d60edefb78a560e4420bd5b6ae3a053356"
+    },
+    "app/tests/references.test.mjs": {
+      "bytes": 13300,
+      "sha256": "83852d0b784581f82a5c79520a83dc44c2de70a0d83f066187985b9e36f54b91"
     },
     "app/tests/rooms.test.mjs": {
       "bytes": 4595,
@@ -662,12 +682,12 @@
       "sha256": "128d25d06587d362d976d1dde1c8c1aa76ccebe968fa748ad03dc7535256f8f3"
     },
     "docs/SHARING-WEB02.en.md": {
-      "bytes": 3879,
-      "sha256": "8bcca060e5e227208c8025daa29343fd4afc8e9796682f25c56e458c0d5d542d"
+      "bytes": 5222,
+      "sha256": "cc89ac31e08b550141011f1e26ac772a732c2c7d287c92abeba0f95c8e3adf9b"
     },
     "docs/SHARING-WEB02.md": {
-      "bytes": 4164,
-      "sha256": "c456ae6748f308a9f72cbf06c89aee2dac9b549c07d3ec70f48fe4ce4b52cf32"
+      "bytes": 5557,
+      "sha256": "9f620dee20cd09e6bd659e5b11156d60db4157f05e326662b2a1d31f3fca3c1f"
     },
     "docs/images/library-en.png": {
       "bytes": 99917,
@@ -1133,13 +1153,17 @@
       "bytes": 1760,
       "sha256": "8a932f218e86c20442e961c5d6594bb070718d7c3d6f971bdf9073daf847c673"
     },
+    "tools/build_references.py": {
+      "bytes": 7068,
+      "sha256": "655742fd59ec89e05d7c0ff95c97895347b24d07e15219f701df8cafa098b76b"
+    },
     "tools/build_resources.py": {
       "bytes": 19456,
       "sha256": "00a8bbc8b04e35836da80e611cf809dcc716e188cc710a933dc34e126558530f"
     },
     "tools/build_share_bundle.py": {
-      "bytes": 18827,
-      "sha256": "db411c385dd66dd7e3069c97bd06f3b8f77ff429fdebc544ecfadf8a6a621a39"
+      "bytes": 20634,
+      "sha256": "4201b816207a6253858341351f7ef7bbaf15167f76a35ff0b3b635a994082eef"
     },
     "tools/check_all.py": {
       "bytes": 3394,
@@ -1150,8 +1174,8 @@
       "sha256": "7ce42e104b858429f55ce4a5381f1a3fda9762ef391742c2f65b045e9a027f78"
     },
     "tools/create_public_manifest.py": {
-      "bytes": 1914,
-      "sha256": "5181c45fb23e6bfe74c24d9f6f9fb9309a1dcd042119c4c0b554bd3448e05086"
+      "bytes": 3178,
+      "sha256": "1fd954aa6af7cbd0e0ae0587b67b1e3c7d75950306846baf1e2d780d8f098921"
     },
     "tools/evaluate_responses.py": {
       "bytes": 9715,
@@ -1160,6 +1184,10 @@
     "tools/package_project.py": {
       "bytes": 9149,
       "sha256": "8a037cabe964dfb1fa48b3e8f6dbf95a4096eecace0f51f61f87dec99c045043"
+    },
+    "tools/tests/test_build_references.py": {
+      "bytes": 2968,
+      "sha256": "bb3bf1ca392ec1a5f1787e9a2bdde69af01b63e5f9cb47f41ee0cd8abce87bd6"
     },
     "tools/tests/test_project_kit.py": {
       "bytes": 31630,
@@ -1170,8 +1198,8 @@
       "sha256": "19dca90913c6fb4fa1e5fc08b30c8ed4b6acc4372b7c7094c3e7783c89a9b70c"
     },
     "tools/tests/test_share_bundle.py": {
-      "bytes": 9311,
-      "sha256": "e484b3bd87c0effd115ca06a73bfd85e4d69c5b51dbda4b81c1fa50226c52a24"
+      "bytes": 12380,
+      "sha256": "08f5be70a3098ee3c3e9ab96eaaadbec6095c5d8022a65d58d7696484e3896b6"
     },
     "tools/verify_package.py": {
       "bytes": 5927,
@@ -1194,7 +1222,7 @@
       "sha256": "497207ce945740835e94119e97ce6df23af164ea10a801f1b176f7bc95018604"
     }
   },
-  "limits": "Integrity receipt for available public sources only; missing research corpus cannot be reverified; no cryptographic signature or educational approval.",
+  "limits": "Integrity receipt for available public sources only; frozen-dossier-derived references have a separate build receipt. Missing raw corpus cannot be reverified; no cryptographic signature or educational approval.",
   "omittedRawCaptures": [
     "research/fulltexts/SRC-08.pdf",
     "research/fulltexts/SRC-09.pdf",
@@ -1212,6 +1240,6 @@
     "research/snapshots/SRC-12.html",
     "research/snapshots/SRC-13.html"
   ],
-  "release": "UI05-public-04",
+  "release": "R04-public-01",
   "schemaVersion": 1
 }

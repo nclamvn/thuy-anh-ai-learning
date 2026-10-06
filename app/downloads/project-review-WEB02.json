@@ -1,15 +1,15 @@
 {
   "archive": "project-review-WEB02.zip",
   "authoredLanguageDocuments": 108,
-  "bytes": 760785,
+  "bytes": 1107619,
   "catalogDocuments": 54,
   "dataKind": "authored-review-download",
-  "documentCountScope": "catalog entries only; package support documents excluded",
-  "fileCount": 267,
+  "documentCountScope": "54 material catalog entries; 14 reference documents counted separately; package support documents excluded",
+  "fileCount": 271,
   "files": {
     "CONTENT-MANIFEST.json": {
-      "bytes": 42799,
-      "sha256": "f7b3ad059de998f78bf857ace080e3768071830f3815b6061bdb85524f36d6f1"
+      "bytes": 43499,
+      "sha256": "e13945bdd303d1ced9315a9d8175f067e864443430e78b2594cb3cea2ae6b585"
     },
     "LICENSE.md": {
       "bytes": 764,
@@ -20,12 +20,12 @@
       "sha256": "6dd183d1c57394f3ec769a3cff6826a14aae34d88be8d17fccd655261bd596dd"
     },
     "README.en.md": {
-      "bytes": 2917,
-      "sha256": "eee0f8176d1bfde734ec20de7159e62ca12ddeb169bd26cc18a8926452f35971"
+      "bytes": 3001,
+      "sha256": "30b28676e7feb4089a6da07cdbff72e57a46bbfca40b9dd377a3afdc23a0c2c1"
     },
     "README.md": {
-      "bytes": 3162,
-      "sha256": "d83f09b7c676c34e258d099f8f155778b58593b4f655b8a81de4718960059343"
+      "bytes": 3254,
+      "sha256": "838289fa359f05e04943e2b4bfeef3c2bec4a7f25a2068724e08ff8749953df3"
     },
     "app/assets/brandmark.svg": {
       "bytes": 587,
@@ -100,24 +100,24 @@
       "sha256": "b92a0d9dd2a3cf1294c7caf69922e959bb855ef6335f8ef9bedb1b56787f8721"
     },
     "app/handoff.js": {
-      "bytes": 27705,
-      "sha256": "0cb1cd02c1ffdd65d431a31afc0e94e38a46b08c6a0d8e11e4b4197c62dc3b7a"
+      "bytes": 27742,
+      "sha256": "a0fbf0a1a6e540407137ae005ed892390395373364cf578310cc31c759c4032f"
     },
     "app/index.html": {
-      "bytes": 5095,
-      "sha256": "5a3e6b0a3ed62e4be879c81dfae534a79ecd0d69efdc9244a2757c9495ce0ab8"
+      "bytes": 5163,
+      "sha256": "489c8d55ecfd270a4cd1d358520abb13cb1b7a7b26173fa0ac5e0910fddffd25"
     },
     "app/legacy-p01.js": {
       "bytes": 12860,
       "sha256": "e4a12b6ec35e31a33ec5d1539fdc41d3a954d9bd405a9a5c2971fe6200598abc"
     },
     "app/locale.js": {
-      "bytes": 28304,
-      "sha256": "f84970703032cc83c1cdef36285b9b2fc6456921012266c6c5deb1b087138eda"
+      "bytes": 28448,
+      "sha256": "2450567ee2f92c88fb3dc4d990b253172b8e947f11d3d38338edf35611183f3a"
     },
     "app/main.js": {
-      "bytes": 72232,
-      "sha256": "1ca07f3755b6a6a989b6f2f9ea2b4ec3a0d8fb5c0e757e759953774c8fad92f9"
+      "bytes": 75525,
+      "sha256": "922b76e266d41b09bd5031355aa4a37e039450fde28cac7796242c6aa969f9fd"
     },
     "app/model.js": {
       "bytes": 25099,
@@ -130,6 +130,22 @@
     "app/provider.js": {
       "bytes": 1034,
       "sha256": "f339eb659cc748b9d278452729a3fa3a8589070b3259f661ffccf09a50981587"
+    },
+    "app/references-client.js": {
+      "bytes": 13223,
+      "sha256": "84f7c1d57b34e3a36acd0a24c9653540952ecc8012d40eec854ea33b8f9f68e6"
+    },
+    "app/references/build.json": {
+      "bytes": 532,
+      "sha256": "7a354dfa13f523b77d99d846888ac49d5cb0ae598def6e7217abc35eba41d96c"
+    },
+    "app/references/catalog.json": {
+      "bytes": 46078,
+      "sha256": "65dfc94d35e6804abd1b1b4c0136ed2303b15a47b1bd8640006750ad74240d19"
+    },
+    "app/references/report.html": {
+      "bytes": 757280,
+      "sha256": "e572b0915b758c987eedf7a76a7bf63f7d2365a609b8083e3195e8c8f9201682"
     },
     "app/resources-client.js": {
       "bytes": 7020,
@@ -588,8 +604,8 @@
       "sha256": "4fe8311f07feb89a1788bfa96131097989c217013b4be3078d248035296f29fd"
     },
     "app/styles.css": {
-      "bytes": 95548,
-      "sha256": "dda48c44db2d612f913459dfcc86749d0ab0b3e3ab7e14a28b6893b24b74cbd8"
+      "bytes": 100433,
+      "sha256": "96027dc0ff8700192b41da22291fbf5ea74b7e7ee229167e7e1ed53160ba2e1c"
     },
     "benchmarks/fixtures/synthetic_responses.json": {
       "bytes": 1164,
@@ -608,12 +624,12 @@
       "sha256": "128d25d06587d362d976d1dde1c8c1aa76ccebe968fa748ad03dc7535256f8f3"
     },
     "docs/SHARING-WEB02.en.md": {
-      "bytes": 3879,
-      "sha256": "8bcca060e5e227208c8025daa29343fd4afc8e9796682f25c56e458c0d5d542d"
+      "bytes": 5222,
+      "sha256": "cc89ac31e08b550141011f1e26ac772a732c2c7d287c92abeba0f95c8e3adf9b"
     },
     "docs/SHARING-WEB02.md": {
-      "bytes": 4164,
-      "sha256": "c456ae6748f308a9f72cbf06c89aee2dac9b549c07d3ec70f48fe4ce4b52cf32"
+      "bytes": 5557,
+      "sha256": "9f620dee20cd09e6bd659e5b11156d60db4157f05e326662b2a1d31f3fca3c1f"
     },
     "materials/README.md": {
       "bytes": 8558,
@@ -1082,10 +1098,12 @@
   },
   "lessons": 3,
   "limits": "Full authored handoff; third-party raw corpus and all browser/user records excluded. No cryptographic signature or human approval.",
+  "referenceDocuments": 14,
   "release": "WEB02",
+  "researchClaimReferences": 92,
   "resourceFiles": 112,
   "schemaVersion": 1,
-  "sha256": "5bcb901f4b437d30038a239b89204904e8060949705b4c4dc346447b07375dd2",
-  "sourceFingerprint": "51543a9a3930cfb9f57a4201d1fea8d949ef692e356bc6e892a11c0eb175a139",
-  "visualEdition": "UI05"
+  "sha256": "ad4b02679bdcb662161da866544720c564a2f3614cca0f3c93ab3cff435ac9d6",
+  "sourceFingerprint": "adfb390ada0f68c857778d64cfbd42b02e5cfc76b3039d666e86c93809e37756",
+  "visualEdition": "R04"
 }

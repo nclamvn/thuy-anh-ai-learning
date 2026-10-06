@@ -2,7 +2,7 @@ import {roomOpening,roomHeading,roomArt} from './room-ui.js';
 // Authored remote-review surfaces. Visitor feedback is separate from the learning model.
 export const REVIEW_KEY='thuy-anh-ai-learning:project-review:v1';
 export const REVIEW_FIELDS=['name','problem','product','lesson','operations','next'];
-export const VIEWS=['overview','guide','review','group','activity','session','reports','library','workbench'];
+export const VIEWS=['overview','guide','review','group','activity','session','reports','library','workbench','references'];
 const clone=value=>JSON.parse(JSON.stringify(value));
 export function parseRoute(hash=''){
  const raw=String(hash).replace(/^#/,'');if(!raw)return {view:'overview',doc:null,lesson:null,lang:null,error:null};
@@ -10,7 +10,7 @@ export function parseRoute(hash=''){
  let params;try{params=new URLSearchParams(query??'');}catch{return {view,doc:null,lesson:null,lang:null,error:'invalid-route'};}
  for(const key of params.keys())if(!['doc','lang','lesson'].includes(key)||params.getAll(key).length!==1)return {view,doc:null,lesson:null,lang:null,error:'invalid-route'};
  const lang=params.get('lang'),doc=params.get('doc'),lesson=params.get('lesson');if(lang!==null&&!['vi','en'].includes(lang))return {view,doc:null,lesson:null,lang:null,error:'invalid-language'};
- if(doc!==null&&(view!=='library'||! /^[A-Z0-9][A-Z0-9_-]{1,99}$/.test(doc)))return {view,doc:null,lesson:null,lang,error:'invalid-document'};
+ if(doc!==null&&(!['library','references'].includes(view)||! /^[A-Z0-9][A-Z0-9_-]{1,99}$/.test(doc)))return {view,doc:null,lesson:null,lang,error:'invalid-document'};
  if(lesson!==null&&(!['group','activity'].includes(view)||! /^[A-Z0-9][A-Z0-9_-]{1,99}$/.test(lesson)))return {view,doc:null,lesson:null,lang,error:'invalid-lesson'};
  return {view,doc,lesson,lang,error:null};
 }

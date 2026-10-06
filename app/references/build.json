@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "protocol": "R04-frozen-authored-dossier-v1",
+  "sourceHTMLSha256": "3cc7fee4c0f745100b110155fdc4bceca434f526cdd143ccc49704c048811b8f",
+  "dataSha256": "c8f785cf604204775b6d356eee6fab8031781abe81d3140e9f3959e4e21aa3ce",
+  "files": {
+    "catalog.json": {
+      "sha256": "65dfc94d35e6804abd1b1b4c0136ed2303b15a47b1bd8640006750ad74240d19",
+      "bytes": 46078
+    },
+    "report.html": {
+      "sha256": "e572b0915b758c987eedf7a76a7bf63f7d2365a609b8083e3195e8c8f9201682",
+      "bytes": 757280
+    }
+  }
+}

@@ -9,8 +9,9 @@ import unittest
 import zipfile
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'tools'))
-from build_share_bundle import build, collect, verify, ARCHIVE, OUTER, PREFIX, INNER, RUNTIME, VISUAL_EDITION, ROOM_ASSETS
+from build_share_bundle import build, collect, verify, ARCHIVE, OUTER, PREFIX, INNER, RUNTIME, VISUAL_EDITION, ROOM_ASSETS, REFERENCE_ASSETS, validate_links
 from build_resources import KitError, markdown_links
+from create_public_manifest import prepared as prepared_public_manifest
 
 class ShareBundle(unittest.TestCase):
     def setUp(self):
@@ -123,6 +124,49 @@ const brokenMarkup=`<img src="assets/missing-world.svg">`;
     def test_resources_and_authored_copies_cannot_diverge(self):
         path=self.project/'materials/en/curriculum/lesson-02.md';path.write_text(path.read_text()+'\nChanged draft\n')
         with self.assertRaisesRegex(KitError,'copy differs'):collect(self.project)
+    def test_references_runtime_and_exact_derivatives_are_portable(self):
+        first=build(self.project)
+        self.assertEqual(first['referenceDocuments'],14)
+        self.assertEqual(first['researchClaimReferences'],92)
+        with zipfile.ZipFile(self.project/ARCHIVE) as archive:
+            inner=json.loads(archive.read(PREFIX+INNER))
+            self.assertEqual(inner['referenceDocuments'],14)
+            self.assertEqual(inner['researchClaimReferences'],92)
+            for name in ('references-client.js',*REFERENCE_ASSETS):
+                self.assertEqual(archive.read(PREFIX+'app/'+name),(self.project/'app'/name).read_bytes())
+                self.assertIn('app/'+name,inner['files'])
+            body=archive.read(PREFIX+'app/references/report.html').decode()
+            self.assertIn('../#references?lang=vi',body)
+            self.assertNotIn('research/enrichment/', '\n'.join(archive.namelist()))
+
+    def test_missing_or_changed_reference_derivatives_fail_before_packaging(self):
+        for name in REFERENCE_ASSETS:
+            with self.subTest(name=name):
+                path=self.project/'app'/name;original=path.read_bytes();path.unlink()
+                with self.assertRaisesRegex(KitError,'source missing'):collect(self.project)
+                path.write_bytes(original+b' ')
+                with self.assertRaisesRegex(KitError,'reference build check failed'):collect(self.project)
+                path.write_bytes(original)
+        path=self.project/'app/references/report.html';original=path.read_text()
+        path.write_text(original.replace('../#references?lang=vi','../../outside.html'))
+        with self.assertRaisesRegex(KitError,'reference build check failed'):collect(self.project)
+
+    def test_html_return_directories_and_script_template_literals(self):
+        files={'app/index.html':b'<main></main>', 'app/references/report.html':b'<a href="../#references?lang=en">Return</a><script>const row=`<a href="${E(source.url)}">Source</a>`;</script>'}
+        validate_links(files)
+        files['app/references/report.html']+=b'<a href="${evil}">Unresolved static attribute</a>'
+        with self.assertRaisesRegex(KitError,'link missing/escaping'):validate_links(files)
+        files['app/references/report.html']=b'<a href="../../outside.html">Broken</a>'
+        with self.assertRaisesRegex(KitError,'link missing/escaping'):validate_links(files)
+
+    def test_public_receipt_rejects_env_raw_and_user_exports(self):
+        for name in ('.env.local','private/child.json','research/enrichment/raw/report.html','research/unlisted.html','app/project-feedback.json'):
+            with self.subTest(name=name):
+                path=self.project/name;path.parent.mkdir(parents=True,exist_ok=True)
+                path.write_text('Synthetic forbidden data, not personal data')
+                with self.assertRaisesRegex(ValueError,'raw/private'):prepared_public_manifest(self.project)
+                path.unlink()
+
     def test_package_readme_and_protocol_links_resolve_without_tools(self):
         files=collect(self.project)
         self.assertNotIn('tools/check_public.py',files)

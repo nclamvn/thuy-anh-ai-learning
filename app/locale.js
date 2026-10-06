@@ -321,3 +321,5 @@ Object.assign(COPY,{
 });
 // Include supplemental interface copy in the same deterministic lookup.
 ordered.splice(0,ordered.length,...Object.keys(COPY).sort((a,b)=>b.length-a.length));
+
+Object.assign(COPY,{'Nguồn tham khảo':'References'});ordered.splice(0,ordered.length,...Object.keys(COPY).sort((a,b)=>b.length-a.length));
