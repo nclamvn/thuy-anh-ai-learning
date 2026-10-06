@@ -107,11 +107,11 @@
     },
     "app/downloads/project-review-WEB02.json": {
       "bytes": 43893,
-      "sha256": "3dcac4954e94354f9bbac34211acfb6a0c985d1f80be24a3961a2eecd2376dc5"
+      "sha256": "160d398c2483e54d1e425dba2127d5ba02d1314897601c1bea1bb110ff1dbcd2"
     },
     "app/downloads/project-review-WEB02.zip": {
-      "bytes": 1107619,
-      "sha256": "ad4b02679bdcb662161da866544720c564a2f3614cca0f3c93ab3cff435ac9d6"
+      "bytes": 1108761,
+      "sha256": "572c9c75f4b3dd91aee8e75274a58aac9f4cb21f94e7175b5a12fb9d2957a669"
     },
     "app/favicon.svg": {
       "bytes": 341,
@@ -159,15 +159,15 @@
     },
     "app/references/build.json": {
       "bytes": 532,
-      "sha256": "7a354dfa13f523b77d99d846888ac49d5cb0ae598def6e7217abc35eba41d96c"
+      "sha256": "935bb6e348f969e865f1d044e8ddfecd3a411bc06babe599a8dd3b001061830d"
     },
     "app/references/catalog.json": {
       "bytes": 46078,
-      "sha256": "65dfc94d35e6804abd1b1b4c0136ed2303b15a47b1bd8640006750ad74240d19"
+      "sha256": "0dfde63efb2ba93fe4c930b607fe540321cc6cfdabe7e43bf967b1b4334767b8"
     },
     "app/references/report.html": {
-      "bytes": 757280,
-      "sha256": "e572b0915b758c987eedf7a76a7bf63f7d2365a609b8083e3195e8c8f9201682"
+      "bytes": 758505,
+      "sha256": "c013279174dc47d1375680301ae4433bb5c6a9f267c79b6d13c46eda8d48e5cd"
     },
     "app/resources-client.js": {
       "bytes": 7020,
@@ -626,8 +626,8 @@
       "sha256": "4fe8311f07feb89a1788bfa96131097989c217013b4be3078d248035296f29fd"
     },
     "app/styles.css": {
-      "bytes": 100433,
-      "sha256": "96027dc0ff8700192b41da22291fbf5ea74b7e7ee229167e7e1ed53160ba2e1c"
+      "bytes": 103471,
+      "sha256": "e80b436e83fb3cadd60778d26973025a61286d41e1ca51b560bc5f436d599236"
     },
     "app/tests/handoff.test.mjs": {
       "bytes": 6292,
@@ -1154,8 +1154,8 @@
       "sha256": "8a932f218e86c20442e961c5d6594bb070718d7c3d6f971bdf9073daf847c673"
     },
     "tools/build_references.py": {
-      "bytes": 7068,
-      "sha256": "655742fd59ec89e05d7c0ff95c97895347b24d07e15219f701df8cafa098b76b"
+      "bytes": 8293,
+      "sha256": "9c95ab3f55c80a7f3f8027f25b293668b8eff4897eb9dba8d04eee04fbea26cb"
     },
     "tools/build_resources.py": {
       "bytes": 19456,

@@ -1,7 +1,7 @@
 {
   "archive": "project-review-WEB02.zip",
   "authoredLanguageDocuments": 108,
-  "bytes": 1107619,
+  "bytes": 1108761,
   "catalogDocuments": 54,
   "dataKind": "authored-review-download",
   "documentCountScope": "54 material catalog entries; 14 reference documents counted separately; package support documents excluded",
@@ -9,7 +9,7 @@
   "files": {
     "CONTENT-MANIFEST.json": {
       "bytes": 43499,
-      "sha256": "e13945bdd303d1ced9315a9d8175f067e864443430e78b2594cb3cea2ae6b585"
+      "sha256": "360b871a5142d26fe4193ccc553926a40c776ee5a4d280a745c94135a80ad848"
     },
     "LICENSE.md": {
       "bytes": 764,
@@ -137,15 +137,15 @@
     },
     "app/references/build.json": {
       "bytes": 532,
-      "sha256": "7a354dfa13f523b77d99d846888ac49d5cb0ae598def6e7217abc35eba41d96c"
+      "sha256": "935bb6e348f969e865f1d044e8ddfecd3a411bc06babe599a8dd3b001061830d"
     },
     "app/references/catalog.json": {
       "bytes": 46078,
-      "sha256": "65dfc94d35e6804abd1b1b4c0136ed2303b15a47b1bd8640006750ad74240d19"
+      "sha256": "0dfde63efb2ba93fe4c930b607fe540321cc6cfdabe7e43bf967b1b4334767b8"
     },
     "app/references/report.html": {
-      "bytes": 757280,
-      "sha256": "e572b0915b758c987eedf7a76a7bf63f7d2365a609b8083e3195e8c8f9201682"
+      "bytes": 758505,
+      "sha256": "c013279174dc47d1375680301ae4433bb5c6a9f267c79b6d13c46eda8d48e5cd"
     },
     "app/resources-client.js": {
       "bytes": 7020,
@@ -604,8 +604,8 @@
       "sha256": "4fe8311f07feb89a1788bfa96131097989c217013b4be3078d248035296f29fd"
     },
     "app/styles.css": {
-      "bytes": 100433,
-      "sha256": "96027dc0ff8700192b41da22291fbf5ea74b7e7ee229167e7e1ed53160ba2e1c"
+      "bytes": 103471,
+      "sha256": "e80b436e83fb3cadd60778d26973025a61286d41e1ca51b560bc5f436d599236"
     },
     "benchmarks/fixtures/synthetic_responses.json": {
       "bytes": 1164,
@@ -1103,7 +1103,7 @@
   "researchClaimReferences": 92,
   "resourceFiles": 112,
   "schemaVersion": 1,
-  "sha256": "ad4b02679bdcb662161da866544720c564a2f3614cca0f3c93ab3cff435ac9d6",
-  "sourceFingerprint": "adfb390ada0f68c857778d64cfbd42b02e5cfc76b3039d666e86c93809e37756",
+  "sha256": "572c9c75f4b3dd91aee8e75274a58aac9f4cb21f94e7175b5a12fb9d2957a669",
+  "sourceFingerprint": "bd5b3faf7244da68c9d528c16ae33b0437e14e496c5719119dd5a17498c04f56",
   "visualEdition": "R04"
 }
