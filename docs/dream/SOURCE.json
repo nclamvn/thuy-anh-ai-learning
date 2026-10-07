@@ -103,5 +103,50 @@
       "bytes": 5975,
       "sha256": "92458243389c478f34432cb7d6f105c7a04d13717fa734b0454a17ae73d77c40"
     }
+  },
+  "kitPublicProjection": {
+    "protocol": "public-colophon-permanent-OFF-v1",
+    "canonicalOutputs": {
+      "index.html": {
+        "bytes": 69598,
+        "sha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e"
+      },
+      "BUILD.json": {
+        "bytes": 1223,
+        "sha256": "342878a76c029afc9cabad8f16c349249e6e59c94159c9e3c3d209ee0f4e5fbb"
+      },
+      "rehearsal.vi.html": {
+        "bytes": 9990,
+        "sha256": "3d8b552a5ad7e9b3af42f250c18b61b31fe2f3f8de05b7289111584e00b838ce"
+      },
+      "rehearsal.en.html": {
+        "bytes": 8486,
+        "sha256": "9c89ea36e82de3376ca852321ec474b4f6aecd15414d3bb887c68801ffb2695d"
+      },
+      "observation.csv": {
+        "bytes": 660,
+        "sha256": "bee046ce4d8562272a17ef0067fe975820d7b08c2781f363d5ddc3859bc2068a"
+      },
+      "observation-template.json": {
+        "bytes": 1184,
+        "sha256": "05629120125256ced5ef9bc31ee7e9a487747abf2504b5d4a025689adc4ed7ed"
+      },
+      "synthetic-scenarios.json": {
+        "bytes": 6224,
+        "sha256": "36c9c14b41ef241a40ce872a039e9b86d90ba2f092d9307564457d635146f44c"
+      }
+    },
+    "replacements": [
+      {
+        "locale": "vi",
+        "canonical": "Xưởng giấc mơ · bản hướng dẫn local · 07/10/2026. AI trực tuyến giữ tắt khi chưa cấu hình.",
+        "published": "Xưởng giấc mơ · bộ hướng dẫn public · 07/10/2026. AI trực tuyến luôn tắt; bản public không có cấu hình provider."
+      },
+      {
+        "locale": "en",
+        "canonical": "Dream atelier · local facilitation guide · 7 October 2026. Live AI stays off until configured.",
+        "published": "Dream atelier · public facilitation guide · 7 October 2026. Live AI is permanently off; this public edition has no provider configuration."
+      }
+    ]
   }
 }

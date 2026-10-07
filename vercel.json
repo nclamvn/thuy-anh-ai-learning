@@ -3,5 +3,6 @@
   "framework": null,
   "buildCommand": "node tools/build_site.mjs",
   "installCommand": "",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "trailingSlash": true
 }

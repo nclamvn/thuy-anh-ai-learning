@@ -107,11 +107,11 @@
     },
     "app/downloads/project-review-WEB02.json": {
       "bytes": 47697,
-      "sha256": "894eea0b1d16e04da35d79ec454a7b7369301961fd6b4a1cb76c83fa2f46b9af"
+      "sha256": "a92b48f5e2da2037275c22a8851cc52fe4be709f37403ddbcad70da57fa3c273"
     },
     "app/downloads/project-review-WEB02.zip": {
-      "bytes": 1646686,
-      "sha256": "517823ee64efe55c4b19ace4777c09e3b40705f452561e3818592742d7d1fa22"
+      "bytes": 1646866,
+      "sha256": "66da325138556e9c91f4393b04e0db75f9edfb1accd8dec1a866b7f8c410581b"
     },
     "app/dream/DEPENDENCIES.json": {
       "bytes": 1193,
@@ -130,16 +130,16 @@
       "sha256": "bbe25baff6513958dd56f3f7299b9c7bdd1fd8e3f7e7d4408529d0c483410155"
     },
     "app/dream/kit/BUILD.json": {
-      "bytes": 1223,
-      "sha256": "342878a76c029afc9cabad8f16c349249e6e59c94159c9e3c3d209ee0f4e5fbb"
+      "bytes": 1495,
+      "sha256": "55d02746d342a872ecb6673a1ad1195db45e12605bc97bc9f8faa50c039381f9"
     },
     "app/dream/kit/CONTENT.json": {
       "bytes": 51040,
       "sha256": "ff1995165b07e20518772a1c958b072fc0480920d16b8d1efce57588e1f03a93"
     },
     "app/dream/kit/index.html": {
-      "bytes": 69598,
-      "sha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e"
+      "bytes": 69666,
+      "sha256": "7d40ab90f15f03e5154dca5f781c619b1ef2ed0c65833488a5c878c9aa7ac377"
     },
     "app/dream/kit/observation-template.json": {
       "bytes": 1184,
@@ -202,8 +202,8 @@
       "sha256": "71c1d8e5d448d93accf638a8b702d65290f39903f795dbb1a5d6bdd78aec4eae"
     },
     "app/dream/tests/kit.test.mjs": {
-      "bytes": 3133,
-      "sha256": "8e39ceee543671b10514a9c63d1949b2f85ede653f69e1783896e43989788b6f"
+      "bytes": 4199,
+      "sha256": "4d7b31bc41499b474d149d2582a9aef75d2be6d58065c1673b312a497bc0be4a"
     },
     "app/dream/tests/lab.test.mjs": {
       "bytes": 15591,
@@ -826,8 +826,8 @@
       "sha256": "128d25d06587d362d976d1dde1c8c1aa76ccebe968fa748ad03dc7535256f8f3"
     },
     "docs/RELEASE-CLEANUP-20261007.md": {
-      "bytes": 4029,
-      "sha256": "2176daa51c10acfb443ce96d751170ccf7b08d3b227814d110a0f3ffa3a0d7a4"
+      "bytes": 4610,
+      "sha256": "3dc9d0d395982810e7fea468f715dfbee2723f484f0bd0b458645b62f3984d7c"
     },
     "docs/SHARING-WEB02.en.md": {
       "bytes": 5222,
@@ -838,16 +838,16 @@
       "sha256": "9f620dee20cd09e6bd659e5b11156d60db4157f05e326662b2a1d31f3fca3c1f"
     },
     "docs/dream/BUILD.json": {
-      "bytes": 5975,
-      "sha256": "9e31c8711da01752ada5f72114049ef98e7663f5b764c9c1e10cb55364d8de64"
+      "bytes": 6008,
+      "sha256": "0d02359cfebadac639e6342bb51999f115ceec8769e3f91ac6d6d29cdcf99326"
     },
     "docs/dream/README.md": {
-      "bytes": 4065,
-      "sha256": "6b430ea2e899ac6a41702488eaadb501330daac658539c41f66d0ea7c9247be0"
+      "bytes": 4766,
+      "sha256": "247c24a045867e696b3f9471431e8e591f133e423469ae223112053382a66083"
     },
     "docs/dream/SOURCE.json": {
-      "bytes": 6319,
-      "sha256": "262da28093ca644543eda8660add007d730c32c1596fa00f0e83289fa6f21708"
+      "bytes": 8157,
+      "sha256": "2e8428b1787d4b88b23b036e9fd6ea0955a97d0d2a87e91599b666f2d3aef0d1"
     },
     "docs/dream/contracts/PlannerPlan.schema.json": {
       "bytes": 14580,
@@ -1366,8 +1366,8 @@
       "sha256": "8a932f218e86c20442e961c5d6594bb070718d7c3d6f971bdf9073daf847c673"
     },
     "tools/build_dream.py": {
-      "bytes": 5671,
-      "sha256": "789d1e4edb3c09a2114b954b59c10aff925b6a8a5bea83a34dbbd72bc9dca64f"
+      "bytes": 7112,
+      "sha256": "8274f74a80fa98d530a1990d64684cdf57977f8f14b6e15c08d7a224ca2138af"
     },
     "tools/build_references.py": {
       "bytes": 8434,
@@ -1406,8 +1406,8 @@
       "sha256": "8a037cabe964dfb1fa48b3e8f6dbf95a4096eecace0f51f61f87dec99c045043"
     },
     "tools/tests/build_site.test.mjs": {
-      "bytes": 5058,
-      "sha256": "f51a7a71c995b07315e6c18fb559089cbf3dfcc3833292f2b1be86be3cb52ef2"
+      "bytes": 5841,
+      "sha256": "2ce056543178e713570f56dd5bcfeef5771e1a9206e7543357e6075c1711628b"
     },
     "tools/tests/test_build_references.py": {
       "bytes": 2968,
@@ -1422,8 +1422,8 @@
       "sha256": "19dca90913c6fb4fa1e5fc08b30c8ed4b6acc4372b7c7094c3e7783c89a9b70c"
     },
     "tools/tests/test_public_dream.py": {
-      "bytes": 2105,
-      "sha256": "20a533a8d9afa523fd27f9c16d8df6068d419a21c6646fd62d15f05878a1b1c3"
+      "bytes": 2425,
+      "sha256": "dbcada8b55c00f0731ab86a49a33d5064f29b81f2c4784a59882208a374981c2"
     },
     "tools/tests/test_share_bundle.py": {
       "bytes": 12708,
@@ -1446,8 +1446,8 @@
       "sha256": "33306424060fa925c745dc8fb89570b4e8d4337ef13519b5def08ca3fbf235b1"
     },
     "vercel.json": {
-      "bytes": 178,
-      "sha256": "d33d60200cdfa37737ed104833540c496b131086c085fe6f93c99c3f74ae5fa0"
+      "bytes": 203,
+      "sha256": "2d83605a9a0941b420eb9fe6fbdf740bdd833546e02566e10124cda01632d678"
     }
   },
   "limits": "Integrity receipt for available public sources only; frozen-dossier-derived references have a separate build receipt. Missing raw corpus cannot be reverified; no cryptographic signature or educational approval.",

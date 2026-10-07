@@ -24,3 +24,6 @@ class PublicDreamFaults(unittest.TestCase):
  def test_direct_network_call_with_whitespace_in_public_helper_fails(self):
   f=m.D/'public-mode.js';f.write_text(f.read_text()+'\nfetch \n("/api/planner");')
   with self.assertRaisesRegex(ValueError,'adapter not permanently OFF'):m.run()
+ def test_edited_public_footer_cannot_pass_projection_freshness(self):
+  f=m.D/'kit/index.html';f.write_text(f.read_text().replace('Live AI is permanently off; this public edition has no provider configuration.','Live AI stays off until configured.'))
+  with self.assertRaisesRegex(ValueError,'generated drift'):m.run()

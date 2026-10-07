@@ -3,11 +3,11 @@
   "source": "CONTENT.json",
   "sourceSha256": "ff1995165b07e20518772a1c958b072fc0480920d16b8d1efce57588e1f03a93",
   "output": "index.html",
-  "outputSha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e",
+  "outputSha256": "7d40ab90f15f03e5154dca5f781c619b1ef2ed0c65833488a5c878c9aa7ac377",
   "files": {
     "index.html": {
-      "bytes": 69598,
-      "sha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e"
+      "bytes": 69666,
+      "sha256": "7d40ab90f15f03e5154dca5f781c619b1ef2ed0c65833488a5c878c9aa7ac377"
     },
     "rehearsal.vi.html": {
       "bytes": 9990,
@@ -32,5 +32,10 @@
   },
   "mode": "self-contained-bilingual-team-proposed-kit",
   "edition": "DREAM-JOURNEY-20261007",
-  "actualOutcomes": null
+  "actualOutcomes": null,
+  "publicProjection": {
+    "protocol": "public-colophon-permanent-OFF-v1",
+    "canonicalIndexSha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e",
+    "canonicalBuildSha256": "342878a76c029afc9cabad8f16c349249e6e59c94159c9e3c3d209ee0f4e5fbb"
+  }
 }

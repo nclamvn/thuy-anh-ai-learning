@@ -3,8 +3,8 @@
   "edition": "DREAM-JOURNEY-public-20261007",
   "dataKind": "public-static-synthetic-rehearsal",
   "source": {
-    "bytes": 6319,
-    "sha256": "262da28093ca644543eda8660add007d730c32c1596fa00f0e83289fa6f21708"
+    "bytes": 8157,
+    "sha256": "2e8428b1787d4b88b23b036e9fd6ea0955a97d0d2a87e91599b666f2d3aef0d1"
   },
   "files": {
     "app/dream/DEPENDENCIES.json": {
@@ -24,16 +24,16 @@
       "sha256": "bbe25baff6513958dd56f3f7299b9c7bdd1fd8e3f7e7d4408529d0c483410155"
     },
     "app/dream/kit/BUILD.json": {
-      "bytes": 1223,
-      "sha256": "342878a76c029afc9cabad8f16c349249e6e59c94159c9e3c3d209ee0f4e5fbb"
+      "bytes": 1495,
+      "sha256": "55d02746d342a872ecb6673a1ad1195db45e12605bc97bc9f8faa50c039381f9"
     },
     "app/dream/kit/CONTENT.json": {
       "bytes": 51040,
       "sha256": "ff1995165b07e20518772a1c958b072fc0480920d16b8d1efce57588e1f03a93"
     },
     "app/dream/kit/index.html": {
-      "bytes": 69598,
-      "sha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e"
+      "bytes": 69666,
+      "sha256": "7d40ab90f15f03e5154dca5f781c619b1ef2ed0c65833488a5c878c9aa7ac377"
     },
     "app/dream/kit/observation-template.json": {
       "bytes": 1184,
@@ -96,8 +96,8 @@
       "sha256": "71c1d8e5d448d93accf638a8b702d65290f39903f795dbb1a5d6bdd78aec4eae"
     },
     "app/dream/tests/kit.test.mjs": {
-      "bytes": 3133,
-      "sha256": "8e39ceee543671b10514a9c63d1949b2f85ede653f69e1783896e43989788b6f"
+      "bytes": 4199,
+      "sha256": "4d7b31bc41499b474d149d2582a9aef75d2be6d58065c1673b312a497bc0be4a"
     },
     "app/dream/tests/lab.test.mjs": {
       "bytes": 15591,
@@ -157,6 +157,7 @@
     "kitSections": 11,
     "syntheticScenarios": 8,
     "generatedKitFiles": 7,
+    "publicKitFooterLocales": 2,
     "liveAI": "PERMANENTLY_OFF_STATIC",
     "providerCalls": 0,
     "rawCorpus": "UNAVAILABLE_REFERENCES_ONLY",
