@@ -1,0 +1,56 @@
+{
+  "recordId": null,
+  "scenarioId": null,
+  "roles": null,
+  "locale": null,
+  "sourceText": null,
+  "sourceKind": null,
+  "proposedChoice": null,
+  "chosenChoice": null,
+  "choiceMode": "not-chosen",
+  "unrenderedWish": null,
+  "sceneObserved": null,
+  "observationStatus": "not-observed",
+  "supportingAction": null,
+  "exactWords": null,
+  "rescueCount": null,
+  "rescueAction": null,
+  "durationSeconds": null,
+  "nextChange": null,
+  "metrics": {
+    "M1": {
+      "status": "not-observed",
+      "evidence": null
+    },
+    "M2": {
+      "status": "not-observed",
+      "evidence": null
+    },
+    "M3": {
+      "status": "not-observed",
+      "evidence": null
+    },
+    "M4": {
+      "status": "not-observed",
+      "evidence": null
+    },
+    "M5": {
+      "status": "not-observed",
+      "evidence": null
+    },
+    "M6": {
+      "status": "not-observed",
+      "evidence": null
+    }
+  },
+  "dataKind": "manual-unverified-observation",
+  "observerConfirmation": null,
+  "printId": null,
+  "geometryVersion": null,
+  "chosenTitle": null,
+  "chosenNarration": null,
+  "metadataSourceWords": null,
+  "titleOrigin": null,
+  "narrationMode": null,
+  "narrationOrigin": null
+}

@@ -1,8 +1,16 @@
 # AI Learning Practice · Lớp thực hành AI
 
-A local facilitator workspace for designing and rehearsing learning with AI: a persistent Vietnamese/English toggle, three draft lessons, 54 bilingual documents, eight-step learning sessions, work records and a structured observation/readiness workbench. WEB02 retains the accepted UI03 design and local application. [Vietnamese README](README.md).
+A local facilitator workspace for designing and rehearsing learning with AI: a persistent Vietnamese/English toggle, three draft lessons, 54 bilingual documents, eight-step learning sessions, work records and a structured observation/readiness workbench. WEB02 retains the accepted UI05 design and local application. [Vietnamese README](README.md).
 
 **Scope: adult rehearsal with fictional data.** This is not approved for use with children, has no measured educational effectiveness in Vietnam and is not a production service. Learner preview hides facilitator controls; it is not authentication or security authorization. The AI provider uses deliberately flawed fixtures and makes no model/API calls.
+
+## Current local edition
+
+The working checkout and the previously deployed HTTPS site are separate states. This source edition integrates the accepted control fixes and 7 October 2026 Dream journey for commit/push. Deployment is separate; the previous HTTPS site does not automatically certify a new commit. Historical receipts do not certify changed bytes. The updated manifest/bundle is generated from reviewed source and checked. Local fonts retain exact committed Be Vietnam Pro/Lora bytes and SIL OFL licenses. From the parent project, `./start-current.command public` opens this review surface on port 8885, separately from the original research app and Dream atelier.
+
+## Dream journey source edition
+
+Open the [English atelier](app/dream/index.html?lang=en) / [Vietnamese](app/dream/index.html?lang=vi) through HTTP, or use the overview/guide entries. The [bilingual rehearsal kit](app/dream/kit/index.html) has11 sections, eight synthetic scenarios and blank unobserved records. Tell → review/build → lookback/change preserves exact words and metadata provenance; method prose never silently becomes authored title/narration. The static browser edition is permanently OFF with no API calls. The prepared server/provider is separately versioned as [source-only backend](source/dream-backend/README.md), default OFF and excluded from website/Vercel uploads. [Source protocol and limits](docs/dream/README.md). The existing WEB02 ZIP URL now includes the atelier/kit, excluding backend and session records.
 
 ## Share for remote review
 

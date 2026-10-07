@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "source": "CONTENT.json",
+  "sourceSha256": "ff1995165b07e20518772a1c958b072fc0480920d16b8d1efce57588e1f03a93",
+  "output": "index.html",
+  "outputSha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e",
+  "files": {
+    "index.html": {
+      "bytes": 69598,
+      "sha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e"
+    },
+    "rehearsal.vi.html": {
+      "bytes": 9990,
+      "sha256": "3d8b552a5ad7e9b3af42f250c18b61b31fe2f3f8de05b7289111584e00b838ce"
+    },
+    "rehearsal.en.html": {
+      "bytes": 8486,
+      "sha256": "9c89ea36e82de3376ca852321ec474b4f6aecd15414d3bb887c68801ffb2695d"
+    },
+    "observation-template.json": {
+      "bytes": 1184,
+      "sha256": "05629120125256ced5ef9bc31ee7e9a487747abf2504b5d4a025689adc4ed7ed"
+    },
+    "synthetic-scenarios.json": {
+      "bytes": 6224,
+      "sha256": "36c9c14b41ef241a40ce872a039e9b86d90ba2f092d9307564457d635146f44c"
+    },
+    "observation.csv": {
+      "bytes": 660,
+      "sha256": "bee046ce4d8562272a17ef0067fe975820d7b08c2781f363d5ddc3859bc2068a"
+    }
+  },
+  "mode": "self-contained-bilingual-team-proposed-kit",
+  "edition": "DREAM-JOURNEY-20261007",
+  "actualOutcomes": null
+}

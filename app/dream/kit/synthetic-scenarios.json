@@ -1,0 +1,159 @@
+{
+  "edition": "DREAM-JOURNEY-20261007",
+  "dataKind": "synthetic-adult-rehearsal",
+  "actualOutcomes": null,
+  "scenarios": [
+    {
+      "id": "S01",
+      "kind": "supported",
+      "title": {
+        "vi": "Cá voi và năm lựa chọn hỗ trợ",
+        "en": "Whale with supported choices"
+      },
+      "sourceText": {
+        "vi": "Con muốn cá voi màu xanh ngọc chở thành phố nhỏ. Ban đêm có vườn và cầu sao.",
+        "en": "I want a teal whale carrying a small city. At night there are gardens and a star bridge."
+      },
+      "task": {
+        "vi": "Đối chiếu năm lựa chọn, lời gốc và cảnh; chỉ dựng sau xem lại/xác nhận.",
+        "en": "Compare all five choices, original words and scene; render only after review/confirmation."
+      },
+      "dataKind": "synthetic-adult-rehearsal",
+      "observationStatus": "not-observed",
+      "actualResult": null
+    },
+    {
+      "id": "S02",
+      "kind": "unsupported",
+      "title": {
+        "vi": "Mong muốn ngoài mẫu",
+        "en": "Wish outside the template"
+      },
+      "sourceText": {
+        "vi": "Con muốn con rồng chở một cửa hàng kẹo.",
+        "en": "I want a dragon carrying a candy shop."
+      },
+      "task": {
+        "vi": "Giữ rồng/cửa hàng kẹo là chưa dựng; không đổi âm thầm sang cá voi. Thử đường giấy, quay lại hoặc dừng.",
+        "en": "Keep dragon/candy shop visibly unrendered; no silent whale substitution. Try paper, return or stop."
+      },
+      "dataKind": "synthetic-adult-rehearsal",
+      "observationStatus": "not-observed",
+      "actualResult": null
+    },
+    {
+      "id": "S03",
+      "kind": "conflict",
+      "title": {
+        "vi": "Bầu trời mâu thuẫn",
+        "en": "Conflicting sky"
+      },
+      "sourceText": {
+        "vi": "Con muốn cá voi chở thành phố. Trời vừa ban đêm vừa hoàng hôn.",
+        "en": "I want a whale carrying a city. The sky is both night and sunset."
+      },
+      "task": {
+        "vi": "Mâu thuẫn phải được chọn lại rõ ràng; không xác nhận hộ hoặc coi đóng panel là đã giải quyết.",
+        "en": "The conflict requires an explicit choice; do not resolve by confirming for someone or closing a panel."
+      },
+      "dataKind": "synthetic-adult-rehearsal",
+      "observationStatus": "not-observed",
+      "actualResult": null
+    },
+    {
+      "id": "S04",
+      "kind": "negation",
+      "title": {
+        "vi": "Phủ định một lựa chọn",
+        "en": "Negating a supported choice"
+      },
+      "sourceText": {
+        "vi": "Con muốn cá voi chở thành phố, không có vườn và không có cầu sao.",
+        "en": "I want a whale carrying a city, with no gardens and no star bridge."
+      },
+      "task": {
+        "vi": "Kiểm cả lời phủ định và hai lựa chọn false; nếu máy chưa hiểu, sửa thủ công rồi xem lại.",
+        "en": "Check the negation and both false choices; if unclear to the system, correct manually and review."
+      },
+      "dataKind": "synthetic-adult-rehearsal",
+      "observationStatus": "not-observed",
+      "actualResult": null
+    },
+    {
+      "id": "S05",
+      "kind": "reject",
+      "title": {
+        "vi": "Bác bỏ gợi ý",
+        "en": "Reject a suggestion"
+      },
+      "sourceText": {
+        "vi": "Con muốn cá voi chở thành phố dưới trời đêm.",
+        "en": "I want a whale carrying a city at night."
+      },
+      "task": {
+        "vi": "Mở gợi ý rồi bác bỏ; ghi dữ liệu đã giữ và việc chưa áp dụng, không coi gợi ý là tác phẩm.",
+        "en": "Preview then reject a proposal; record preserved data and non-adoption, without treating the proposal as artwork."
+      },
+      "dataKind": "synthetic-adult-rehearsal",
+      "observationStatus": "not-observed",
+      "actualResult": null
+    },
+    {
+      "id": "S06",
+      "kind": "revision",
+      "title": {
+        "vi": "Đổi một chi tiết sau dựng",
+        "en": "Change one detail after print"
+      },
+      "sourceText": {
+        "vi": "Giữ cầu sao, đổi bầu trời từ ban đêm sang hoàng hôn.",
+        "en": "Keep the star bridge; change the sky from night to sunset."
+      },
+      "task": {
+        "vi": "Chỉ dùng sau một bản đã dựng có cầu sao. So trước/sau, giữ lựa chọn khác, xác nhận lại; ghi phiên bản nếu thực sự dựng.",
+        "en": "Use after an actual printed world with a bridge. Compare before/after, preserve other choices and reconfirm; record a version only if rendered."
+      },
+      "dataKind": "synthetic-adult-rehearsal",
+      "observationStatus": "not-observed",
+      "actualResult": null
+    },
+    {
+      "id": "S07",
+      "kind": "paper",
+      "title": {
+        "vi": "Chọn giấy",
+        "en": "Choose paper"
+      },
+      "sourceText": {
+        "vi": "Hôm nay tôi muốn vẽ con rồng trên giấy.",
+        "en": "Today I want to draw a dragon on paper."
+      },
+      "task": {
+        "vi": "Chọn giấy là hành động hợp lệ; ghi chưa kiểm renderer, không chuyển mẫu để đủ buổi thử.",
+        "en": "Paper is valid; record renderer not tested rather than switching to the template to complete a trial."
+      },
+      "dataKind": "synthetic-adult-rehearsal",
+      "observationStatus": "not-observed",
+      "actualResult": null
+    },
+    {
+      "id": "S08",
+      "kind": "stop",
+      "title": {
+        "vi": "Chọn dừng",
+        "en": "Choose to stop"
+      },
+      "sourceText": {
+        "vi": "Tôi chưa muốn dựng. Tôi muốn nghỉ.",
+        "en": "I do not want to print yet. I want a break."
+      },
+      "task": {
+        "vi": "Dừng không chấm điểm; ghi lời/hành động nếu được phép, không tự cho là thất bại hoặc đã kiểm renderer.",
+        "en": "Stop without scoring; record words/actions if agreed, not automatic failure or renderer validation."
+      },
+      "dataKind": "synthetic-adult-rehearsal",
+      "observationStatus": "not-observed",
+      "actualResult": null
+    }
+  ]
+}

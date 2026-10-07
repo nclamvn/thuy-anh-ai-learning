@@ -5,12 +5,12 @@
   "dataSha256": "c8f785cf604204775b6d356eee6fab8031781abe81d3140e9f3959e4e21aa3ce",
   "files": {
     "catalog.json": {
-      "sha256": "0dfde63efb2ba93fe4c930b607fe540321cc6cfdabe7e43bf967b1b4334767b8",
+      "sha256": "54e235878826c544630b97dbcffca270842d87bf1c5271aed8e2809a6d2a0cc0",
       "bytes": 46078
     },
     "report.html": {
-      "sha256": "c013279174dc47d1375680301ae4433bb5c6a9f267c79b6d13c46eda8d48e5cd",
-      "bytes": 758505
+      "sha256": "55aebaa2493208e87618adb85ec9d3913e1790048dc190f4166f4194c2ad1a40",
+      "bytes": 758646
     }
   }
 }

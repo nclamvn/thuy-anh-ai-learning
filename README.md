@@ -1,8 +1,18 @@
 # Lớp thực hành AI · AI Learning Practice
 
-Bộ công cụ local dành cho người hướng dẫn thiết kế và diễn tập việc học có AI: giao diện VI/EN, ba bài học nháp, thư viện 54 tài liệu song ngữ, phiên học tám bước, hồ sơ bài làm và bàn ghi quan sát/readiness. Bản WEB02 giữ hướng thiết kế UI03 và ứng dụng đã nghiệm thu trên máy. [English README](README.en.md).
+Bộ công cụ local dành cho người hướng dẫn thiết kế và diễn tập việc học có AI: giao diện VI/EN, ba bài học nháp, thư viện 54 tài liệu song ngữ, phiên học tám bước, hồ sơ bài làm và bàn ghi quan sát/readiness. Checkout review WEB02 hiện có hướng thiết kế UI05, reference dossier R04 và các sửa control hiện hành; mười khu giữ vai trò diễn tập rõ ràng. [English README](README.en.md).
 
 **Phạm vi: diễn tập người lớn với dữ liệu giả.** Chưa được phê duyệt sử dụng với trẻ, chưa có kết quả hiệu quả giáo dục tại Việt Nam và chưa là dịch vụ production. Preview người học chỉ ẩn công cụ người hướng dẫn; không có xác thực hay phân quyền bảo mật. AI hiện dùng fixture cố ý có lỗi, không gọi model/API trả phí.
+
+## Edition và kiểm chứng hiện tại
+
+Bản làm việc local và bản HTTPS đã triển khai là hai trạng thái cần phân biệt. Bản nguồn này tích hợp các sửa control đã nghiệm thu và Dream journey ngày 07/10/2026 để commit/push. Việc deploy là bước riêng; link Vercel dưới đây không tự xác nhận bytes của commit mới. Manifest/bundle được sinh từ nguồn đã review và kiểm lại; receipts cũ chỉ giữ giá trị lịch sử. Font Be Vietnam Pro/Lora local giữ nguyên bytes đã commit và SIL OFL, không thay bằng fallback hay tải CDN.
+
+Từ project cha, `./start-current.command public` mở bản này riêng ở 8885. Từ checkout này, dùng launcher cũ với `AI_LEARNING_PORT=8885 ./start-local.command`. Đừng chép toàn bộ runtime public vào original research app: chúng có logic/đường bàn giao riêng.
+
+## Dream journey trong repository
+
+Mở [Xưởng giấc mơ VI](app/dream/index.html?lang=vi) / [EN](app/dream/index.html?lang=en) qua HTTP, hoặc chọn entry ở overview/guide. [Kit song ngữ](app/dream/kit/index.html) gồm11 phần, tám tình huống tổng hợp và phiếu quan sát trống. Ba chặng kể → xem lại/dựng → nhìn lại/sửa giữ nguyên văn và nguồn metadata; lời phương pháp không tự thành tên/lời tác phẩm. Bản public static luôn OFF, không gọi API. Mã server/provider đã chuẩn bị được version riêng trong [source-only backend](source/dream-backend/README.md), mặc định OFF và không nằm trong website/upload Vercel. [Protocol nguồn và giới hạn](docs/dream/README.md). Bộ ZIP cùng tên WEB02 được cập nhật chứa xưởng/kit; không chứa backend hoặc dữ liệu phiên.
 
 ## Gửi cho người khác xem
 

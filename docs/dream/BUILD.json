@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "edition": "DREAM-JOURNEY-public-20261007",
+  "dataKind": "public-static-synthetic-rehearsal",
+  "source": {
+    "bytes": 6130,
+    "sha256": "066d300f6a4ce152107f895a2ccddcf5df4bb9002feef2549e68910c1bb25235"
+  },
+  "files": {
+    "app/dream/DEPENDENCIES.json": {
+      "bytes": 1193,
+      "sha256": "c230ce1e10c7cd181c57ba8aa5062f6ca3dcb7f7a0c72e232641e3d3fbf4e260"
+    },
+    "app/dream/fixtures/prepared.js": {
+      "bytes": 1274,
+      "sha256": "f1adb7715d5746446a606a3527c80fa762f6064a42ac505be11fcc1dd7a41239"
+    },
+    "app/dream/index.html": {
+      "bytes": 6267,
+      "sha256": "d129ed280d577b4ed5d69f0c4a7628bf93dc41d93fc2f40d41b79a1ff50f49a6"
+    },
+    "app/dream/journey.js": {
+      "bytes": 5250,
+      "sha256": "bbe25baff6513958dd56f3f7299b9c7bdd1fd8e3f7e7d4408529d0c483410155"
+    },
+    "app/dream/kit/BUILD.json": {
+      "bytes": 1223,
+      "sha256": "342878a76c029afc9cabad8f16c349249e6e59c94159c9e3c3d209ee0f4e5fbb"
+    },
+    "app/dream/kit/CONTENT.json": {
+      "bytes": 51040,
+      "sha256": "ff1995165b07e20518772a1c958b072fc0480920d16b8d1efce57588e1f03a93"
+    },
+    "app/dream/kit/index.html": {
+      "bytes": 69598,
+      "sha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e"
+    },
+    "app/dream/kit/observation-template.json": {
+      "bytes": 1184,
+      "sha256": "05629120125256ced5ef9bc31ee7e9a487747abf2504b5d4a025689adc4ed7ed"
+    },
+    "app/dream/kit/observation.csv": {
+      "bytes": 660,
+      "sha256": "bee046ce4d8562272a17ef0067fe975820d7b08c2781f363d5ddc3859bc2068a"
+    },
+    "app/dream/kit/rehearsal.en.html": {
+      "bytes": 8486,
+      "sha256": "9c89ea36e82de3376ca852321ec474b4f6aecd15414d3bb887c68801ffb2695d"
+    },
+    "app/dream/kit/rehearsal.vi.html": {
+      "bytes": 9990,
+      "sha256": "3d8b552a5ad7e9b3af42f250c18b61b31fe2f3f8de05b7289111584e00b838ce"
+    },
+    "app/dream/kit/render.py": {
+      "bytes": 21427,
+      "sha256": "13a29ca224980ac84c52bad45cfbb3ec4541066864fce6ba04fd65fe97b9b053"
+    },
+    "app/dream/kit/synthetic-scenarios.json": {
+      "bytes": 6224,
+      "sha256": "36c9c14b41ef241a40ce872a039e9b86d90ba2f092d9307564457d635146f44c"
+    },
+    "app/dream/lab.js": {
+      "bytes": 22353,
+      "sha256": "13d261b53a7c5451fbcadd712fbb52914568865c71fc04daa61923533f201bb1"
+    },
+    "app/dream/main.js": {
+      "bytes": 43857,
+      "sha256": "9b7a552d55db84c1e028500e943f280883fac118567ba1351c7af0067350f7dd"
+    },
+    "app/dream/notebook.js": {
+      "bytes": 16385,
+      "sha256": "30728a0998acf68168678f36af10fb50140267adafa49eca8830747813f85cce"
+    },
+    "app/dream/planner.js": {
+      "bytes": 9315,
+      "sha256": "254c910373b63c9f2a4604f366899bcc6e78c9347e04e27372b448a83cee19a1"
+    },
+    "app/dream/public-mode.js": {
+      "bytes": 1162,
+      "sha256": "015b015087b63da11cccbefe55bae571c36e20f99ea08b65443f9d3623140dd7"
+    },
+    "app/dream/scene.js": {
+      "bytes": 9355,
+      "sha256": "318b9d694d750d2c7fe6859c88f60636e68fc29c62950b55f7640f8c4af00b74"
+    },
+    "app/dream/story.js": {
+      "bytes": 25023,
+      "sha256": "952714b64140116da88ae95e5ff5c678163f8865905273b66de89484633ee183"
+    },
+    "app/dream/style.css": {
+      "bytes": 21578,
+      "sha256": "4d623f51b7065dee5a5ee51ade3b75ca2515253444c16bd8373f6260e4036c87"
+    },
+    "app/dream/tests/journey.test.mjs": {
+      "bytes": 10125,
+      "sha256": "71c1d8e5d448d93accf638a8b702d65290f39903f795dbb1a5d6bdd78aec4eae"
+    },
+    "app/dream/tests/kit.test.mjs": {
+      "bytes": 3133,
+      "sha256": "8e39ceee543671b10514a9c63d1949b2f85ede653f69e1783896e43989788b6f"
+    },
+    "app/dream/tests/lab.test.mjs": {
+      "bytes": 15591,
+      "sha256": "769a2ea0d59d9ebea6c5844fba7f6588b8943ec546e7ab140f3196fa3f4ee572"
+    },
+    "app/dream/tests/loop.test.mjs": {
+      "bytes": 2339,
+      "sha256": "e2a7c6b0e56f77310b45be139a11428d8261f70e962524a01ad53109b4719266"
+    },
+    "app/dream/tests/notebook.test.mjs": {
+      "bytes": 9203,
+      "sha256": "97df464f32ec884e2fd84a801a0ee35c1a1058bc737308510ce826a8d18c3db1"
+    },
+    "app/dream/tests/planner.test.mjs": {
+      "bytes": 9405,
+      "sha256": "f1f3c108bc2997e71aa50ba89c902e1e4646f162115934bf3a1bbbecf4e15a42"
+    },
+    "app/dream/tests/public-mode.test.mjs": {
+      "bytes": 1604,
+      "sha256": "e95e48f308e1decac1e79c47e5d824c18c7ae396cfe077c7ed8aeea2d7bff0c2"
+    },
+    "app/dream/tests/scene.test.mjs": {
+      "bytes": 1641,
+      "sha256": "b447e98b782993226a94e504183cca88d422d161e18e691f4c8ab41c70ddaae2"
+    },
+    "app/dream/tests/story.test.mjs": {
+      "bytes": 13831,
+      "sha256": "8712d99e1585bc540cfce53b4d6d61e3e2bca715a255be508cd20c1f4312328b"
+    },
+    "app/dream/tests/world.test.mjs": {
+      "bytes": 4763,
+      "sha256": "c99fb56620a67cb88946c08ac1bcd6a4c56907007d20905c3f9022ccf66a8467"
+    },
+    "app/dream/vendor/OrbitControls.js": {
+      "bytes": 40755,
+      "sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b"
+    },
+    "app/dream/vendor/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    "app/dream/vendor/three.core.js": {
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    "app/dream/vendor/three.module.js": {
+      "bytes": 662772,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    "app/dream/world.js": {
+      "bytes": 4719,
+      "sha256": "4c0d6cbb5f3f0430e7d5fdbfcbabbe2ff2a63e2aac68e86990cba574da63b111"
+    }
+  },
+  "verification": {
+    "canonicalRuntimeRecovered": 16,
+    "kitSections": 11,
+    "syntheticScenarios": 8,
+    "generatedKitFiles": 7,
+    "liveAI": "PERMANENTLY_OFF_STATIC",
+    "providerCalls": 0,
+    "rawCorpus": "UNAVAILABLE_REFERENCES_ONLY",
+    "limits": "Reconstructs accepted canonical source bytes; no original Completion/human studies included or asserted."
+  }
+}

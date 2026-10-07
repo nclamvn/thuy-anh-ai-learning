@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "edition": "DREAM-JOURNEY-public-20261007",
+  "canonicalAcceptanceSha256": "e67654da33b644a8ee9e9938bfd84a9fd22720310467e87740aec9a0782b56f4",
+  "canonicalRuntime": {
+    "index.html": {
+      "bytes": 5954,
+      "sha256": "beffd56276c085b02268533ab0efd89f63308526cd827b56fdc92af7c3fc7ff4"
+    },
+    "main.js": {
+      "bytes": 45417,
+      "sha256": "0806189d22cee531a1f5edc2a053697b08978231cfe06707ae64ccf19d227846"
+    },
+    "style.css": {
+      "bytes": 21236,
+      "sha256": "96c689fc75970b650102a8a4403aa501e8dabf40bd5be7bb485ca3ad7e6245d5"
+    },
+    "world.js": {
+      "bytes": 4719,
+      "sha256": "4c0d6cbb5f3f0430e7d5fdbfcbabbe2ff2a63e2aac68e86990cba574da63b111"
+    },
+    "story.js": {
+      "bytes": 25023,
+      "sha256": "952714b64140116da88ae95e5ff5c678163f8865905273b66de89484633ee183"
+    },
+    "planner.js": {
+      "bytes": 9315,
+      "sha256": "254c910373b63c9f2a4604f366899bcc6e78c9347e04e27372b448a83cee19a1"
+    },
+    "notebook.js": {
+      "bytes": 16385,
+      "sha256": "30728a0998acf68168678f36af10fb50140267adafa49eca8830747813f85cce"
+    },
+    "lab.js": {
+      "bytes": 22353,
+      "sha256": "13d261b53a7c5451fbcadd712fbb52914568865c71fc04daa61923533f201bb1"
+    },
+    "journey.js": {
+      "bytes": 5250,
+      "sha256": "bbe25baff6513958dd56f3f7299b9c7bdd1fd8e3f7e7d4408529d0c483410155"
+    },
+    "scene.js": {
+      "bytes": 9355,
+      "sha256": "318b9d694d750d2c7fe6859c88f60636e68fc29c62950b55f7640f8c4af00b74"
+    },
+    "fixtures/prepared.js": {
+      "bytes": 1274,
+      "sha256": "f1adb7715d5746446a606a3527c80fa762f6064a42ac505be11fcc1dd7a41239"
+    },
+    "vendor/three.module.js": {
+      "bytes": 662772,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    "vendor/three.core.js": {
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    "vendor/OrbitControls.js": {
+      "bytes": 40755,
+      "sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b"
+    },
+    "vendor/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    "DEPENDENCIES.json": {
+      "bytes": 1193,
+      "sha256": "c230ce1e10c7cd181c57ba8aa5062f6ca3dcb7f7a0c72e232641e3d3fbf4e260"
+    }
+  },
+  "adaptations": {
+    "main": {
+      "requestLivePlan": {
+        "canonical": "async function requestLivePlan(){if(!lab.state.liveEnabled||busy||lab.state.pending)return;let ticket=lab.state.generation;try{const id=lang==='vi'?'vi-whale':'en-whale',fixture=snapshotForFixture(id,0);if(!confirm(lang==='vi'?'Nạp truyện ví dụ tổng hợp để thử provider? Lời đang soạn sẽ được thay bằng ví dụ.':'Load the prepared synthetic story for a provider test? The current draft story will be replaced.'))return;session.loadPreparedExample(fixture.sourceText);lab.update('band',fixture.ageBand);lab.update('goal',fixture.goals[0]);lab.update('notes',fixture.mentorNotes);lab.update('answers',[...fixture.answerNotes,...Array(3-fixture.answerNotes.length).fill('')]);syncDraftEditors();renderStoryNotebook();const started=beginProposal();ticket=started.ticket;refreshProposal();plannerAbort=new AbortController();$('scene-note').textContent=lang==='vi'?'Đang yêu cầu đề xuất cho truyện ví dụ tổng hợp; cảnh chưa đổi.':'Requesting a proposal for a synthetic story; the scene has not changed.';const response=await fetch('/api/planner',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({fixtureId:id,snapshot:started.request}),signal:plannerAbort.signal});const data=await response.json();if(!response.ok)throw Error(data.error??'provider-failed');acceptProposal(data.plan,started.request,ticket,'live');renderLab();}catch(error){plannerError(ticket,error);}finally{plannerAbort=null;$('scene-note').textContent=c().sceneNote;}}",
+        "published": "async function requestLivePlan(){applyPublicOff(lab,LAB_COPY);refreshProposal();}"
+      },
+      "readPlannerConfig": {
+        "canonical": "async function readPlannerConfig(){try{const response=await fetch('/api/config',{cache:'no-store'});if(!response.ok)return;const data=await response.json();lab.setLive(data.enabled===true&&data.configured===true);refreshProposal();}catch{/* Static/offline mode remains useful; no provider is contacted. */}}",
+        "published": "async function readPlannerConfig(){applyPublicOff(lab,LAB_COPY);refreshProposal();}"
+      }
+    },
+    "importPrefix": "import {applyPublicOff, syncPublicReturn} from './public-mode.js';\n",
+    "syncPrefix": {
+      "canonical": "function sync(){",
+      "published": "function sync(){syncPublicReturn(document,lang);"
+    },
+    "indexFooter": "<footer class=\"public-handoff\"><a id=\"public-platform\" class=\"lab-link\" href=\"../#overview\" target=\"_blank\" rel=\"noopener\">Mở dự án · tab mới</a><p id=\"public-scope\">Bản diễn tập public bằng dữ liệu tổng hợp. AI trực tuyến luôn tắt; lời kể chỉ ở bộ nhớ tab.</p></footer>",
+    "styleSuffix": "\n/* Public handoff: keep both the platform and this in-memory session open. */\n.public-handoff{padding:28px max(24px,5%);background:#263e5c;color:#fff0cf}.public-handoff .lab-link{min-height:48px;line-height:24px;display:inline-flex;align-items:center;color:inherit;white-space:normal}.public-handoff p{max-width:72ch;overflow-wrap:anywhere}\n"
+  },
+  "kitCanonicalSourceSha256": "ff1995165b07e20518772a1c958b072fc0480920d16b8d1efce57588e1f03a93",
+  "mode": "public-static-OFF",
+  "limits": "Canonical accepted local bytes remain unchanged. Public paths/return and permanent OFF adapter differ; no backend, provider, browser records, raw research captures or human outcome proof.",
+  "canonicalBackend": {
+    "provider.mjs": {
+      "bytes": 4358,
+      "sha256": "9e00dfd35029a540ef9b72aca1db963347937c62894770c250b1c56bce21dca0"
+    },
+    "server.mjs": {
+      "bytes": 5975,
+      "sha256": "92458243389c478f34432cb7d6f105c7a04d13717fa734b0454a17ae73d77c40"
+    }
+  }
+}

@@ -8,3 +8,9 @@ app/tests
 app/README.md
 app/package.json
 app/resources/manifest.json
+
+# Dream public runtime: authored development tools/tests remain source-only.
+app/dream/tests
+app/dream/kit/render.py
+app/dream/kit/BUILD.json
+app/dream/DEPENDENCIES.json

@@ -1,0 +1,569 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "enum": [
+        1
+      ]
+    },
+    "inputBinding": {
+      "type": "string",
+      "maxLength": 64000
+    },
+    "reflection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "vi": {
+          "type": "string",
+          "maxLength": 600
+        },
+        "en": {
+          "type": "string",
+          "maxLength": 600
+        }
+      },
+      "required": [
+        "vi",
+        "en"
+      ]
+    },
+    "title": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "vi": {
+          "type": "string",
+          "maxLength": 600
+        },
+        "en": {
+          "type": "string",
+          "maxLength": 600
+        }
+      },
+      "required": [
+        "vi",
+        "en"
+      ]
+    },
+    "proposals": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sky": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": [
+                "sunset",
+                "night"
+              ]
+            },
+            "rationale": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "vi": {
+                  "type": "string",
+                  "maxLength": 600
+                },
+                "en": {
+                  "type": "string",
+                  "maxLength": 600
+                }
+              },
+              "required": [
+                "vi",
+                "en"
+              ]
+            },
+            "evidence": {
+              "type": "array",
+              "maxItems": 16,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "enum": [
+                      "sourceText",
+                      "revisionText",
+                      "baseSourceText",
+                      "baseRevisionText",
+                      "mentorNotes",
+                      "answerNote0",
+                      "answerNote1",
+                      "answerNote2"
+                    ]
+                  },
+                  "start": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "end": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "maxLength": 3000
+                  }
+                },
+                "required": [
+                  "source",
+                  "start",
+                  "end",
+                  "text"
+                ]
+              }
+            }
+          },
+          "required": [
+            "value",
+            "rationale",
+            "evidence"
+          ]
+        },
+        "cityScale": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "number",
+              "minimum": 0.8,
+              "maximum": 1.3
+            },
+            "rationale": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "vi": {
+                  "type": "string",
+                  "maxLength": 600
+                },
+                "en": {
+                  "type": "string",
+                  "maxLength": 600
+                }
+              },
+              "required": [
+                "vi",
+                "en"
+              ]
+            },
+            "evidence": {
+              "type": "array",
+              "maxItems": 16,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "enum": [
+                      "sourceText",
+                      "revisionText",
+                      "baseSourceText",
+                      "baseRevisionText",
+                      "mentorNotes",
+                      "answerNote0",
+                      "answerNote1",
+                      "answerNote2"
+                    ]
+                  },
+                  "start": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "end": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "maxLength": 3000
+                  }
+                },
+                "required": [
+                  "source",
+                  "start",
+                  "end",
+                  "text"
+                ]
+              }
+            }
+          },
+          "required": [
+            "value",
+            "rationale",
+            "evidence"
+          ]
+        },
+        "gardens": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "boolean"
+            },
+            "rationale": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "vi": {
+                  "type": "string",
+                  "maxLength": 600
+                },
+                "en": {
+                  "type": "string",
+                  "maxLength": 600
+                }
+              },
+              "required": [
+                "vi",
+                "en"
+              ]
+            },
+            "evidence": {
+              "type": "array",
+              "maxItems": 16,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "enum": [
+                      "sourceText",
+                      "revisionText",
+                      "baseSourceText",
+                      "baseRevisionText",
+                      "mentorNotes",
+                      "answerNote0",
+                      "answerNote1",
+                      "answerNote2"
+                    ]
+                  },
+                  "start": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "end": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "maxLength": 3000
+                  }
+                },
+                "required": [
+                  "source",
+                  "start",
+                  "end",
+                  "text"
+                ]
+              }
+            }
+          },
+          "required": [
+            "value",
+            "rationale",
+            "evidence"
+          ]
+        },
+        "starBridge": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "boolean"
+            },
+            "rationale": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "vi": {
+                  "type": "string",
+                  "maxLength": 600
+                },
+                "en": {
+                  "type": "string",
+                  "maxLength": 600
+                }
+              },
+              "required": [
+                "vi",
+                "en"
+              ]
+            },
+            "evidence": {
+              "type": "array",
+              "maxItems": 16,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "enum": [
+                      "sourceText",
+                      "revisionText",
+                      "baseSourceText",
+                      "baseRevisionText",
+                      "mentorNotes",
+                      "answerNote0",
+                      "answerNote1",
+                      "answerNote2"
+                    ]
+                  },
+                  "start": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "end": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "maxLength": 3000
+                  }
+                },
+                "required": [
+                  "source",
+                  "start",
+                  "end",
+                  "text"
+                ]
+              }
+            }
+          },
+          "required": [
+            "value",
+            "rationale",
+            "evidence"
+          ]
+        },
+        "whaleColor": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "string",
+              "enum": [
+                "indigo",
+                "teal"
+              ]
+            },
+            "rationale": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "vi": {
+                  "type": "string",
+                  "maxLength": 600
+                },
+                "en": {
+                  "type": "string",
+                  "maxLength": 600
+                }
+              },
+              "required": [
+                "vi",
+                "en"
+              ]
+            },
+            "evidence": {
+              "type": "array",
+              "maxItems": 16,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "enum": [
+                      "sourceText",
+                      "revisionText",
+                      "baseSourceText",
+                      "baseRevisionText",
+                      "mentorNotes",
+                      "answerNote0",
+                      "answerNote1",
+                      "answerNote2"
+                    ]
+                  },
+                  "start": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "end": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "text": {
+                    "type": "string",
+                    "maxLength": 3000
+                  }
+                },
+                "required": [
+                  "source",
+                  "start",
+                  "end",
+                  "text"
+                ]
+              }
+            }
+          },
+          "required": [
+            "value",
+            "rationale",
+            "evidence"
+          ]
+        }
+      },
+      "required": [
+        "sky",
+        "cityScale",
+        "gardens",
+        "starBridge",
+        "whaleColor"
+      ]
+    },
+    "questions": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "vi": {
+            "type": "string",
+            "maxLength": 600
+          },
+          "en": {
+            "type": "string",
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "vi",
+          "en"
+        ]
+      }
+    },
+    "unrendered": {
+      "type": "array",
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 64
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "field": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              null,
+              "sky",
+              "cityScale",
+              "gardens",
+              "starBridge",
+              "whaleColor"
+            ]
+          },
+          "reason": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "vi": {
+                "type": "string",
+                "maxLength": 600
+              },
+              "en": {
+                "type": "string",
+                "maxLength": 600
+              }
+            },
+            "required": [
+              "vi",
+              "en"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "maxItems": 16,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "enum": [
+                    "sourceText",
+                    "revisionText",
+                    "baseSourceText",
+                    "baseRevisionText",
+                    "mentorNotes",
+                    "answerNote0",
+                    "answerNote1",
+                    "answerNote2"
+                  ]
+                },
+                "start": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "end": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "text": {
+                  "type": "string",
+                  "maxLength": 3000
+                }
+              },
+              "required": [
+                "source",
+                "start",
+                "end",
+                "text"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "required",
+          "field",
+          "reason",
+          "evidence"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "inputBinding",
+    "reflection",
+    "title",
+    "proposals",
+    "questions",
+    "unrendered"
+  ]
+}

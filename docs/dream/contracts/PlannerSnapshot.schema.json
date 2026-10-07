@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:dream-p03:planner-snapshot:1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "generation",
+    "sourceText",
+    "revisionText",
+    "basePrintId",
+    "baseSourceText",
+    "baseRevisionText",
+    "baseWorld",
+    "ageBand",
+    "goals",
+    "mentorNotes",
+    "answerNotes"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "generation": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "sourceText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 3000
+    },
+    "revisionText": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "basePrintId": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "baseSourceText": {
+      "type": "string",
+      "maxLength": 3000
+    },
+    "baseRevisionText": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "baseWorld": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sky": {
+              "enum": [
+                "sunset",
+                "night"
+              ]
+            },
+            "cityScale": {
+              "type": "number",
+              "minimum": 0.8,
+              "maximum": 1.3
+            },
+            "gardens": {
+              "type": "boolean"
+            },
+            "starBridge": {
+              "type": "boolean"
+            },
+            "whaleColor": {
+              "enum": [
+                "indigo",
+                "teal"
+              ]
+            }
+          },
+          "required": [
+            "sky",
+            "cityScale",
+            "gardens",
+            "starBridge",
+            "whaleColor"
+          ]
+        }
+      ]
+    },
+    "ageBand": {
+      "enum": [
+        "6-8",
+        "9-11",
+        "12-15"
+      ]
+    },
+    "goals": {
+      "type": "array",
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "authorship",
+          "iteration",
+          "ai-literacy"
+        ]
+      }
+    },
+    "mentorNotes": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "answerNotes": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "maxLength": 300
+      }
+    }
+  },
+  "description": "Runtime additionally enforces nonblank source and consistent null/non-null basePrintId/baseWorld/base source. UTF-16 string lengths match JS domain checks."
+}

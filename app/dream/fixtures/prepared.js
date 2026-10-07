@@ -1,0 +1,6 @@
+// Public, synthetic adult-only transport fixtures. No real family or learner records.
+import {validatePlannerSnapshot,bindingFor} from '../planner.js';
+const template=sourceText=>({schemaVersion:1,generation:0,sourceText,revisionText:'',basePrintId:null,baseSourceText:'',baseRevisionText:'',baseWorld:null,ageBand:'9-11',goals:['authorship'],mentorNotes:'',answerNotes:[]});
+export const PLANNER_FIXTURES=[{id:'vi-whale',label:{vi:'Mẫu giả lập: cá voi và thành phố',en:'Synthetic whale-city fixture (VI)'},snapshot:template('Cá voi bay chở thành phố nhỏ. Ban đêm có khu vườn và cầu sao.')},{id:'en-whale',label:{vi:'Mẫu giả lập tiếng Anh',en:'Synthetic whale-city fixture (EN)'},snapshot:template('A flying teal whale carries a tiny city at sunset, with a garden but no star bridge.')}];
+export function snapshotForFixture(id,generation=0){const fixture=PLANNER_FIXTURES.find(f=>f.id===id);if(!fixture)throw Error('unknown-fixture');return validatePlannerSnapshot({...structuredClone(fixture.snapshot),generation});}
+export function requireLiveFixture(id,snapshot){const s=validatePlannerSnapshot(snapshot),expected=snapshotForFixture(id,s.generation);if(bindingFor(s)!==bindingFor(expected))throw Error('fixture-only-live');return s;}

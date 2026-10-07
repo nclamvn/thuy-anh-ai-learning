@@ -1,15 +1,18 @@
 {
   "archive": "project-review-WEB02.zip",
   "authoredLanguageDocuments": 108,
-  "bytes": 1108761,
+  "bytes": 1646343,
   "catalogDocuments": 54,
   "dataKind": "authored-review-download",
   "documentCountScope": "54 material catalog entries; 14 reference documents counted separately; package support documents excluded",
-  "fileCount": 271,
+  "dreamJourneyEdition": "DREAM-JOURNEY-20261007",
+  "dreamKitSections": 11,
+  "dreamSyntheticScenarios": 8,
+  "fileCount": 296,
   "files": {
     "CONTENT-MANIFEST.json": {
-      "bytes": 43499,
-      "sha256": "360b871a5142d26fe4193ccc553926a40c776ee5a4d280a745c94135a80ad848"
+      "bytes": 47303,
+      "sha256": "ee771f6ffc9b4cf99274e8dfed7c920d3705e71438a28619aec967f49d45abad"
     },
     "LICENSE.md": {
       "bytes": 764,
@@ -20,12 +23,12 @@
       "sha256": "6dd183d1c57394f3ec769a3cff6826a14aae34d88be8d17fccd655261bd596dd"
     },
     "README.en.md": {
-      "bytes": 3001,
-      "sha256": "30b28676e7feb4089a6da07cdbff72e57a46bbfca40b9dd377a3afdc23a0c2c1"
+      "bytes": 3368,
+      "sha256": "42a62890c4f498917aa2b828ade0ce5d705c65413007fed8b13580535b6d2502"
     },
     "README.md": {
-      "bytes": 3254,
-      "sha256": "838289fa359f05e04943e2b4bfeef3c2bec4a7f25a2068724e08ff8749953df3"
+      "bytes": 3622,
+      "sha256": "d0aa967f9d9d912be02f9b87fbd2c0d8f98353e4c2e806885121a0c6cdb42fb4"
     },
     "app/assets/brandmark.svg": {
       "bytes": 587,
@@ -95,13 +98,113 @@
       "bytes": 545,
       "sha256": "fb8e31067cdee7efbcaf078961c62d31e68a6be925bc5c08edb0ff377bf5c266"
     },
+    "app/dream/DEPENDENCIES.json": {
+      "bytes": 1193,
+      "sha256": "c230ce1e10c7cd181c57ba8aa5062f6ca3dcb7f7a0c72e232641e3d3fbf4e260"
+    },
+    "app/dream/fixtures/prepared.js": {
+      "bytes": 1274,
+      "sha256": "f1adb7715d5746446a606a3527c80fa762f6064a42ac505be11fcc1dd7a41239"
+    },
+    "app/dream/index.html": {
+      "bytes": 6267,
+      "sha256": "d129ed280d577b4ed5d69f0c4a7628bf93dc41d93fc2f40d41b79a1ff50f49a6"
+    },
+    "app/dream/journey.js": {
+      "bytes": 5250,
+      "sha256": "bbe25baff6513958dd56f3f7299b9c7bdd1fd8e3f7e7d4408529d0c483410155"
+    },
+    "app/dream/kit/BUILD.json": {
+      "bytes": 1223,
+      "sha256": "342878a76c029afc9cabad8f16c349249e6e59c94159c9e3c3d209ee0f4e5fbb"
+    },
+    "app/dream/kit/CONTENT.json": {
+      "bytes": 51040,
+      "sha256": "ff1995165b07e20518772a1c958b072fc0480920d16b8d1efce57588e1f03a93"
+    },
+    "app/dream/kit/index.html": {
+      "bytes": 69598,
+      "sha256": "0d5bacf493325330ed97b84df4242765e8161f757fd85f8682b3396bb25ee69e"
+    },
+    "app/dream/kit/observation-template.json": {
+      "bytes": 1184,
+      "sha256": "05629120125256ced5ef9bc31ee7e9a487747abf2504b5d4a025689adc4ed7ed"
+    },
+    "app/dream/kit/observation.csv": {
+      "bytes": 660,
+      "sha256": "bee046ce4d8562272a17ef0067fe975820d7b08c2781f363d5ddc3859bc2068a"
+    },
+    "app/dream/kit/rehearsal.en.html": {
+      "bytes": 8486,
+      "sha256": "9c89ea36e82de3376ca852321ec474b4f6aecd15414d3bb887c68801ffb2695d"
+    },
+    "app/dream/kit/rehearsal.vi.html": {
+      "bytes": 9990,
+      "sha256": "3d8b552a5ad7e9b3af42f250c18b61b31fe2f3f8de05b7289111584e00b838ce"
+    },
+    "app/dream/kit/synthetic-scenarios.json": {
+      "bytes": 6224,
+      "sha256": "36c9c14b41ef241a40ce872a039e9b86d90ba2f092d9307564457d635146f44c"
+    },
+    "app/dream/lab.js": {
+      "bytes": 22353,
+      "sha256": "13d261b53a7c5451fbcadd712fbb52914568865c71fc04daa61923533f201bb1"
+    },
+    "app/dream/main.js": {
+      "bytes": 43857,
+      "sha256": "9b7a552d55db84c1e028500e943f280883fac118567ba1351c7af0067350f7dd"
+    },
+    "app/dream/notebook.js": {
+      "bytes": 16385,
+      "sha256": "30728a0998acf68168678f36af10fb50140267adafa49eca8830747813f85cce"
+    },
+    "app/dream/planner.js": {
+      "bytes": 9315,
+      "sha256": "254c910373b63c9f2a4604f366899bcc6e78c9347e04e27372b448a83cee19a1"
+    },
+    "app/dream/public-mode.js": {
+      "bytes": 1162,
+      "sha256": "015b015087b63da11cccbefe55bae571c36e20f99ea08b65443f9d3623140dd7"
+    },
+    "app/dream/scene.js": {
+      "bytes": 9355,
+      "sha256": "318b9d694d750d2c7fe6859c88f60636e68fc29c62950b55f7640f8c4af00b74"
+    },
+    "app/dream/story.js": {
+      "bytes": 25023,
+      "sha256": "952714b64140116da88ae95e5ff5c678163f8865905273b66de89484633ee183"
+    },
+    "app/dream/style.css": {
+      "bytes": 21578,
+      "sha256": "4d623f51b7065dee5a5ee51ade3b75ca2515253444c16bd8373f6260e4036c87"
+    },
+    "app/dream/vendor/OrbitControls.js": {
+      "bytes": 40755,
+      "sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b"
+    },
+    "app/dream/vendor/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    "app/dream/vendor/three.core.js": {
+      "bytes": 1458113,
+      "sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6"
+    },
+    "app/dream/vendor/three.module.js": {
+      "bytes": 662772,
+      "sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea"
+    },
+    "app/dream/world.js": {
+      "bytes": 4719,
+      "sha256": "4c0d6cbb5f3f0430e7d5fdbfcbabbe2ff2a63e2aac68e86990cba574da63b111"
+    },
     "app/favicon.svg": {
       "bytes": 341,
       "sha256": "b92a0d9dd2a3cf1294c7caf69922e959bb855ef6335f8ef9bedb1b56787f8721"
     },
     "app/handoff.js": {
-      "bytes": 27742,
-      "sha256": "a0fbf0a1a6e540407137ae005ed892390395373364cf578310cc31c759c4032f"
+      "bytes": 29183,
+      "sha256": "4d57030435f08e7eec9a7affdadcf153b9a6ccbb359790dd7d1096c72e4603f2"
     },
     "app/index.html": {
       "bytes": 5163,
@@ -137,15 +240,15 @@
     },
     "app/references/build.json": {
       "bytes": 532,
-      "sha256": "935bb6e348f969e865f1d044e8ddfecd3a411bc06babe599a8dd3b001061830d"
+      "sha256": "4cd13d6870194eb599c20d5769144fdbe25564c5da5898c42eb16de5854a0e22"
     },
     "app/references/catalog.json": {
       "bytes": 46078,
-      "sha256": "0dfde63efb2ba93fe4c930b607fe540321cc6cfdabe7e43bf967b1b4334767b8"
+      "sha256": "54e235878826c544630b97dbcffca270842d87bf1c5271aed8e2809a6d2a0cc0"
     },
     "app/references/report.html": {
-      "bytes": 758505,
-      "sha256": "c013279174dc47d1375680301ae4433bb5c6a9f267c79b6d13c46eda8d48e5cd"
+      "bytes": 758646,
+      "sha256": "55aebaa2493208e87618adb85ec9d3913e1790048dc190f4166f4194c2ad1a40"
     },
     "app/resources-client.js": {
       "bytes": 7020,
@@ -604,8 +707,8 @@
       "sha256": "4fe8311f07feb89a1788bfa96131097989c217013b4be3078d248035296f29fd"
     },
     "app/styles.css": {
-      "bytes": 103471,
-      "sha256": "e80b436e83fb3cadd60778d26973025a61286d41e1ca51b560bc5f436d599236"
+      "bytes": 104830,
+      "sha256": "fbfda9909ee75a7f6a652b35bcd03b5caf156ad43d4ec7abe3f7c8099af919bf"
     },
     "benchmarks/fixtures/synthetic_responses.json": {
       "bytes": 1164,
@@ -1103,7 +1206,7 @@
   "researchClaimReferences": 92,
   "resourceFiles": 112,
   "schemaVersion": 1,
-  "sha256": "572c9c75f4b3dd91aee8e75274a58aac9f4cb21f94e7175b5a12fb9d2957a669",
-  "sourceFingerprint": "bd5b3faf7244da68c9d528c16ae33b0437e14e496c5719119dd5a17498c04f56",
-  "visualEdition": "R04"
+  "sha256": "77fb6d7aeae95141155c6147c3644792ce89b8a9d05e87b7bb9ebcc8dfdbad44",
+  "sourceFingerprint": "be289e9b2dc9d457b02ed2eff7ee5151bab0cb6555acbe7ca9e34bf752d1ad22",
+  "visualEdition": "DREAM-JOURNEY-20261007"
 }

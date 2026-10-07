@@ -26,7 +26,7 @@ def prepared(root):
         if name in omitted or path.suffix.lower()=='.pdf' or (path.suffix.lower()=='.zip' and name!=ARCHIVE) or any(part.lower() in PRIVATE for part in relative.parts) or private_name=='.env' or private_name.startswith('.env.') or private_name in {'project-feedback.json','project-feedback.md','browser-state.json'} or private_name.endswith('.backup.json') or (name.startswith('research/') and path.suffix.lower()=='.html'):
             raise ValueError(f'raw/private distribution path forbidden: {name}')
         raw=path.read_bytes();files[name]={'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
-    return {'schemaVersion':1,'dataKind':'public-references-only','release':'R04-public-01','files':files,'omittedRawCaptures':omitted,'limits':'Integrity receipt for available public sources only; frozen-dossier-derived references have a separate build receipt. Missing raw corpus cannot be reverified; no cryptographic signature or educational approval.'}
+    return {'schemaVersion':1,'dataKind':'public-references-only','release':'DREAM-JOURNEY-public-20261007','files':files,'omittedRawCaptures':omitted,'limits':'Integrity receipt for available public sources only; frozen-dossier-derived references have a separate build receipt. Missing raw corpus cannot be reverified; no cryptographic signature or educational approval.'}
 
 def build(root):
     root=root.resolve();receipt=prepared(root)

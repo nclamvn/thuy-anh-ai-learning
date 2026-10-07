@@ -93,9 +93,11 @@ const brokenMarkup=`<img src="assets/missing-world.svg">`;
             path=self.project/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_text('Synthetic forbidden sentinel, not a secret')
         build(self.project)
         with zipfile.ZipFile(self.project/ARCHIVE) as archive:
-            self.assertFalse(any('downloads/' in n or 'private' in n or '.env' in n or '/snapshots/' in n or n.endswith(('.pdf','.csv')) for n in archive.namelist()))
+            self.assertFalse(any('downloads/' in n or 'private' in n or '.env' in n or '/snapshots/' in n or (n.endswith('.pdf') or n.endswith('.csv') and n!=PREFIX+'app/dream/kit/observation.csv') for n in archive.namelist()))
             self.assertNotIn(PREFIX+'PUBLIC-MANIFEST.json',archive.namelist())
             self.assertNotIn(PREFIX+'app/browser-state.json',archive.namelist())
+            self.assertEqual([n for n in archive.namelist()if n.endswith('.csv')],[PREFIX+'app/dream/kit/observation.csv'])
+            self.assertEqual(archive.read(PREFIX+'app/dream/kit/observation.csv'),(self.project/'app/dream/kit/observation.csv').read_bytes())
     def test_catalog_traversal_and_private_paths_rejected(self):
         path=self.project/'materials/catalog.json';original=path.read_text();data=json.loads(original)
         for name in ('../../outside.md','private/notes.md'):

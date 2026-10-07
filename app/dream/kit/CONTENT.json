@@ -1,0 +1,822 @@
+{
+  "schemaVersion": 1,
+  "id": "dream-poc-value-kit",
+  "owner": "Nguyễn Cảnh Lâm",
+  "date": "2026-10-07",
+  "dataKind": "team-proposed-pilot-design",
+  "status": "prepared-not-field-validated",
+  "title": {
+    "vi": "Một giấc mơ vẫn thuộc về người kể",
+    "en": "A dream still belongs to its storyteller"
+  },
+  "subtitle": {
+    "vi": "Bộ thực hành cho người lớn đồng hành · Xưởng giấc mơ",
+    "en": "A facilitation kit for adults · Dream atelier"
+  },
+  "intro": {
+    "vi": "Điều cần chứng minh không chỉ là máy dựng được một cảnh đẹp. Trẻ cần nhận ra ý tưởng của mình, được quyền bác bỏ gợi ý, sửa sản phẩm và kể lại điều đã làm. Bộ này chuẩn bị một thử nghiệm nhỏ; chưa có kết quả học tập hoặc đánh giá với trẻ thật.",
+    "en": "The question is more than whether a machine can render a beautiful scene. A learner should recognize their own idea, reject suggestions, revise the artifact, and explain what they made. This kit prepares a small pilot; it contains no measured learning outcomes or real-child evaluation."
+  },
+  "sourceLinks": [
+    {
+      "id": "UNICEF-3",
+      "title": "UNICEF · Guidance on AI and children, version 3.0",
+      "url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children"
+    },
+    {
+      "id": "MIT-DREAM",
+      "title": "MIT Media Lab · Dreaming through Code",
+      "url": "https://www.media.mit.edu/projects/dreaming-through-code/overview/"
+    },
+    {
+      "id": "OAI-SCHEMA",
+      "title": "OpenAI · Structured model outputs",
+      "url": "https://developers.openai.com/api/docs/guides/structured-outputs"
+    },
+    {
+      "id": "OAI-DATA",
+      "title": "OpenAI · Data controls",
+      "url": "https://developers.openai.com/api/docs/guides/your-data"
+    }
+  ],
+  "sections": [
+    {
+      "id": "promise",
+      "kind": "principle",
+      "title": {
+        "vi": "Lời hứa đúng với khả năng hiện tại",
+        "en": "A promise the current system can keep"
+      },
+      "body": {
+        "vi": "AI như máy in 3D trên màn hình là một ẩn dụ để giải thích việc biến mô tả thành sản phẩm. PoC hiện chỉ dựng thế giới cá voi mang thành phố, với năm lựa chọn: bầu trời, vườn, cầu sao, màu cá voi và tỷ lệ thành phố. Một con rồng, người bạn biết nói hoặc trò chơi có luật riêng chưa được tạo. Ta giữ mong muốn đó trong sổ, không đổi thành cá voi rồi gọi là đã làm xong.",
+        "en": "An on-screen 3D printer is a metaphor for turning a description into an artifact. The current PoC renders only a whale carrying a city, with five options: sky, gardens, star bridge, whale color and city scale. A dragon, talking companion or game with custom rules is not generated. Keep that wish in the notebook; do not replace it with a whale and call it fulfilled."
+      },
+      "items": [
+        {
+          "vi": "Người kể giữ lời gốc. Người lớn giữ mạch trò chuyện. Máy đề xuất và dựng phần đã được xem lại.",
+          "en": "The storyteller owns the original words. The adult holds the conversation. The system proposes and renders the reviewed portion."
+        },
+        {
+          "vi": "Hứng thú là điều cần quan sát, không tự chứng minh rằng trẻ đã học hoặc cần định hướng nghề nghiệp nào.",
+          "en": "Interest is something to observe; it does not establish learning or a suitable future career."
+        },
+        {
+          "vi": "Thành công cho phép cả câu trả lời: hôm nay con muốn vẽ bằng giấy hoặc chưa muốn in.",
+          "en": "Success also allows: today I would rather draw on paper, or I do not want to print yet."
+        }
+      ],
+      "provenance": {
+        "type": "team-decision",
+        "sources": [
+          "UNICEF-3",
+          "MIT-DREAM"
+        ]
+      }
+    },
+    {
+      "id": "meeting",
+      "kind": "conversation",
+      "title": {
+        "vi": "Trao đổi với Thuý Anh trước khi mời gia đình",
+        "en": "A conversation with Thuý Anh before inviting families"
+      },
+      "body": {
+        "vi": "Dùng bản dựng để trao đổi về một giả thuyết cụ thể: người lớn đồng hành giúp trẻ biến ý tưởng thành sản phẩm mà vẫn giữ quyền tác giả. Đây chưa phải kết luận về yêu cầu của Thuý Anh; các câu hỏi dưới đây cần được thống nhất trực tiếp.",
+        "en": "Use the prototype to discuss a specific hypothesis: adult facilitation can help learners turn ideas into artifacts while preserving authorship. This is not a confirmed account of Thuý Anh's requirements; agree the following points together."
+      },
+      "items": [
+        {
+          "vi": "Ưu tiên đầu tiên là hiểu AI, sáng tạo có AI, kết nối cha mẹ–con hay hướng nghiệp? Chọn một mục tiêu thử trước.",
+          "en": "Is the first priority understanding AI, creating with AI, parent–child connection or career exploration? Choose one initial pilot goal."
+        },
+        {
+          "vi": "Gia đình nào sẽ thử, trẻ ở độ tuổi nào, dùng ngôn ngữ nào, ai điều phối và ai quan sát?",
+          "en": "Which families and age group will participate, in which language, with which facilitator and observer?"
+        },
+        {
+          "vi": "Trẻ được tự sửa điều gì? Ai quyết định khi ý trẻ khác mong muốn giáo dục của người lớn?",
+          "en": "What can the learner change? Who decides when their idea differs from the adult's educational goal?"
+        },
+        {
+          "vi": "Tiêu chí nào khiến ta dừng, sửa hoặc mở rộng? Chia vai trò, quyền quyết định và cách tiếp nhận phản hồi trước khi gọi đây là một sản phẩm.",
+          "en": "What would make us stop, revise or expand? Agree roles, decisions and feedback handling before treating this as a product."
+        }
+      ],
+      "provenance": {
+        "type": "unanswered-stakeholder-questions",
+        "sources": []
+      }
+    },
+    {
+      "id": "session",
+      "kind": "timeline",
+      "title": {
+        "vi": "Một phiên 25 phút có người lớn đồng hành",
+        "en": "One 25-minute adult-led session"
+      },
+      "body": {
+        "vi": "Thời lượng là đề xuất để thử, không phải chuẩn sư phạm. Nên diễn tập với người lớn và truyện giả lập trước. Trẻ có thể nói, vẽ, viết hoặc dừng ở bất kỳ bước nào. Không cần tên đầy đủ, ngày sinh, trường học, ảnh hoặc ghi âm để thử luồng này.",
+        "en": "The timing is a pilot proposal, not a pedagogical standard. Rehearse with adults and synthetic stories first. A learner may speak, draw, write or stop at any step. Full names, birth dates, school details, images and recordings are unnecessary for this workflow."
+      },
+      "steps": [
+        {
+          "minutes": "0–3",
+          "vi": "Mời và giải thích: đây là công cụ dựng một loại thế giới; người kể có thể nói không, đổi ý hoặc dùng giấy. Thống nhất việc tham gia với phụ huynh và hỏi riêng trẻ có muốn thử không theo quy trình của đơn vị tổ chức.",
+          "en": "Invite and explain: this tool builds one kind of world; the storyteller may decline, change their mind or use paper. Agree participation with the guardian and separately ask whether the learner wants to try, under the organizer's process."
+        },
+        {
+          "minutes": "3–7",
+          "vi": "Lắng nghe: hỏi con muốn kể điều gì; ghi đúng lời hoặc để trẻ kiểm lại bản người lớn ghi. Chưa đưa bảng lựa chọn máy vào thay ý tưởng.",
+          "en": "Listen: ask what they want to tell; record their words or let them check the adult's transcription. Do not replace the idea with the machine's option list."
+        },
+        {
+          "minutes": "7–12",
+          "vi": "Làm rõ: hỏi tối đa ba câu gợi mở. Tách phần trẻ muốn giữ, gợi ý mới và phần máy chưa dựng được. Đọc lại trước khi chọn.",
+          "en": "Clarify: ask up to three open questions. Distinguish what the learner wants to preserve, new suggestions and unsupported details. Read back before choosing."
+        },
+        {
+          "minutes": "12–17",
+          "vi": "Xem lại và dựng: trẻ cùng người lớn sửa bản thiết kế; người lớn thao tác xác nhận trong phiên. Cùng nhìn cảnh, chỉ rõ đâu là phần đã dựng và đâu còn thiếu.",
+          "en": "Review and render: the learner and adult edit the blueprint; the adult operates the in-session confirmation. View the scene together and identify what was rendered and what remains missing."
+        },
+        {
+          "minutes": "17–22",
+          "vi": "Chơi và sửa: trẻ chọn một thay đổi có chủ đích; so trước–sau, xác nhận lại và dựng lại. Có thể chọn không sửa.",
+          "en": "Play and revise: the learner chooses an intentional change; compare before and after, reconfirm and rerender. Choosing not to revise is valid."
+        },
+        {
+          "minutes": "22–25",
+          "vi": "Kể lại: phần nào là ý của con? Máy đã giúp gì, chưa làm gì? Nếu kể cho một người khác, con sẽ nói thế nào? Lưu bản ghi chỉ khi đã thống nhất rõ mục đích và cách giữ dữ liệu.",
+          "en": "Reflect: which part was your idea? What did the system help with and what did it not do? How would you explain it to someone else? Save notes only after agreeing their purpose and handling."
+        }
+      ],
+      "provenance": {
+        "type": "team-proposed-protocol",
+        "sources": [
+          "MIT-DREAM",
+          "UNICEF-3"
+        ]
+      }
+    },
+    {
+      "id": "prompts",
+      "kind": "age-bands",
+      "title": {
+        "vi": "Câu hỏi mở, không giành vai người kể",
+        "en": "Open prompts that leave the storyteller in charge"
+      },
+      "body": {
+        "vi": "Các nhóm tuổi dưới đây chỉ giúp người lớn chọn cách trò chuyện; chưa được thẩm định phát triển. Không suy đoán năng lực theo tuổi. Điều chỉnh theo cách giao tiếp thực tế của từng trẻ.",
+        "en": "These age bands help an adult choose a conversational approach; they are not developmentally validated. Do not infer ability from age. Adapt to the learner's actual communication preferences."
+      },
+      "bands": [
+        {
+          "id": "6–8",
+          "vi": "Cho nói hoặc vẽ, mỗi lần một câu: Con muốn chỉ cho cô/chú chỗ nào trước? Điều gì ở đó con muốn giữ? Con muốn đổi chỗ nào?",
+          "en": "Allow speaking or drawing, one question at a time: Where would you like to show me first? What would you like to keep there? What would you change?"
+        },
+        {
+          "id": "9–11",
+          "vi": "Cho đặt tên và giải thích lựa chọn: Trong thế giới này xảy ra chuyện gì? Phần nào làm con thấy đây là thế giới của mình? Điều gì trên màn hình khác với điều con tưởng tượng?",
+          "en": "Invite naming and explaining choices: What happens in this world? Which part makes it feel like yours? What on the screen differs from what you imagined?"
+        },
+        {
+          "id": "12–15",
+          "vi": "Cho phản biện máy và tự viết bản thiết kế: Điều gì trong câu chuyện không được phép mất? Gợi ý nào con muốn bác bỏ, vì sao? Con sẽ thử cách nào để biết sản phẩm đúng ý?",
+          "en": "Invite critique and self-authored specifications: What must not be lost from the story? Which suggestion would you reject, and why? How would you test whether the artifact matches your idea?"
+        }
+      ],
+      "items": [
+        {
+          "vi": "Tránh hỏi dẫn: Con thêm vườn cho đẹp nhé? Đổi thành: Con muốn thêm, bỏ hay giữ điều gì?",
+          "en": "Avoid leading questions such as: Shall we add a garden to make it prettier? Ask instead: What would you like to add, remove or keep?"
+        },
+        {
+          "vi": "Không biến nhật ký thành bài phân tích tính cách hoặc hướng nghiệp. Nếu trẻ muốn nói về đời thật, người lớn lắng nghe theo vai trò của mình; không yêu cầu máy chẩn đoán.",
+          "en": "Do not turn a diary into a personality or career assessment. If a learner wants to discuss real life, the adult listens within their role; do not ask the system to diagnose."
+        }
+      ],
+      "provenance": {
+        "type": "team-proposed-facilitation",
+        "sources": [
+          "UNICEF-3",
+          "MIT-DREAM"
+        ]
+      }
+    },
+    {
+      "id": "rehearsal",
+      "kind": "adult-rehearsal",
+      "title": {
+        "vi": "Diễn tập người lớn theo ba chặng",
+        "en": "Adult rehearsal in three stages"
+      },
+      "body": {
+        "vi": "Trong đợt diễn tập này, dùng người lớn và truyện giả lập; không mời trẻ hoặc dùng lời kể/định danh thật. Một người kể, một người thao tác, một người quan sát nếu có thể; nếu chỉ có hai người, ghi rõ ai kiêm vai trò. Các hành động bên dưới là việc cần thử, chưa phải kết quả. Quan sát hành động của người lớn cần được thực hiện trực tiếp; phần mềm không diễn thay hoặc tự xác nhận buổi thử.",
+        "en": "Use adults and synthetic stories for this rehearsal; do not invite children or use real personal stories or identifying details. Assign a storyteller, an operator and an observer where possible; with two adults, record the combined roles. These are actions to try, not measured results. Adult actions must be observed directly; software does not role-play the people or automatically validate a rehearsal."
+      },
+      "steps": [
+        {
+          "vi": "Kể: người kể tự chọn câu chuyện; giữ nguyên lời gốc và ngôn ngữ. Chọn nhóm trò chuyện rõ ràng, không suy năng lực từ tuổi. Ghi chú người lớn là tùy chọn và tách khỏi lời kể. Có thể nói, viết hoặc vẽ giấy; người kể kiểm lại bản ghi.",
+          "en": "Tell: the storyteller chooses an idea; retain the exact words and language. Explicitly choose a conversation band without inferring ability from age. Adult notes are optional and separate. Speaking, writing or paper drawing are alternatives; the storyteller checks any transcription.",
+          "stage": {
+            "vi": "Kể ý tưởng",
+            "en": "Tell the idea"
+          }
+        },
+        {
+          "vi": "Xem lại và dựng: chỉ mở gợi ý khi được yêu cầu. Đối chiếu lời gốc, lựa chọn và phần chưa dựng được. Hỏi muốn giữ, bác bỏ hay đổi điều gì; không coi im lặng là đồng ý. Tên và lời kể của tác phẩm do người dùng viết/chọn; giải thích phương pháp không tự thành tên tác phẩm. Xác nhận chỉ chốt bản thiết kế trong phiên. Nếu còn mâu thuẫn bắt buộc, quay lại lựa chọn; không xác nhận hộ để có cảnh đẹp.",
+          "en": "Review and build: open suggestions only through an explicit action. Compare original words, selected choices and unsupported wishes. Ask what to keep, reject or change; silence is not agreement. Artwork name and narration are written or chosen by the person; method copy must not automatically become a title. Confirmation commits an in-session blueprint only. Return to necessary unresolved choices rather than confirming on behalf of the storyteller.",
+          "stage": {
+            "vi": "Xem lại và dựng",
+            "en": "Review and build"
+          }
+        },
+        {
+          "vi": "Nhìn lại và thay đổi: sau khi dựng thật, so cảnh với lời gốc và lựa chọn đã xác nhận. Mời đổi một chi tiết hoặc chọn không đổi; ghi phiên bản trước/sau nếu có. Phần kể lại là tùy chọn, không buộc trả lời để được tiếp tục. Người kể có thể giữ mong muốn chưa làm, chuyển giấy, quay lại hoặc dừng. Lưu JSON nếu cần trước khi đóng/reload; ghi việc lưu là chưa xác minh nếu không thấy file.",
+          "en": "Look back and change: after an actual render, compare the scene with the original words and confirmed choices. Invite a one-detail revision or no change; record before/after versions if available. Reflection is optional, not a compulsory answer for progression. Keep an unrendered wish, choose paper, return or stop. Save JSON before close/reload where needed; mark saving unverified if no file is observed.",
+          "stage": {
+            "vi": "Nhìn lại và sửa",
+            "en": "Look back and change"
+          }
+        }
+      ],
+      "items": [
+        {
+          "vi": "Người quan sát ghi đúng hành động/lời nói; không đánh giá ý định từ im lặng, vẻ mặt hoặc việc chọn mẫu.",
+          "en": "The observer records exact actions/words; do not infer intent from silence, appearance or template choice."
+        },
+        {
+          "vi": "Cứu luồng là can thiệp để vượt lỗi thao tác/kỹ thuật; phân biệt với trò chuyện đồng hành bình thường. Ghi ai đã làm gì, vì sao và phần dữ liệu còn giữ.",
+          "en": "A rescue is intervention for interaction/technical failure; distinguish it from ordinary facilitation. Record who did what, why and what data remained."
+        },
+        {
+          "vi": "Tất cả ghi nhận là thủ công, chưa xác minh; phần mềm không tự chấm buổi diễn tập.",
+          "en": "Every observation is manual and unverified; software does not automatically pass the rehearsal."
+        }
+      ],
+      "provenance": {
+        "type": "team-proposed-protocol",
+        "sources": [],
+        "outcomes": null
+      }
+    },
+    {
+      "id": "comparison",
+      "kind": "adult-rehearsal",
+      "title": {
+        "vi": "Tờ đối chiếu lời kể → lựa chọn → cảnh",
+        "en": "Original words → choices → scene sheet"
+      },
+      "body": {
+        "vi": "Để trống khi chưa thử. Mỗi dòng ghi một chi tiết, gồm lời gốc đúng nguyên văn; gợi ý của máy/người lớn; lựa chọn giữ, bác bỏ hoặc sửa; cảnh đã thấy hoặc chưa quan sát; và hành động/lời nói làm bằng chứng. Không dùng ảnh đẹp thay bằng chứng quyền tác giả.",
+        "en": "Leave fields blank before rehearsal. Use one row per detail: exact original words; machine/adult proposal; keep, reject or change decision; rendered scene or not observed; and supporting action/words. A beautiful picture is not evidence of authorship."
+      },
+      "items": [
+        {
+          "vi": "Trạng thái quan sát: đã quan sát / không xảy ra trong lần thử này / chưa quan sát. “Không xảy ra” chỉ ghi khi đã có cơ hội thử và ghi rõ cơ hội đó.",
+          "en": "Observation status: observed / did not occur in this attempt / not observed. Use “did not occur” only when an opportunity existed and record that opportunity."
+        },
+        {
+          "vi": "Nguồn lời: lời kể gốc, bản sửa, ghi chú người lớn, gợi ý đã chuẩn bị hoặc import chưa xác minh. Giữ nhãn nguồn, không gán lời người lớn thành lời của trẻ.",
+          "en": "Word origin: original story, revision, adult notes, prepared proposal or unverified import. Preserve labels; do not attribute adult words to a learner."
+        },
+        {
+          "vi": "Kết quả lựa chọn: giữ / bác bỏ / sửa / mong muốn chưa dựng / giấy / dừng / chưa chọn. Chấp nhận bỏ qua chỉ là đồng ý tạm không dựng, không phải đã đáp ứng.",
+          "en": "Choice outcome: keep / reject / change / unrendered wish / paper / stop / not chosen. Accepting an omission means accepting that it is not rendered, not that it was fulfilled."
+        },
+        {
+          "vi": "M1–M6 đều có ô trạng thái và bằng chứng riêng; có thể giữ toàn bộ là chưa quan sát. Các ngưỡng pilot cũ vẫn là đề xuất, không phải kết quả diễn tập.",
+          "en": "Each M1–M6 has its own status and evidence field; all may remain not observed. Existing pilot thresholds remain proposals, not rehearsal results."
+        },
+        {
+          "vi": "Ghi lỗi, số lần cứu luồng, hành động cứu, thời gian nếu đo được, phiên bản đã dựng và điều cần sửa. Để null khi không biết; không điền 0 để giả như đã đo.",
+          "en": "Record failures, rescue count/actions, durations if measured, printed version and needed changes. Keep null when unknown; do not insert zero as though measured."
+        }
+      ],
+      "provenance": {
+        "type": "team-proposed-protocol",
+        "sources": [],
+        "outcomes": null
+      }
+    },
+    {
+      "id": "synthetic",
+      "kind": "adult-rehearsal",
+      "title": {
+        "vi": "Tám tình huống giả lập để thử luồng",
+        "en": "Eight synthetic workflow scenarios"
+      },
+      "body": {
+        "vi": "Đây là dữ liệu mẫu do nhóm viết, không phải lời của trẻ hay kết quả thử. Người lớn chọn một tình huống rồi ghi điều thực sự xảy ra; không điền sẵn PASS. Các nhiệm vụ là tiêu chí quan sát, không bảo đảm máy sẽ hiểu mọi cách diễn đạt.",
+        "en": "These are team-authored synthetic examples, not learner words or trial results. Adults select one and record what actually happens; do not prefill PASS. Tasks are observation criteria, not a promise that every phrasing is understood."
+      },
+      "items": [
+        {
+          "vi": "S01 · Cá voi và năm lựa chọn hỗ trợ. Lời mẫu: Con muốn cá voi màu xanh ngọc chở thành phố nhỏ. Ban đêm có vườn và cầu sao. Việc cần thử: Đối chiếu năm lựa chọn, lời gốc và cảnh; chỉ dựng sau xem lại/xác nhận.",
+          "en": "S01 · Whale with supported choices. Synthetic words: I want a teal whale carrying a small city. At night there are gardens and a star bridge. Task: Compare all five choices, original words and scene; render only after review/confirmation."
+        },
+        {
+          "vi": "S02 · Mong muốn ngoài mẫu. Lời mẫu: Con muốn con rồng chở một cửa hàng kẹo. Việc cần thử: Giữ rồng/cửa hàng kẹo là chưa dựng; không đổi âm thầm sang cá voi. Thử đường giấy, quay lại hoặc dừng.",
+          "en": "S02 · Wish outside the template. Synthetic words: I want a dragon carrying a candy shop. Task: Keep dragon/candy shop visibly unrendered; no silent whale substitution. Try paper, return or stop."
+        },
+        {
+          "vi": "S03 · Bầu trời mâu thuẫn. Lời mẫu: Con muốn cá voi chở thành phố. Trời vừa ban đêm vừa hoàng hôn. Việc cần thử: Mâu thuẫn phải được chọn lại rõ ràng; không xác nhận hộ hoặc coi đóng panel là đã giải quyết.",
+          "en": "S03 · Conflicting sky. Synthetic words: I want a whale carrying a city. The sky is both night and sunset. Task: The conflict requires an explicit choice; do not resolve by confirming for someone or closing a panel."
+        },
+        {
+          "vi": "S04 · Phủ định một lựa chọn. Lời mẫu: Con muốn cá voi chở thành phố, không có vườn và không có cầu sao. Việc cần thử: Kiểm cả lời phủ định và hai lựa chọn false; nếu máy chưa hiểu, sửa thủ công rồi xem lại.",
+          "en": "S04 · Negating a supported choice. Synthetic words: I want a whale carrying a city, with no gardens and no star bridge. Task: Check the negation and both false choices; if unclear to the system, correct manually and review."
+        },
+        {
+          "vi": "S05 · Bác bỏ gợi ý. Lời mẫu: Con muốn cá voi chở thành phố dưới trời đêm. Việc cần thử: Mở gợi ý rồi bác bỏ; ghi dữ liệu đã giữ và việc chưa áp dụng, không coi gợi ý là tác phẩm.",
+          "en": "S05 · Reject a suggestion. Synthetic words: I want a whale carrying a city at night. Task: Preview then reject a proposal; record preserved data and non-adoption, without treating the proposal as artwork."
+        },
+        {
+          "vi": "S06 · Đổi một chi tiết sau dựng. Lời mẫu: Giữ cầu sao, đổi bầu trời từ ban đêm sang hoàng hôn. Việc cần thử: Chỉ dùng sau một bản đã dựng có cầu sao. So trước/sau, giữ lựa chọn khác, xác nhận lại; ghi phiên bản nếu thực sự dựng.",
+          "en": "S06 · Change one detail after print. Synthetic words: Keep the star bridge; change the sky from night to sunset. Task: Use after an actual printed world with a bridge. Compare before/after, preserve other choices and reconfirm; record a version only if rendered."
+        },
+        {
+          "vi": "S07 · Chọn giấy. Lời mẫu: Hôm nay tôi muốn vẽ con rồng trên giấy. Việc cần thử: Chọn giấy là hành động hợp lệ; ghi chưa kiểm renderer, không chuyển mẫu để đủ buổi thử.",
+          "en": "S07 · Choose paper. Synthetic words: Today I want to draw a dragon on paper. Task: Paper is valid; record renderer not tested rather than switching to the template to complete a trial."
+        },
+        {
+          "vi": "S08 · Chọn dừng. Lời mẫu: Tôi chưa muốn dựng. Tôi muốn nghỉ. Việc cần thử: Dừng không chấm điểm; ghi lời/hành động nếu được phép, không tự cho là thất bại hoặc đã kiểm renderer.",
+          "en": "S08 · Choose to stop. Synthetic words: I do not want to print yet. I want a break. Task: Stop without scoring; record words/actions if agreed, not automatic failure or renderer validation."
+        }
+      ],
+      "provenance": {
+        "type": "team-proposed-protocol",
+        "sources": [],
+        "outcomes": null
+      }
+    },
+    {
+      "id": "evaluate",
+      "kind": "metrics",
+      "title": {
+        "vi": "Đo quyền tác giả và khả năng sử dụng",
+        "en": "Observe authorship and usability"
+      },
+      "body": {
+        "vi": "Đề xuất diễn tập ba phiên với người lớn, rồi mời thử tối đa sáu gia đình ở một nhóm tuổi đã thống nhất, bắt đầu với 9–11 nếu phù hợp. Đây là mẫu nhỏ để phát hiện lỗi và sửa phương pháp; không đủ để kết luận hiệu quả giáo dục. Số lượng và ngưỡng dưới đây do nhóm đề xuất, chưa có kết quả.",
+        "en": "Proposed sequence: three adult rehearsals, then up to six families in one agreed age band, starting with 9–11 if appropriate. This is a small sample for finding problems and improving facilitation, not establishing educational effectiveness. Counts and thresholds below are team proposals; there are no results yet."
+      },
+      "metrics": [
+        {
+          "id": "M1",
+          "vi": "Nhận ra ý mình: trẻ tự chỉ hoặc kể ít nhất một chi tiết từ ý tưởng gốc. Ghi có/không/chưa quan sát cùng bằng chứng; không gán điểm năng lực.",
+          "en": "Recognizes own idea: the learner identifies at least one original detail. Record yes/no/not observed with evidence; do not assign an ability score."
+        },
+        {
+          "id": "M2",
+          "vi": "Có quyền lựa chọn: ghi một lần trẻ giữ, sửa, bác bỏ gợi ý hoặc chọn dừng. Đếm hành động đã quan sát, không diễn giải im lặng thành đồng ý.",
+          "en": "Has a choice: record an observed keep, change, rejection or decision to stop. Count observed acts; silence is not agreement."
+        },
+        {
+          "id": "M3",
+          "vi": "Hiểu giới hạn: sau khi xem, trẻ và người lớn phân biệt được một phần đã dựng với một phần chưa dựng. Không cần buộc trẻ trả lời như bài kiểm tra.",
+          "en": "Understands a limit: after viewing, the learner and adult distinguish a rendered detail from an unrendered one. Avoid turning this into a compulsory quiz."
+        },
+        {
+          "id": "M4",
+          "vi": "Độ trung thành: người quan sát so lời gốc, bản được chọn và sản phẩm; ghi mỗi lần hệ thống hoặc người lớn thêm ý mà chưa hỏi. Mục tiêu thử: không có chi tiết gốc bị đổi âm thầm.",
+          "en": "Fidelity: the observer compares the original words, selected blueprint and artifact, recording unasked additions by the system or adult. Pilot target: no silently replaced original detail."
+        },
+        {
+          "id": "M5",
+          "vi": "Công sức đồng hành: ghi số lần người lớn phải cứu luồng, lỗi máy, thời gian từng bước và mong muốn chưa đáp ứng. Chưa đặt mục tiêu tốc độ cho trẻ.",
+          "en": "Facilitation effort: record rescues, technical failures, step durations and unmet wishes. Do not impose a speed target on learners."
+        },
+        {
+          "id": "M6",
+          "vi": "Muốn tiếp tục: hỏi trẻ có muốn thử lại, sửa, vẽ giấy hoặc nghỉ; giữ cả câu trả lời không muốn tiếp tục. Không dùng cảm xúc tức thời làm bằng chứng học tập.",
+          "en": "Preference to continue: ask whether they would like to try again, revise, draw on paper or rest; retain negative answers. Momentary enthusiasm is not evidence of learning."
+        }
+      ],
+      "items": [
+        {
+          "vi": "Điều kiện so sánh đề xuất: cùng ý tưởng được trẻ chọn, một phiên với giấy/bản thiết kế người lớn và một phiên với máy; đổi thứ tự giữa các gia đình nếu làm được. Ghi rõ tác động thứ tự và người điều phối; không tuyên bố thử nghiệm nhân quả.",
+          "en": "Proposed comparison: learner-chosen ideas developed with paper/adult blueprinting and with the tool; vary order between families where feasible. Record order and facilitator effects; do not claim a causal experiment."
+        },
+        {
+          "vi": "Cổng mở rộng đề xuất: ít nhất năm trong sáu phiên được ghi nhận trọn luồng hoặc lý do trẻ chọn dừng/giấy; mỗi phiên cần không quá hai lần người vận hành cứu lỗi thao tác hoặc kỹ thuật, không tính trò chuyện đồng hành. Mọi phiên ghi M1–M6 hoặc lý do chưa quan sát; không có lỗi đổi ý âm thầm chưa sửa. Báo riêng số phiên có dựng và sửa thật; không tính việc dừng là đã kiểm chứng renderer. Không đạt thì sửa và thử lại, không ép trẻ chọn mẫu cá voi để đủ số.",
+          "en": "Proposed expansion gate: at least five of six sessions document the full workflow or the learner's choice to stop/use paper; no more than two operator rescues of interaction or technical failures per session, excluding facilitation conversations. Every session records M1–M6 or why unobserved; no unresolved silent replacement. Report actual render/revision sessions separately; stopping does not validate the renderer. If unmet, revise and repeat; never force the whale template to reach a target."
+        }
+      ],
+      "provenance": {
+        "type": "team-proposed-feasibility-hypotheses",
+        "sources": [
+          "MIT-DREAM",
+          "UNICEF-3"
+        ],
+        "outcomes": null
+      }
+    },
+    {
+      "id": "stop",
+      "kind": "care",
+      "title": {
+        "vi": "Dừng đúng lúc cũng là một kết quả tốt",
+        "en": "Stopping at the right time is a valid outcome"
+      },
+      "body": {
+        "vi": "Dừng khi trẻ muốn dừng, khó chịu, mệt, không được quyền sửa hoặc bị thúc phải chọn cho kịp demo. Nếu xuất hiện nội dung cần chăm sóc thật, ưu tiên người lớn và quy trình của đơn vị tổ chức; không để AI làm người tư vấn thay thế. Nếu máy lỗi, trở lại lời kể, giấy hoặc cảnh trước đó.",
+        "en": "Stop when the learner wants to stop, is distressed or tired, loses the ability to revise, or is rushed to satisfy a demo. If an issue needs real care, prioritize the adult and the organizer's process; do not substitute AI counseling. When the system fails, return to the story, paper or the previous artifact."
+      },
+      "items": [
+        {
+          "vi": "Không đưa thông tin nhận dạng, bí mật gia đình hoặc nhật ký thật lên provider trong đợt này. AI trực tiếp giữ tắt; adapter thử sau chỉ nhận truyện giả lập có trong bộ mẫu.",
+          "en": "Do not send identifying details, family secrets or real diaries to a provider in this phase. Live AI stays off; later adapter tests accept only prepared synthetic fixture stories."
+        },
+        {
+          "vi": "Ghi chú buổi thử chỉ ở bộ nhớ phiên; bản tải về nằm ngoài cơ chế xóa phiên. Người tổ chức cần thống nhất riêng việc giữ, xóa và sử dụng bản ghi trước khi thu thập thật.",
+          "en": "Session notes remain in memory; downloaded files are outside session clearing. The organizer must separately agree retention, deletion and use before collecting real observations."
+        },
+        {
+          "vi": "Xác nhận trên giao diện chỉ chốt một bản thiết kế; không thay cho xác thực phụ huynh, sự đồng ý tham gia nghiên cứu hay đánh giá pháp lý.",
+          "en": "Interface confirmation commits a blueprint; it does not authenticate guardians, obtain research participation consent or establish legal compliance."
+        }
+      ],
+      "provenance": {
+        "type": "team-operating-boundaries",
+        "sources": [
+          "UNICEF-3",
+          "OAI-DATA"
+        ]
+      }
+    },
+    {
+      "id": "work",
+      "kind": "roles",
+      "title": {
+        "vi": "Việc người làm và việc máy hỗ trợ",
+        "en": "Human work and software support"
+      },
+      "body": {
+        "vi": "Vai trò dưới đây là đề xuất để anh và Thuý Anh thống nhất, chưa phải phân công đã cam kết.",
+        "en": "These roles are proposals for you and Thuý Anh to agree, not committed assignments."
+      },
+      "rows": [
+        {
+          "owner": "Nguyễn Cảnh Lâm + Thuý Anh",
+          "vi": "Chọn mục tiêu thử, nhóm gia đình, người điều phối; mời trực tiếp, thống nhất tham gia, lắng nghe và quyết định có nên tiếp tục.",
+          "en": "Choose the pilot goal, families and facilitators; invite people directly, agree participation, listen and decide whether to continue."
+        },
+        {
+          "owner": "Người lớn đồng hành / Facilitating adult",
+          "vi": "Giữ mạch chuyện, hỏi không dẫn, kiểm lời được ghi, nhận ra khi trẻ muốn dừng, không chọn thay chỉ để có hình đẹp.",
+          "en": "Hold the conversation, ask nonleading questions, check transcriptions and recognize stopping; avoid choosing for the learner just to obtain a prettier artifact."
+        },
+        {
+          "owner": "Trẻ / Learner",
+          "vi": "Nói, vẽ hoặc viết theo cách mình muốn; giữ, đổi, bác bỏ, thử lại hoặc không tham gia.",
+          "en": "Speak, draw or write as preferred; keep, revise, reject, retry or decline."
+        },
+        {
+          "owner": "Phần mềm + AI / Software + AI",
+          "vi": "Giữ lời gốc, đề xuất có nhãn, kiểm dữ liệu, dựng lựa chọn đã duyệt, hiện phần chưa làm, so trước–sau và xuất hồ sơ theo thao tác rõ.",
+          "en": "Preserve original words, label proposals, validate data, render reviewed choices, show unmet wishes, compare revisions and export only through explicit actions."
+        }
+      ],
+      "provenance": {
+        "type": "team-proposed-roles",
+        "sources": []
+      }
+    },
+    {
+      "id": "roadmap",
+      "kind": "roadmap",
+      "title": {
+        "vi": "Mở rộng có căn cứ",
+        "en": "Expand from evidence"
+      },
+      "body": {
+        "vi": "Hoàn thiện kỹ thuật không đồng nghĩa hoàn thiện giá trị giáo dục. Mỗi bước sau cần một giả thuyết và một cách bác bỏ giả thuyết đó.",
+        "en": "Technical completeness is not educational validation. Each next step needs a hypothesis and a way to disconfirm it."
+      },
+      "items": [
+        {
+          "vi": "Ngay bây giờ: diễn tập người lớn, kiểm luồng và đọc bộ mẫu đối chiếu; ghi các mong muốn mà mẫu cá voi không đáp ứng.",
+          "en": "Now: rehearse with adults, test the workflow and inspect evaluation fixtures; record wishes the whale template cannot meet."
+        },
+        {
+          "vi": "Khi cấu hình: chạy AI với truyện giả lập, đo lỗi ý nghĩa, dẫn chứng, thời gian và chi phí. JSON đúng cấu trúc vẫn có thể sai ý; store:false không đồng nghĩa không có lưu giữ ở provider.",
+          "en": "Once configured: run synthetic AI cases and measure semantic errors, evidence, latency and cost. Schema-valid JSON may still misread intent; store:false does not mean no provider retention."
+        },
+        {
+          "vi": "Sau phản hồi: chọn thêm một dạng sản phẩm từ mong muốn lặp lại, ví dụ sân khấu kể chuyện hoặc trò chơi nhỏ. Định nghĩa ngữ pháp, điều khiển và giới hạn mới, thay vì hứa in mọi thứ.",
+          "en": "After feedback: choose one additional artifact type from recurring wishes, such as a story stage or small game. Define its grammar, controls and limits rather than promising to print anything."
+        },
+        {
+          "vi": "Trước mở rộng trẻ thật: thống nhất điều phối, dữ liệu và trách nhiệm với người có chuyên môn giáo dục; thử khả năng tiếp cận và ngôn ngữ; chưa định hướng nghề nghiệp từ dữ liệu tưởng tượng.",
+          "en": "Before expanding to real learners: agree facilitation, data and responsibilities with educational expertise; test accessibility and language; do not derive career guidance from imagination data."
+        }
+      ],
+      "provenance": {
+        "type": "team-proposed-roadmap",
+        "sources": [
+          "OAI-SCHEMA",
+          "OAI-DATA",
+          "UNICEF-3"
+        ]
+      }
+    }
+  ],
+  "edition": "DREAM-JOURNEY-20261007",
+  "rehearsal": {
+    "dataKind": "synthetic-adult-rehearsal",
+    "status": "prepared-not-observed",
+    "observationModes": [
+      "observed",
+      "did-not-occur",
+      "not-observed"
+    ],
+    "choiceModes": [
+      "keep",
+      "reject",
+      "change",
+      "unrendered",
+      "paper",
+      "stop",
+      "not-chosen"
+    ],
+    "scenarios": [
+      {
+        "id": "S01",
+        "kind": "supported",
+        "title": {
+          "vi": "Cá voi và năm lựa chọn hỗ trợ",
+          "en": "Whale with supported choices"
+        },
+        "sourceText": {
+          "vi": "Con muốn cá voi màu xanh ngọc chở thành phố nhỏ. Ban đêm có vườn và cầu sao.",
+          "en": "I want a teal whale carrying a small city. At night there are gardens and a star bridge."
+        },
+        "task": {
+          "vi": "Đối chiếu năm lựa chọn, lời gốc và cảnh; chỉ dựng sau xem lại/xác nhận.",
+          "en": "Compare all five choices, original words and scene; render only after review/confirmation."
+        },
+        "dataKind": "synthetic-adult-rehearsal",
+        "observationStatus": "not-observed",
+        "actualResult": null
+      },
+      {
+        "id": "S02",
+        "kind": "unsupported",
+        "title": {
+          "vi": "Mong muốn ngoài mẫu",
+          "en": "Wish outside the template"
+        },
+        "sourceText": {
+          "vi": "Con muốn con rồng chở một cửa hàng kẹo.",
+          "en": "I want a dragon carrying a candy shop."
+        },
+        "task": {
+          "vi": "Giữ rồng/cửa hàng kẹo là chưa dựng; không đổi âm thầm sang cá voi. Thử đường giấy, quay lại hoặc dừng.",
+          "en": "Keep dragon/candy shop visibly unrendered; no silent whale substitution. Try paper, return or stop."
+        },
+        "dataKind": "synthetic-adult-rehearsal",
+        "observationStatus": "not-observed",
+        "actualResult": null
+      },
+      {
+        "id": "S03",
+        "kind": "conflict",
+        "title": {
+          "vi": "Bầu trời mâu thuẫn",
+          "en": "Conflicting sky"
+        },
+        "sourceText": {
+          "vi": "Con muốn cá voi chở thành phố. Trời vừa ban đêm vừa hoàng hôn.",
+          "en": "I want a whale carrying a city. The sky is both night and sunset."
+        },
+        "task": {
+          "vi": "Mâu thuẫn phải được chọn lại rõ ràng; không xác nhận hộ hoặc coi đóng panel là đã giải quyết.",
+          "en": "The conflict requires an explicit choice; do not resolve by confirming for someone or closing a panel."
+        },
+        "dataKind": "synthetic-adult-rehearsal",
+        "observationStatus": "not-observed",
+        "actualResult": null
+      },
+      {
+        "id": "S04",
+        "kind": "negation",
+        "title": {
+          "vi": "Phủ định một lựa chọn",
+          "en": "Negating a supported choice"
+        },
+        "sourceText": {
+          "vi": "Con muốn cá voi chở thành phố, không có vườn và không có cầu sao.",
+          "en": "I want a whale carrying a city, with no gardens and no star bridge."
+        },
+        "task": {
+          "vi": "Kiểm cả lời phủ định và hai lựa chọn false; nếu máy chưa hiểu, sửa thủ công rồi xem lại.",
+          "en": "Check the negation and both false choices; if unclear to the system, correct manually and review."
+        },
+        "dataKind": "synthetic-adult-rehearsal",
+        "observationStatus": "not-observed",
+        "actualResult": null
+      },
+      {
+        "id": "S05",
+        "kind": "reject",
+        "title": {
+          "vi": "Bác bỏ gợi ý",
+          "en": "Reject a suggestion"
+        },
+        "sourceText": {
+          "vi": "Con muốn cá voi chở thành phố dưới trời đêm.",
+          "en": "I want a whale carrying a city at night."
+        },
+        "task": {
+          "vi": "Mở gợi ý rồi bác bỏ; ghi dữ liệu đã giữ và việc chưa áp dụng, không coi gợi ý là tác phẩm.",
+          "en": "Preview then reject a proposal; record preserved data and non-adoption, without treating the proposal as artwork."
+        },
+        "dataKind": "synthetic-adult-rehearsal",
+        "observationStatus": "not-observed",
+        "actualResult": null
+      },
+      {
+        "id": "S06",
+        "kind": "revision",
+        "title": {
+          "vi": "Đổi một chi tiết sau dựng",
+          "en": "Change one detail after print"
+        },
+        "sourceText": {
+          "vi": "Giữ cầu sao, đổi bầu trời từ ban đêm sang hoàng hôn.",
+          "en": "Keep the star bridge; change the sky from night to sunset."
+        },
+        "task": {
+          "vi": "Chỉ dùng sau một bản đã dựng có cầu sao. So trước/sau, giữ lựa chọn khác, xác nhận lại; ghi phiên bản nếu thực sự dựng.",
+          "en": "Use after an actual printed world with a bridge. Compare before/after, preserve other choices and reconfirm; record a version only if rendered."
+        },
+        "dataKind": "synthetic-adult-rehearsal",
+        "observationStatus": "not-observed",
+        "actualResult": null
+      },
+      {
+        "id": "S07",
+        "kind": "paper",
+        "title": {
+          "vi": "Chọn giấy",
+          "en": "Choose paper"
+        },
+        "sourceText": {
+          "vi": "Hôm nay tôi muốn vẽ con rồng trên giấy.",
+          "en": "Today I want to draw a dragon on paper."
+        },
+        "task": {
+          "vi": "Chọn giấy là hành động hợp lệ; ghi chưa kiểm renderer, không chuyển mẫu để đủ buổi thử.",
+          "en": "Paper is valid; record renderer not tested rather than switching to the template to complete a trial."
+        },
+        "dataKind": "synthetic-adult-rehearsal",
+        "observationStatus": "not-observed",
+        "actualResult": null
+      },
+      {
+        "id": "S08",
+        "kind": "stop",
+        "title": {
+          "vi": "Chọn dừng",
+          "en": "Choose to stop"
+        },
+        "sourceText": {
+          "vi": "Tôi chưa muốn dựng. Tôi muốn nghỉ.",
+          "en": "I do not want to print yet. I want a break."
+        },
+        "task": {
+          "vi": "Dừng không chấm điểm; ghi lời/hành động nếu được phép, không tự cho là thất bại hoặc đã kiểm renderer.",
+          "en": "Stop without scoring; record words/actions if agreed, not automatic failure or renderer validation."
+        },
+        "dataKind": "synthetic-adult-rehearsal",
+        "observationStatus": "not-observed",
+        "actualResult": null
+      }
+    ],
+    "recordTemplate": {
+      "recordId": null,
+      "scenarioId": null,
+      "roles": null,
+      "locale": null,
+      "sourceText": null,
+      "sourceKind": null,
+      "proposedChoice": null,
+      "chosenChoice": null,
+      "choiceMode": "not-chosen",
+      "unrenderedWish": null,
+      "sceneObserved": null,
+      "observationStatus": "not-observed",
+      "supportingAction": null,
+      "exactWords": null,
+      "rescueCount": null,
+      "rescueAction": null,
+      "durationSeconds": null,
+      "nextChange": null,
+      "metrics": {
+        "M1": {
+          "status": "not-observed",
+          "evidence": null
+        },
+        "M2": {
+          "status": "not-observed",
+          "evidence": null
+        },
+        "M3": {
+          "status": "not-observed",
+          "evidence": null
+        },
+        "M4": {
+          "status": "not-observed",
+          "evidence": null
+        },
+        "M5": {
+          "status": "not-observed",
+          "evidence": null
+        },
+        "M6": {
+          "status": "not-observed",
+          "evidence": null
+        }
+      },
+      "dataKind": "manual-unverified-observation",
+      "observerConfirmation": null,
+      "printId": null,
+      "geometryVersion": null,
+      "chosenTitle": null,
+      "chosenNarration": null,
+      "metadataSourceWords": null,
+      "titleOrigin": null,
+      "narrationMode": null,
+      "narrationOrigin": null
+    },
+    "sheetLabels": {
+      "caption": {
+        "vi": "Tờ ghi trống · thủ công, chưa xác minh",
+        "en": "Blank sheet · manual, unverified"
+      },
+      "original": {
+        "vi": "Lời gốc nguyên văn",
+        "en": "Exact original words"
+      },
+      "proposal": {
+        "vi": "Gợi ý và nguồn",
+        "en": "Proposal and origin"
+      },
+      "choice": {
+        "vi": "Giữ / bác bỏ / sửa / chưa chọn",
+        "en": "Keep / reject / change / not chosen"
+      },
+      "scene": {
+        "vi": "Cảnh đã thấy / chưa quan sát",
+        "en": "Scene seen / not observed"
+      },
+      "evidence": {
+        "vi": "Hành động hoặc lời làm bằng chứng",
+        "en": "Supporting action or exact words"
+      },
+      "metric": {
+        "vi": "Mục quan sát",
+        "en": "Observation item"
+      },
+      "status": {
+        "vi": "Trạng thái (mặc định chưa quan sát)",
+        "en": "Status (default not observed)"
+      },
+      "notObserved": {
+        "vi": "Chưa quan sát",
+        "en": "Not observed"
+      },
+      "rescue": {
+        "vi": "Số lần cứu luồng nếu đã đếm: ______ ; hành động và lý do: __________________",
+        "en": "Rescue count if measured: ______ ; action and reason: __________________"
+      },
+      "duration": {
+        "vi": "Thời gian nếu đã đo: ______ ; printId: ______ ; geometryVersion: ______",
+        "en": "Duration if measured: ______ ; printId: ______ ; geometryVersion: ______"
+      },
+      "boundary": {
+        "vi": "Để trống phần chưa biết; không điền 0 thay cho chưa đo. Chỉ ghi “đã quan sát” khi có hành động/lời làm bằng chứng.",
+        "en": "Leave unknowns blank; do not enter zero for unmeasured values. Mark observed only with supporting action/words."
+      },
+      "metadata": {
+        "vi": "Tên/lời kể đã chọn và nguồn (tự viết / giữ lời gốc / gợi ý được chọn rõ): __________________",
+        "en": "Chosen title/narration and origin (own writing / kept original words / explicitly chosen suggestion): __________________"
+      }
+    },
+    "metadataFields": {
+      "printId": "printed.printId",
+      "geometryVersion": "printed.spec.version",
+      "chosenTitle": "printed.story.title",
+      "titleOrigin": "printed.story.metadata.titleOrigin",
+      "chosenNarration": "printed.story.narration",
+      "narrationMode": "printed.story.metadata.narrationMode",
+      "narrationOrigin": "printed.story.metadata.narrationOrigin",
+      "note": {
+        "vi": "Chép nhãn nguồn đúng như snapshot; null nghĩa là chưa ghi nhận. Cờ retained không tự chứng minh độ trung thành hay ý định.",
+        "en": "Copy source labels exactly from the snapshot; null means unrecorded. A retained flag does not independently establish fidelity or intent."
+      }
+    }
+  }
+}
