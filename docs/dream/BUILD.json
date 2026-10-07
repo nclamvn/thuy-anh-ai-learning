@@ -3,8 +3,8 @@
   "edition": "DREAM-JOURNEY-public-20261007",
   "dataKind": "public-static-synthetic-rehearsal",
   "source": {
-    "bytes": 6130,
-    "sha256": "066d300f6a4ce152107f895a2ccddcf5df4bb9002feef2549e68910c1bb25235"
+    "bytes": 6319,
+    "sha256": "262da28093ca644543eda8660add007d730c32c1596fa00f0e83289fa6f21708"
   },
   "files": {
     "app/dream/DEPENDENCIES.json": {
@@ -64,8 +64,8 @@
       "sha256": "13d261b53a7c5451fbcadd712fbb52914568865c71fc04daa61923533f201bb1"
     },
     "app/dream/main.js": {
-      "bytes": 43857,
-      "sha256": "9b7a552d55db84c1e028500e943f280883fac118567ba1351c7af0067350f7dd"
+      "bytes": 43917,
+      "sha256": "4feb02c472f5d28308b4fdfaaefe7b727312175012e8c92b932dc04b2168350d"
     },
     "app/dream/notebook.js": {
       "bytes": 16385,
@@ -76,8 +76,8 @@
       "sha256": "254c910373b63c9f2a4604f366899bcc6e78c9347e04e27372b448a83cee19a1"
     },
     "app/dream/public-mode.js": {
-      "bytes": 1162,
-      "sha256": "015b015087b63da11cccbefe55bae571c36e20f99ea08b65443f9d3623140dd7"
+      "bytes": 1973,
+      "sha256": "1f9b62932375b825fb2732921ae048174a3f5f52864ca8130c8eef03a14fd240"
     },
     "app/dream/scene.js": {
       "bytes": 9355,
@@ -116,8 +116,8 @@
       "sha256": "f1f3c108bc2997e71aa50ba89c902e1e4646f162115934bf3a1bbbecf4e15a42"
     },
     "app/dream/tests/public-mode.test.mjs": {
-      "bytes": 1604,
-      "sha256": "e95e48f308e1decac1e79c47e5d824c18c7ae396cfe077c7ed8aeea2d7bff0c2"
+      "bytes": 2138,
+      "sha256": "26639b3dbf2c6a7f5e20cbcf25be75291451e0a4fca350736245553b209c6c97"
     },
     "app/dream/tests/scene.test.mjs": {
       "bytes": 1641,

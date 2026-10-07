@@ -44,11 +44,13 @@ The original strict `check_all.py`, `verify_research.py`, `verify_project_kit.py
 
 ## Deploy to Vercel
 
-`vercel.json` selects the Other preset, skips dependency installation/build commands and serves only `app/`. `.vercelignore` admits only the application and hosting config to the deployment input, excluding app tests/README/package/compiler manifest and all root research/tooling/source documents. Fonts and their OFL notices remain included. No environment variables, API keys or backend are required.
+`vercel.json` selects the Other preset, skips dependency installation and runs `node tools/build_site.mjs`; only the generated `dist/` is served. The same exact runtime/resource/kit/download allowlist works for full Git and filtered CLI input. `.vercelignore` admits the builder and required inputs, while tests/backend/development metadata stay outside output. Fonts/OFL and Three MIT remain included. No environment variables, API keys, packages or backend are required. [Release boundary and remaining debt](docs/RELEASE-CLEANUP-20261007.md).
 
 From the repository root, with Vercel CLI installed and authenticated to the intended account/scope:
 
 ```sh
+node tools/build_site.mjs
+node tools/build_site.mjs --check
 vercel link
 vercel --dry --json
 vercel --prod

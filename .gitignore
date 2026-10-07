@@ -34,3 +34,6 @@ export-*.json
 # Visitor-authored review exports are not source assets
 project-feedback.json
 project-feedback.md
+
+# Deterministic production output, rebuilt from reviewed source.
+/dist/

@@ -35,7 +35,7 @@ def verify_distribution(project):
             raw=path.read_bytes()
             require(row=={'bytes':len(raw),'sha256':digest(raw)}, f'public file fingerprint mismatch: {name}')
         # Git metadata, local caches/reports/exports are intentionally outside this source receipt.
-        actual={p.relative_to(project).as_posix() for p in project.rglob('*') if p.is_file() and not any(part in {'.git','.vercel','__pycache__','.venv','node_modules','exports','observed','runtime'} for part in p.relative_to(project).parts) and p.name!='PUBLIC-MANIFEST.json' and not p.name.endswith('.pyc')}
+        actual={p.relative_to(project).as_posix() for p in project.rglob('*') if p.is_file() and not any(part in {'dist','.git','.vercel','__pycache__','.venv','node_modules','exports','observed','runtime'} for part in p.relative_to(project).parts) and p.name!='PUBLIC-MANIFEST.json' and not p.name.endswith('.pyc')}
         require(actual==expected, f'unlisted source files: {sorted(actual-expected)}; missing: {sorted(expected-actual)}')
         sources,_=read_json(project/'research/sources.json')
         supplements,_=read_json(project/'research/fulltexts/capture-manifest.json')
@@ -99,6 +99,7 @@ def run(project,node=None):
     results=[{'check':'public-source-integrity','status':integrity['status'],'result':integrity}]
     binary=node or os.environ.get('AI_LEARNING_NODE') or shutil.which('node')
     jobs=[('python-fault-tests',[sys.executable,'-B','-m','unittest','discover','-s','tools/tests','-v']),('unmeasured-benchmark',[sys.executable,'-B','tools/evaluate_responses.py','benchmarks/response_template.json']),('synthetic-benchmark',[sys.executable,'-B','tools/evaluate_responses.py','benchmarks/fixtures/synthetic_responses.json']),('inactive-provider-config',[sys.executable,'-B','tools/verify_provider_config.py','benchmarks/provider-config.template.json']),('authored-review-bundle',[sys.executable,'-B','tools/build_share_bundle.py','--verify']),('public-dream-source',[sys.executable,'-B','tools/build_dream.py','--check'])]
+    if binary:jobs.extend([('static-build-tests',[binary,'--test','tools/tests/build_site.test.mjs']),('static-site-build',[binary,'tools/build_site.mjs']),('static-site-integrity',[binary,'tools/build_site.mjs','--check'])])
     if binary:jobs.append(('app-tests',[binary,'--test',*sorted(str(p.relative_to(project)) for p in (project/'app/tests').glob('*.test.mjs'))]))
     if binary:jobs.append(('source-only-backend-tests',[binary,'--test',*sorted(str(p.relative_to(project)) for p in (project/'source/dream-backend/tests').glob('*.test.mjs'))]))
     if binary:jobs.append(('dream-tests',[binary,'--test',*sorted(str(p.relative_to(project)) for p in (project/'app/dream/tests').glob('*.test.mjs'))]))

@@ -46,11 +46,13 @@ Bộ kiểm này xác nhận dấu vân tay của **file đang được phân ph
 
 ## Triển khai Vercel
 
-Cấu hình `vercel.json` dùng preset Other, bỏ install/build command và chỉ phục vụ thư mục `app/`. `.vercelignore` chỉ cho phép app + config vào deployment; tests, README/package của app, manifest compiler và toàn bộ nguồn/tooling/research ngoài app bị loại. Font và giấy phép OFL vẫn đi kèm. Không cần env, API key hoặc backend.
+Cấu hình `vercel.json` dùng Other preset, bỏ install và chạy `node tools/build_site.mjs`; chỉ phục vụ `dist/` đã sinh. Một allowlist runtime/học liệu/kit/download dùng chung cho Git và CLI. `.vercelignore` chỉ giới hạn input CLI; builder mới là ranh giới output, loại tests/backend/tooling/metadata phát triển. Font/OFL và Three MIT giữ nguyên. Build không cần package, key/env hoặc backend. [Ranh giới release và nợ còn lại](docs/RELEASE-CLEANUP-20261007.md).
 
 Từ thư mục gốc repo, với Vercel CLI đã cài và đăng nhập đúng tài khoản/scope:
 
 ```sh
+node tools/build_site.mjs
+node tools/build_site.mjs --check
 vercel link
 vercel --dry --json
 vercel --prod

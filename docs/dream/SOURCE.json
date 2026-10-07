@@ -79,13 +79,17 @@
         "published": "async function readPlannerConfig(){applyPublicOff(lab,LAB_COPY);refreshProposal();}"
       }
     },
-    "importPrefix": "import {applyPublicOff, syncPublicReturn} from './public-mode.js';\n",
+    "importPrefix": "import {applyPublicOff, syncPublicReturn, syncPublicExplanation} from './public-mode.js';\n",
     "syncPrefix": {
       "canonical": "function sync(){",
       "published": "function sync(){syncPublicReturn(document,lang);"
     },
     "indexFooter": "<footer class=\"public-handoff\"><a id=\"public-platform\" class=\"lab-link\" href=\"../#overview\" target=\"_blank\" rel=\"noopener\">Mở dự án · tab mới</a><p id=\"public-scope\">Bản diễn tập public bằng dữ liệu tổng hợp. AI trực tuyến luôn tắt; lời kể chỉ ở bộ nhớ tab.</p></footer>",
-    "styleSuffix": "\n/* Public handoff: keep both the platform and this in-memory session open. */\n.public-handoff{padding:28px max(24px,5%);background:#263e5c;color:#fff0cf}.public-handoff .lab-link{min-height:48px;line-height:24px;display:inline-flex;align-items:center;color:inherit;white-space:normal}.public-handoff p{max-width:72ch;overflow-wrap:anywhere}\n"
+    "styleSuffix": "\n/* Public handoff: keep both the platform and this in-memory session open. */\n.public-handoff{padding:28px max(24px,5%);background:#263e5c;color:#fff0cf}.public-handoff .lab-link{min-height:48px;line-height:24px;display:inline-flex;align-items:center;color:inherit;white-space:normal}.public-handoff p{max-width:72ch;overflow-wrap:anywhere}\n",
+    "explanationHook": {
+      "canonical": ";$('boundary').textContent",
+      "published": ";syncPublicExplanation(document,lang);$('boundary').textContent"
+    }
   },
   "kitCanonicalSourceSha256": "ff1995165b07e20518772a1c958b072fc0480920d16b8d1efce57588e1f03a93",
   "mode": "public-static-OFF",

@@ -20,3 +20,7 @@ class PublicDreamFaults(unittest.TestCase):
  def test_backend_module_cannot_enter_static_runtime_inventory(self):
   (m.D/'provider.mjs').write_text('// counterfeit static provider')
   with self.assertRaisesRegex(ValueError,'private/backend'):m.inventory()
+
+ def test_direct_network_call_with_whitespace_in_public_helper_fails(self):
+  f=m.D/'public-mode.js';f.write_text(f.read_text()+'\nfetch \n("/api/planner");')
+  with self.assertRaisesRegex(ValueError,'adapter not permanently OFF'):m.run()

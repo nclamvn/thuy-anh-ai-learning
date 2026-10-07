@@ -11,6 +11,7 @@ def recover(name,raw,meta):
  if name=='main.js':
   require(text.startswith(a['importPrefix']),'public OFF import missing');text=text[len(a['importPrefix']):]
   item=a['syncPrefix'];require(text.count(item['published'])==1,'public return adapter drift');text=text.replace(item['published'],item['canonical'],1)
+  item=a['explanationHook'];require(text.count(item['published'])==1,'public explanation adapter drift');text=text.replace(item['published'],item['canonical'],1)
   for item in a['main'].values():require(text.count(item['published'])==1,'static OFF function drift');text=text.replace(item['published'],item['canonical'],1)
  elif name=='index.html':require(text.count(a['indexFooter'])==1,'public return footer drift');text=text.replace(a['indexFooter'],'',1)
  elif name=='style.css':require(text.endswith(a['styleSuffix']),'public return style drift');text=text[:-len(a['styleSuffix'])]
@@ -27,8 +28,8 @@ def check_sources():
  meta=json.loads(S.read_text());require(meta['mode']=='public-static-OFF','Dream publication mode mismatch')
  for n,row in meta['canonicalRuntime'].items():require(fp(recover(n,(D/n).read_bytes(),meta))==row,'canonical Dream recovery mismatch: '+n)
  for n,row in meta['canonicalBackend'].items():require(fp((P/'source/dream-backend'/n).read_bytes())==row,'canonical source-only backend mismatch: '+n)
- main=(D/'main.js').read_text();require('fetch('not in main and '/api/'not in main,'public Dream must have no API request');require("import {applyPublicOff, syncPublicReturn} from './public-mode.js';"in main,'OFF adapter unavailable')
- mode=(D/'public-mode.js').read_text();require('lab.setLive(false)'in mode and 'fetch('not in mode,'public adapter not permanently OFF')
+ main=(D/'main.js').read_text();require(not re.search(r'\b(?:fetch|XMLHttpRequest|WebSocket|EventSource)\s*\(',main) and '/api/'not in main,'public Dream must have no API request');require("import {applyPublicOff, syncPublicReturn, syncPublicExplanation} from './public-mode.js';"in main,'OFF adapter unavailable')
+ mode=(D/'public-mode.js').read_text();require('lab.setLive(false)'in mode and not re.search(r'\b(?:fetch|XMLHttpRequest|WebSocket|EventSource)\s*\(',mode),'public adapter not permanently OFF')
  require(fp((D/'kit/CONTENT.json').read_bytes())['sha256']==meta['kitCanonicalSourceSha256'],'authored kit source drift')
  with tempfile.TemporaryDirectory(prefix='dream-public-kit-')as tmp:
   root=Path(tmp)

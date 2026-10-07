@@ -1,7 +1,7 @@
 {
   "archive": "project-review-WEB02.zip",
   "authoredLanguageDocuments": 108,
-  "bytes": 1646343,
+  "bytes": 1646686,
   "catalogDocuments": 54,
   "dataKind": "authored-review-download",
   "documentCountScope": "54 material catalog entries; 14 reference documents counted separately; package support documents excluded",
@@ -12,7 +12,7 @@
   "files": {
     "CONTENT-MANIFEST.json": {
       "bytes": 47303,
-      "sha256": "ee771f6ffc9b4cf99274e8dfed7c920d3705e71438a28619aec967f49d45abad"
+      "sha256": "4b11ec80a2c94a9b53d3da169f6279fa8e6472c543949f731c8d61954db668e2"
     },
     "LICENSE.md": {
       "bytes": 764,
@@ -151,8 +151,8 @@
       "sha256": "13d261b53a7c5451fbcadd712fbb52914568865c71fc04daa61923533f201bb1"
     },
     "app/dream/main.js": {
-      "bytes": 43857,
-      "sha256": "9b7a552d55db84c1e028500e943f280883fac118567ba1351c7af0067350f7dd"
+      "bytes": 43917,
+      "sha256": "4feb02c472f5d28308b4fdfaaefe7b727312175012e8c92b932dc04b2168350d"
     },
     "app/dream/notebook.js": {
       "bytes": 16385,
@@ -163,8 +163,8 @@
       "sha256": "254c910373b63c9f2a4604f366899bcc6e78c9347e04e27372b448a83cee19a1"
     },
     "app/dream/public-mode.js": {
-      "bytes": 1162,
-      "sha256": "015b015087b63da11cccbefe55bae571c36e20f99ea08b65443f9d3623140dd7"
+      "bytes": 1973,
+      "sha256": "1f9b62932375b825fb2732921ae048174a3f5f52864ca8130c8eef03a14fd240"
     },
     "app/dream/scene.js": {
       "bytes": 9355,
@@ -1206,7 +1206,7 @@
   "researchClaimReferences": 92,
   "resourceFiles": 112,
   "schemaVersion": 1,
-  "sha256": "77fb6d7aeae95141155c6147c3644792ce89b8a9d05e87b7bb9ebcc8dfdbad44",
-  "sourceFingerprint": "be289e9b2dc9d457b02ed2eff7ee5151bab0cb6555acbe7ca9e34bf752d1ad22",
+  "sha256": "517823ee64efe55c4b19ace4777c09e3b40705f452561e3818592742d7d1fa22",
+  "sourceFingerprint": "5de0d8697de17367861dd62ce408ec8d453f7ac0b29fe766009ea11d5239c9b3",
   "visualEdition": "DREAM-JOURNEY-20261007"
 }

@@ -2,16 +2,16 @@
   "dataKind": "public-references-only",
   "files": {
     ".github/workflows/checks.yml": {
-      "bytes": 464,
-      "sha256": "ceca0ee20aac61201ab12ae8216c4d750dee957d3ae7d6a95b409c912909392b"
+      "bytes": 511,
+      "sha256": "535c75dc54fe0b749b1713bbcf2535df0a620f3a7460d716ee7005ec562edfb1"
     },
     ".gitignore": {
-      "bytes": 597,
-      "sha256": "4f70cf2b81607f6ace9804e1346bb8b69b7d20866b333b6acf4c93d48c7faabf"
+      "bytes": 670,
+      "sha256": "22af8c2117000f5ddc399f22cd844b3531e56eb003894c7968593e899120730f"
     },
     ".vercelignore": {
-      "bytes": 398,
-      "sha256": "89b2228232f6cc1f77108b1cf2b83e5480ab6301df87555b47cda8ff2726e492"
+      "bytes": 374,
+      "sha256": "c82ab95df41714907f0aa88ba4f2690b2d004839c41156b4041c99bc4f6ab9a5"
     },
     "AGENTS.md": {
       "bytes": 1600,
@@ -26,12 +26,12 @@
       "sha256": "6dd183d1c57394f3ec769a3cff6826a14aae34d88be8d17fccd655261bd596dd"
     },
     "README.en.md": {
-      "bytes": 7724,
-      "sha256": "c0e1568724d7a8a5172573d78b2df5944606e099174ab26493df8d33f1fe8856"
+      "bytes": 7927,
+      "sha256": "ef7d126738834c1ebe018c4d1c8bb8934d3c6860a17de25efc5a693f367fb521"
     },
     "README.md": {
-      "bytes": 8576,
-      "sha256": "50da8b7008eb769fdf661ab03ab0c759d9941b3d8a90462154cd5ee56457002e"
+      "bytes": 8780,
+      "sha256": "c695c8863d8499f520ac90275c83abb6bbb2a971dd589e798474b81ba1611540"
     },
     "app/README.md": {
       "bytes": 12437,
@@ -107,11 +107,11 @@
     },
     "app/downloads/project-review-WEB02.json": {
       "bytes": 47697,
-      "sha256": "90d8a367548b22d0eee8745a32d950d24365e98a2e8f90413158b623636cbb47"
+      "sha256": "894eea0b1d16e04da35d79ec454a7b7369301961fd6b4a1cb76c83fa2f46b9af"
     },
     "app/downloads/project-review-WEB02.zip": {
-      "bytes": 1646343,
-      "sha256": "77fb6d7aeae95141155c6147c3644792ce89b8a9d05e87b7bb9ebcc8dfdbad44"
+      "bytes": 1646686,
+      "sha256": "517823ee64efe55c4b19ace4777c09e3b40705f452561e3818592742d7d1fa22"
     },
     "app/dream/DEPENDENCIES.json": {
       "bytes": 1193,
@@ -170,8 +170,8 @@
       "sha256": "13d261b53a7c5451fbcadd712fbb52914568865c71fc04daa61923533f201bb1"
     },
     "app/dream/main.js": {
-      "bytes": 43857,
-      "sha256": "9b7a552d55db84c1e028500e943f280883fac118567ba1351c7af0067350f7dd"
+      "bytes": 43917,
+      "sha256": "4feb02c472f5d28308b4fdfaaefe7b727312175012e8c92b932dc04b2168350d"
     },
     "app/dream/notebook.js": {
       "bytes": 16385,
@@ -182,8 +182,8 @@
       "sha256": "254c910373b63c9f2a4604f366899bcc6e78c9347e04e27372b448a83cee19a1"
     },
     "app/dream/public-mode.js": {
-      "bytes": 1162,
-      "sha256": "015b015087b63da11cccbefe55bae571c36e20f99ea08b65443f9d3623140dd7"
+      "bytes": 1973,
+      "sha256": "1f9b62932375b825fb2732921ae048174a3f5f52864ca8130c8eef03a14fd240"
     },
     "app/dream/scene.js": {
       "bytes": 9355,
@@ -222,8 +222,8 @@
       "sha256": "f1f3c108bc2997e71aa50ba89c902e1e4646f162115934bf3a1bbbecf4e15a42"
     },
     "app/dream/tests/public-mode.test.mjs": {
-      "bytes": 1604,
-      "sha256": "e95e48f308e1decac1e79c47e5d824c18c7ae396cfe077c7ed8aeea2d7bff0c2"
+      "bytes": 2138,
+      "sha256": "26639b3dbf2c6a7f5e20cbcf25be75291451e0a4fca350736245553b209c6c97"
     },
     "app/dream/tests/scene.test.mjs": {
       "bytes": 1641,
@@ -825,6 +825,10 @@
       "bytes": 8925,
       "sha256": "128d25d06587d362d976d1dde1c8c1aa76ccebe968fa748ad03dc7535256f8f3"
     },
+    "docs/RELEASE-CLEANUP-20261007.md": {
+      "bytes": 4029,
+      "sha256": "2176daa51c10acfb443ce96d751170ccf7b08d3b227814d110a0f3ffa3a0d7a4"
+    },
     "docs/SHARING-WEB02.en.md": {
       "bytes": 5222,
       "sha256": "cc89ac31e08b550141011f1e26ac772a732c2c7d287c92abeba0f95c8e3adf9b"
@@ -835,15 +839,15 @@
     },
     "docs/dream/BUILD.json": {
       "bytes": 5975,
-      "sha256": "921d740098456ad7a86dac23e2b1813e5ac59150b46dacee4ea8e6f35e34d208"
+      "sha256": "9e31c8711da01752ada5f72114049ef98e7663f5b764c9c1e10cb55364d8de64"
     },
     "docs/dream/README.md": {
-      "bytes": 3755,
-      "sha256": "8bcd24a7d357b96c76e999c6f7368ac94873cb3fcbbcf1156b1bb93e33ecf59c"
+      "bytes": 4065,
+      "sha256": "6b430ea2e899ac6a41702488eaadb501330daac658539c41f66d0ea7c9247be0"
     },
     "docs/dream/SOURCE.json": {
-      "bytes": 6130,
-      "sha256": "066d300f6a4ce152107f895a2ccddcf5df4bb9002feef2549e68910c1bb25235"
+      "bytes": 6319,
+      "sha256": "262da28093ca644543eda8660add007d730c32c1596fa00f0e83289fa6f21708"
     },
     "docs/dream/contracts/PlannerPlan.schema.json": {
       "bytes": 14580,
@@ -1362,8 +1366,8 @@
       "sha256": "8a932f218e86c20442e961c5d6594bb070718d7c3d6f971bdf9073daf847c673"
     },
     "tools/build_dream.py": {
-      "bytes": 5372,
-      "sha256": "b7ce7a6acf61201a28b16bfbdabe4bacd62084329a68999a847304b02eca5a7d"
+      "bytes": 5671,
+      "sha256": "789d1e4edb3c09a2114b954b59c10aff925b6a8a5bea83a34dbbd72bc9dca64f"
     },
     "tools/build_references.py": {
       "bytes": 8434,
@@ -1377,17 +1381,21 @@
       "bytes": 22769,
       "sha256": "1257f04c0076e6a45818fcdfdd3ee476f1e684211449779c1f71239f46991413"
     },
+    "tools/build_site.mjs": {
+      "bytes": 9200,
+      "sha256": "a1dafb4527d491e4ad11148344ea02dc8362d55cb97157879ebbbd58cab1ae13"
+    },
     "tools/check_all.py": {
       "bytes": 3394,
       "sha256": "7a55ea1712ddd3297e1db924d267bec8c38f4d9e152df2c92fe446738a7dff5a"
     },
     "tools/check_public.py": {
-      "bytes": 10486,
-      "sha256": "9efe8e7a6185a5387d14d4959692ea6de7c31a1916339313561d2131263b6a9f"
+      "bytes": 10719,
+      "sha256": "c23563396021402518afd66fa005d8e71f4723a92bd7025cc54a0d9049396aa3"
     },
     "tools/create_public_manifest.py": {
-      "bytes": 3194,
-      "sha256": "9c97f6321fff4722e20fa8cc81fd2e295c65d2548eb79cadb2d12aea766b3caf"
+      "bytes": 3202,
+      "sha256": "306c5cb8a0cabbf0576b40cac97289980a18758e2a8e3440f93c8bf55d380824"
     },
     "tools/evaluate_responses.py": {
       "bytes": 9715,
@@ -1396,6 +1404,10 @@
     "tools/package_project.py": {
       "bytes": 9149,
       "sha256": "8a037cabe964dfb1fa48b3e8f6dbf95a4096eecace0f51f61f87dec99c045043"
+    },
+    "tools/tests/build_site.test.mjs": {
+      "bytes": 5058,
+      "sha256": "f51a7a71c995b07315e6c18fb559089cbf3dfcc3833292f2b1be86be3cb52ef2"
     },
     "tools/tests/test_build_references.py": {
       "bytes": 2968,
@@ -1410,8 +1422,8 @@
       "sha256": "19dca90913c6fb4fa1e5fc08b30c8ed4b6acc4372b7c7094c3e7783c89a9b70c"
     },
     "tools/tests/test_public_dream.py": {
-      "bytes": 1865,
-      "sha256": "9135e960fca016d99144a3bb40e12a5f5fc6f91ca00af89404daffdeb792a4e8"
+      "bytes": 2105,
+      "sha256": "20a533a8d9afa523fd27f9c16d8df6068d419a21c6646fd62d15f05878a1b1c3"
     },
     "tools/tests/test_share_bundle.py": {
       "bytes": 12708,
@@ -1434,8 +1446,8 @@
       "sha256": "33306424060fa925c745dc8fb89570b4e8d4337ef13519b5def08ca3fbf235b1"
     },
     "vercel.json": {
-      "bytes": 152,
-      "sha256": "497207ce945740835e94119e97ce6df23af164ea10a801f1b176f7bc95018604"
+      "bytes": 178,
+      "sha256": "d33d60200cdfa37737ed104833540c496b131086c085fe6f93c99c3f74ae5fa0"
     }
   },
   "limits": "Integrity receipt for available public sources only; frozen-dossier-derived references have a separate build receipt. Missing raw corpus cannot be reverified; no cryptographic signature or educational approval.",
@@ -1456,6 +1468,6 @@
     "research/snapshots/SRC-12.html",
     "research/snapshots/SRC-13.html"
   ],
-  "release": "DREAM-JOURNEY-public-20261007",
+  "release": "DEPLOY-CLEANUP-public-20261007",
   "schemaVersion": 1
 }
